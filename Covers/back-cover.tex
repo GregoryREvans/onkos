@@ -1,0 +1,34 @@
+\documentclass[10pt]{article}
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Didot}
+\usepackage[utf8]{inputenc}
+\usepackage[papersize={8.5in, 11in}]{geometry}
+\usepackage[absolute]{textpos}
+\TPGrid[0.5in, 0.25in]{23}{24}
+\usepackage{palatino}
+\parindent=0pt
+\usepackage{nopageno}
+\usepackage{eurosym}
+\usepackage{paracol}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\begin{document}
+
+        \begin{tikzpicture}[remember picture, overlay]
+            \draw[line width = 2.5pt]
+                ($(current page.north west) + (0.25in,-0.25in)$)
+                rectangle
+                ($(current page.south east) + (-0.25in,0.25in)$);
+        \end{tikzpicture}
+
+
+
+
+\begin{textblock}{23}(0, 23.5)
+\textcopyright 12-2018 \hfill
+\textit{Scores available for purchase at www.gregoryrowlandevans.com} \hfill
+\euro 61.56 / \$70
+\end{textblock}
+
+\end{document}
