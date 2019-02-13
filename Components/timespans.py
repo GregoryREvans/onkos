@@ -7,14 +7,14 @@ from Scores.onkos.Components.music_makers import *
 
 timespan_maker = TimespanMaker(
     denominator=8,
-    total_duration=abjad.Duration(15, 2),
+    total_duration=abjad.Duration(30, 2),
 )
 
 counts = [3, 5, 3, 4, 7, ]
 
 timespan_list = timespan_maker(counts, max_duration=7)
 
-cyclic_materials = timespan_functions.cyc([music_maker_one, ])
+cyclic_materials = timespan_functions.cyc(material_list)
 
 initial_list = [timespan_list, ]
 

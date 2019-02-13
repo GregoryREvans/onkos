@@ -49,3 +49,17 @@ pitch_handler_one = PitchHandler(
 slur_handler_one = SlurHandler(
     slurs='runs',
     )
+
+#######
+
+pitch_handler_two = PitchHandler(
+    pitch_list=analyzed_list,
+    continuous=True,
+    )
+
+#######
+
+pitch_handler_three = PitchHandler(
+    pitch_list=random_walk_list,
+    continuous=True,
+    )

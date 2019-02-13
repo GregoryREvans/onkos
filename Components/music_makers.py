@@ -25,10 +25,10 @@ music_maker_one = MusicMaker(
 )
 
 music_maker_two = MusicMaker(
-    rmaker = rmaker_one,
+    rmaker = rmaker_two,
     #glissando_handler = glissando_handler_one,
     # notehead_handler = notehead_handler_one,
-    pitch_handler = pitch_handler_one,
+    pitch_handler = pitch_handler_two,
     # articulation_handler = articulation_handler_one,
     # dynamic_handler = dynamic_handler_one,
     #clef_handler = clef_handler_one,
@@ -37,10 +37,10 @@ music_maker_two = MusicMaker(
 )
 
 music_maker_three = MusicMaker(
-    rmaker = rmaker_one,
+    rmaker = rmaker_three,
     #glissando_handler = glissando_handler_one,
     # notehead_handler = notehead_handler_one,
-    pitch_handler = pitch_handler_one,
+    pitch_handler = pitch_handler_three,
     # articulation_handler = articulation_handler_one,
     # dynamic_handler = dynamic_handler_one,
     #clef_handler = clef_handler_one,
