@@ -3,7 +3,7 @@ import abjadext.rmakers
 from evans.abjad_functions.rtm_maker import RTMMaker
 
 rtm_one = RTMMaker(rtm='(1 (3 (2 (1 2 -1 1)) 3))')
-
+# rmaker_one = abjadext.rmakers.NoteRhythmMaker()
 rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(
         counts=[7, 5, ],

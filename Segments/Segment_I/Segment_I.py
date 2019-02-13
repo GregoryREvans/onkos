@@ -37,18 +37,6 @@ for voice_name, timespan_list in all_timespans.items():
     timespan_list.sort()
 
 
-# Split the timespan list via the time signatures and collect the shards into a
-# new timespan list
-
-# for voice_name, timespan_list in all_timespans.items():
-#     shards = timespan_list.split_at_offsets(bounds)
-#     split_timespan_list = abjad.TimespanList()
-#     for shard in shards:
-#         split_timespan_list.extend(shard)
-#     split_timespan_list.sort()
-#     all_timespans[voice_name] = timespan_list
-
-
 for time_signature in time_signatures:
     skip = abjad.Skip(1, multiplier=(time_signature))
     abjad.attach(time_signature, skip)
@@ -60,55 +48,20 @@ for time_signature in time_signatures:
 
 print('Making containers ...')
 
+def key_function(timespan):
+    return timespan.annotation.rhythm_maker or silence_maker
+
 def make_container(music_maker, durations):
     selections = music_maker(durations)
     container = abjad.Container([])
     container.extend(selections)
-    # # Add analysis brackets so we can see the phrasing graphically
-    # start_indicator = abjad.LilyPondLiteral('\startGroup', format_slot='after')
-    # stop_indicator = abjad.LilyPondLiteral('\stopGroup', format_slot='after')
-    # for cell in selections:
-    #     cell_first_leaf = abjad.select(cell).leaves()[0]
-    #     cell_last_leaf = abjad.select(cell).leaves()[-1]
-    #     abjad.attach(start_indicator, cell_first_leaf)
-    #     abjad.attach(stop_indicator, cell_last_leaf)
-    # # The extra space in the literals is a hack around a check for whether an
-    # # identical object has already been attached
-    # start_indicator = abjad.LilyPondLiteral('\startGroup ', format_slot='after')
-    # stop_indicator = abjad.LilyPondLiteral('\stopGroup ', format_slot='after')
-    # phrase_first_leaf = abjad.select(container).leaves()[0]
-    # phrase_last_leaf = abjad.select(container).leaves()[-1]
-    # abjad.attach(start_indicator, phrase_first_leaf)
-    # abjad.attach(stop_indicator, phrase_last_leaf)
     return container
-
-# Loop over the timespan list dictionaries, spitting out pairs of voice
-# names and per-voice timespan lists. Group timespans into phrases, with
-# all timespans in each phrase having an identical rhythm maker. Run the
-# rhythm maker against the durations of the timespans in the phrase and
-# add the output to the voice with the timespan lists's voice name.
-
-def key_function(timespan):
-    """
-    Get the timespan's annotation's rhythm-maker.
-    If the annotation's rhythm-maker is None, return the silence maker.
-    """
-    return timespan.annotation.rhythm_maker or silence_maker
 
 for voice_name, timespan_list in all_timespans.items():
     for music_maker, grouper in itertools.groupby(
         timespan_list,
         key=key_function,
     ):
-        # We know the voice name of each timespan because a) the timespan
-        # list is in a dictionary, associated with that voice name and b)
-        # each timespan's annotation is a MusicSpecifier instance which
-        # knows the name of the voice the timespan should be used for.
-        # This double-reference to the voice is redundant here, but in a
-        # different implementation we could put *all* the timespans into
-        # one timespan list, split them, whatever, and still know which
-        # voice they belong to because their annotation records that
-        # information.
         durations = [timespan.duration for timespan in grouper]
         container = make_container(music_maker, durations)
         voice = score[voice_name]
