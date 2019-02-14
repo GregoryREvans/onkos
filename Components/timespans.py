@@ -1,5 +1,5 @@
 import abjad
-from evans.abjad_functions.talea_timespan.TimespanMaker_for_greg import TimespanMaker
+from evans.abjad_functions.talea_timespan.TimespanMaker import TimespanMaker
 from Scores.onkos.Components.material_pattern import material_list
 from evans.general_tools.cyc import cyc
 from evans.abjad_functions.talea_timespan import timespan_functions
