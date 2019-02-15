@@ -32,6 +32,7 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
         ),
     )
 
+# '(1 ((1 ((4 (2 1)) 1)) (2 (2 2 1)) (1 (1 3 1))))'
 rmaker_two = RTMMaker_4(rtm= [
     '(1 (1 (4 (1 -1 1 -1 1))))',
     '(1 (1 (1 (1 1 1))))',
