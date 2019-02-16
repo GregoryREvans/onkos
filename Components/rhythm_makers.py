@@ -1,6 +1,7 @@
 import abjad
 import abjadext.rmakers
 from evans.abjad_functions.rtm.rtm_maker import RTMMaker_4
+from Scores.onkos.Components.rtm_lists import final_rtm_list
 
 rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(
@@ -32,16 +33,7 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
         ),
     )
 
-# '(1 ((1 ((4 (2 1)) 1)) (2 (2 2 1)) (1 (1 3 1))))'
-rmaker_two = RTMMaker_4(rtm= [
-    '(1 (1 (4 (1 -1 1 -1 1))))',
-    '(1 (1 (1 (1 1 1))))',
-    '(1 (1 1 1 (2 (1 1 1)) 1 1))',
-    '(1 (1 1 1 1 1))',
-    '(1 (2 (1 (1 1 1)) 1 3))',
-    '(1 (3 (2 (1 2 -1 1)) 3))'
-    ],
-    continuous=True)
+rmaker_two = RTMMaker_4(rtm=final_rtm_list, continuous=True)
 
 rmaker_three = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(
