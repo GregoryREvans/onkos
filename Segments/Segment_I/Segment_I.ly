@@ -112,572 +112,647 @@
                 \context Voice = "Voice 1"
                 {
                     {
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        % [Voice 1 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        \set Staff.shortInstrumentName =
+                        \markup { spr. }
+                        \set Staff.instrumentName =
+                        \markup { "Soprano 1" }
+                        \tempo 4=90
+                        f'8.
+                        \f
+                        - \tenuto
+                        \>
+                        [
+                        \!
+                        fs'8.
+                        - \staccato
+                        % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS
+                        a'8
+                        - \portato
+                        b'8
+                        - \tenuto
+                        e''8
+                        - \staccato
+                        f''8
+                        - \portato
+                        bf''8
+                        \p
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/6 {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
-                                    % [Voice 1 measure 1] %! COMMENT_MEASURE_NUMBERS
-                                    \set Staff.shortInstrumentName =
-                                    \markup { spr. }
-                                    \set Staff.instrumentName =
-                                    \markup { "Soprano 1" }
-                                    \tempo 4=90
-                                    c'8
-                                    [
-                                    \!
-                                    c'8
+                                    % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS
+                                    atef8
+                                    \f
+                                    - \staccato
+                                    \>
+                                    gtes'8
+                                    - \portato
                                 }
-                                c'8.
+                                gtes'8.
+                                - \tenuto
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
-                                c'16.
-                                c'16
-                                c'16
+                                af'16.
+                                - \staccato
+                                ef''16
+                                - \portato
+                                d''16
+                                - \tenuto
                             }
-                            c'16
-                            c'32
-                            c'32
+                            bes'16
+                            - \staccato
+                            aqf'32
+                            - \portato
+                            ctes32
+                            - \tenuto
                         }
-                        \stopStaff \startStaff
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 10/13 {
+                        \times 8/13 {
                             \times 4/7 {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
-                                    % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS
-                                    c'16.
-                                    c'8
+                                    % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
+                                    bqs,16.
+                                    - \staccato
+                                    btef,8
+                                    - \portato
                                     ]
                                 }
-                                c'4
+                                atef4
+                                - \tenuto
                             }
                             \times 8/9 {
-                                c'16.
+                                gtes'16.
+                                - \staccato
                                 [
-                                c'16.
-                                c'16.
+                                gtes'16.
+                                - \portato
+                                af'16.
+                                - \tenuto
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \times 10/11 {
-                                c'16.
-                                c'16.
-                                c'8
-                                ~
-                                c'32
+                            \times 5/6 {
+                                ef''16.
+                                - \staccato
+                                d''16.
+                                - \portato
+                                bes'8.
+                                - \tenuto
                             }
                         }
-                        \times 8/9 {
-                            \times 4/5 {
-                                % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS
-                                c'32
-                                ~
-                                c'128
-                                c'32
-                                ~
-                                c'128
-                            }
-                            c'16
-                            ~
-                            c'64
-                        }
-                        \times 8/13 {
-                            c'16
-                            c'16
-                            c'16
-                            ~
-                            c'64
-                        }
-                        \times 4/7 {
-                            c'16
-                            c'16
-                            ~
-                            c'64
-                            c'16
-                            ~
-                            c'64
-                            ]
-                        }
-                    }
-                    {
-                        % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        c'2
-                        \stopStaff \startStaff
-                    }
-                    {
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 7/6 {
-                            % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
-                            c'8
-                            [
-                            c'8
-                            c'8
-                            c'8
-                            c'8
-                            c'8
-                            ]
+                        \times 7/12 {
+                            \times 8/9 {
+                                \times 4/5 {
+                                    % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
+                                    aqf'8
+                                    ~
+                                    aqf'32
+                                    ctes8
+                                    ~
+                                    ctes32
+                                    ]
+                                }
+                                bqs,4
+                                ~
+                                bqs,16
+                            }
+                            \times 4/7 {
+                                btef,4
+                                - \staccato
+                                atef4
+                                - \portato
+                                gtes'4.
+                                - \tenuto
+                            }
+                            \times 8/15 {
+                                gtes'4
+                                - \staccato
+                                af'4.
+                                - \portato
+                                ef''4
+                                ~
+                                ef''16
+                                \p
+                                - \tweak stencil #constante-hairpin
+                                \<
+                            }
                         }
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 1 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        c'4
-                        c'8
-                        [
-                        \stopStaff \startStaff
+                        fqs''4.
+                        \f
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
-                        % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        c'8
-                        c'8
-                        c'8
-                        c'8
-                        c'8
-                        \stopStaff \startStaff
-                    }
-                    {
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        \times 4/5 {
-                            % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
-                            c'32
-                            ~
-                            c'128
-                            c'32
-                            ~
-                            c'128
-                            c'16
-                            ~
-                            c'64
-                            \times 2/3 {
-                                c'16
-                                ~
-                                c'64
-                                c'16
-                                ~
-                                c'64
-                                c'16
-                                ~
-                                c'64
-                            }
-                            \times 2/3 {
-                                c'16
-                                ~
-                                c'64
-                                c'16
-                                ~
-                                c'64
-                                c'16
-                                ~
-                                c'64
-                                ]
-                            }
-                        }
-                        \stopStaff \startStaff
-                        \times 4/7 {
-                            \times 2/3 {
-                                \times 2/3 {
-                                    % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
-                                    c'4
-                                    c'8
-                                    [
-                                }
-                                c'8
-                            }
-                            \times 4/5 {
-                                c'16.
-                                c'32
-                                c'32
-                                ]
-                            }
-                            c'4
-                            c'8
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 5/6 {
+                            % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
+                            bf''8
+                            \f
+                            - \staccato
+                            \>
                             [
-                            c'8
+                            af''8
+                            - \portato
+                            g8
+                            - \tenuto
+                            b8
+                            - \staccato
+                            af8
+                            - \portato
+                            cs'8
+                            \p
+                            - \tenuto
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
                         }
+                    }
+                    {
+                        % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        fqs''4.
+                        \p
+                        - \staccato
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 7/10 {
+                        \times 4/3 {
+                            % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
+                            cs'8
+                            \f
+                            - \portato
+                            \>
+                            [
+                            d''8
+                            - \tenuto
+                            fs''8
+                            \p
+                            - \staccato
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 14/15 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \times 3/5 {
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 3/4 {
-                                    % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
-                                    c'4
-                                    c'4
-                                }
-                                c'4
-                            }
-                            \times 8/9 {
-                                c'8
-                                [
-                                c'8
-                                ]
-                                c'4
+                            \times 10/11 {
+                                % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
+                                ef''16.
+                                \f
+                                - \portato
+                                \>
+                                d''16.
+                                - \tenuto
+                                bes'8
                                 ~
-                                c'16
-                                [
+                                bes'32
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \times 6/7 {
-                                c'8
-                                c'8
-                                c'8.
-                                ]
+                            \times 5/8 {
+                                aqf'8
+                                ~
+                                aqf'32
+                                ctes8.
+                                - \staccato
+                                bqs,8
+                                ~
+                                bqs,32
+                            }
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 10/17 {
+                                btef,8.
+                                - \portato
+                                atef8.
+                                - \tenuto
+                                gtes'8
+                                ~
+                                gtes'32
+                            }
+                        }
+                        \times 2/3 {
+                            % [Voice 1 measure 11] %! COMMENT_MEASURE_NUMBERS
+                            gtes'32.
+                            - \staccato
+                            af'32.
+                            - \portato
+                            ef''16.
+                            - \tenuto
+                            \times 2/3 {
+                                d''16.
+                                - \staccato
+                                bes'16.
+                                - \portato
+                                aqf'16.
+                                - \tenuto
+                            }
+                            \times 2/3 {
+                                ctes16.
+                                - \staccato
+                                bqs,16.
+                                - \portato
+                                btef,16.
+                                \p
+                                - \tenuto
+                                - \tweak stencil #constante-hairpin
+                                \<
                             }
                         }
                     }
                     {
-                        % [Voice 1 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        c'4.
-                        \stopStaff \startStaff
-                    }
-                    {
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             % [Voice 1 measure 12] %! COMMENT_MEASURE_NUMBERS
-                            c'8
-                            [
-                            c'8
-                            c'8
-                            c'8
-                            c'8
-                            c'8
+                            fs''8
+                            \f
+                            - \staccato
+                            \>
+                            af''8
+                            - \portato
+                            ef''8
+                            - \tenuto
+                            a8
+                            - \staccato
+                            ef'8
+                            - \portato
+                            bf8
+                            - \tenuto
                         }
-                        \stopStaff \startStaff
                         % [Voice 1 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        c'8.
-                        c'8.
+                        cs'8
+                        - \staccato
+                        c''8
+                        - \portato
+                        fs''8
+                        \p
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        \times 8/15 {
-                            % [Voice 1 measure 14] %! COMMENT_MEASURE_NUMBERS
-                            c'16
-                            ~
-                            c'64
-                            c'16
-                            ~
-                            c'64
-                            c'8
-                            ~
-                            c'32
-                            \times 2/3 {
-                                c'8
-                                ~
-                                c'32
-                                c'8
-                                ~
-                                c'32
-                                c'8
-                                ~
-                                c'32
-                            }
-                            \times 2/3 {
-                                c'8
-                                ~
-                                c'32
-                                c'8
-                                ~
-                                c'32
-                                c'8
-                                ~
-                                c'32
-                                ]
-                            }
-                        }
-                        \stopStaff \startStaff
-                        \times 2/3 {
-                            \times 2/3 {
-                                % [Voice 1 measure 15] %! COMMENT_MEASURE_NUMBERS
-                                c'4
-                                c'8
-                                [
-                            }
-                            c'8
-                        }
-                        \times 4/5 {
-                            c'16.
-                            c'32
-                            c'32
-                            ]
-                        }
-                        c'4
-                        c'8
-                        [
-                        c'8
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 3/5 {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 3/5 {
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 3/4 {
-                                    % [Voice 1 measure 16] %! COMMENT_MEASURE_NUMBERS
-                                    c'8
-                                    c'8
-                                }
-                                c'8
-                            }
-                            \times 8/9 {
-                                c'16
-                                c'16
-                                c'8
-                                ~
-                                c'32
-                            }
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 6/7 {
-                                c'16
-                                c'16
-                                c'16.
-                            }
-                        }
-                        % [Voice 1 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        c'32.
-                        c'32.
-                        c'8
-                        ~
-                        c'32
-                        c'32.
-                        c'16
-                        ~
-                        c'64
-                        c'16
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 6/11 {
-                            c'16.
-                            c'8
-                            c'8
-                        }
-                    }
-                    {
-                        % [Voice 1 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        c'16.
-                        c'16.
-                        c'16.
-                        c'16.
-                        ]
-                        \stopStaff \startStaff
-                    }
-                    {
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         \times 4/7 {
                             \times 2/3 {
-                                \times 2/3 {
-                                    % [Voice 1 measure 19] %! COMMENT_MEASURE_NUMBERS
-                                    c'4
-                                    c'8
-                                    [
+                                % [Voice 1 measure 14] %! COMMENT_MEASURE_NUMBERS
+                                btef,8
+                                \f
+                                - \staccato
+                                \>
+                                atef8
+                                - \portato
+                                gtes'8
+                                - \tenuto
+                            }
+                            gtes'16
+                            - \staccato
+                            af'16
+                            - \portato
+                            ]
+                            ef''4
+                            - \tenuto
+                            d''16
+                            - \staccato
+                            [
+                            bes'16
+                            - \portato
+                            aqf'8
+                            - \tenuto
+                        }
+                        % [Voice 1 measure 15] %! COMMENT_MEASURE_NUMBERS
+                        ctes16
+                        - \staccato
+                        bqs,16
+                        - \portato
+                        ]
+                        btef,4
+                        - \tenuto
+                        \times 4/5 {
+                            atef16
+                            - \staccato
+                            [
+                            gtes'8
+                            ~
+                            gtes'32
+                            gtes'16.
+                            - \portato
+                        }
+                        af'16
+                        - \tenuto
+                        ef''16.
+                        - \staccato
+                        d''16.
+                        - \portato
+                        \times 2/3 {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/4 {
+                                % [Voice 1 measure 16] %! COMMENT_MEASURE_NUMBERS
+                                bes'32.
+                                - \tenuto
+                                aqf'16
+                                ~
+                                aqf'64
+                            }
+                            ctes16.
+                            - \staccato
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 12/13 {
+                                bqs,16.
+                                - \portato
+                                btef,16
+                                - \tenuto
+                                atef32.
+                                - \staccato
+                            }
+                            gtes'16
+                            - \portato
+                            gtes'16
+                            - \tenuto
+                            af'16
+                            \p
+                            - \staccato
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 5/4 {
+                            % [Voice 1 measure 17] %! COMMENT_MEASURE_NUMBERS
+                            fs''8
+                            \f
+                            - \portato
+                            \>
+                            e''8
+                            - \tenuto
+                            cs''8
+                            - \staccato
+                            f'8
+                            \p
+                            - \portato
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            \times 4/5 {
+                                % [Voice 1 measure 18] %! COMMENT_MEASURE_NUMBERS
+                                af'32.
+                                \f
+                                - \tenuto
+                                \>
+                                ef''32
+                                - \staccato
+                            }
+                            d''16
+                            - \portato
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 12/13 {
+                                bes'16
+                                ~
+                                bes'64
+                                aqf'16
+                                - \tenuto
+                                ctes16
+                                - \staccato
+                            }
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/7 {
+                                bqs,16
+                                ~
+                                bqs,64
+                                btef,16
+                                ~
+                                btef,64
+                                atef16
+                                \p
+                                - \portato
+                                - \tweak stencil #constante-hairpin
+                                \<
+                            }
+                        }
+                    }
+                    {
+                        % [Voice 1 measure 19] %! COMMENT_MEASURE_NUMBERS
+                        f'8
+                        \f
+                        - \tenuto
+                        \>
+                        fs'8
+                        - \staccato
+                        a'8
+                        - \portato
+                        b'8
+                        \p
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 14/17 {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/6 {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/5 {
+                                    % [Voice 1 measure 20] %! COMMENT_MEASURE_NUMBERS
+                                    atef8
+                                    \f
+                                    \>
+                                    ~
+                                    atef32
+                                    gtes'8
+                                    ~
+                                    gtes'32
                                 }
-                                c'8
+                                gtes'8.
+                                - \staccato
+                            }
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/4 {
+                                af'8
+                                ~
+                                af'32
+                                ef''8
+                                ~
+                                ef''32
+                                d''8.
+                                - \portato
+                            }
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/4 {
+                                bes'8.
+                                - \tenuto
+                                aqf'8
+                                ~
+                                aqf'32
+                                ctes8
+                                ~
+                                ctes32
+                                \p
+                                - \tweak stencil #constante-hairpin
+                                \<
+                            }
+                        }
+                    }
+                    {
+                        % [Voice 1 measure 21] %! COMMENT_MEASURE_NUMBERS
+                        b'16.
+                        \f
+                        - \staccato
+                        \>
+                        e''16.
+                        - \portato
+                        f''16.
+                        - \tenuto
+                        bf''16.
+                        - \staccato
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 5/4 {
+                            % [Voice 1 measure 22] %! COMMENT_MEASURE_NUMBERS
+                            af''8
+                            - \portato
+                            g8
+                            - \tenuto
+                            b8
+                            - \staccato
+                            af8
+                            \p
+                            - \portato
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        \times 2/3 {
+                            % [Voice 1 measure 23] %! COMMENT_MEASURE_NUMBERS
+                            ctes32.
+                            \f
+                            - \tenuto
+                            \>
+                            bqs,32.
+                            - \staccato
+                            btef,16.
+                            - \portato
+                            \times 2/3 {
+                                atef16.
+                                - \tenuto
+                                gtes'16.
+                                - \staccato
+                                gtes'16.
+                                - \portato
+                            }
+                            \times 2/3 {
+                                af'16.
+                                - \tenuto
+                                ef''16.
+                                - \staccato
+                                d''16.
+                                - \portato
+                            }
+                        }
+                        \times 2/3 {
+                            \times 2/3 {
+                                % [Voice 1 measure 24] %! COMMENT_MEASURE_NUMBERS
+                                bes'8
+                                - \tenuto
+                                aqf'16
+                                - \staccato
+                            }
+                            ctes8
+                            - \portato
+                            \times 2/3 {
+                                bqs,8
+                                - \tenuto
+                                btef,8
+                                - \staccato
+                                atef8
+                                - \portato
                             }
                             \times 4/5 {
-                                c'16.
-                                c'32
-                                c'32
-                                ]
+                                gtes'16
+                                - \tenuto
+                                gtes'16
+                                - \staccato
+                                af'8.
+                                - \portato
                             }
-                            c'4
-                            c'8
-                            [
-                            c'8
-                            ]
                         }
-                        \stopStaff \startStaff
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 7/10 {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 3/5 {
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 3/4 {
-                                    % [Voice 1 measure 20] %! COMMENT_MEASURE_NUMBERS
-                                    c'4
-                                    c'4
-                                }
-                                c'4
-                            }
-                            \times 8/9 {
-                                c'8
-                                [
-                                c'8
-                                ]
-                                c'4
-                                ~
-                                c'16
-                                [
-                            }
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 6/7 {
-                                c'8
-                                c'8
-                                c'8.
-                            }
+                        \times 4/7 {
+                            % [Voice 1 measure 25] %! COMMENT_MEASURE_NUMBERS
+                            ef''8.
+                            - \tenuto
+                            d''8
+                            - \staccato
+                            bes'8
+                            - \portato
                         }
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 3/5 {
-                            % [Voice 1 measure 21] %! COMMENT_MEASURE_NUMBERS
-                            c'32.
-                            c'32.
-                            c'8
-                            ~
-                            c'32
-                            c'32.
-                            c'16
-                            ~
-                            c'64
-                            c'16
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 6/11 {
-                                c'16.
-                                c'8
-                                c'8
-                            }
+                        \times 3/4 {
+                            aqf'8.
+                            - \tenuto
+                            ctes8.
+                            - \staccato
+                            bqs,8
+                            - \portato
                         }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 5/6 {
-                            \times 8/9 {
-                                % [Voice 1 measure 22] %! COMMENT_MEASURE_NUMBERS
-                                c'16
-                                c'16
-                                ~
-                                c'64
-                            }
-                            c'8
-                            \times 4/7 {
-                                c'8
-                                ~
-                                c'32
-                                c'8
-                                ~
-                                c'32
-                                c'8
-                            }
-                            \times 8/15 {
-                                c'8
-                                ~
-                                c'32
-                                c'8
-                                ~
-                                c'32
-                                c'8
-                                ~
-                                c'32
-                            }
-                        }
-                        \times 4/5 {
-                            % [Voice 1 measure 23] %! COMMENT_MEASURE_NUMBERS
-                            c'32
-                            ~
-                            c'128
-                            c'32
-                            ~
-                            c'128
-                            c'16
-                            ~
-                            c'64
-                            \times 2/3 {
-                                c'16
-                                ~
-                                c'64
-                                c'16
-                                ~
-                                c'64
-                                c'16
-                                ~
-                                c'64
-                            }
-                            \times 2/3 {
-                                c'16
-                                ~
-                                c'64
-                                c'16
-                                ~
-                                c'64
-                                c'16
-                                ~
-                                c'64
-                                ]
-                            }
-                        }
-                    }
-                    {
-                        % [Voice 1 measure 24] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        c'2
-                        \stopStaff \startStaff
-                    }
-                    {
-                        % [Voice 1 measure 25] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        c'8
-                        [
-                        c'8
-                        c'8
-                        c'8
-                        c'8
-                        c'8
-                        c'8
-                        \stopStaff \startStaff
+                        btef,16
+                        - \tenuto
+                        atef8
+                        - \staccato
+                        gtes'16
+                        \p
+                        - \portato
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                     {
                         % [Voice 1 measure 26] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        c'8.
-                        c'8.
-                        \stopStaff \startStaff
+                        fqs''4.
+                        \f
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
-                        \once \override Staff.Clef.transparent = ##t
-                        \clef alto
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 5/4 {
+                        \times 5/6 {
                             % [Voice 1 measure 27] %! COMMENT_MEASURE_NUMBERS
-                            c'8
-                            c'8
-                            c'8
-                            c'8
+                            af8
+                            \f
+                            - \staccato
+                            \>
+                            [
+                            cs'8
+                            - \portato
+                            d''8
+                            - \tenuto
+                            fs''8
+                            - \staccato
+                            af''8
+                            - \portato
+                            ef''8
+                            \p
+                            - \tenuto
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
                             \bar "||"
                         }
-                        \stopStaff \startStaff
                     }
                 }
             }

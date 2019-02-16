@@ -33,7 +33,7 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
         ),
     )
 
-rmaker_two = RTMMaker_4(rtm=final_rtm_list, continuous=True)
+rmaker_two = RTMMaker_4(rtm=final_rtm_list)
 
 rmaker_three = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(

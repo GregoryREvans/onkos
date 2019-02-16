@@ -20,14 +20,12 @@ initial_list = [timespan_list, ]
 
 master_list = []
 
-rhythm_models = [cyclic_materials,]
-
-for i, timespan_list, cycle in zip(enumerate(initial_list), initial_list, rhythm_models):
+for i, timespan_list in enumerate(initial_list):
     for timespan in timespan_list:
         if isinstance(timespan, abjad.AnnotatedTimespan):
             timespan.annotation = timespan_functions.TimespanSpecifier(
                 voice_name = f'Voice {i}',
-                rhythm_maker = next(cycle),
+                rhythm_maker = next(cyclic_materials),
             )
         else:
             timespan.annotation = timespan_functions.TimespanSpecifier(
