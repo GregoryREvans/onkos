@@ -42,7 +42,7 @@ notehead_handler_one = NoteheadHandler(
     )
 
 pitch_handler_one = PitchHandler(
-    pitch_list=perm_list,
+    pitch_list=sieve_list,
     continuous=True,
     )
 
@@ -53,7 +53,7 @@ slur_handler_one = SlurHandler(
 #######
 
 pitch_handler_two = PitchHandler(
-    pitch_list=analyzed_list,
+    pitch_list=perm_list,
     continuous=True,
     )
 

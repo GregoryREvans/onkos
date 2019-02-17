@@ -26,3 +26,5 @@ for x in tuple_list:
     a = x[0]
     b = x[-1]
     final_rtm_list.append(funnels[a][b])
+
+print(final_rtm_list)

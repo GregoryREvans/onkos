@@ -5,7 +5,7 @@ from Scores.onkos.Components.music_makers import music_maker_two
 from Scores.onkos.Components.music_makers import music_maker_three
 from Scores.onkos.Components.music_makers import silence_maker
 
-seed = np.random.seed(seed=5)
+seed = np.random.seed(seed=7)
 
 # transition_prob = {
 #     'microtones_up': {'microtones_down': 0.8, 'combinations': 0.19, 'microtones_up': 0.01},
@@ -32,4 +32,4 @@ dict = {
 }
 
 material_list = [dict[x] for x in key_list]
-print(key_list)
+# print(key_list)
