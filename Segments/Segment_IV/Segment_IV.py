@@ -151,7 +151,7 @@ staffs = [staff for staff in abjad.iterate(score['Staff Group']).components(abja
 print('Adding attachments ...')
 bar_line = abjad.BarLine('|.')
 metro = abjad.MetronomeMark((1, 8), (63, 72))
-markup = abjad.Markup(r'\bold { A }')
+markup = abjad.Markup(r'\bold { C }')
 mark = abjad.RehearsalMark(markup=markup)
 
 instruments = cyc([
@@ -171,16 +171,17 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
     abjad.attach(next(instruments), leaf1)
     abjad.attach(next(abbreviations), leaf1)
     abjad.attach(next(names), leaf1)
+    abjad.attach(mark, leaf1)
+    abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanOne'), leaf1)
+    abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanTwo'), leaf1)
+    abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanThree'), leaf1)
+    abjad.attach(abjad.LilyPondLiteral(r'\!', 'before'), leaf1)
 
 for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]
     last_leaf = abjad.select(staff).leaves()[-1]
     abjad.attach(metro, leaf1)
     abjad.attach(bar_line, last_leaf)
-
-for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
-    leaf1 = abjad.select(staff).leaves()[0]
-    abjad.attach(mark, leaf1)
 
 # for staff in abjad.iterate(score['Staff Group 1']).components(abjad.Staff):
 #     abjad.Instrument.transpose_from_sounding_pitch(staff)

@@ -72,8 +72,8 @@
                             \markup { Viola }
                             \tempo 8=63-72
                             \once \override Staff.NoteHead.style = #'cross
-                            \clef "varC"
-                            c8
+                            \clef "treble"
+                            bef8
                             \f
                             \>
                             \stopTextSpanOne
@@ -107,20 +107,20 @@
                             [
                             \!
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            cqs16
+                            bqs''16
                             - \tweak style #'solid-line
                             \glissando
                             ]
                             \once \override Staff.NoteHead.style = #'diamond
-                            dqf4.
+                            d'''4.
                             - \tweak style #'solid-line
                             \glissando
                             \once \override Staff.NoteHead.style = #'triangle
-                            d4
+                            dqf'''4
                             - \tweak style #'solid-line
                             \glissando
                             \once \override Staff.NoteHead.style = #'slash
-                            ef8
+                            dqf'''8
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -790,7 +790,7 @@
                     {
                         % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'cross
-                        \clef "treble"
+                        \clef "varC"
                         fqs''8
                         \mp
                         - \tenuto
@@ -1055,8 +1055,8 @@
                     {
                         % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
-                        ef16
+                        \clef "treble"
+                        dqf'''16
                         \f
                         \>
                         \stopTextSpanOne
@@ -1089,15 +1089,15 @@
                         \startTextSpanThree
                         ]
                         \once \override Staff.NoteHead.style = #'cross
-                        e4
+                        aef''4
                         ~
                         \once \override Staff.NoteHead.style = #'cross
-                        e16
+                        aef''16
                         - \tweak style #'solid-line
                         \glissando
                         [
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        f8
+                        dqf'''8
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -1731,7 +1731,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        \clef "treble"
+                        \clef "varC"
                         fqs''4.
                         :32
                         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
@@ -1756,8 +1756,8 @@
                         \times 8/9 {
                             % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'diamond
-                            \clef "varC"
-                            f16
+                            \clef "treble"
+                            dqf'''16
                             \f
                             \>
                             \stopTextSpanOne
@@ -1789,11 +1789,11 @@
                             - \tweak staff-padding #15
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'triangle
-                            fqs4.
+                            dqf'''4.
                             - \tweak style #'solid-line
                             \glissando
                             \once \override Staff.NoteHead.style = #'slash
-                            fs8
+                            etes''8
                             ~
                             [
                         }
@@ -1801,16 +1801,16 @@
                         \times 10/9 {
                             % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'slash
-                            fs8
+                            etes''8
                             - \tweak style #'solid-line
                             \glissando
                             \once \override Staff.NoteHead.style = #'default
-                            gqf8.
+                            ees''8.
                             - \tweak style #'solid-line
                             \glissando
                             ]
                             \once \override Staff.NoteHead.style = #'cross
-                            g4
+                            eef''4
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -2085,8 +2085,8 @@
                         \times 12/13 {
                             % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            \clef "varC"
-                            g16
+                            \clef "treble"
+                            eef''16
                             \f
                             \>
                             \stopTextSpanOne
@@ -2119,20 +2119,20 @@
                             \startTextSpanThree
                             [
                             \once \override Staff.NoteHead.style = #'diamond
-                            af8
+                            eqf''8
                             - \tweak style #'solid-line
                             \glissando
                             \once \override Staff.NoteHead.style = #'triangle
-                            aqf16
+                            eqf''16
                             - \tweak style #'solid-line
                             \glissando
                             ]
                             \once \override Staff.NoteHead.style = #'slash
-                            aqs4.
+                            etef''4.
                             - \tweak style #'solid-line
                             \glissando
                             \once \override Staff.NoteHead.style = #'default
-                            bf8.
+                            eqf''8.
                             \p
                             - \tweak stencil #constante-hairpin
                             \<

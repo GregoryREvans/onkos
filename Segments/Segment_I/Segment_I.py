@@ -74,22 +74,22 @@ for voice_name, timespan_list in all_timespans.items():
 #         time_signature = time_signatures[i]
 #         abjad.mutate(shard).rewrite_meter(time_signature)
 
-print('Adding ending skips ...')
-final_skip = abjad.Skip(1, multiplier=((1, 32)))
-score['Global Context'].append(final_skip)
-for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
-    final_rest = abjad.Rest((1, 32))
-    fermata = abjad.Fermata(command='shortfermata')
-    staff_literal = abjad.LilyPondLiteral(r'\stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff', 'before')
-    note_literal = abjad.LilyPondLiteral(r'\once \override Rest.color = #white', 'before')
-    abjad.attach(fermata, final_rest)
-    abjad.attach(staff_literal, final_rest)
-    abjad.attach(note_literal, final_rest)
-    abjad.attach(abjad.StopHairpin(), final_rest)
-    abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanOne'), final_rest)
-    abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanTwo'), final_rest)
-    abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanThree'), final_rest)
-    staff.append(final_rest)
+# print('Adding ending skips ...')
+# final_skip = abjad.Skip(1, multiplier=((1, 32)))
+# score['Global Context'].append(final_skip)
+# for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
+#     final_rest = abjad.Rest((1, 32))
+#     fermata = abjad.Fermata(command='shortfermata')
+#     staff_literal = abjad.LilyPondLiteral(r'\stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff', 'before')
+#     note_literal = abjad.LilyPondLiteral(r'\once \override Rest.color = #white', 'before')
+#     abjad.attach(fermata, final_rest)
+#     abjad.attach(staff_literal, final_rest)
+#     abjad.attach(note_literal, final_rest)
+#     abjad.attach(abjad.StopHairpin(), final_rest)
+#     abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanOne'), final_rest)
+#     abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanTwo'), final_rest)
+#     abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanThree'), final_rest)
+#     staff.append(final_rest)
 
 
 print('Beaming runs ...')
@@ -151,8 +151,8 @@ staffs = [staff for staff in abjad.iterate(score['Staff Group']).components(abja
 print('Adding attachments ...')
 bar_line = abjad.BarLine('|.')
 metro = abjad.MetronomeMark((1, 8), (63, 72))
-markup = abjad.Markup(r'\bold { A }')
-mark = abjad.RehearsalMark(markup=markup)
+# markup = abjad.Markup(r'\bold { A }')
+# mark = abjad.RehearsalMark(markup=markup)
 
 instruments = cyc([
     abjad.Viola(),
@@ -178,9 +178,9 @@ for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
     abjad.attach(metro, leaf1)
     abjad.attach(bar_line, last_leaf)
 
-for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
-    leaf1 = abjad.select(staff).leaves()[0]
-    abjad.attach(mark, leaf1)
+# for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
+#     leaf1 = abjad.select(staff).leaves()[0]
+#     abjad.attach(mark, leaf1)
 
 # for staff in abjad.iterate(score['Staff Group 1']).components(abjad.Staff):
 #     abjad.Instrument.transpose_from_sounding_pitch(staff)

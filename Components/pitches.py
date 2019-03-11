@@ -1,4 +1,6 @@
 import abjad
+from Scores.onkos.Components.instruments import instrument_one_range_lowest
+from Scores.onkos.Components.instruments import instrument_one_range_highest
 import numpy as np
 from evans.general_tools.reduce_mod import reduceMod
 from evans.tool_tests.audio_pitches import get_audio_pitches
@@ -48,11 +50,55 @@ perm_list = flatten(transpositions)
 
 ######
 #list two is broken
-analyzed_list_1 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_1.wav')]
+old_analyzed_list_1 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_1.wav')]
+analyzed_list_1 = []
+for x in old_analyzed_list_1:
+    if x < instrument_one_range_lowest:
+        x = x + 24
+        analyzed_list_1.append(x)
+    elif x > instrument_one_range_highest:
+        x = x - 24
+        analyzed_list_1.append(x)
+    else:
+        analyzed_list_1.append(x)
+
 # analyzed_list_2 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_2.wav')]
-analyzed_list_3 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_3.wav')]
-analyzed_list_4 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_4.wav')]
-analyzed_list_5 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_5.wav')]
+
+old_analyzed_list_3 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_3.wav')]
+analyzed_list_3 = []
+for x in old_analyzed_list_3:
+    if x < instrument_one_range_lowest:
+        x = x + 24
+        analyzed_list_3.append(x)
+    elif x > instrument_one_range_highest:
+        x = x - 24
+        analyzed_list_3.append(x)
+    else:
+        analyzed_list_3.append(x)
+
+old_analyzed_list_4 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_4.wav')]
+analyzed_list_4 = []
+for x in old_analyzed_list_4:
+    if x < instrument_one_range_lowest:
+        x = x + 24
+        analyzed_list_4.append(x)
+    elif x > instrument_one_range_highest:
+        x = x - 24
+        analyzed_list_4.append(x)
+    else:
+        analyzed_list_4.append(x)
+
+old_analyzed_list_5 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_5.wav')]
+analyzed_list_5 = []
+for x in old_analyzed_list_5:
+    if x < instrument_one_range_lowest:
+        x = x + 24
+        analyzed_list_5.append(x)
+    elif x > instrument_one_range_highest:
+        x = x - 24
+        analyzed_list_5.append(x)
+    else:
+        analyzed_list_5.append(x)
 ######
 
 random_walk_list = [x for x in randomWalk(

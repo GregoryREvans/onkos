@@ -151,7 +151,7 @@ staffs = [staff for staff in abjad.iterate(score['Staff Group']).components(abja
 print('Adding attachments ...')
 bar_line = abjad.BarLine('|.')
 metro = abjad.MetronomeMark((1, 8), (63, 72))
-markup = abjad.Markup(r'\bold { A }')
+markup = abjad.Markup(r'\bold { D }')
 mark = abjad.RehearsalMark(markup=markup)
 
 instruments = cyc([
