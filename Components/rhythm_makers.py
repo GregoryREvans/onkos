@@ -33,14 +33,17 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
         ),
     )
 
-rmaker_two = RTMMaker_4(rtm= [
-'(1 (1 (4 (1 -1 1 -1 1))))',
-'(1 (1 (1 (1 1 1))))',
-'(1 (1 1 1 (2 (1 1 1)) 1 1))',
-'(1 (1 1 1 1 1))',
-'(1 (2 (1 (1 1 1)) 1 3))',
-'(1 (3 (2 (1 2 -1 1)) 3))'
-],)
+#rmaker_two = RTMMaker_4(rtm=['(1 (3 (2 (1 2 1 1)) 3))', '(1 (3 (2 (3 2 2 4)) 4))', '(1 (5 (4 (4 6 6 5)) 4))', ] )
+rmaker_two = RTMMaker_4(rtm=final_rtm_list )
+# '(1 (5 (4 (4 6 -6 5)) 4))', '(1 (5 (5 (6 6 -6 5)) 6))', '(1 (6 (6 (6 6 -6 6)) 6))', '(1 (3 (3 (2 1 -2 1)) 1))', '(1 (4 (3 (2 3 -2 2)) 4))'
+# [
+# '(1 (1 (4 (1 -1 1 -1 1))))',
+# '(1 (1 (1 (1 1 1))))',
+# '(1 (1 1 1 (2 (1 1 1)) 1 1))',
+# '(1 (1 1 1 1 1))',
+# '(1 (2 (1 (1 1 1)) 1 3))',
+# '(1 (3 (2 (1 2 -1 1)) 3))'
+# ]
 # final_rtm_list breaks dynamics ...
 rmaker_three = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(

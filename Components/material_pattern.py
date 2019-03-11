@@ -5,18 +5,13 @@ from Scores.onkos.Components.music_makers import music_maker_two
 from Scores.onkos.Components.music_makers import music_maker_three
 from Scores.onkos.Components.music_makers import silence_maker
 
-seed = np.random.seed(seed=7)
-
-# transition_prob = {
-#     'microtones_up': {'microtones_down': 0.8, 'combinations': 0.19, 'microtones_up': 0.01},
-#     'microtones_down': {'microtones_up': 0.2, 'combinations': 0.7, 'microtones_down': 0.1},
-#     'combinations': {'microtones_down': 0.1, 'combinations': 0.2, 'microtones_up': 0.7}
-#     }
+np.random.seed(7)
 
 transition_prob = {
-    'music_maker_one': {'music_maker_two': 0.6, 'music_maker_three': 0.19, 'music_maker_one': 0.21},
-    'music_maker_two': {'music_maker_one': 0.2, 'music_maker_three': 0.1, 'music_maker_two': 0.7},
-    'music_maker_three': {'music_maker_two': 0.1, 'music_maker_three': 0.3, 'music_maker_one': 0.6}
+    'music_maker_one': {'music_maker_one': 0.2, 'music_maker_two': 0.6, 'music_maker_three': 0.19, 'silence_maker': 0.01},
+    'music_maker_two': {'music_maker_one': 0.2, 'music_maker_two': 0.6, 'music_maker_three': 0.1, 'silence_maker': 0.1},
+    'music_maker_three': {'music_maker_one': 0.5, 'music_maker_two': 0.1, 'music_maker_three': 0.3, 'silence_maker': 0.1},
+    'silence_maker': {'music_maker_one': 0.25, 'music_maker_two': 0.25, 'music_maker_three': 0.25, 'silence_maker': 0.25},
     }
 
 material_chain = MarkovChain(transition_prob=transition_prob)
@@ -29,7 +24,8 @@ dict = {
     'music_maker_one': music_maker_one,
     'music_maker_two': music_maker_two,
     'music_maker_three': music_maker_three,
+    'silence_maker': silence_maker,
 }
 
 material_list = [dict[x] for x in key_list]
-# print(key_list)
+print(key_list)

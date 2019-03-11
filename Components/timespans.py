@@ -4,19 +4,23 @@ from Scores.onkos.Components.material_pattern import material_list
 from evans.general_tools.cyc import cyc
 from evans.abjad_functions.talea_timespan import timespan_functions
 from Scores.onkos.Components.music_makers import *
+from Scores.onkos.Components.time_signatures import *
 
 timespan_maker = TimespanMaker(
     denominator=8,
-    total_duration=abjad.Duration(30, 2),
+    total_duration=abjad.Duration(74, 8),
 )
 
-counts = [3, 5, 3, 4, 7, ]
+counts = [8, 5, 7, 6, 1, 9, 5, 4, 7, 5, 2, 9, 6, ]
 
-timespan_list = timespan_maker(counts, max_duration=7)
+timespan_list = timespan_maker(counts, max_duration=9)
+
+split_list = timespan_functions.make_split_list(timespan_list, bounds) #only use when I explicity define time signatures without automation
 
 cyclic_materials = timespan_functions.cyc(material_list)
 
-initial_list = [timespan_list, ]
+# initial_list = [timespan_list, ]
+initial_list = [split_list, ] #only use when I explicity define time signatures without automation
 
 master_list = []
 
@@ -57,4 +61,3 @@ for voice, timespan_list in all_timespans.items():
 # print(all_timespans)
 # for voice, timespan_list in all_timespans.items():
 #     abjad.show(timespan_list, key="annotation", scale=0.5)
-# Get Rid of Instances of the Timespan Specifier and replace with regular annotations

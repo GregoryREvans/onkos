@@ -14,48 +14,35 @@ silence_maker = abjadext.rmakers.NoteRhythmMaker(
 
 music_maker_one = MusicMaker(
     rmaker = rmaker_one,
-    #glissando_handler = glissando_handler_one,
+    glissando_handler = glissando_handler_one,
     notehead_handler = notehead_handler_one,
     pitch_handler = pitch_handler_one,
-    articulation_handler = articulation_handler_one,
+    #articulation_handler = articulation_handler_one,
     dynamic_handler = dynamic_handler_one,
     clef_handler = clef_handler_one,
-    #slur_handler = slur_handler_one,
+    text_span_handler = text_span_handler_one,
     continuous = True,
 )
 
 music_maker_two = MusicMaker(
     rmaker = rmaker_two,
-    #glissando_handler = glissando_handler_one,
-    #notehead_handler = notehead_handler_one,
+    notehead_handler = notehead_handler_two,
     pitch_handler = pitch_handler_two,
-    articulation_handler = articulation_handler_one,
-    dynamic_handler = dynamic_handler_one,
-    clef_handler = clef_handler_one,
-    #slur_handler = slur_handler_one,
+    articulation_handler = articulation_handler_two,
+    dynamic_handler = dynamic_handler_two,
+    clef_handler = clef_handler_two,
+    text_span_handler = text_span_handler_two,
     continuous = True,
 )
 
 music_maker_three = MusicMaker(
     rmaker = rmaker_three,
-    glissando_handler = glissando_handler_one,
-    #notehead_handler = notehead_handler_one,
+    glissando_handler = glissando_handler_three,
+    notehead_handler = notehead_handler_three,
     pitch_handler = pitch_handler_three,
-    articulation_handler = articulation_handler_one,
-    dynamic_handler = dynamic_handler_one,
-    clef_handler = clef_handler_one,
-    slur_handler = slur_handler_one,
+    articulation_handler = articulation_handler_three,
+    dynamic_handler = dynamic_handler_three,
+    clef_handler = clef_handler_three,
+    text_span_handler = text_span_handler_three,
     continuous = True,
 )
-
-# music_maker_two = MusicMaker(
-#     rmaker = rmaker_one,
-#     glissando_handler = glissando_handler_one,
-#     notehead_handler = notehead_handler_one,
-#     pitch_handler = pitch_handler_one,
-#     articulation_handler = articulation_handler_one,
-#     dynamic_handler = dynamic_handler_one,
-#     clef_handler = clef_handler_one,
-#     slur_handler = slur_handler_one,
-#     continuous = False,
-# )

@@ -193,9 +193,9 @@ score_file = abjad.LilyPondFile.new(
 abjad.SegmentMaker.comment_measure_numbers(score)
 ###################
 
-directory = '/Users/evansdsg2/Scores/onkos/Segments/Segment_I'
-pdf_path = f'{directory}/Segment_I.pdf'
-path = pathlib.Path('Segment_I.pdf')
+directory = '/Users/evansdsg2/Scores/onkos/Segments/Segment_IV'
+pdf_path = f'{directory}/Segment_IV.pdf'
+path = pathlib.Path('Segment_IV.pdf')
 if path.exists():
     print(f'Removing {pdf_path} ...')
     path.unlink()
@@ -214,8 +214,8 @@ print(f'Total time: {total_time} seconds')
 if path.exists():
     print(f'Opening {pdf_path} ...')
     os.system(f'open {pdf_path}')
-score_lines = open('/Users/evansdsg2/Scores/onkos/Segments/Segment_I/Segment_I.ly').readlines()
-open('/Users/evansdsg2/Scores/onkos/Build/Score/Segment_I.ly', 'w').writelines(score_lines[15:-1])
+score_lines = open('/Users/evansdsg2/Scores/onkos/Segments/Segment_IV/Segment_IV.ly').readlines()
+open('/Users/evansdsg2/Scores/onkos/Build/Score/Segment_IV.ly', 'w').writelines(score_lines[15:-1])
 
 # abjad.show(score_file)
 # abjad.play(score)

@@ -47,9 +47,12 @@ transpositions = [[l + c[i] for l in permutations[i]] for i in range(len(c))]
 perm_list = flatten(transpositions)
 
 ######
-
-analyzed_list = [x for x in get_audio_pitches(path='/Users/evansdsg2/evans/tool_tests/hello.wav')]
-
+#list two is broken
+analyzed_list_1 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_1.wav')]
+# analyzed_list_2 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_2.wav')]
+analyzed_list_3 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_3.wav')]
+analyzed_list_4 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_4.wav')]
+analyzed_list_5 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_5.wav')]
 ######
 
 random_walk_list = [x for x in randomWalk(
