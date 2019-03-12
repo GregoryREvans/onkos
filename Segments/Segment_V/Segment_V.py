@@ -3,10 +3,10 @@ import itertools
 import os
 import pathlib
 import time
-from Scores.onkos.Components.timespans import all_timespans
+from Scores.onkos.Components.timespans import all_timespans_5 as all_timespans
 from Scores.onkos.Components.score_structure import score
-from Scores.onkos.Components.time_signatures import time_signatures
-from Scores.onkos.Components.time_signatures import bounds
+from Scores.onkos.Components.time_signatures import time_signatures_5 as time_signatures
+from Scores.onkos.Components.time_signatures import bounds_5 as bounds
 from Scores.onkos.Components.music_makers import *
 from evans.general_tools.cyc import cyc
 
@@ -171,6 +171,7 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
     abjad.attach(next(instruments), leaf1)
     abjad.attach(next(abbreviations), leaf1)
     abjad.attach(next(names), leaf1)
+    # abjad.attach(abjad.LilyPondLiteral(r'\!', 'before'), leaf1)
 
 for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]

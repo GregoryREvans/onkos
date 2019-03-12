@@ -3,10 +3,10 @@ import itertools
 import os
 import pathlib
 import time
-from Scores.onkos.Components.timespans import all_timespans
+from Scores.onkos.Components.timespans import all_timespans_1 as all_timespans
 from Scores.onkos.Components.score_structure import score
-from Scores.onkos.Components.time_signatures import time_signatures
-from Scores.onkos.Components.time_signatures import bounds
+from Scores.onkos.Components.time_signatures import time_signatures_1 as time_signatures
+from Scores.onkos.Components.time_signatures import bounds_1 as bounds
 from Scores.onkos.Components.music_makers import *
 from evans.general_tools.cyc import cyc
 
@@ -149,10 +149,10 @@ staffs = [staff for staff in abjad.iterate(score['Staff Group']).components(abja
 #attach instruments and clefs
 
 print('Adding attachments ...')
-bar_line = abjad.BarLine('|.')
+bar_line = abjad.BarLine('||')
 metro = abjad.MetronomeMark((1, 8), (63, 72))
-# markup = abjad.Markup(r'\bold { A }')
-# mark = abjad.RehearsalMark(markup=markup)
+markup = abjad.Markup(r'\bold {  }')
+mark = abjad.RehearsalMark(markup=markup)
 
 instruments = cyc([
     abjad.Viola(),
@@ -178,9 +178,9 @@ for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
     abjad.attach(metro, leaf1)
     abjad.attach(bar_line, last_leaf)
 
-# for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
-#     leaf1 = abjad.select(staff).leaves()[0]
-#     abjad.attach(mark, leaf1)
+for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
+    leaf1 = abjad.select(staff).leaves()[0]
+    abjad.attach(mark, leaf1)
 
 # for staff in abjad.iterate(score['Staff Group 1']).components(abjad.Staff):
 #     abjad.Instrument.transpose_from_sounding_pitch(staff)

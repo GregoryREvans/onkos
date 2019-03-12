@@ -19,6 +19,11 @@
         {
             % [Global Context measure 1] %! COMMENT_MEASURE_NUMBERS
             \time 1/1
+            \mark \markup {
+                \bold
+                    {
+                    }
+                }
             s1 * 1
             % [Global Context measure 2] %! COMMENT_MEASURE_NUMBERS
             \time 5/4
@@ -55,88 +60,14 @@
                 \context Voice = "Voice 1"
                 {
                     {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 16/15 {
-                            % [Voice 1 measure 1] %! COMMENT_MEASURE_NUMBERS
-                            \set Staff.shortInstrumentName =
-                            \markup { vla. }
-                            \set Staff.instrumentName =
-                            \markup { Viola }
-                            \tempo 8=63-72
-                            \once \override Staff.NoteHead.style = #'cross
-                            \clef "treble"
-                            bef8
-                            \f
-                            \>
-                            \stopTextSpanOne
-                            \stopTextSpanTwo
-                            \stopTextSpanThree
-                            - \tweak style #'solid-line
-                            \glissando
-                            - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            st.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #12
-                            \startTextSpanTwo
-                            - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        1/2-clt.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #15
-                            \startTextSpanThree
-                            [
-                            \!
-                            \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            bqs''16
-                            - \tweak style #'solid-line
-                            \glissando
-                            ]
-                            \once \override Staff.NoteHead.style = #'diamond
-                            d'''4.
-                            - \tweak style #'solid-line
-                            \glissando
-                            \once \override Staff.NoteHead.style = #'triangle
-                            dqf'''4
-                            - \tweak style #'solid-line
-                            \glissando
-                            \once \override Staff.NoteHead.style = #'slash
-                            dqf'''8
-                            \p
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            \stopTextSpanTwo
-                            - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #12
-                            \startTextSpanTwo
-                            [
-                        }
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 10/17 {
+                        \times 16/17 {
                             \times 2/3 {
-                                % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS
+                                % [Voice 1 measure 1] %! COMMENT_MEASURE_NUMBERS
+                                \set Staff.shortInstrumentName =
+                                \markup { vla. }
+                                \set Staff.instrumentName =
+                                \markup { Viola }
+                                \tempo 8=63-72
                                 \once \override Staff.NoteHead.style = #'cross
                                 \clef "varC"
                                 f'8
@@ -167,7 +98,7 @@
                                     \concat
                                         {
                                             \upright
-                                                ord.
+                                                sp.
                                             \hspace
                                                 #0.5
                                         }
@@ -178,13 +109,15 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            1/2-clt.
+                                            clt
                                             \hspace
                                                 #0.5
                                         }
                                     }
                                 - \tweak staff-padding #15
                                 \startTextSpanThree
+                                [
+                                \!
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fs'8
                                 - \staccato
@@ -363,6 +296,7 @@
                         \times 20/21 {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 10/11 {
+                                % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'triangle
                                 b16.
                                 - \tenuto
@@ -537,9 +471,13 @@
                             }
                             \once \override Staff.NoteHead.style = #'default
                             ef'8
+                            \p
                             - \portato
+                            - \tweak stencil #constante-hairpin
+                            \<
                             \stopTextSpanOne
-                            - \abjad-solid-line-with-arrow
+                            \stopTextSpanTwo
+                            - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
@@ -555,36 +493,86 @@
                                 }
                             - \tweak staff-padding #9
                             \startTextSpanOne
+                            - \abjad-dashed-line-with-hook
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            msp.
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #12
+                            \startTextSpanTwo
+                            ]
                         }
+                    }
+                    {
+                        \once \override Staff.NoteHead.style = #'cross
+                        \clef "varC"
+                        fqs''2
+                        \mp
+                        - \tenuto
+                        \>
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
+                        ~
+                        - \abjad-dashed-line-with-arrow
+                        - \tweak bound-details.left.text \markup {
+                            \concat
+                                {
+                                    \upright
+                                        st.
+                                    \hspace
+                                        #0.5
+                                }
+                            }
+                        - \tweak staff-padding #12
+                        \startTextSpanTwo
+                        \once \override Staff.NoteHead.style = #'cross
+                        fqs''8
+                        _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        \stopTextSpanTwo
+                        ~
+                        - \abjad-dashed-line-with-hook
+                        - \tweak bound-details.left.text \markup {
+                            \concat
+                                {
+                                    \upright
+                                        ord.
+                                    \hspace
+                                        #0.5
+                                }
+                            }
+                        - \tweak staff-padding #12
+                        \startTextSpanTwo
+                    }
+                    {
+                        % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        r4
+                        \!
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
+                        r2.
+                    }
+                    {
                         \times 8/13 {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/11 {
-                                % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS
+                                % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'cross
-                                bf16.
+                                \clef "varC"
+                                ef'32.
+                                \ppp
                                 - \tenuto
+                                \<
                                 \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            6
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                cs'16
-                                - \staccato
-                                \stopTextSpanOne
-                                ~
+                                \stopTextSpanTwo
+                                \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
                                     \concat
@@ -601,11 +589,56 @@
                                     }
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
+                                - \abjad-dashed-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                ord.
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #12
+                                \startTextSpanTwo
+                                - \abjad-solid-line-with-hook
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            clt
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #15
+                                \startTextSpanThree
+                                [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                cs'64
+                                bf32
+                                - \staccato
+                                \stopTextSpanOne
+                                ~
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            4
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                bf128
                             }
                             \once \override Staff.NoteHead.style = #'diamond
-                            c''16
+                            cs'32
                             - \portato
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -616,7 +649,7 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        4
+                                                        3
                                                         8
                                         \hspace
                                             #0.5
@@ -627,28 +660,8 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'triangle
-                                fs''32.
+                                c''64.
                                 - \tenuto
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            3
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'slash
-                                e''32.
-                                - \staccato
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -666,9 +679,9 @@
                                     }
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'default
-                                cs''32.
-                                - \portato
+                                \once \override Staff.NoteHead.style = #'slash
+                                fs''64.
+                                - \staccato
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -686,12 +699,9 @@
                                     }
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
-                            }
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 5/9 {
-                                \once \override Staff.NoteHead.style = #'cross
-                                f'16
-                                - \tenuto
+                                \once \override Staff.NoteHead.style = #'default
+                                e''64.
+                                - \portato
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -709,11 +719,13 @@
                                     }
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                fs'16
-                                - \staccato
+                            }
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/9 {
+                                \once \override Staff.NoteHead.style = #'cross
+                                cs''32
+                                - \tenuto
                                 \stopTextSpanOne
-                                ~
                                 - \abjad-solid-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
                                     \concat
@@ -731,17 +743,34 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                fs'64
+                                f'32
+                                - \staccato
+                                \stopTextSpanOne
+                                ~
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            6
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                f'128
                             }
                             \once \override Staff.NoteHead.style = #'diamond
-                            a'16.
-                            \p
+                            fs'32.
                             - \portato
-                            - \tweak stencil #constante-hairpin
-                            \<
                             \stopTextSpanOne
-                            \stopTextSpanTwo
-                            - \abjad-solid-line-with-hook
+                            - \abjad-solid-line-with-arrow
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
@@ -749,7 +778,7 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
+                                                        5
                                                         8
                                         \hspace
                                             #0.5
@@ -757,67 +786,15 @@
                                 }
                             - \tweak staff-padding #9
                             \startTextSpanOne
-                            - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            sp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #12
-                            \startTextSpanTwo
-                            ]
                         }
-                    }
-                    {
-                        r2.
-                        \!
-                        \stopTextSpanOne
-                        \stopTextSpanTwo
-                        \stopTextSpanThree
-                    }
-                    {
-                        % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.NoteHead.style = #'cross
-                        \clef "varC"
-                        fqs''8
-                        \mp
-                        - \tenuto
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \stopTextSpanTwo
-                        \stopTextSpanThree
-                        - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
-                        - \tweak staff-padding #12
-                        \startTextSpanTwo
-                        [
-                    }
-                    {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 20/29 {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/11 {
                                 \once \override Staff.NoteHead.style = #'triangle
-                                \clef "varC"
                                 a'8.
-                                \ppp
                                 - \tenuto
-                                \<
                                 \stopTextSpanOne
-                                \stopTextSpanTwo
-                                \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
                                     \concat
@@ -834,29 +811,6 @@
                                     }
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
-                                - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                sp.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #12
-                                \startTextSpanTwo
-                                - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            1/2-clt.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #15
-                                \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'slash
                                 b'8
                                 - \staccato
@@ -1008,13 +962,9 @@
                             }
                             \once \override Staff.NoteHead.style = #'default
                             af8.
-                            \p
                             - \portato
-                            - \tweak stencil #constante-hairpin
-                            \<
                             \stopTextSpanOne
-                            \stopTextSpanTwo
-                            - \abjad-solid-line-with-hook
+                            - \abjad-solid-line-with-arrow
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
@@ -1030,12 +980,586 @@
                                 }
                             - \tweak staff-padding #9
                             \startTextSpanOne
+                        }
+                        \times 8/15 {
+                            % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
+                            \once \override Staff.NoteHead.style = #'cross
+                            cs'16.
+                            - \tenuto
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        3
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \once \override Staff.NoteHead.style = #'harmonic-mixed
+                            d''16.
+                            - \staccato
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        2
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \once \override Staff.NoteHead.style = #'diamond
+                            fs''8.
+                            - \portato
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        1
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \times 2/3 {
+                                \once \override Staff.NoteHead.style = #'triangle
+                                af''16.
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            8
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'slash
+                                ef''16.
+                                - \staccato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            7
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'default
+                                a16.
+                                - \portato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            6
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                            }
+                            \once \override Staff.NoteHead.style = #'cross
+                            ef'16.
+                            - \tenuto
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        5
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \once \override Staff.NoteHead.style = #'harmonic-mixed
+                            bf16.
+                            - \staccato
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        4
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \once \override Staff.NoteHead.style = #'diamond
+                            cs'8.
+                            - \portato
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        3
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                        }
+                        \times 8/13 {
+                            \times 4/5 {
+                                \once \override Staff.NoteHead.style = #'triangle
+                                c''32
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            2
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'slash
+                                fs''32.
+                                - \staccato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            1
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                ]
+                            }
+                            \once \override Staff.NoteHead.style = #'default
+                            e''4
+                            - \portato
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        8
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/5 {
+                                \once \override Staff.NoteHead.style = #'cross
+                                cs''8
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            7
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                [
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                f'16
+                                - \staccato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            6
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'diamond
+                                fs'8
+                                - \portato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            5
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                            }
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 6/7 {
+                                \once \override Staff.NoteHead.style = #'triangle
+                                a'8
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            4
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'slash
+                                b'16.
+                                - \staccato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            3
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                            }
+                            \once \override Staff.NoteHead.style = #'default
+                            e''8
+                            - \portato
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        2
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                        }
+                        \times 16/17 {
+                            \times 2/3 {
+                                % [Voice 1 measure 6] %! COMMENT_MEASURE_NUMBERS
+                                \once \override Staff.NoteHead.style = #'cross
+                                f''64
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            1
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                bf''64
+                                - \staccato
+                                \stopTextSpanOne
+                                ~
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            8
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                bf''256
+                            }
+                            \once \override Staff.NoteHead.style = #'diamond
+                            af''32
+                            - \portato
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        7
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \times 2/3 {
+                                \once \override Staff.NoteHead.style = #'triangle
+                                g128
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            6
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'slash
+                                b128.
+                                - \staccato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            5
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'default
+                                af64
+                                - \portato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            4
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                            }
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/7 {
+                                \once \override Staff.NoteHead.style = #'cross
+                                cs'32
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            3
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                d''64.
+                                - \staccato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            2
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                            }
+                            \once \override Staff.NoteHead.style = #'diamond
+                            fs''64
+                            \p
+                            - \portato
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTextSpanOne
+                            \stopTextSpanTwo
+                            - \abjad-solid-line-with-hook
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        1
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
                                         \upright
-                                            msp.
+                                            st.
                                         \hspace
                                             #0.5
                                     }
@@ -1045,10 +1569,314 @@
                         }
                     }
                     {
-                        % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.NoteHead.style = #'default
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 8/7 {
+                            \once \override Staff.NoteHead.style = #'cross
+                            \clef "treble"
+                            bef8
+                            \f
+                            \>
+                            \stopTextSpanOne
+                            \stopTextSpanTwo
+                            \stopTextSpanThree
+                            - \tweak style #'solid-line
+                            \glissando
+                            - \abjad-dashed-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            st.
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #12
+                            \startTextSpanTwo
+                            - \abjad-solid-line-with-hook
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        1/2-clt.
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #15
+                            \startTextSpanThree
+                            \once \override Staff.NoteHead.style = #'harmonic-mixed
+                            bqs''16
+                            - \tweak style #'solid-line
+                            \glissando
+                            ]
+                            \once \override Staff.NoteHead.style = #'diamond
+                            d'''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTextSpanTwo
+                            - \abjad-dashed-line-with-hook
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            ord.
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #12
+                            \startTextSpanTwo
+                        }
+                    }
+                    {
+                        \times 4/7 {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 10/11 {
+                                \once \override Staff.NoteHead.style = #'triangle
+                                \clef "varC"
+                                fs''16.
+                                \ppp
+                                - \tenuto
+                                \<
+                                \stopTextSpanOne
+                                \stopTextSpanTwo
+                                \stopTextSpanThree
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            5
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                - \abjad-dashed-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                ord.
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #12
+                                \startTextSpanTwo
+                                - \abjad-solid-line-with-hook
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            clt
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #15
+                                \startTextSpanThree
+                                [
+                                \once \override Staff.NoteHead.style = #'slash
+                                af''16
+                                - \staccato
+                                \stopTextSpanOne
+                                ~
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            4
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'slash
+                                af''64
+                            }
+                            \once \override Staff.NoteHead.style = #'default
+                            ef''8
+                            - \portato
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        3
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \times 4/5 {
+                                \once \override Staff.NoteHead.style = #'cross
+                                a32
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            2
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                ef'32
+                                - \staccato
+                                \stopTextSpanOne
+                                ~
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            1
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                ef'128
+                                \once \override Staff.NoteHead.style = #'diamond
+                                bf32.
+                                - \portato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            8
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                            }
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/7 {
+                                \once \override Staff.NoteHead.style = #'triangle
+                                cs'8
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            7
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'slash
+                                c''16.
+                                - \staccato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            6
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                            }
+                            \once \override Staff.NoteHead.style = #'default
+                            fs''8
+                            \p
+                            - \portato
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTextSpanOne
+                            \stopTextSpanTwo
+                            - \abjad-solid-line-with-hook
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        5
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            - \abjad-dashed-line-with-hook
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            sp.
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #12
+                            \startTextSpanTwo
+                        }
+                    }
+                    {
+                        % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        \once \override Staff.NoteHead.style = #'triangle
                         \clef "treble"
-                        dqf'''16
+                        d'''8
                         \f
                         \>
                         \stopTextSpanOne
@@ -1080,15 +1908,11 @@
                         - \tweak staff-padding #15
                         \startTextSpanThree
                         ]
-                        \once \override Staff.NoteHead.style = #'cross
-                        aef''4
-                        ~
-                        \once \override Staff.NoteHead.style = #'cross
-                        aef''16
+                        \once \override Staff.NoteHead.style = #'slash
+                        dqf'''4
                         - \tweak style #'solid-line
                         \glissando
-                        [
-                        \once \override Staff.NoteHead.style = #'harmonic-mixed
+                        \once \override Staff.NoteHead.style = #'default
                         dqf'''8
                         \p
                         - \tweak stencil #constante-hairpin
@@ -1108,16 +1932,20 @@
                         \startTextSpanTwo
                     }
                     {
-                        \times 8/15 {
-                            \once \override Staff.NoteHead.style = #'cross
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 5/6 {
+                            % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
+                            \once \override Staff.NoteHead.style = #'harmonic-mixed
                             \clef "varC"
-                            af16.
-                            \ppp
-                            - \tenuto
-                            \<
+                            fqs''4.
+                            :32
+                            \mp
+                            \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             \stopTextSpanThree
+                            - \tweak style #'dotted-line
+                            \glissando
                             - \abjad-solid-line-with-arrow
                             - \tweak bound-details.left.text \markup {
                                 \concat
@@ -1126,7 +1954,7 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        8
+                                                        7
                                                         8
                                         \hspace
                                             #0.5
@@ -1139,553 +1967,17 @@
                                 \concat
                                     {
                                         \upright
-                                            sp.
+                                            msp.
                                         \hspace
                                             #0.5
                                     }
                                 }
                             - \tweak staff-padding #12
                             \startTextSpanTwo
-                            - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        1/2-clt.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #15
-                            \startTextSpanThree
-                            \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            cs'16.
-                            - \staccato
-                            \stopTextSpanOne
-                            - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            \center-align
-                                                \vcenter
-                                                    \fraction
-                                                        7
-                                                        8
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #9
-                            \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'diamond
-                            d''8.
-                            - \portato
-                            \stopTextSpanOne
-                            - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            \center-align
-                                                \vcenter
-                                                    \fraction
-                                                        6
-                                                        8
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #9
-                            \startTextSpanOne
-                            \times 2/3 {
-                                \once \override Staff.NoteHead.style = #'triangle
-                                fs''16.
-                                - \tenuto
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            5
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'slash
-                                af''16.
-                                - \staccato
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            4
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'default
-                                ef''16.
-                                - \portato
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            3
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                            }
-                            \once \override Staff.NoteHead.style = #'cross
-                            a16.
-                            - \tenuto
-                            \stopTextSpanOne
-                            - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            \center-align
-                                                \vcenter
-                                                    \fraction
-                                                        2
-                                                        8
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #9
-                            \startTextSpanOne
-                            \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            ef'16.
-                            - \staccato
-                            \stopTextSpanOne
-                            - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            \center-align
-                                                \vcenter
-                                                    \fraction
-                                                        1
-                                                        8
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #9
-                            \startTextSpanOne
-                            \once \override Staff.NoteHead.style = #'diamond
-                            bf8.
-                            - \portato
-                            \stopTextSpanOne
-                            - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            \center-align
-                                                \vcenter
-                                                    \fraction
-                                                        8
-                                                        8
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #9
-                            \startTextSpanOne
-                        }
-                        \times 8/13 {
-                            \times 4/5 {
-                                % [Voice 1 measure 6] %! COMMENT_MEASURE_NUMBERS
-                                \once \override Staff.NoteHead.style = #'triangle
-                                cs'128
-                                - \tenuto
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            7
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'slash
-                                c''128.
-                                - \staccato
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            6
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                            }
-                            \once \override Staff.NoteHead.style = #'default
-                            fs''16
-                            - \portato
-                            \stopTextSpanOne
-                            - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            \center-align
-                                                \vcenter
-                                                    \fraction
-                                                        5
-                                                        8
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #9
-                            \startTextSpanOne
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 3/5 {
-                                \once \override Staff.NoteHead.style = #'cross
-                                e''32
-                                - \tenuto
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            4
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                cs''64
-                                - \staccato
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            3
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'diamond
-                                f'32
-                                - \portato
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            2
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                            }
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 6/7 {
-                                \once \override Staff.NoteHead.style = #'triangle
-                                fs'32
-                                - \tenuto
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            1
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'slash
-                                a'64.
-                                - \staccato
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            8
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                            }
-                            \once \override Staff.NoteHead.style = #'default
-                            b'32
-                            - \portato
-                            \stopTextSpanOne
-                            - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            \center-align
-                                                \vcenter
-                                                    \fraction
-                                                        7
-                                                        8
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #9
-                            \startTextSpanOne
-                        }
-                        \times 16/17 {
-                            \times 2/3 {
-                                \once \override Staff.NoteHead.style = #'cross
-                                e''16
-                                - \tenuto
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            6
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                f''16
-                                - \staccato
-                                \stopTextSpanOne
-                                ~
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            5
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                f''64
-                            }
-                            \once \override Staff.NoteHead.style = #'diamond
-                            bf''8
-                            - \portato
-                            \stopTextSpanOne
-                            - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            \center-align
-                                                \vcenter
-                                                    \fraction
-                                                        4
-                                                        8
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #9
-                            \startTextSpanOne
-                            \times 2/3 {
-                                \once \override Staff.NoteHead.style = #'triangle
-                                af''32
-                                - \tenuto
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            3
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'slash
-                                g32.
-                                - \staccato
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            2
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'default
-                                b16
-                                - \portato
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            1
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                            }
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 5/7 {
-                                \once \override Staff.NoteHead.style = #'cross
-                                af8
-                                - \tenuto
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            8
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                cs'16.
-                                - \staccato
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            7
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                            }
-                            \once \override Staff.NoteHead.style = #'diamond
-                            d''16
-                            \p
-                            - \portato
+                            fs''4.
+                            :32
+                            _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTextSpanOne
@@ -1711,43 +2003,18 @@
                                 \concat
                                     {
                                         \upright
-                                            msp.
+                                            ord.
                                         \hspace
                                             #0.5
                                     }
                                 }
                             - \tweak staff-padding #12
                             \startTextSpanTwo
-                            ]
                         }
                     }
                     {
-                        \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        \clef "varC"
-                        fqs''4.
-                        :32
-                        _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \stopTextSpanTwo
-                        \stopTextSpanThree
-                        - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
-                        - \tweak staff-padding #12
-                        \startTextSpanTwo
-                    }
-                    {
-                        \times 8/9 {
-                            % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
-                            \once \override Staff.NoteHead.style = #'diamond
+                        \times 4/5 {
+                            \once \override Staff.NoteHead.style = #'cross
                             \clef "treble"
                             dqf'''16
                             \f
@@ -1780,29 +2047,8 @@
                                 }
                             - \tweak staff-padding #15
                             \startTextSpanThree
-                            \once \override Staff.NoteHead.style = #'triangle
-                            dqf'''4.
-                            - \tweak style #'solid-line
-                            \glissando
-                            \once \override Staff.NoteHead.style = #'slash
-                            etes''8
-                            ~
-                            [
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 10/9 {
-                            % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
-                            \once \override Staff.NoteHead.style = #'slash
-                            etes''8
-                            - \tweak style #'solid-line
-                            \glissando
-                            \once \override Staff.NoteHead.style = #'default
-                            ees''8.
-                            - \tweak style #'solid-line
-                            \glissando
-                            ]
-                            \once \override Staff.NoteHead.style = #'cross
-                            eef''4
+                            \once \override Staff.NoteHead.style = #'harmonic-mixed
+                            aef''4
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -1822,12 +2068,13 @@
                         }
                     }
                     {
-                        \times 16/21 {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 12/13 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \times 10/11 {
-                                \once \override Staff.NoteHead.style = #'triangle
+                            \times 6/11 {
+                                \once \override Staff.NoteHead.style = #'cross
                                 \clef "varC"
-                                d''32.
+                                fs''16.
                                 \ppp
                                 - \tenuto
                                 \<
@@ -1842,7 +2089,7 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            2
+                                                            1
                                                             8
                                             \hspace
                                                 #0.5
@@ -1866,7 +2113,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            1/2-clt.
+                                            arco
                                             \hspace
                                                 #0.5
                                         }
@@ -1874,11 +2121,337 @@
                                 - \tweak staff-padding #15
                                 \startTextSpanThree
                                 [
-                                \once \override Staff.NoteHead.style = #'slash
-                                fs''32
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                e''16
                                 - \staccato
                                 \stopTextSpanOne
                                 ~
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            8
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                e''64
+                            }
+                            \once \override Staff.NoteHead.style = #'diamond
+                            cs''16
+                            - \portato
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        7
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/9 {
+                                \once \override Staff.NoteHead.style = #'triangle
+                                f'32.
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            6
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'slash
+                                fs'32.
+                                - \staccato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            5
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'default
+                                a'32.
+                                - \portato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            4
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                            }
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/9 {
+                                \once \override Staff.NoteHead.style = #'cross
+                                b'16
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            3
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                e''16
+                                - \staccato
+                                \stopTextSpanOne
+                                ~
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            2
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                e''64
+                            }
+                            \once \override Staff.NoteHead.style = #'diamond
+                            f''16.
+                            - \portato
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        1
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 24/29 {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 6/11 {
+                                % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
+                                \once \override Staff.NoteHead.style = #'triangle
+                                bf''8.
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            8
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'slash
+                                af''8
+                                - \staccato
+                                \stopTextSpanOne
+                                ~
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            7
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'slash
+                                af''32
+                            }
+                            \once \override Staff.NoteHead.style = #'default
+                            g8.
+                            - \portato
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        6
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \times 2/3 {
+                                \once \override Staff.NoteHead.style = #'cross
+                                b16.
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            5
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                af16.
+                                - \staccato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            4
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'diamond
+                                cs'16.
+                                - \portato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            3
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                            }
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/6 {
+                                \once \override Staff.NoteHead.style = #'triangle
+                                d''16.
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            2
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'slash
+                                fs''16.
+                                - \staccato
+                                \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
                                     \concat
@@ -1895,11 +2468,9 @@
                                     }
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'slash
-                                fs''128
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            af''16
+                            af''8.
                             - \portato
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -1918,75 +2489,71 @@
                                 }
                             - \tweak staff-padding #9
                             \startTextSpanOne
-                            \times 4/5 {
-                                \once \override Staff.NoteHead.style = #'cross
-                                ef''64
-                                - \tenuto
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            7
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
+                        }
+                        \times 8/15 {
+                            \once \override Staff.NoteHead.style = #'cross
+                            ef''32.
+                            - \tenuto
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        7
+                                                        8
+                                        \hspace
+                                            #0.5
                                     }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                a64
-                                - \staccato
-                                \stopTextSpanOne
-                                ~
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            6
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \once \override Staff.NoteHead.style = #'harmonic-mixed
+                            a32.
+                            - \staccato
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        6
+                                                        8
+                                        \hspace
+                                            #0.5
                                     }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                a256
-                                \once \override Staff.NoteHead.style = #'diamond
-                                ef'64.
-                                - \portato
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            5
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \once \override Staff.NoteHead.style = #'diamond
+                            ef'16.
+                            - \portato
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        5
+                                                        8
+                                        \hspace
+                                            #0.5
                                     }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                            }
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 5/7 {
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'triangle
-                                bf16
+                                bf32.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -2025,9 +2592,69 @@
                                     }
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'default
+                                c''32.
+                                - \portato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            2
+                                                            8
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
                             }
-                            \once \override Staff.NoteHead.style = #'default
-                            c''16
+                            \once \override Staff.NoteHead.style = #'cross
+                            fs''32.
+                            - \tenuto
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        1
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \once \override Staff.NoteHead.style = #'harmonic-mixed
+                            e''32.
+                            - \staccato
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        8
+                                                        8
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \once \override Staff.NoteHead.style = #'diamond
+                            cs''16.
                             \p
                             - \portato
                             - \tweak stencil #constante-hairpin
@@ -2042,7 +2669,7 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        2
+                                                        7
                                                         8
                                         \hspace
                                             #0.5
@@ -2055,30 +2682,22 @@
                                 \concat
                                     {
                                         \upright
-                                            st.
+                                            sp.
                                         \hspace
                                             #0.5
                                     }
                                 }
                             - \tweak staff-padding #12
                             \startTextSpanTwo
-                            ]
                         }
                     }
                     {
-                        r4.
-                        \!
-                        \stopTextSpanOne
-                        \stopTextSpanTwo
-                        \stopTextSpanThree
-                    }
-                    {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 12/13 {
-                            % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
-                            \once \override Staff.NoteHead.style = #'harmonic-mixed
+                        \times 8/7 {
+                            % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
+                            \once \override Staff.NoteHead.style = #'diamond
                             \clef "treble"
-                            eef''16
+                            aef''16
                             \f
                             \>
                             \stopTextSpanOne
@@ -2109,22 +2728,16 @@
                                 }
                             - \tweak staff-padding #15
                             \startTextSpanThree
-                            [
-                            \once \override Staff.NoteHead.style = #'diamond
-                            eqf''8
-                            - \tweak style #'solid-line
-                            \glissando
                             \once \override Staff.NoteHead.style = #'triangle
-                            eqf''16
+                            dqf'''8
                             - \tweak style #'solid-line
                             \glissando
-                            ]
                             \once \override Staff.NoteHead.style = #'slash
-                            etef''4.
+                            dqf'''16
                             - \tweak style #'solid-line
                             \glissando
                             \once \override Staff.NoteHead.style = #'default
-                            eqf''8.
+                            etes''8.
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -2141,261 +2754,9 @@
                                 }
                             - \tweak staff-padding #12
                             \startTextSpanTwo
-                            [
-                        }
-                    }
-                    {
-                        \times 8/13 {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 6/11 {
-                                \once \override Staff.NoteHead.style = #'cross
-                                \clef "varC"
-                                c''16.
-                                \ppp
-                                - \tenuto
-                                \<
-                                \stopTextSpanOne
-                                \stopTextSpanTwo
-                                \stopTextSpanThree
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            6
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                ord.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #12
-                                \startTextSpanTwo
-                                - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            1/2-clt.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #15
-                                \startTextSpanThree
-                                \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                fs''16
-                                - \staccato
-                                \stopTextSpanOne
-                                ~
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            5
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                fs''64
-                            }
-                            \once \override Staff.NoteHead.style = #'diamond
-                            e''16
-                            - \portato
-                            \stopTextSpanOne
-                            - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            \center-align
-                                                \vcenter
-                                                    \fraction
-                                                        4
-                                                        8
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #9
-                            \startTextSpanOne
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 5/9 {
-                                \once \override Staff.NoteHead.style = #'triangle
-                                cs''32.
-                                - \tenuto
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            3
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'slash
-                                f'32.
-                                - \staccato
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            2
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'default
-                                fs'32.
-                                - \portato
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            1
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                            }
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 5/9 {
-                                \once \override Staff.NoteHead.style = #'cross
-                                a'16
-                                - \tenuto
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            8
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                b'16
-                                - \staccato
-                                \stopTextSpanOne
-                                ~
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            7
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                b'64
-                            }
-                            \once \override Staff.NoteHead.style = #'diamond
-                            e''16.
-                            \p
-                            - \portato
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            \stopTextSpanOne
-                            \stopTextSpanTwo
-                            - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            \center-align
-                                                \vcenter
-                                                    \fraction
-                                                        6
-                                                        8
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #9
-                            \startTextSpanOne
-                            - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            sp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #12
-                            \startTextSpanTwo
                             ]
+                            \bar "||"
                         }
-                    }
-                    {
-                        % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        r2
-                        \!
-                        \stopTextSpanOne
-                        \stopTextSpanTwo
-                        \stopTextSpanThree
-                        \bar "|."
                     }
                 }
             }
