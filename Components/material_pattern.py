@@ -1,9 +1,6 @@
 import numpy as np
 from evans.general_tools.Markov_Chain import MarkovChain
-from Scores.onkos.Components.music_makers import music_maker_one
-from Scores.onkos.Components.music_makers import music_maker_two
-from Scores.onkos.Components.music_makers import music_maker_three
-from Scores.onkos.Components.music_makers import silence_maker
+from Scores.onkos.Components.music_makers import *
 
 
 transition_prob = {
@@ -31,21 +28,54 @@ key_list_4 = [x for x in material_chain.generate_states(current_state='music_mak
 np.random.seed(13)
 key_list_5 = [x for x in material_chain.generate_states(current_state='music_maker_three', no=20)]
 
-dict = {
+dict_1 = {
     'music_maker_one': music_maker_one,
     'music_maker_two': music_maker_two,
     'music_maker_three': music_maker_three,
     'silence_maker': silence_maker,
 }
 
-material_list_1 = [dict[x] for x in key_list_1]
-material_list_2 = [dict[x] for x in key_list_2]
-material_list_3 = [dict[x] for x in key_list_3]
-material_list_4 = [dict[x] for x in key_list_4]
-material_list_5 = [dict[x] for x in key_list_5]
+dict_2 = {
+    'music_maker_one': music_maker_four,
+    'music_maker_two': music_maker_five,
+    'music_maker_three': music_maker_six,
+    'silence_maker': silence_maker,
+}
 
-print(key_list_1)
-print(key_list_2)
-print(key_list_3)
-print(key_list_4)
-print(key_list_5)
+dict_3 = {
+    'music_maker_one': music_maker_seven,
+    'music_maker_two': music_maker_eight,
+    'music_maker_three': music_maker_nine,
+    'silence_maker': silence_maker,
+}
+
+dict_4 = {
+    'music_maker_one': music_maker_ten,
+    'music_maker_two': music_maker_eleven,
+    'music_maker_three': music_maker_twelve,
+    'silence_maker': silence_maker,
+}
+
+dict_5 = {
+    'music_maker_one': music_maker_thirteen,
+    'music_maker_two': music_maker_fourteen,
+    'music_maker_three': music_maker_fifteen,
+    'silence_maker': silence_maker,
+}
+
+material_list_1 = [dict_1[x] for x in key_list_1]
+material_list_2 = [dict_2[x] for x in key_list_2]
+material_list_3 = [dict_3[x] for x in key_list_3]
+material_list_4 = [dict_4[x] for x in key_list_4]
+material_list_5 = [dict_5[x] for x in key_list_5]
+
+materials = [material_list_1, material_list_2, material_list_3, material_list_4, material_list_5, ]
+material_list = []
+for x in materials:
+    material_list.extend(x)
+
+# print(key_list_1)
+# print(key_list_2)
+# print(key_list_3)
+# print(key_list_4)
+# print(key_list_5)

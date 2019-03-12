@@ -1,0 +1,13 @@
+['music_maker_one', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'silence_maker', 'music_maker_three', 'music_maker_two', 'music_maker_one', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'music_maker_three', 'music_maker_one', 'music_maker_one', 'music_maker_two', 'silence_maker', 'music_maker_one', 'music_maker_two', 'silence_maker', 'music_maker_one']
+1, 2, 2, 2, s, 3, 2, 1, 2, 2, 2, 3, 1, 1, 2, s, 1, 2, s, 1
+
+['music_maker_one', 'music_maker_one', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'music_maker_one', 'music_maker_two', 'silence_maker', 'silence_maker', 'music_maker_three', 'music_maker_one', 'music_maker_three', 'music_maker_three', 'music_maker_one', 'music_maker_two', 'music_maker_one', 'music_maker_one', 'music_maker_two', 'music_maker_one']
+
+
+['music_maker_two', 'music_maker_three', 'music_maker_one', 'music_maker_three', 'music_maker_one', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'music_maker_one', 'music_maker_one', 'music_maker_two', 'music_maker_two', 'music_maker_one', 'music_maker_three', 'music_maker_one', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'music_maker_two']
+
+
+['music_maker_two', 'music_maker_two', 'music_maker_one', 'music_maker_one', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'music_maker_one', 'music_maker_two', 'silence_maker', 'music_maker_one', 'music_maker_three', 'music_maker_three', 'music_maker_one', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'music_maker_two']
+
+
+['music_maker_three', 'music_maker_one', 'music_maker_three', 'silence_maker', 'silence_maker', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'music_maker_one', 'music_maker_two', 'music_maker_one', 'music_maker_three', 'music_maker_one', 'music_maker_two', 'music_maker_two', 'music_maker_two', 'music_maker_one', 'music_maker_two']
