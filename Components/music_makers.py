@@ -16,10 +16,9 @@ silence_maker = abjadext.rmakers.NoteRhythmMaker(
 
 music_maker_one = MusicMaker(
     rmaker = rmaker_one,
-    glissando_handler = glissando_handler_one,
     notehead_handler = notehead_handler_one,
     pitch_handler = pitch_handler_one,
-    #articulation_handler = articulation_handler_one,
+    articulation_handler = articulation_handler_one,
     dynamic_handler = dynamic_handler_one,
     clef_handler = clef_handler_one,
     text_span_handler = text_span_handler_one,

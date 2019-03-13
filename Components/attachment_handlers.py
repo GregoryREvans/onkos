@@ -16,12 +16,12 @@ from Scores.onkos.Components.pitches import *
 #Segment_1
 
 articulation_handler_one = ArticulationHandler(
-    articulation_list=['tremolo', 'tremolo', 'portato', 'espressivo', ],
+    articulation_list=['tremolo', 'tremolo', 'portato', 'tremolo', 'tenuto', 'espressivo', 'tenuto', ],
     continuous=True,
     )
 
 clef_handler_one = ClefHandler(
-    clef='treble',
+    clef='varC',
     add_ottavas=True,
     # ottava_shelf=5,
     )
@@ -33,13 +33,8 @@ dynamic_handler_one = DynamicHandler(
     continuous=True,
     )
 
-glissando_handler_one = GlissandoHandler(
-    # glissando_style='hide_middle_note_heads',
-    line_style='solid-line',
-    )
-
 notehead_handler_one = NoteheadHandler(
-    notehead_list=['cross', 'harmonic-mixed', 'diamond', 'triangle', 'slash', 'default',  ],
+    notehead_list=['harmonic-mixed', 'diamond', 'default',  'default', 'diamond', 'default',  'harmonic-mixed', 'diamond', 'default',  ],
     continuous=True,
     )
 
@@ -62,13 +57,13 @@ text_span_handler_one = TextSpanHandler(
 
 #######
 articulation_handler_two = ArticulationHandler(
-    articulation_list=['tenuto', 'staccato', 'portato', ],
+    articulation_list=['staccato', 'marcato', 'staccatissimo', ],
     continuous=True,
     )
 
 clef_handler_two = ClefHandler(
     clef='varC',
-    add_ottavas=False,
+    add_ottavas=True,
     # ottava_shelf=5,
     )
 
@@ -80,7 +75,7 @@ dynamic_handler_two = DynamicHandler(
     )
 
 notehead_handler_two = NoteheadHandler(
-    notehead_list=['cross', 'harmonic-mixed', 'diamond', 'triangle', 'slash', 'default',  ],
+    notehead_list=['default', 'default', 'harmonic-mixed', 'default', 'diamond', 'harmonic-mixed', 'harmonic-mixed', 'default',  ],
     continuous=True,
     )
 
@@ -90,15 +85,15 @@ pitch_handler_two = PitchHandler(
     )
 
 text_span_handler_two = TextSpanHandler(
-    span_one_positions=['8/8', '7/8', '6/8', '5/8', '4/8', '3/8', '2/8', '1/8', ],
+    span_one_positions=['8/8', '5/8', '6/8', '1/8', '2/8', '1/8', '4/8', '3/8', '7/8', ],
     span_one_style='solid-line',
     span_one_padding=9,
     attach_span_one_to='leaves',
-    span_two_positions=['st.', 'ord.', 'sp.', 'msp.', 'ord.',],
+    span_two_positions=['msp.', 'ord.', 'st.', 'ord.', 'sp.', ],
     span_two_style='dashed-line',
     span_two_padding=12,
     attach_span_two_to='bounds',
-    span_three_positions=['arco', '1/2-clt.', 'clt', '1/2-clt.',],
+    span_three_positions=['clt', '1/2-clt.', 'arco', '1/2-clt.', ],
     span_three_style='solid-line',
     span_three_padding=15,
     attach_span_three_to='left',
@@ -107,13 +102,13 @@ text_span_handler_two = TextSpanHandler(
 
 #######
 articulation_handler_three = ArticulationHandler(
-    articulation_list=['tenuto', 'tremolo', 'tremolo', 'espressivo', 'tremolo',],
+    articulation_list=['accent', 'tenuto', 'tenuto', 'portato', 'espressivo', 'accent', 'tenuto', 'tenuto', 'portato',],
     continuous=True,
     )
 
 clef_handler_three = ClefHandler(
     clef='varC',
-    add_ottavas=False,
+    add_ottavas=True,
     # ottava_shelf=5,
     )
 
@@ -126,7 +121,7 @@ dynamic_handler_three = DynamicHandler(
 
 glissando_handler_three = GlissandoHandler(
     # glissando_style='hide_middle_note_heads',
-    line_style='dotted-line',
+    line_style='solid-line',
     )
 
 notehead_handler_three = NoteheadHandler(
@@ -159,7 +154,7 @@ articulation_handler_four = ArticulationHandler(
     )
 
 clef_handler_four = ClefHandler(
-    clef='treble',
+    clef='varC',
     add_ottavas=True,
     # ottava_shelf=5,
     )
@@ -206,7 +201,7 @@ articulation_handler_five = ArticulationHandler(
 
 clef_handler_five = ClefHandler(
     clef='varC',
-    add_ottavas=False,
+    add_ottavas=True,
     # ottava_shelf=5,
     )
 
@@ -251,7 +246,7 @@ articulation_handler_six = ArticulationHandler(
 
 clef_handler_six = ClefHandler(
     clef='varC',
-    add_ottavas=False,
+    add_ottavas=True,
     # ottava_shelf=5,
     )
 
@@ -297,7 +292,7 @@ articulation_handler_seven = ArticulationHandler(
     )
 
 clef_handler_seven = ClefHandler(
-    clef='treble',
+    clef='varC',
     add_ottavas=True,
     # ottava_shelf=5,
     )
@@ -344,7 +339,7 @@ articulation_handler_eight = ArticulationHandler(
 
 clef_handler_eight = ClefHandler(
     clef='varC',
-    add_ottavas=False,
+    add_ottavas=True,
     # ottava_shelf=5,
     )
 
@@ -389,7 +384,7 @@ articulation_handler_nine = ArticulationHandler(
 
 clef_handler_nine = ClefHandler(
     clef='varC',
-    add_ottavas=False,
+    add_ottavas=True,
     # ottava_shelf=5,
     )
 
@@ -435,7 +430,7 @@ articulation_handler_ten = ArticulationHandler(
     )
 
 clef_handler_ten = ClefHandler(
-    clef='treble',
+    clef='varC',
     add_ottavas=True,
     # ottava_shelf=5,
     )
@@ -482,7 +477,7 @@ articulation_handler_eleven = ArticulationHandler(
 
 clef_handler_eleven = ClefHandler(
     clef='varC',
-    add_ottavas=False,
+    add_ottavas=True,
     # ottava_shelf=5,
     )
 
@@ -527,7 +522,7 @@ articulation_handler_twelve = ArticulationHandler(
 
 clef_handler_twelve = ClefHandler(
     clef='varC',
-    add_ottavas=False,
+    add_ottavas=True,
     # ottava_shelf=5,
     )
 
@@ -573,7 +568,7 @@ articulation_handler_thirteen = ArticulationHandler(
     )
 
 clef_handler_thirteen = ClefHandler(
-    clef='treble',
+    clef='varC',
     add_ottavas=True,
     # ottava_shelf=5,
     )
@@ -620,7 +615,7 @@ articulation_handler_fourteen = ArticulationHandler(
 
 clef_handler_fourteen = ClefHandler(
     clef='varC',
-    add_ottavas=False,
+    add_ottavas=True,
     # ottava_shelf=5,
     )
 
@@ -665,7 +660,7 @@ articulation_handler_fifteen = ArticulationHandler(
 
 clef_handler_fifteen = ClefHandler(
     clef='varC',
-    add_ottavas=False,
+    add_ottavas=True,
     # ottava_shelf=5,
     )
 

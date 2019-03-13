@@ -9,10 +9,10 @@ from Scores.onkos.Components.time_signatures import bounds
 
 timespan_maker = TimespanMaker(
     denominator=8,
-    total_duration=abjad.Duration(45, 8),
+    total_duration=abjad.Duration(342, 8),
 )
 
-counts = [9, 6, 7, 8, 2, 5, 4, 4, ]
+counts = [9, 6, 7, 8, 1, 5, 7, 5, 6, 6, 6, 8, 10, 6, 5, 4, 5, 8, 7, 6, 6, ]
 
 timespan_list = timespan_maker(counts, max_duration=9)
 

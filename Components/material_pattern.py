@@ -14,10 +14,10 @@ material_chain = MarkovChain(transition_prob=transition_prob)
 
 # material_list = [x for x in material_chain.generate_states(current_state='combinations', no=20)]
 np.random.seed(7)
-key_list_1 = [x for x in material_chain.generate_states(current_state='music_maker_two', no=20)]
+key_list_1 = [x for x in material_chain.generate_states(current_state='music_maker_two', no=14)]
 
 np.random.seed(11)
-key_list_2 = [x for x in material_chain.generate_states(current_state='music_maker_three', no=20)]
+key_list_2 = [x for x in material_chain.generate_states(current_state='music_maker_three', no=7)]
 
 np.random.seed(5)
 key_list_3 = [x for x in material_chain.generate_states(current_state='music_maker_one', no=20)]
@@ -74,8 +74,8 @@ material_list = []
 for x in materials:
     material_list.extend(x)
 
-# print(key_list_1)
-# print(key_list_2)
-# print(key_list_3)
-# print(key_list_4)
-# print(key_list_5)
+print(key_list_1)
+print(key_list_2)
+print(key_list_3)
+print(key_list_4)
+print(key_list_5)

@@ -92,7 +92,7 @@ for voice in abjad.select(score).components(abjad.Voice):
             beam_each_division=False,
             )
         specifier(run)
-    abjad.beam(voice[:], beam_lone_notes=False, beam_rests=False,)
+    abjad.beam(voice[:], beam_lone_notes=False, beam_rests=False)
 
 # print('Beautifying score ...')
 # cutaway score
@@ -184,7 +184,7 @@ for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
 
 for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]
-    leaf2 = abjad.select(staff).leaves()[4]
+    leaf2 = abjad.select(staff).leaves()[10]
     leaf3 = abjad.select(staff).leaves()[16]
     leaf4 = abjad.select(staff).leaves()[26]
     leaf5 = abjad.select(staff).leaves()[36]
