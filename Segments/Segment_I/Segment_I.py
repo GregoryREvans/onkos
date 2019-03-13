@@ -143,19 +143,16 @@ print('Adding attachments ...')
 bar_line = abjad.BarLine('|.')
 metro = abjad.MetronomeMark((1, 8), (63, 72))
 
-markup = abjad.Markup(r'\bold { o }')
-mark = abjad.RehearsalMark(markup=markup)
-
-markup2 = abjad.Markup(r'\bold { n }')
+markup2 = abjad.Markup(r'\bold { A }')
 mark2 = abjad.RehearsalMark(markup=markup2)
 
-markup3 = abjad.Markup(r'\bold { k }')
+markup3 = abjad.Markup(r'\bold { B }')
 mark3 = abjad.RehearsalMark(markup=markup3)
 
-markup4 = abjad.Markup(r'\bold { o }')
+markup4 = abjad.Markup(r'\bold { C }')
 mark4 = abjad.RehearsalMark(markup=markup4)
 
-markup5 = abjad.Markup(r'\bold { s }')
+markup5 = abjad.Markup(r'\bold { D }')
 mark5 = abjad.RehearsalMark(markup=markup5)
 
 instruments = cyc([
@@ -184,11 +181,10 @@ for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
 
 for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]
-    leaf2 = abjad.select(staff).leaves()[10]
-    leaf3 = abjad.select(staff).leaves()[16]
-    leaf4 = abjad.select(staff).leaves()[26]
-    leaf5 = abjad.select(staff).leaves()[36]
-    abjad.attach(mark, leaf1)
+    leaf2 = abjad.select(staff).leaves()[12]
+    leaf3 = abjad.select(staff).leaves()[18]
+    leaf4 = abjad.select(staff).leaves()[23]
+    leaf5 = abjad.select(staff).leaves()[29]
     abjad.attach(metro, leaf1)
     abjad.attach(mark2, leaf2)
     abjad.attach(mark3, leaf3)
