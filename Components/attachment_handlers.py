@@ -14,30 +14,30 @@ from Scores.onkos.Components.pitches import *
 # print(random_walk_list)
 
 articulation_handler_one = ArticulationHandler(
-    articulation_list=['tremolo', 'tremolo', 'portato', 'tremolo', 'tenuto', 'espressivo', 'tenuto', ],
+    articulation_list=['tenuto', 'tremolo', 'tremolo', 'portato', 'tremolo', 'tenuto', 'espressivo', 'tenuto', ],
     continuous=True,
     )
 
 clef_handler_one = ClefHandler(
-    clef='varC',
+    clef='treble',
     add_ottavas=True,
-    # ottava_shelf=5,
+    ottava_shelf=24,
     )
 
 dynamic_handler_one = DynamicHandler(
     starting_dynamic='f',
     hairpin='>',
-    ending_dynamic='p',
+    ending_dynamic='mf',
     continuous=True,
     )
 
 notehead_handler_one = NoteheadHandler(
-    notehead_list=['harmonic-mixed', 'diamond', 'default',  'default', 'diamond', 'default',  'harmonic-mixed', 'diamond', 'default',  ],
+    notehead_list=['default', 'harmonic-mixed', 'diamond', 'default',  'default', 'diamond', 'default',  'harmonic-mixed', 'diamond', 'default',  ],
     continuous=True,
     )
 
 pitch_handler_one = PitchHandler(
-    pitch_list=analyzed_list_1,
+    pitch_list=analyzed_list,
     continuous=True,
     )
 
@@ -55,7 +55,7 @@ text_span_handler_one = TextSpanHandler(
 
 #######
 articulation_handler_two = ArticulationHandler(
-    articulation_list=['staccato', 'marcato', 'staccatissimo', ],
+    articulation_list=['espressivo', 'tenuto', 'tenuto', 'accent', 'portato', 'tenuto', 'accent', ],
     continuous=True,
     )
 
@@ -68,7 +68,7 @@ clef_handler_two = ClefHandler(
 dynamic_handler_two = DynamicHandler(
     starting_dynamic='ppp',
     hairpin='<',
-    ending_dynamic='p',
+    ending_dynamic='ff',
     continuous=True,
     )
 
@@ -78,7 +78,7 @@ notehead_handler_two = NoteheadHandler(
     )
 
 pitch_handler_two = PitchHandler(
-    pitch_list=perm_list,
+    pitch_list=sieve_list,
     continuous=True,
     )
 
@@ -100,7 +100,7 @@ text_span_handler_two = TextSpanHandler(
 
 #######
 articulation_handler_three = ArticulationHandler(
-    articulation_list=['accent', 'tenuto', 'tenuto', 'portato', 'espressivo', 'accent', 'tenuto', 'tenuto', 'portato',],
+    articulation_list=['accent', 'tenuto', 'tenuto', 'espressivo', 'accent', 'tenuto', 'tenuto',],
     continuous=True,
     )
 
@@ -123,7 +123,7 @@ glissando_handler_three = GlissandoHandler(
     )
 
 notehead_handler_three = NoteheadHandler(
-    notehead_list=['cross', 'harmonic-mixed', 'diamond', 'triangle', 'slash', 'default',  ],
+    notehead_list=['harmonic-mixed', 'diamond', 'default', 'diamond', 'default', 'harmonic-mixed', 'diamond', 'default', ],
     continuous=True,
     )
 
@@ -147,7 +147,7 @@ text_span_handler_three = TextSpanHandler(
 
 #######
 articulation_handler_four = ArticulationHandler(
-    articulation_list=['tremolo', 'tremolo', 'portato', 'espressivo', ],
+    articulation_list=['tenuto', 'tenuto', 'accent', 'tenuto', 'espressivo', ],
     continuous=True,
     )
 
@@ -158,24 +158,18 @@ clef_handler_four = ClefHandler(
     )
 
 dynamic_handler_four = DynamicHandler(
-    starting_dynamic='f',
-    hairpin='>',
-    ending_dynamic='p',
+    starting_dynamic='ff',
+    hairpin='--',
     continuous=True,
     )
 
-glissando_handler_four = GlissandoHandler(
-    # glissando_style='hide_middle_note_heads',
-    line_style='solid-line',
-    )
-
 notehead_handler_four = NoteheadHandler(
-    notehead_list=['cross', 'harmonic-mixed', 'diamond', 'triangle', 'slash', 'default',  ],
+    notehead_list=['default',  ],
     continuous=True,
     )
 
 pitch_handler_four = PitchHandler(
-    pitch_list=sieve_list,
+    pitch_list=perm_list,
     continuous=True,
     )
 
@@ -184,7 +178,7 @@ text_span_handler_four = TextSpanHandler(
     span_two_style='dashed-line',
     span_two_padding=12,
     attach_span_two_to='bounds',
-    span_three_positions=['arco', '1/2-clt.', 'clt', '1/2-clt.',],
+    span_three_positions=['arco',],
     span_three_style='solid-line',
     span_three_padding=15,
     attach_span_three_to='left',

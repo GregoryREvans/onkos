@@ -8,6 +8,8 @@ from evans.general_tools.flatten import flatten
 from evans.general_tools.perm import perm
 from evans.general_tools.random_walk import randomWalk
 from evans.general_tools.grouper import grouper
+from evans.general_tools.rotate import rotate
+from evans.general_tools.mirror import mirror
 
 sieve_1a = abjad.index([0, 1, 7], 8)
 sieve_1b = abjad.index([1, 3], 5)
@@ -40,15 +42,24 @@ for x, y in zip(nums, list):
     if x > 0:
         sieve_l.append(y)
 
-sieve_list = []
+new_sieve_l = []
 for x in sieve_l:
     if x < instrument_one_range_lowest:
         continue
     elif x > instrument_one_range_highest:
         continue
     else:
-        sieve_list.append(x)
+        new_sieve_l.append(x)
 
+rotation = len(new_sieve_l) // 3
+mirrored_sieve = mirror(new_sieve_l, sequential_duplicates=False)
+rotated_sieve = rotate(mirrored_sieve, rotation)
+sieve_list = [x for x in randomWalk(
+    random_seed=9,
+    length=1000,
+    mapped_list=rotated_sieve
+            )
+        ]
 ######
 
 lst = [5, 6, 9, 11, ]
@@ -108,13 +119,22 @@ for x in old_analyzed_list_5:
         analyzed_list_5.append(x)
     else:
         analyzed_list_5.append(x)
+analyses = [analyzed_list_1, analyzed_list_3, analyzed_list_4, analyzed_list_5]
+analyzed_list = []
+for x in analyses:
+    analyzed_list.extend(x)
 ######
+walk_list = []
+for x in range(-12, 26):
+    walk_list.append(x)
+    walk_list.append(x + 0.5)
+
+mirrored_walk_list = mirror(walk_list, sequential_duplicates=False)
+rotated_walk_list = rotate(mirrored_walk_list, 18)
 
 random_walk_list = [x for x in randomWalk(
     random_seed=2,
     length=1000,
-    mapped_list=[
-        17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5,
-                ]
+    mapped_list=rotated_walk_list
             )
         ]

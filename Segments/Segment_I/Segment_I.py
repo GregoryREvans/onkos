@@ -141,7 +141,7 @@ staffs = [staff for staff in abjad.iterate(score['Staff Group']).components(abja
 
 print('Adding attachments ...')
 bar_line = abjad.BarLine('|.')
-metro = abjad.MetronomeMark((1, 8), (63, 72))
+metro = abjad.MetronomeMark((1, 4), (63, 72))
 
 markup2 = abjad.Markup(r'\bold { A }')
 mark2 = abjad.RehearsalMark(markup=markup2)
@@ -181,10 +181,10 @@ for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
 
 for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]
-    leaf2 = abjad.select(staff).leaves()[12]
-    leaf3 = abjad.select(staff).leaves()[18]
-    leaf4 = abjad.select(staff).leaves()[23]
-    leaf5 = abjad.select(staff).leaves()[29]
+    leaf2 = abjad.select(staff).leaves()[22]
+    leaf3 = abjad.select(staff).leaves()[29]
+    leaf4 = abjad.select(staff).leaves()[43]
+    leaf5 = abjad.select(staff).leaves()[57]
     abjad.attach(metro, leaf1)
     abjad.attach(mark2, leaf2)
     abjad.attach(mark3, leaf3)
