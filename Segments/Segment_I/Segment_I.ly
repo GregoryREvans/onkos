@@ -289,7 +289,8 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        1/2-hair-arco
                                     \hspace
                                         #0.5
                                 }
@@ -301,13 +302,13 @@
                         bqs''16
                         :32
                         \ottava 1
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         d'''8.
                         :32
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             d'''8.
                             :32
                             ]
@@ -315,26 +316,27 @@
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
                             dqf'''4
-                            - \portato
+                            - \snappizzicato
                             \ottava 0
                         }
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         dqf'''8.
-                        :32
+                        - \portato
                         \ottava 0
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         aef''4
-                        - \tenuto
+                        :32
                         ~
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         aef''16
+                        :32
                         [
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         dqf'''8
                         \mf
-                        - \espressivo
+                        - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTextSpanTwo
@@ -373,8 +375,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            7
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -397,7 +399,8 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            clt
+                                            \upright
+                                                clt.
                                             \hspace
                                                 #0.5
                                         }
@@ -418,7 +421,7 @@
                                                     \vcenter
                                                         \fraction
                                                             5
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -442,7 +445,7 @@
                                                 \vcenter
                                                     \fraction
                                                         6
-                                                        8
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -451,7 +454,7 @@
                             \startTextSpanOne
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
-                                b16
+                                dqf'16
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -463,7 +466,7 @@
                                                     \vcenter
                                                         \fraction
                                                             1
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -471,8 +474,8 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 [
-                                \once \override Staff.NoteHead.style = #'diamond
-                                bf16.
+                                \once \override Staff.NoteHead.style = #'triangle
+                                bqs16.
                                 - \portato
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -484,7 +487,7 @@
                                                     \vcenter
                                                         \fraction
                                                             2
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -492,7 +495,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                b8
+                                d'8
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -504,7 +507,7 @@
                                                     \vcenter
                                                         \fraction
                                                             1
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -516,7 +519,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                bqs4
+                                dqs'4
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -528,7 +531,7 @@
                                                     \vcenter
                                                         \fraction
                                                             4
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -536,7 +539,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                b8.
+                                d'8.
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -548,7 +551,7 @@
                                                     \vcenter
                                                         \fraction
                                                             3
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -558,7 +561,7 @@
                                 [
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            bqs8
+                            dqs'8
                             \ff
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -574,7 +577,7 @@
                                                 \vcenter
                                                     \fraction
                                                         7
-                                                        8
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -603,7 +606,7 @@
                             \clef "treble"
                             dqf'''16
                             \f
-                            - \tenuto
+                            - \snappizzicato
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
@@ -613,7 +616,7 @@
                                 \concat
                                     {
                                         \upright
-                                            sp.
+                                            st.
                                         \hspace
                                             #0.5
                                     }
@@ -624,7 +627,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        1/2-clt.
+                                        \upright
+                                            1/2-clt.
                                         \hspace
                                             #0.5
                                     }
@@ -633,13 +637,13 @@
                             \startTextSpanThree
                             ]
                             \ottava 0
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             etes''4.
-                            - \tenuto
+                            - \espressivo
                             \once \override Staff.NoteHead.style = #'default
                             ees''8
-                            :32
                             \mf
+                            - \tenuto
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTextSpanTwo
@@ -648,7 +652,7 @@
                                 \concat
                                     {
                                         \upright
-                                            msp.
+                                            sp.
                                         \hspace
                                             #0.5
                                     }
@@ -694,7 +698,7 @@
                                 % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
                                 \clef "varC"
-                                cqs'8.
+                                fs'8.
                                 \ppp
                                 - \tenuto
                                 \<
@@ -709,8 +713,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            5
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -733,7 +737,8 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            1/2-clt.
+                                            \upright
+                                                1/2-clt.
                                             \hspace
                                                 #0.5
                                         }
@@ -742,7 +747,7 @@
                                 \startTextSpanThree
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                bqs8
+                                eqs'8
                                 - \accent
                                 \stopTextSpanOne
                                 ~
@@ -754,8 +759,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            5
-                                                            8
+                                                            6
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -763,11 +768,11 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                bqs32
+                                eqs'32
                                 ]
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            b4
+                            d'4
                             - \portato
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -778,8 +783,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        1
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -787,8 +792,8 @@
                             - \tweak staff-padding #9
                             \startTextSpanOne
                             \times 4/5 {
-                                \once \override Staff.NoteHead.style = #'diamond
-                                bqs16
+                                \once \override Staff.NoteHead.style = #'triangle
+                                dqs'16
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -799,8 +804,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            2
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -809,7 +814,7 @@
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                b16
+                                d'16
                                 - \accent
                                 \stopTextSpanOne
                                 ~
@@ -821,8 +826,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            2
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -830,9 +835,9 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                b64
+                                d'64
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                bqs16.
+                                dqs'16.
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -843,8 +848,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            4
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -856,7 +861,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'default
-                                b4
+                                bqs4
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -867,8 +872,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            4
-                                                            8
+                                                            3
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -887,8 +892,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            3
-                                                            8
+                                                            7
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -897,7 +902,7 @@
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            aqs4
+                            af4
                             \ff
                             - \accent
                             - \tweak stencil #constante-hairpin
@@ -912,8 +917,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        5
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -941,8 +946,8 @@
                             \once \override Staff.NoteHead.style = #'default
                             \clef "treble"
                             eef''8
-                            :32
                             \f
+                            - \tenuto
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
@@ -952,7 +957,7 @@
                                 \concat
                                     {
                                         \upright
-                                            ord.
+                                            msp.
                                         \hspace
                                             #0.5
                                     }
@@ -963,7 +968,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        clt
+                                        \upright
+                                            clt.
                                         \hspace
                                             #0.5
                                     }
@@ -973,8 +979,8 @@
                             [
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             eqf''8.
+                            :32
                             \mf
-                            - \portato
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTextSpanTwo
@@ -983,7 +989,7 @@
                                 \concat
                                     {
                                         \upright
-                                            st.
+                                            ord.
                                         \hspace
                                             #0.5
                                     }
@@ -1000,7 +1006,7 @@
                                 % [Voice 1 measure 6] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 \clef "varC"
-                                bf8.
+                                aqf8.
                                 \ppp
                                 - \portato
                                 \<
@@ -1015,8 +1021,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            6
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -1039,7 +1045,8 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            arco
+                                            \upright
+                                                3/4-hair-arco
                                             \hspace
                                                 #0.5
                                         }
@@ -1047,7 +1054,7 @@
                                 - \tweak staff-padding #15
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'default
-                                b8
+                                aqs8
                                 - \tenuto
                                 \stopTextSpanOne
                                 ~
@@ -1059,8 +1066,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            5
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -1068,10 +1075,10 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                b32
+                                aqs32
                             }
-                            \once \override Staff.NoteHead.style = #'diamond
-                            bqs8
+                            \once \override Staff.NoteHead.style = #'triangle
+                            bf8
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -1082,8 +1089,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        2
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -1093,7 +1100,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                cqs'16.
+                                dqf'16.
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -1105,7 +1112,7 @@
                                                     \vcenter
                                                         \fraction
                                                             1
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -1124,8 +1131,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            2
-                                                            8
+                                                            4
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -1133,7 +1140,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                cqs'16.
+                                d'16.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -1144,8 +1151,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            3
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -1156,7 +1163,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'default
-                                bqs8
+                                dqf'8
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -1167,8 +1174,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            4
-                                                            8
+                                                            7
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -1176,7 +1183,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                b8
+                                cqs'8
                                 - \portato
                                 \stopTextSpanOne
                                 ~
@@ -1188,8 +1195,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            3
-                                                            8
+                                                            5
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -1197,10 +1204,10 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                b32
+                                cqs'32
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            bqs8.
+                            dqf'8.
                             \ff
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -1215,8 +1222,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        6
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -1239,7 +1246,7 @@
                     }
                     {
                         % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         \clef "varC"
                         bf8.
                         \mp
@@ -1258,8 +1265,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    8
-                                                    8
+                                                    1
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -1279,7 +1286,7 @@
                         - \tweak staff-padding #12
                         \startTextSpanTwo
                         \once \override Staff.NoteHead.style = #'default
-                        aqs8.
+                        a8.
                         - \tenuto
                         \stopTextSpanOne
                         ~
@@ -1291,8 +1298,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    7
-                                                    8
+                                                    4
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -1303,11 +1310,11 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             \once \override Staff.NoteHead.style = #'default
-                            aqs4
+                            a4
                             - \tweak style #'solid-line
                             \glissando
-                            \once \override Staff.NoteHead.style = #'diamond
-                            a8
+                            \once \override Staff.NoteHead.style = #'triangle
+                            af8
                             _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
                             - \espressivo
                             - \tweak stencil #constante-hairpin
@@ -1322,8 +1329,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        5
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -1352,7 +1359,7 @@
                                 % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
                                 \clef "varC"
-                                cqs'4.
+                                eqs'4.
                                 \ppp
                                 - \accent
                                 \<
@@ -1367,8 +1374,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -1391,15 +1398,16 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            1/2-clt.
+                                            \upright
+                                                1/2-clt.
                                             \hspace
                                                 #0.5
                                         }
                                     }
                                 - \tweak staff-padding #15
                                 \startTextSpanThree
-                                \once \override Staff.NoteHead.style = #'diamond
-                                bqs4
+                                \once \override Staff.NoteHead.style = #'triangle
+                                dqs'4
                                 - \espressivo
                                 \stopTextSpanOne
                                 ~
@@ -1411,19 +1419,19 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            5
-                                                            8
+                                                            2
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
                                     }
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'diamond
-                                bqs16
+                                \once \override Staff.NoteHead.style = #'triangle
+                                dqs'16
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            b4.
+                            cqs'4.
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -1434,8 +1442,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        1
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -1444,71 +1452,7 @@
                             \startTextSpanOne
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                bf8.
-                                - \tenuto
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            1
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                [
-                                \once \override Staff.NoteHead.style = #'default
-                                aqs8.
-                                - \accent
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            2
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'default
-                                aqf8.
-                                - \portato
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            1
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                            }
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 5/6 {
-                                \once \override Staff.NoteHead.style = #'default
-                                aqs8.
+                                bqs8.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -1520,15 +1464,16 @@
                                                     \vcenter
                                                         \fraction
                                                             4
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
                                     }
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                aqf8.
+                                [
+                                \once \override Staff.NoteHead.style = #'default
+                                b8.
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -1540,7 +1485,70 @@
                                                     \vcenter
                                                         \fraction
                                                             3
-                                                            8
+                                                            7
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'default
+                                bf8.
+                                - \portato
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            7
+                                                            7
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                            }
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/6 {
+                                \once \override Staff.NoteHead.style = #'default
+                                dqf'8.
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            5
+                                                            7
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                bqs8.
+                                - \accent
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            6
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -1550,7 +1558,7 @@
                                 ]
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            aqs4.
+                            d'4.
                             \ff
                             - \espressivo
                             - \tweak stencil #constante-hairpin
@@ -1565,8 +1573,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        1
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -1591,7 +1599,7 @@
                         % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        aqs2
+                        aqf2
                         \mp
                         - \accent
                         \>
@@ -1607,8 +1615,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
+                                                    3
                                                     5
-                                                    8
                                     \hspace
                                         #0.5
                                 }
@@ -1628,11 +1636,11 @@
                         - \tweak staff-padding #12
                         \startTextSpanTwo
                         \once \override Staff.NoteHead.style = #'default
-                        aqs4.
+                        aqf4.
                         - \tweak style #'solid-line
                         \glissando
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        bf8
+                        aqs8
                         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -1647,8 +1655,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    4
-                                                    8
+                                                    2
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -1670,7 +1678,7 @@
                     }
                     {
                         % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         \clef "treble"
                         eqf''4
                         :32
@@ -1685,7 +1693,7 @@
                             \concat
                                 {
                                     \upright
-                                        ord.
+                                        st.
                                     \hspace
                                         #0.5
                                 }
@@ -1696,32 +1704,34 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    1/2-clt.
+                                    \upright
+                                        1/2-clt.
                                     \hspace
                                         #0.5
                                 }
                             }
                         - \tweak staff-padding #15
                         \startTextSpanThree
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         eqf''16
                         :32
                         [
                         \once \override Staff.NoteHead.style = #'default
                         etef''8
-                        - \tenuto
+                        - \snappizzicato
                         \once \override Staff.NoteHead.style = #'default
                         eqf''16
-                        - \espressivo
+                        - \portato
                         \ottava 1
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         aqf'''8
-                        - \tenuto
+                        :32
                         ~
                         ]
                         \times 4/5 {
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             aqf'''4
+                            :32
                             \ottava 0
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
@@ -1736,7 +1746,7 @@
                                 \concat
                                     {
                                         \upright
-                                            sp.
+                                            ord.
                                         \hspace
                                             #0.5
                                     }
@@ -1759,8 +1769,8 @@
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
                         \clef "treble"
                         ctes'''8.
-                        :32
                         \f
+                        - \snappizzicato
                         \>
                         \stopTextSpanOne
                         \stopTextSpanTwo
@@ -1770,7 +1780,7 @@
                             \concat
                                 {
                                     \upright
-                                        msp.
+                                        st.
                                     \hspace
                                         #0.5
                                 }
@@ -1781,7 +1791,8 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        1/2-hair-arco
                                     \hspace
                                         #0.5
                                 }
@@ -1791,10 +1802,10 @@
                         [
                         \ottava 0
                         \ottava 1
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         eef'''8.
-                        :32
                         \mf
+                        - \espressivo
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTextSpanTwo
@@ -1803,7 +1814,7 @@
                             \concat
                                 {
                                     \upright
-                                        ord.
+                                        sp.
                                     \hspace
                                         #0.5
                                 }
@@ -1816,7 +1827,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             % [Voice 1 measure 12] %! COMMENT_MEASURE_NUMBERS
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             \clef "varC"
                             bqf8
                             \mp
@@ -1835,8 +1846,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        3
-                                                        8
+                                                        1
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -1869,8 +1880,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        2
-                                                        8
+                                                        4
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -1883,7 +1894,7 @@
                         - \tweak style #'solid-line
                         \glissando
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        bqf8
+                        b8
                         - \tenuto
                         \stopTextSpanOne
                         - \tweak style #'solid-line
@@ -1896,8 +1907,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    1
-                                                    8
+                                                    5
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -1905,8 +1916,8 @@
                         - \tweak staff-padding #9
                         \startTextSpanOne
                         [
-                        \once \override Staff.NoteHead.style = #'diamond
-                        b8
+                        \once \override Staff.NoteHead.style = #'triangle
+                        c'8
                         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -1921,8 +1932,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    8
-                                                    8
+                                                    3
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -1945,9 +1956,9 @@
                     {
                         \times 8/15 {
                             % [Voice 1 measure 13] %! COMMENT_MEASURE_NUMBERS
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             \clef "varC"
-                            bf8.
+                            dqs'8.
                             \ppp
                             - \tenuto
                             \<
@@ -1962,8 +1973,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        8
-                                                        8
+                                                        2
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -1986,7 +1997,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        clt
+                                        \upright
+                                            clt.
                                         \hspace
                                             #0.5
                                     }
@@ -1994,7 +2006,7 @@
                             - \tweak staff-padding #15
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            aqs8.
+                            d'8.
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -2005,8 +2017,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        5
-                                                        8
+                                                        1
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -2015,7 +2027,7 @@
                             \startTextSpanOne
                             ]
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            aqf4.
+                            dqf'4.
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -2026,8 +2038,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        4
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -2036,7 +2048,7 @@
                             \startTextSpanOne
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
-                                af8.
+                                bf8.
                                 - \portato
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -2047,8 +2059,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            3
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -2057,7 +2069,7 @@
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
-                                g8.
+                                aqf8.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -2068,8 +2080,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            2
-                                                            8
+                                                            7
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -2088,8 +2100,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            5
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -2109,8 +2121,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        4
-                                                        8
+                                                        6
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -2129,8 +2141,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        3
-                                                        8
+                                                        1
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -2138,7 +2150,7 @@
                             - \tweak staff-padding #9
                             \startTextSpanOne
                             ]
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             g4.
                             \ff
                             - \tenuto
@@ -2154,8 +2166,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        2
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -2205,7 +2217,8 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        flat-hair-arco
                                     \hspace
                                         #0.5
                                 }
@@ -2243,7 +2256,7 @@
                             \clef "treble"
                             eef'''4
                             \f
-                            - \portato
+                            - \tenuto
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
@@ -2254,7 +2267,7 @@
                                 \concat
                                     {
                                         \upright
-                                            st.
+                                            msp.
                                         \hspace
                                             #0.5
                                     }
@@ -2265,7 +2278,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        1/2-clt.
+                                        \upright
+                                            1/2-clt.
                                         \hspace
                                             #0.5
                                     }
@@ -2279,31 +2293,32 @@
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
                             e'''8
-                            :32
+                            - \tenuto
                             \ottava 0
                         }
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
                         btef''16
-                        - \tenuto
-                        \once \override Staff.NoteHead.style = #'diamond
+                        :32
+                        \once \override Staff.NoteHead.style = #'triangle
                         btef''8.
-                        - \espressivo
+                        :32
                         ~
                         \times 8/9 {
                             % [Voice 1 measure 16] %! COMMENT_MEASURE_NUMBERS
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             btef''8.
+                            :32
                             ]
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
                             eqf'''4
-                            - \tenuto
+                            - \snappizzicato
                             \ottava 0
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
                             eef'''8
                             \mf
-                            - \tenuto
+                            - \portato
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTextSpanTwo
@@ -2325,7 +2340,7 @@
                     {
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        bqs4.
+                        cqs'4.
                         \mp
                         - \espressivo
                         \>
@@ -2342,8 +2357,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    7
-                                                    8
+                                                    2
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -2363,8 +2378,8 @@
                         - \tweak staff-padding #12
                         \startTextSpanTwo
                         % [Voice 1 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.NoteHead.style = #'diamond
-                        b2
+                        \once \override Staff.NoteHead.style = #'triangle
+                        bqs2
                         - \accent
                         \stopTextSpanOne
                         - \tweak style #'solid-line
@@ -2377,8 +2392,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    6
-                                                    8
+                                                    1
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -2400,8 +2415,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
+                                                    4
                                                     5
-                                                    8
                                     \hspace
                                         #0.5
                                 }
@@ -2425,8 +2440,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    4
-                                                    8
+                                                    5
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -2455,9 +2470,9 @@
                         \stopTextSpanThree
                     }
                     {
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         \clef "varC"
-                        bqf4
+                        b4
                         \mp
                         - \accent
                         \>
@@ -2475,7 +2490,7 @@
                                             \vcenter
                                                 \fraction
                                                     3
-                                                    8
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -2495,7 +2510,7 @@
                         - \tweak staff-padding #12
                         \startTextSpanTwo
                         \once \override Staff.NoteHead.style = #'default
-                        b8
+                        c'8
                         - \tenuto
                         \stopTextSpanOne
                         - \tweak style #'solid-line
@@ -2509,7 +2524,7 @@
                                             \vcenter
                                                 \fraction
                                                     2
-                                                    8
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -2517,7 +2532,7 @@
                         - \tweak staff-padding #9
                         \startTextSpanOne
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        bqs4
+                        cqs'4
                         - \tenuto
                         \stopTextSpanOne
                         ~
@@ -2530,7 +2545,7 @@
                                             \vcenter
                                                 \fraction
                                                     1
-                                                    8
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -2539,7 +2554,7 @@
                         \startTextSpanOne
                         % [Voice 1 measure 19] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        bqs4
+                        cqs'4
                         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
                         - \tweak stencil #constante-hairpin
                         \<
@@ -2561,7 +2576,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
                             \ottava 1
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             \clef "treble"
                             e'''16
                             :32
@@ -2575,7 +2590,7 @@
                                 \concat
                                     {
                                         \upright
-                                            sp.
+                                            st.
                                         \hspace
                                             #0.5
                                     }
@@ -2586,7 +2601,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        clt
+                                        \upright
+                                            clt.
                                         \hspace
                                             #0.5
                                     }
@@ -2597,24 +2613,23 @@
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
                             def'''4
-                            :32
+                            - \tenuto
                             ~
                             \once \override Staff.NoteHead.style = #'default
                             def'''16
-                            :32
                             [
                             \ottava 0
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             ates''16
-                            - \portato
+                            - \snappizzicato
                             ~
                         }
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
                         ates''16
                         \ottava 1
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         eqf'''16
-                        :32
+                        - \espressivo
                         \ottava 0
                         \once \override Staff.NoteHead.style = #'default
                         aqs'8
@@ -2628,7 +2643,7 @@
                             \concat
                                 {
                                     \upright
-                                        msp.
+                                        ord.
                                     \hspace
                                         #0.5
                                 }
@@ -2664,7 +2679,8 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        flat-hair-arco
                                     \hspace
                                         #0.5
                                 }
@@ -2672,8 +2688,9 @@
                         - \tweak staff-padding #15
                         \startTextSpanThree
                         % [Voice 1 measure 20] %! COMMENT_MEASURE_NUMBERS
+                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        b'4
+                        <b' e''>4
                         - \tenuto
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
@@ -2688,6 +2705,7 @@
                             }
                         - \tweak staff-padding #12
                         \startTextSpanTwo
+                        \ottava 0
                     }
                     {
                         r4
@@ -2703,7 +2721,7 @@
                                 % [Voice 1 measure 21] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 \clef "varC"
-                                gqf32
+                                f32
                                 \ppp
                                 - \accent
                                 \<
@@ -2718,8 +2736,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -2742,7 +2760,8 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            1/2-clt.
+                                            \upright
+                                                1/2-clt.
                                             \hspace
                                                 #0.5
                                         }
@@ -2751,7 +2770,7 @@
                                 \startTextSpanThree
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                g32.
+                                fs32.
                                 - \portato
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -2762,8 +2781,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            5
-                                                            8
+                                                            4
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -2784,8 +2803,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        3
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -2806,8 +2825,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            7
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -2827,8 +2846,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            2
-                                                            8
+                                                            5
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -2847,8 +2866,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            6
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -2859,7 +2878,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 \once \override Staff.NoteHead.style = #'default
-                                gqf8
+                                aqf8
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -2870,16 +2889,16 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            4
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
                                     }
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'diamond
-                                fs16.
+                                \once \override Staff.NoteHead.style = #'triangle
+                                g16.
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -2890,8 +2909,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            3
-                                                            8
+                                                            2
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -2915,8 +2934,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        1
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -2946,7 +2965,7 @@
                             \clef "treble"
                             aes'4
                             \f
-                            - \espressivo
+                            - \tenuto
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
@@ -2956,7 +2975,7 @@
                                 \concat
                                     {
                                         \upright
-                                            ord.
+                                            st.
                                         \hspace
                                             #0.5
                                     }
@@ -2967,7 +2986,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        1/2-clt.
+                                        \upright
+                                            1/2-clt.
                                         \hspace
                                             #0.5
                                     }
@@ -2976,28 +2996,28 @@
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             aqs'8.
-                            - \tenuto
+                            :32
                             ~
                             [
                         }
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
                         aqs'16
-                        \once \override Staff.NoteHead.style = #'diamond
+                        :32
+                        \once \override Staff.NoteHead.style = #'triangle
                         aqs'8.
-                        - \tenuto
+                        :32
                         ]
                         \once \override Staff.NoteHead.style = #'default
                         gqf''4
-                        :32
+                        - \snappizzicato
                         ~
                         \once \override Staff.NoteHead.style = #'default
                         gqf''16
-                        :32
                         [
                         \once \override Staff.NoteHead.style = #'default
                         ctes''16
-                        :32
                         \mf
+                        - \portato
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTextSpanTwo
@@ -3006,7 +3026,7 @@
                             \concat
                                 {
                                     \upright
-                                        st.
+                                        sp.
                                     \hspace
                                         #0.5
                                 }
@@ -3035,8 +3055,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            4
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3059,7 +3079,8 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            arco
+                                            \upright
+                                                3/4-hair-arco
                                             \hspace
                                                 #0.5
                                         }
@@ -3079,8 +3100,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            5
-                                                            8
+                                                            3
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3103,8 +3124,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        7
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -3113,7 +3134,7 @@
                             \startTextSpanOne
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
-                                e16
+                                dqf16
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -3124,8 +3145,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            5
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3134,7 +3155,7 @@
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                f16.
+                                ef16.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -3145,8 +3166,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            2
-                                                            8
+                                                            6
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3154,7 +3175,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                e8
+                                cqs8
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -3166,7 +3187,7 @@
                                                     \vcenter
                                                         \fraction
                                                             1
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3177,8 +3198,8 @@
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/7 {
-                                \once \override Staff.NoteHead.style = #'diamond
-                                f4
+                                \once \override Staff.NoteHead.style = #'triangle
+                                dqf4
                                 - \portato
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -3189,8 +3210,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            4
-                                                            8
+                                                            2
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3198,7 +3219,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                e8.
+                                cqs8.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -3209,8 +3230,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            3
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3220,7 +3241,7 @@
                                 [
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            f8
+                            dqf8
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -3231,8 +3252,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        4
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -3245,7 +3266,7 @@
                             \times 10/11 {
                                 % [Voice 1 measure 24] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                fqs8.
+                                f8.
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -3256,8 +3277,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            3
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3265,7 +3286,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                f8
+                                ef8
                                 - \tenuto
                                 \stopTextSpanOne
                                 ~
@@ -3277,8 +3298,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            5
-                                                            8
+                                                            7
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3286,7 +3307,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                f32
+                                ef32
                                 ]
                             }
                             \once \override Staff.NoteHead.style = #'default
@@ -3301,8 +3322,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        5
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -3322,8 +3343,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            6
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3344,8 +3365,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            2
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3354,7 +3375,7 @@
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 fqs64
-                                \once \override Staff.NoteHead.style = #'diamond
+                                \once \override Staff.NoteHead.style = #'triangle
                                 f16.
                                 - \tenuto
                                 \stopTextSpanOne
@@ -3366,8 +3387,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            2
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3379,7 +3400,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                fqs4
+                                g4
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -3390,8 +3411,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            4
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3399,7 +3420,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                fs8.
+                                aqf8.
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -3410,8 +3431,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            3
-                                                            8
+                                                            4
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3420,7 +3441,7 @@
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            fqs4
+                            gqf4
                             \ff
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -3435,8 +3456,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        3
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -3461,11 +3482,11 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             % [Voice 1 measure 25] %! COMMENT_MEASURE_NUMBERS
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             \clef "treble"
                             bf''16
+                            :32
                             \f
-                            - \portato
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
@@ -3475,7 +3496,7 @@
                                 \concat
                                     {
                                         \upright
-                                            ord.
+                                            msp.
                                         \hspace
                                             #0.5
                                     }
@@ -3486,7 +3507,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        arco
+                                        \upright
+                                            1/2-hair-arco
                                         \hspace
                                             #0.5
                                     }
@@ -3496,10 +3518,10 @@
                             [
                             \once \override Staff.NoteHead.style = #'default
                             eqs''16
-                            :32
+                            - \tenuto
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             ees''16
-                            - \tenuto
+                            - \snappizzicato
                             ~
                             ]
                         }
@@ -3514,7 +3536,7 @@
                             \concat
                                 {
                                     \upright
-                                        sp.
+                                        ord.
                                     \hspace
                                         #0.5
                                 }
@@ -3530,7 +3552,7 @@
                                 % [Voice 1 measure 26] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
                                 \clef "varC"
-                                fs4.
+                                g4.
                                 \ppp
                                 - \tenuto
                                 \<
@@ -3545,8 +3567,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            7
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3569,7 +3591,8 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            1/2-clt.
+                                            \upright
+                                                1/2-clt.
                                             \hspace
                                                 #0.5
                                         }
@@ -3577,7 +3600,7 @@
                                 - \tweak staff-padding #15
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'default
-                                gqf4
+                                af4
                                 - \accent
                                 \stopTextSpanOne
                                 ~
@@ -3590,7 +3613,7 @@
                                                     \vcenter
                                                         \fraction
                                                             5
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3598,10 +3621,10 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                gqf16
+                                af16
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            fs4
+                            g4
                             - \portato
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -3613,7 +3636,7 @@
                                                 \vcenter
                                                     \fraction
                                                         6
-                                                        8
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -3623,7 +3646,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'default
-                                gqf8.
+                                bf8.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -3635,7 +3658,7 @@
                                                     \vcenter
                                                         \fraction
                                                             1
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3643,8 +3666,8 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 [
-                                \once \override Staff.NoteHead.style = #'diamond
-                                fs8.
+                                \once \override Staff.NoteHead.style = #'triangle
+                                aqf8.
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -3656,7 +3679,7 @@
                                                     \vcenter
                                                         \fraction
                                                             2
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3664,7 +3687,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                fqs8.
+                                gqf8.
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -3676,7 +3699,7 @@
                                                     \vcenter
                                                         \fraction
                                                             1
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3688,7 +3711,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                fs4
+                                g4
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -3700,7 +3723,7 @@
                                                     \vcenter
                                                         \fraction
                                                             4
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3708,7 +3731,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                gqf4
+                                af4
                                 - \tenuto
                                 \stopTextSpanOne
                                 ~
@@ -3721,7 +3744,7 @@
                                                     \vcenter
                                                         \fraction
                                                             3
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3729,10 +3752,10 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                gqf16
+                                af16
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            g4.
+                            aqf4.
                             \ff
                             - \accent
                             - \tweak stencil #constante-hairpin
@@ -3748,7 +3771,7 @@
                                                 \vcenter
                                                     \fraction
                                                         7
-                                                        8
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -3774,7 +3797,7 @@
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        e''4
+                        f''4
                         \ff
                         - \espressivo
                         - \tweak stencil #constante-hairpin
@@ -3799,7 +3822,8 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        flat-hair-arco
                                     \hspace
                                         #0.5
                                 }
@@ -3807,7 +3831,7 @@
                         - \tweak staff-padding #15
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
-                        e''4
+                        f''4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -3830,7 +3854,7 @@
                                 % [Voice 1 measure 28] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
                                 \clef "varC"
-                                gqf4.
+                                fs4.
                                 \ppp
                                 - \portato
                                 \<
@@ -3845,8 +3869,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            5
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3869,7 +3893,8 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            clt
+                                            \upright
+                                                clt.
                                             \hspace
                                                 #0.5
                                         }
@@ -3877,7 +3902,7 @@
                                 - \tweak staff-padding #15
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                fs4
+                                f4
                                 - \tenuto
                                 \stopTextSpanOne
                                 ~
@@ -3889,8 +3914,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            5
-                                                            8
+                                                            6
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3898,7 +3923,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                fs16
+                                f16
                             }
                             \once \override Staff.NoteHead.style = #'default
                             gqf4.
@@ -3912,8 +3937,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        1
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -3921,7 +3946,7 @@
                             - \tweak staff-padding #9
                             \startTextSpanOne
                             \times 2/3 {
-                                \once \override Staff.NoteHead.style = #'diamond
+                                \once \override Staff.NoteHead.style = #'triangle
                                 g8.
                                 - \espressivo
                                 \stopTextSpanOne
@@ -3933,8 +3958,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            2
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3954,8 +3979,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            2
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3974,8 +3999,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            4
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -3986,7 +4011,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/6 {
                                 \once \override Staff.NoteHead.style = #'default
-                                gqf8.
+                                aqf8.
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -3997,8 +4022,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            4
-                                                            8
+                                                            3
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -4006,7 +4031,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                g8.
+                                bf8.
                                 - \portato
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -4017,8 +4042,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            3
-                                                            8
+                                                            7
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -4028,7 +4053,7 @@
                                 ]
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            gqf4.
+                            af4.
                             \ff
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -4043,8 +4068,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        5
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -4067,9 +4092,9 @@
                     }
                     {
                         % [Voice 1 measure 29] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         \clef "varC"
-                        c'4
+                        dqf'4
                         \mp
                         - \espressivo
                         \>
@@ -4086,8 +4111,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    8
-                                                    8
+                                                    4
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -4107,7 +4132,7 @@
                         - \tweak staff-padding #12
                         \startTextSpanTwo
                         \once \override Staff.NoteHead.style = #'default
-                        bqs8
+                        cqs'8
                         - \accent
                         \stopTextSpanOne
                         ~
@@ -4119,8 +4144,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    7
-                                                    8
+                                                    5
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -4129,11 +4154,11 @@
                         \startTextSpanOne
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'default
-                            bqs4
+                            cqs'4
                             - \tweak style #'solid-line
                             \glissando
-                            \once \override Staff.NoteHead.style = #'diamond
-                            b4
+                            \once \override Staff.NoteHead.style = #'triangle
+                            c'4
                             - \tenuto
                             \stopTextSpanOne
                             - \tweak style #'solid-line
@@ -4146,8 +4171,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        3
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -4155,7 +4180,7 @@
                             - \tweak staff-padding #9
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'default
-                            bqf8
+                            b8
                             - \tenuto
                             \stopTextSpanOne
                             ~
@@ -4167,8 +4192,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        2
                                                         5
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -4178,7 +4203,7 @@
                         }
                         % [Voice 1 measure 30] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        bqf4
+                        b4
                         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4198,7 +4223,7 @@
                     }
                     {
                         \times 4/5 {
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             \clef "treble"
                             ees''16
                             \f
@@ -4212,7 +4237,7 @@
                                 \concat
                                     {
                                         \upright
-                                            msp.
+                                            st.
                                         \hspace
                                             #0.5
                                     }
@@ -4223,7 +4248,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        1/2-clt.
+                                        \upright
+                                            1/2-clt.
                                         \hspace
                                             #0.5
                                     }
@@ -4266,7 +4292,7 @@
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        f''8
+                        bf''8
                         \ff
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4290,7 +4316,8 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        flat-hair-arco
                                     \hspace
                                         #0.5
                                 }
@@ -4300,11 +4327,11 @@
                         \ottava 0
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        bf''4
+                        af''4
                         - \tenuto
                         ~
                         \once \override Staff.NoteHead.style = #'default
-                        bf''4
+                        af''4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -4342,8 +4369,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        4
-                                                        8
+                                                        1
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -4362,7 +4389,7 @@
                                 }
                             - \tweak staff-padding #12
                             \startTextSpanTwo
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             aqs8
                             - \tenuto
                             \stopTextSpanOne
@@ -4376,8 +4403,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        3
-                                                        8
+                                                        4
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -4385,7 +4412,7 @@
                             - \tweak staff-padding #9
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'default
-                            a4
+                            aqf4
                             _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -4400,8 +4427,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        2
-                                                        8
+                                                        5
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -4423,10 +4450,9 @@
                         }
                     }
                     {
-                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        af''4
+                        <g b>4
                         \ff
                         - \accent
                         - \tweak stencil #constante-hairpin
@@ -4450,16 +4476,16 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        flat-hair-arco
                                     \hspace
                                         #0.5
                                 }
                             }
                         - \tweak staff-padding #15
                         \startTextSpanThree
-                        \ottava 0
                         \once \override Staff.NoteHead.style = #'default
-                        g8
+                        af8
                         - \tenuto
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
@@ -4481,7 +4507,7 @@
                             % [Voice 1 measure 33] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             \clef "varC"
-                            g8.
+                            aqf8.
                             \ppp
                             - \accent
                             \<
@@ -4496,8 +4522,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        8
-                                                        8
+                                                        6
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -4520,7 +4546,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        1/2-clt.
+                                        \upright
+                                            1/2-clt.
                                         \hspace
                                             #0.5
                                     }
@@ -4528,7 +4555,7 @@
                             - \tweak staff-padding #15
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'default
-                            gqf8.
+                            af8.
                             - \espressivo
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -4539,8 +4566,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        5
-                                                        8
+                                                        1
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -4548,8 +4575,8 @@
                             - \tweak staff-padding #9
                             \startTextSpanOne
                             ]
-                            \once \override Staff.NoteHead.style = #'diamond
-                            fs4.
+                            \once \override Staff.NoteHead.style = #'triangle
+                            g4.
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -4560,8 +4587,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        2
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -4570,7 +4597,7 @@
                             \startTextSpanOne
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                fqs8.
+                                f8.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -4582,7 +4609,7 @@
                                                     \vcenter
                                                         \fraction
                                                             1
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -4591,7 +4618,7 @@
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                f8.
+                                ef8.
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -4602,8 +4629,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            2
-                                                            8
+                                                            4
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -4611,7 +4638,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                e8.
+                                cqs8.
                                 - \portato
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -4622,8 +4649,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            3
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -4632,7 +4659,7 @@
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            ef8.
+                            c8.
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -4643,8 +4670,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        4
-                                                        8
+                                                        7
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -4652,7 +4679,7 @@
                             - \tweak staff-padding #9
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'default
-                            e8.
+                            cqs8.
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -4663,8 +4690,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        3
-                                                        8
+                                                        5
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -4673,7 +4700,7 @@
                             \startTextSpanOne
                             ]
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            ef4.
+                            c4.
                             \ff
                             - \espressivo
                             - \tweak stencil #constante-hairpin
@@ -4688,8 +4715,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        6
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -4715,7 +4742,7 @@
                             % [Voice 1 measure 34] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
                             \clef "varC"
-                            b4
+                            cs'4
                             \ff
                             - \espressivo
                             - \tweak stencil #constante-hairpin
@@ -4739,20 +4766,22 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        arco
+                                        \upright
+                                            flat-hair-arco
                                         \hspace
                                             #0.5
                                     }
                                 }
                             - \tweak staff-padding #15
                             \startTextSpanThree
+                            \ottava 1
                             \once \override Staff.NoteHead.style = #'default
-                            af8
+                            d''8
                             - \tenuto
                             ~
                         }
                         \once \override Staff.NoteHead.style = #'default
-                        af4.
+                        d''4.
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -4766,6 +4795,7 @@
                             }
                         - \tweak staff-padding #12
                         \startTextSpanTwo
+                        \ottava 0
                     }
                     {
                         % [Voice 1 measure 35] %! COMMENT_MEASURE_NUMBERS
@@ -4795,7 +4825,8 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    clt
+                                    \upright
+                                        clt.
                                     \hspace
                                         #0.5
                                 }
@@ -4806,35 +4837,34 @@
                         e'16
                         :32
                         [
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         aqs''8
                         :32
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         def'''16
-                        - \portato
+                        - \snappizzicato
                         ]
                         \ottava 0
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         d'''4
-                        :32
+                        - \portato
                         ~
                         % [Voice 1 measure 36] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
                         d'''16
-                        :32
                         \ottava 0
                         \ottava 1
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         ces'''4
-                        - \tenuto
+                        :32
                         \ottava 0
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         d'''8.
                         \mf
-                        - \espressivo
+                        - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTextSpanTwo
@@ -4843,7 +4873,7 @@
                             \concat
                                 {
                                     \upright
-                                        ord.
+                                        sp.
                                     \hspace
                                         #0.5
                                 }
@@ -4855,7 +4885,7 @@
                     {
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
                         \clef "varC"
-                        aqf4.
+                        gqs4.
                         \mp
                         - \espressivo
                         \>
@@ -4872,8 +4902,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    1
-                                                    8
+                                                    3
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -4893,8 +4923,8 @@
                         - \tweak staff-padding #12
                         \startTextSpanTwo
                         % [Voice 1 measure 37] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Staff.NoteHead.style = #'diamond
-                        a2
+                        \once \override Staff.NoteHead.style = #'triangle
+                        af2
                         - \accent
                         \stopTextSpanOne
                         - \tweak style #'solid-line
@@ -4907,8 +4937,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    8
-                                                    8
+                                                    2
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -4917,7 +4947,7 @@
                         \startTextSpanOne
                         % [Voice 1 measure 38] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        aqs4
+                        a4
                         - \tenuto
                         \stopTextSpanOne
                         - \tweak style #'solid-line
@@ -4930,15 +4960,15 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    7
-                                                    8
+                                                    1
+                                                    5
                                     \hspace
                                         #0.5
                                 }
                             }
                         - \tweak staff-padding #9
                         \startTextSpanOne
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         bf8
                         - \tenuto
                         \stopTextSpanOne
@@ -4951,15 +4981,15 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    6
-                                                    8
+                                                    4
+                                                    5
                                     \hspace
                                         #0.5
                                 }
                             }
                         - \tweak staff-padding #9
                         \startTextSpanOne
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         bf4
                         - \tweak style #'solid-line
                         \glissando
@@ -4980,7 +5010,7 @@
                                                 \vcenter
                                                     \fraction
                                                         5
-                                                        8
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -4988,7 +5018,7 @@
                             - \tweak staff-padding #9
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            a4.
+                            aqf4.
                             - \tenuto
                             \stopTextSpanOne
                             ~
@@ -5000,8 +5030,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        4
-                                                        8
+                                                        3
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -5012,11 +5042,11 @@
                         \times 2/3 {
                             % [Voice 1 measure 39] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            a4
+                            aqf4
                             - \tweak style #'solid-line
                             \glissando
-                            \once \override Staff.NoteHead.style = #'diamond
-                            aqf8
+                            \once \override Staff.NoteHead.style = #'triangle
+                            gqs8
                             _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -5031,8 +5061,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        3
-                                                        8
+                                                        2
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -5060,7 +5090,7 @@
                             \clef "treble"
                             bes''4
                             \f
-                            - \tenuto
+                            - \snappizzicato
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
@@ -5071,7 +5101,7 @@
                                 \concat
                                     {
                                         \upright
-                                            sp.
+                                            msp.
                                         \hspace
                                             #0.5
                                     }
@@ -5082,7 +5112,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        1/2-clt.
+                                        \upright
+                                            1/2-clt.
                                         \hspace
                                             #0.5
                                     }
@@ -5093,20 +5124,20 @@
                             bes''16
                             [
                             \ottava 1
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             dtef'''8
-                            - \tenuto
+                            - \espressivo
                             \ottava 0
                         }
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         d'''16
-                        :32
+                        - \tenuto
                         \ottava 0
                         \once \override Staff.NoteHead.style = #'default
                         bef''8.
-                        :32
                         \mf
+                        - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTextSpanTwo
@@ -5115,7 +5146,7 @@
                             \concat
                                 {
                                     \upright
-                                        msp.
+                                        ord.
                                     \hspace
                                         #0.5
                                 }
@@ -5125,9 +5156,10 @@
                         ]
                     }
                     {
+                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        cs'4
+                        fs''4
                         \ff
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5152,7 +5184,8 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        flat-hair-arco
                                     \hspace
                                         #0.5
                                 }
@@ -5161,7 +5194,7 @@
                         \startTextSpanThree
                         % [Voice 1 measure 40] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        cs'4
+                        fs''4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -5175,11 +5208,12 @@
                             }
                         - \tweak staff-padding #12
                         \startTextSpanTwo
+                        \ottava 0
                     }
                     {
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        af4
+                        g4
                         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
                         - \espressivo
                         - \tweak stencil #constante-hairpin
@@ -5206,7 +5240,7 @@
                                 % [Voice 1 measure 41] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
                                 \clef "varC"
-                                e32
+                                ef32
                                 \ppp
                                 - \tenuto
                                 \<
@@ -5221,8 +5255,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5245,7 +5279,8 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            arco
+                                            \upright
+                                                3/4-hair-arco
                                             \hspace
                                                 #0.5
                                         }
@@ -5253,8 +5288,8 @@
                                 - \tweak staff-padding #15
                                 \startTextSpanThree
                                 [
-                                \once \override Staff.NoteHead.style = #'diamond
-                                ef32.
+                                \once \override Staff.NoteHead.style = #'triangle
+                                dqf32.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -5265,8 +5300,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            5
-                                                            8
+                                                            2
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5287,8 +5322,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        1
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -5309,8 +5344,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            4
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5330,8 +5365,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            2
-                                                            8
+                                                            3
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5350,8 +5385,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            7
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5362,7 +5397,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 \once \override Staff.NoteHead.style = #'default
-                                e8
+                                dqf8
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -5373,8 +5408,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            4
-                                                            8
+                                                            5
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5382,7 +5417,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                f16.
+                                ef16.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -5393,8 +5428,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            3
-                                                            8
+                                                            6
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5403,7 +5438,7 @@
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            e8
+                            cqs8
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -5414,8 +5449,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        1
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -5427,93 +5462,9 @@
                         \times 7/13 {
                             \times 4/5 {
                                 % [Voice 1 measure 42] %! COMMENT_MEASURE_NUMBERS
-                                \once \override Staff.NoteHead.style = #'diamond
-                                ef16
+                                \once \override Staff.NoteHead.style = #'triangle
+                                c16
                                 - \accent
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            8
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                e16.
-                                - \portato
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            5
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                ]
-                            }
-                            \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            ef2
-                            - \tenuto
-                            \stopTextSpanOne
-                            - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            \center-align
-                                                \vcenter
-                                                    \fraction
-                                                        6
-                                                        8
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak staff-padding #9
-                            \startTextSpanOne
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 3/5 {
-                                \once \override Staff.NoteHead.style = #'default
-                                d4
-                                - \accent
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            1
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'default
-                                ef8
-                                - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -5524,16 +5475,16 @@
                                                     \vcenter
                                                         \fraction
                                                             2
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
                                     }
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'default
-                                d4
-                                - \tenuto
+                                \once \override Staff.NoteHead.style = #'harmonic-mixed
+                                cqs16.
+                                - \portato
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -5544,7 +5495,91 @@
                                                     \vcenter
                                                         \fraction
                                                             1
-                                                            8
+                                                            7
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                ]
+                            }
+                            \once \override Staff.NoteHead.style = #'harmonic-mixed
+                            c2
+                            - \tenuto
+                            \stopTextSpanOne
+                            - \abjad-solid-line-with-arrow
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            \center-align
+                                                \vcenter
+                                                    \fraction
+                                                        4
+                                                        7
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/5 {
+                                \once \override Staff.NoteHead.style = #'default
+                                ef4
+                                - \accent
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            3
+                                                            7
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'default
+                                dqf8
+                                - \espressivo
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            7
+                                                            7
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'default
+                                e4
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            5
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5566,8 +5601,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            4
-                                                            8
+                                                            6
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5575,7 +5610,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                d8.
+                                e8.
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -5586,8 +5621,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            3
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5595,7 +5630,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                             }
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             ef4
                             - \portato
                             \stopTextSpanOne
@@ -5607,8 +5642,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        2
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -5621,7 +5656,7 @@
                             \times 2/3 {
                                 % [Voice 1 measure 43] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                d4
+                                fs4
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -5632,8 +5667,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5641,7 +5676,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                dqf4
+                                g4
                                 - \accent
                                 \stopTextSpanOne
                                 ~
@@ -5653,8 +5688,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            5
-                                                            8
+                                                            4
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5662,10 +5697,10 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                dqf16
+                                g16
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            d2
+                            fqs2
                             - \espressivo
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -5676,8 +5711,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        3
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -5686,7 +5721,7 @@
                             \startTextSpanOne
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
-                                dqf8
+                                fs8
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -5697,8 +5732,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            7
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5707,7 +5742,7 @@
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
-                                d8.
+                                fqs8.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -5718,8 +5753,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            2
-                                                            8
+                                                            5
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5728,7 +5763,7 @@
                                 \startTextSpanOne
                                 ]
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                ef4
+                                f4
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -5739,8 +5774,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            6
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5751,7 +5786,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'default
-                                e2
+                                dqf2
                                 - \portato
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -5762,15 +5797,15 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            4
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
                                     }
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'diamond
+                                \once \override Staff.NoteHead.style = #'triangle
                                 ef4.
                                 - \tenuto
                                 \stopTextSpanOne
@@ -5782,8 +5817,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            3
-                                                            8
+                                                            2
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -5792,7 +5827,7 @@
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            d4
+                            fqs4
                             \ff
                             - \accent
                             - \tweak stencil #constante-hairpin
@@ -5807,8 +5842,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        1
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -5836,8 +5871,8 @@
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             \clef "treble"
                             dtef'''8.
+                            :32
                             \f
-                            - \portato
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
@@ -5847,7 +5882,7 @@
                                 \concat
                                     {
                                         \upright
-                                            ord.
+                                            st.
                                         \hspace
                                             #0.5
                                     }
@@ -5858,7 +5893,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        arco
+                                        \upright
+                                            1/2-hair-arco
                                         \hspace
                                             #0.5
                                     }
@@ -5868,21 +5904,21 @@
                             [
                             \ottava 0
                             \ottava 1
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             def'''8
                             :32
                             ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             def'''8
                             :32
                             \ottava 0
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
                             eqf'''16
-                            - \tenuto
+                            - \snappizzicato
                             ~
                         }
                         \once \override Staff.NoteHead.style = #'default
@@ -5892,7 +5928,7 @@
                         \once \override Staff.NoteHead.style = #'default
                         gtef''4
                         \mf
-                        - \espressivo
+                        - \portato
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTextSpanTwo
@@ -5901,7 +5937,7 @@
                             \concat
                                 {
                                     \upright
-                                        st.
+                                        ord.
                                     \hspace
                                         #0.5
                                 }
@@ -5915,7 +5951,7 @@
                             % [Voice 1 measure 45] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             \clef "varC"
-                            aqf4
+                            af4
                             \mp
                             - \accent
                             \>
@@ -5932,8 +5968,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        2
-                                                        8
+                                                        1
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -5952,7 +5988,7 @@
                                 }
                             - \tweak staff-padding #12
                             \startTextSpanTwo
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             a8
                             _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
                             - \tenuto
@@ -5968,8 +6004,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        1
-                                                        8
+                                                        4
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -5994,9 +6030,10 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             \ottava 1
+                            \ottava 1
                             \once \override Staff.NoteHead.style = #'default
                             \clef "varC"
-                            d''4.
+                            <ef'' af''>4.
                             \ff
                             - \accent
                             - \tweak stencil #constante-hairpin
@@ -6020,7 +6057,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        arco
+                                        \upright
+                                            flat-hair-arco
                                         \hspace
                                             #0.5
                                     }
@@ -6028,9 +6066,9 @@
                             - \tweak staff-padding #15
                             \startTextSpanThree
                             \ottava 0
-                            \ottava 1
+                            \ottava 0
                             \once \override Staff.NoteHead.style = #'default
-                            fs''8
+                            a8
                             - \tenuto
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
@@ -6045,7 +6083,6 @@
                                 }
                             - \tweak staff-padding #12
                             \startTextSpanTwo
-                            \ottava 0
                         }
                     }
                     {
@@ -6062,7 +6099,7 @@
                                 % [Voice 1 measure 46] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 \clef "varC"
-                                dqf8.
+                                fs8.
                                 \ppp
                                 - \espressivo
                                 \<
@@ -6077,8 +6114,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            4
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -6101,7 +6138,8 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            1/2-clt.
+                                            \upright
+                                                1/2-clt.
                                             \hspace
                                                 #0.5
                                         }
@@ -6110,7 +6148,7 @@
                                 \startTextSpanThree
                                 [
                                 \once \override Staff.NoteHead.style = #'default
-                                cqs8
+                                gqf8
                                 - \tenuto
                                 \stopTextSpanOne
                                 ~
@@ -6122,8 +6160,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            5
-                                                            8
+                                                            3
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -6131,11 +6169,11 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                cqs32
+                                gqf32
                                 ]
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            dqf4
+                            fs4
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -6146,8 +6184,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        7
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -6156,7 +6194,7 @@
                             \startTextSpanOne
                             \times 4/5 {
                                 \once \override Staff.NoteHead.style = #'default
-                                d16
+                                ef16
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -6167,8 +6205,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            5
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -6177,7 +6215,7 @@
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                dqf16
+                                f16
                                 - \portato
                                 \stopTextSpanOne
                                 ~
@@ -6189,8 +6227,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            2
-                                                            8
+                                                            6
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -6198,9 +6236,9 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                dqf64
+                                f64
                                 \once \override Staff.NoteHead.style = #'default
-                                cqs16.
+                                gqf16.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -6212,7 +6250,7 @@
                                                     \vcenter
                                                         \fraction
                                                             1
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -6223,8 +6261,8 @@
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/7 {
-                                \once \override Staff.NoteHead.style = #'diamond
-                                dqf4
+                                \once \override Staff.NoteHead.style = #'triangle
+                                fs4
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -6235,8 +6273,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            4
-                                                            8
+                                                            2
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -6244,7 +6282,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                cqs8.
+                                gqf8.
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -6255,8 +6293,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            3
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -6265,7 +6303,7 @@
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            c4
+                            g4
                             \ff
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -6280,8 +6318,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        4
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -6304,10 +6342,9 @@
                     }
                     {
                         % [Voice 1 measure 47] %! COMMENT_MEASURE_NUMBERS
-                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        af''4.
+                        f'4.
                         \ff
                         - \espressivo
                         - \tweak stencil #constante-hairpin
@@ -6332,7 +6369,8 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        flat-hair-arco
                                     \hspace
                                         #0.5
                                 }
@@ -6340,7 +6378,7 @@
                         - \tweak staff-padding #15
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
-                        af''4
+                        f'4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -6354,7 +6392,6 @@
                             }
                         - \tweak staff-padding #12
                         \startTextSpanTwo
-                        \ottava 0
                     }
                     {
                         \times 8/13 {
@@ -6363,7 +6400,7 @@
                                 % [Voice 1 measure 48] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
                                 \clef "varC"
-                                cqs4.
+                                f4.
                                 \ppp
                                 - \tenuto
                                 \<
@@ -6378,8 +6415,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            3
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -6402,7 +6439,8 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            clt
+                                            \upright
+                                                clt.
                                             \hspace
                                                 #0.5
                                         }
@@ -6410,7 +6448,7 @@
                                 - \tweak staff-padding #15
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'default
-                                dqf4
+                                ef4
                                 - \accent
                                 \stopTextSpanOne
                                 ~
@@ -6422,8 +6460,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            5
-                                                            8
+                                                            7
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -6431,10 +6469,10 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                dqf16
+                                ef16
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            cqs4
+                            fqs4
                             - \portato
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -6445,8 +6483,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        5
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -6456,7 +6494,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                c8.
+                                fs8.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -6467,8 +6505,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            6
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -6477,7 +6515,7 @@
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
-                                cqs8.
+                                fqs8.
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -6488,16 +6526,16 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            2
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
                                     }
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'diamond
-                                dqf8.
+                                \once \override Staff.NoteHead.style = #'triangle
+                                f8.
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -6508,8 +6546,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            2
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -6521,7 +6559,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                cqs4
+                                g4
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -6532,8 +6570,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            4
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -6541,7 +6579,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                dqf4
+                                fs4
                                 - \tenuto
                                 \stopTextSpanOne
                                 ~
@@ -6553,8 +6591,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            3
-                                                            8
+                                                            4
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -6562,10 +6600,10 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                dqf16
+                                fs16
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            cqs4.
+                            af4.
                             \ff
                             - \accent
                             - \tweak stencil #constante-hairpin
@@ -6580,8 +6618,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        3
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -6604,10 +6642,9 @@
                     }
                     {
                         % [Voice 1 measure 49] %! COMMENT_MEASURE_NUMBERS
-                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        ef''4
+                        fs'4
                         \ff
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6631,16 +6668,16 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        flat-hair-arco
                                     \hspace
                                         #0.5
                                 }
                             }
                         - \tweak staff-padding #15
                         \startTextSpanThree
-                        \ottava 0
                         \once \override Staff.NoteHead.style = #'default
-                        a4.
+                        a'4.
                         - \tenuto
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
@@ -6660,11 +6697,11 @@
                         \times 8/9 {
                             % [Voice 1 measure 50] %! COMMENT_MEASURE_NUMBERS
                             \ottava 1
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             \clef "treble"
                             eef'''16
+                            :32
                             \f
-                            - \tenuto
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
@@ -6674,7 +6711,7 @@
                                 \concat
                                     {
                                         \upright
-                                            ord.
+                                            st.
                                         \hspace
                                             #0.5
                                     }
@@ -6685,7 +6722,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        1/2-clt.
+                                        \upright
+                                            1/2-clt.
                                         \hspace
                                             #0.5
                                     }
@@ -6699,24 +6737,22 @@
                             - \tenuto
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             fqs''16
-                            :32
+                            - \snappizzicato
                             ]
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             eef''4
-                            :32
+                            - \espressivo
                             ~
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             eef''16
-                            :32
                             ~
                             [
                         }
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         eef''16
-                        :32
                         \once \override Staff.NoteHead.style = #'default
                         c''8.
-                        - \portato
+                        - \tenuto
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
@@ -6725,11 +6761,11 @@
                             c''16
                             \once \override Staff.NoteHead.style = #'default
                             dqs''8.
-                            :32
+                            - \tenuto
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             ef''8.
+                            :32
                             \mf
-                            - \tenuto
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTextSpanTwo
@@ -6768,8 +6804,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    8
-                                                    8
+                                                    5
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -6790,8 +6826,8 @@
                         \startTextSpanTwo
                         \times 4/5 {
                             % [Voice 1 measure 52] %! COMMENT_MEASURE_NUMBERS
-                            \once \override Staff.NoteHead.style = #'diamond
-                            a8
+                            \once \override Staff.NoteHead.style = #'triangle
+                            aqf8
                             - \accent
                             \stopTextSpanOne
                             - \tweak style #'solid-line
@@ -6804,8 +6840,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        7
-                                                        8
+                                                        3
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -6825,8 +6861,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        2
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -6853,8 +6889,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
+                                                    1
                                                     5
-                                                    8
                                     \hspace
                                         #0.5
                                 }
@@ -6867,8 +6903,8 @@
                             bf4
                             - \tweak style #'solid-line
                             \glissando
-                            \once \override Staff.NoteHead.style = #'diamond
-                            bqf8
+                            \once \override Staff.NoteHead.style = #'triangle
+                            b8
                             - \espressivo
                             \stopTextSpanOne
                             ~
@@ -6881,7 +6917,7 @@
                                                 \vcenter
                                                     \fraction
                                                         4
-                                                        8
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -6890,13 +6926,13 @@
                             \startTextSpanOne
                             [
                         }
-                        \once \override Staff.NoteHead.style = #'diamond
-                        bqf8
+                        \once \override Staff.NoteHead.style = #'triangle
+                        b8
                         - \tweak style #'solid-line
                         \glissando
                         ]
                         \once \override Staff.NoteHead.style = #'default
-                        b2
+                        c'2
                         - \accent
                         \stopTextSpanOne
                         - \tweak style #'solid-line
@@ -6909,8 +6945,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    3
-                                                    8
+                                                    5
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -6919,7 +6955,7 @@
                         \startTextSpanOne
                         % [Voice 1 measure 54] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        bqs4
+                        cqs'4
                         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6934,8 +6970,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    2
-                                                    8
+                                                    3
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -6956,11 +6992,11 @@
                         \startTextSpanTwo
                     }
                     {
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         \clef "treble"
                         eqf''8
+                        :32
                         \f
-                        - \espressivo
                         \>
                         \stopTextSpanOne
                         \stopTextSpanTwo
@@ -6981,7 +7017,8 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    clt
+                                    \upright
+                                        clt.
                                     \hspace
                                         #0.5
                                 }
@@ -6991,25 +7028,25 @@
                         [
                         \once \override Staff.NoteHead.style = #'default
                         dqs''8
-                        - \tenuto
+                        - \snappizzicato
                         \once \override Staff.NoteHead.style = #'default
                         bes''16
-                        - \tenuto
+                        - \portato
                         \ottava 1
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         eef'''8.
                         :32
                         ~
                         \times 4/5 {
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             eef'''8.
                             :32
                             \ottava 0
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
                             dtef'''8
-                            :32
                             \mf
+                            - \tenuto
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTextSpanTwo
@@ -7029,9 +7066,10 @@
                         }
                     }
                     {
+                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        ef'8
+                        <b' e''>8
                         \ff
                         - \accent
                         - \tweak stencil #constante-hairpin
@@ -7055,21 +7093,24 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        flat-hair-arco
                                     \hspace
                                         #0.5
                                 }
                             }
                         - \tweak staff-padding #15
                         \startTextSpanThree
+                        \ottava 0
+                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        bf8
+                        f''8
                         - \tenuto
                         ~
                         ]
                         % [Voice 1 measure 55] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        bf4
+                        f''4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -7083,11 +7124,12 @@
                             }
                         - \tweak staff-padding #12
                         \startTextSpanTwo
+                        \ottava 0
                     }
                     {
-                        \once \override Staff.NoteHead.style = #'diamond
+                        \once \override Staff.NoteHead.style = #'triangle
                         \clef "varC"
-                        c'4
+                        dqf'4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -7115,7 +7157,7 @@
                                 % [Voice 1 measure 56] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
                                 \clef "varC"
-                                dqf8.
+                                g8.
                                 \ppp
                                 - \portato
                                 \<
@@ -7130,8 +7172,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            7
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -7154,7 +7196,8 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            1/2-clt.
+                                            \upright
+                                                1/2-clt.
                                             \hspace
                                                 #0.5
                                         }
@@ -7163,7 +7206,7 @@
                                 \startTextSpanThree
                                 [
                                 \once \override Staff.NoteHead.style = #'default
-                                d8
+                                gqf8
                                 - \tenuto
                                 \stopTextSpanOne
                                 ~
@@ -7176,7 +7219,7 @@
                                                     \vcenter
                                                         \fraction
                                                             5
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -7184,10 +7227,10 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                d32
+                                gqf32
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            ef8.
+                            fs8.
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -7199,7 +7242,7 @@
                                                 \vcenter
                                                     \fraction
                                                         6
-                                                        8
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -7208,7 +7251,7 @@
                             \startTextSpanOne
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
-                                d16.
+                                aqf16.
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -7220,15 +7263,15 @@
                                                     \vcenter
                                                         \fraction
                                                             1
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
                                     }
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'diamond
-                                dqf16.
+                                \once \override Staff.NoteHead.style = #'triangle
+                                bf16.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -7240,7 +7283,7 @@
                                                     \vcenter
                                                         \fraction
                                                             2
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -7248,7 +7291,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                cqs16.
+                                cqs'16.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -7260,7 +7303,7 @@
                                                     \vcenter
                                                         \fraction
                                                             1
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -7271,7 +7314,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/6 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                dqf16.
+                                bqs16.
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -7283,7 +7326,7 @@
                                                     \vcenter
                                                         \fraction
                                                             4
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -7291,7 +7334,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                cqs16.
+                                cqs'16.
                                 - \portato
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -7303,7 +7346,7 @@
                                                     \vcenter
                                                         \fraction
                                                             3
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -7312,7 +7355,7 @@
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            dqf8.
+                            bqs8.
                             \ff
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -7328,7 +7371,7 @@
                                                 \vcenter
                                                     \fraction
                                                         7
-                                                        8
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -7355,7 +7398,7 @@
                             % [Voice 1 measure 57] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
                             \clef "varC"
-                            bqs4.
+                            cqs'4.
                             \mp
                             - \accent
                             \>
@@ -7372,8 +7415,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        1
-                                                        8
+                                                        2
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -7392,8 +7435,8 @@
                                 }
                             - \tweak staff-padding #12
                             \startTextSpanTwo
-                            \once \override Staff.NoteHead.style = #'diamond
-                            c'4
+                            \once \override Staff.NoteHead.style = #'triangle
+                            cs'4
                             - \tenuto
                             \stopTextSpanOne
                             ~
@@ -7405,8 +7448,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        8
-                                                        8
+                                                        1
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -7414,13 +7457,13 @@
                             - \tweak staff-padding #9
                             \startTextSpanOne
                         }
-                        \once \override Staff.NoteHead.style = #'diamond
-                        c'8.
+                        \once \override Staff.NoteHead.style = #'triangle
+                        cs'8.
                         - \tweak style #'solid-line
                         \glissando
                         [
                         \once \override Staff.NoteHead.style = #'default
-                        cqs'8.
+                        d'8.
                         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -7435,8 +7478,8 @@
                                         \center-align
                                             \vcenter
                                                 \fraction
-                                                    7
-                                                    8
+                                                    4
+                                                    5
                                     \hspace
                                         #0.5
                                 }
@@ -7469,7 +7512,7 @@
                             % [Voice 1 measure 58] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             \clef "varC"
-                            c'8
+                            cs'8
                             \mp
                             - \espressivo
                             \>
@@ -7486,8 +7529,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        5
+                                                        5
                                         \hspace
                                             #0.5
                                     }
@@ -7506,8 +7549,8 @@
                                 }
                             - \tweak staff-padding #12
                             \startTextSpanTwo
-                            \once \override Staff.NoteHead.style = #'diamond
-                            cqs'4
+                            \once \override Staff.NoteHead.style = #'triangle
+                            dqf'4
                             _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
                             - \accent
                             - \tweak stencil #constante-hairpin
@@ -7522,8 +7565,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        3
                                                         5
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -7545,9 +7588,10 @@
                         }
                     }
                     {
+                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        cs'4.
+                        bf''4.
                         \ff
                         - \espressivo
                         - \tweak stencil #constante-hairpin
@@ -7571,13 +7615,15 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        flat-hair-arco
                                     \hspace
                                         #0.5
                                 }
                             }
                         - \tweak staff-padding #15
                         \startTextSpanThree
+                        \ottava 0
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -7588,7 +7634,7 @@
                             \clef "treble"
                             ctes'''8
                             \f
-                            - \portato
+                            - \snappizzicato
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
@@ -7609,7 +7655,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        1/2-clt.
+                                        \upright
+                                            1/2-clt.
                                         \hspace
                                             #0.5
                                     }
@@ -7619,9 +7666,9 @@
                             [
                             \ottava 0
                             \ottava 1
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             ctes'''8.
-                            :32
+                            - \espressivo
                             \ottava 0
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
@@ -7636,7 +7683,7 @@
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         ctes'''16
-                        - \espressivo
+                        - \tenuto
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/7 {
@@ -7645,14 +7692,15 @@
                             \ottava 0
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             gef''16
-                            - \tenuto
+                            :32
                             ]
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             fs''4
-                            - \tenuto
+                            :32
                             ~
-                            \once \override Staff.NoteHead.style = #'diamond
+                            \once \override Staff.NoteHead.style = #'triangle
                             fs''16
+                            :32
                             \mf
                             - \tweak stencil #constante-hairpin
                             \<
@@ -7674,9 +7722,10 @@
                     {
                         \times 8/9 {
                             % [Voice 1 measure 61] %! COMMENT_MEASURE_NUMBERS
+                            \ottava 1
                             \once \override Staff.NoteHead.style = #'default
                             \clef "varC"
-                            c''4
+                            af''4
                             \ff
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -7700,24 +7749,23 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        arco
+                                        \upright
+                                            flat-hair-arco
                                         \hspace
                                             #0.5
                                     }
                                 }
                             - \tweak staff-padding #15
                             \startTextSpanThree
-                            \ottava 1
+                            \ottava 0
                             \once \override Staff.NoteHead.style = #'default
-                            fs''2
+                            <g b>2
                             - \tenuto
                             ~
                             \once \override Staff.NoteHead.style = #'default
-                            fs''8
-                            \ottava 0
-                            \ottava 1
+                            <g b>8
                             \once \override Staff.NoteHead.style = #'default
-                            e''4
+                            af4
                             - \accent
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
@@ -7732,7 +7780,6 @@
                                 }
                             - \tweak staff-padding #12
                             \startTextSpanTwo
-                            \ottava 0
                         }
                     }
                     {
@@ -7741,7 +7788,7 @@
                             % [Voice 1 measure 62] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
                             \clef "varC"
-                            cqs8.
+                            dqs'8.
                             \ppp
                             - \accent
                             \<
@@ -7756,8 +7803,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        8
-                                                        8
+                                                        5
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -7780,7 +7827,8 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        arco
+                                        \upright
+                                            3/4-hair-arco
                                         \hspace
                                             #0.5
                                     }
@@ -7789,7 +7837,7 @@
                             \startTextSpanThree
                             [
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            dqf8.
+                            dqf'8.
                             - \espressivo
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -7800,8 +7848,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        5
-                                                        8
+                                                        6
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -7810,7 +7858,7 @@
                             \startTextSpanOne
                             ]
                             \once \override Staff.NoteHead.style = #'default
-                            cqs4.
+                            eqf'4.
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -7821,8 +7869,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        1
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -7830,8 +7878,8 @@
                             - \tweak staff-padding #9
                             \startTextSpanOne
                             \times 2/3 {
-                                \once \override Staff.NoteHead.style = #'diamond
-                                c8.
+                                \once \override Staff.NoteHead.style = #'triangle
+                                eqs'8.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -7842,8 +7890,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            2
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -7852,7 +7900,7 @@
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                cqs8.
+                                fqs'8.
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -7863,8 +7911,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            2
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -7872,7 +7920,7 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                dqf8.
+                                fs'8.
                                 - \portato
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -7883,8 +7931,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            1
-                                                            8
+                                                            4
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -7893,7 +7941,7 @@
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
-                            cqs8.
+                            dqs'8.
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -7904,8 +7952,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        4
-                                                        8
+                                                        3
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -7913,7 +7961,7 @@
                             - \tweak staff-padding #9
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'default
-                            dqf8.
+                            eqs'8.
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -7924,8 +7972,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        3
-                                                        8
+                                                        7
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -7934,7 +7982,7 @@
                             \startTextSpanOne
                             ]
                             \once \override Staff.NoteHead.style = #'default
-                            d4.
+                            gqf'4.
                             \ff
                             - \espressivo
                             - \tweak stencil #constante-hairpin
@@ -7949,8 +7997,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        5
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -7975,7 +8023,7 @@
                         % [Voice 1 measure 63] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        cs''8
+                        cs'8
                         \ff
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -7999,23 +8047,27 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        flat-hair-arco
                                     \hspace
                                         #0.5
                                 }
                             }
                         - \tweak staff-padding #15
                         \startTextSpanThree
+                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        f'2
+                        d''2
                         - \espressivo
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             \once \override Staff.NoteHead.style = #'default
-                            f'8
+                            d''8
+                            \ottava 0
+                            \ottava 1
                             \once \override Staff.NoteHead.style = #'default
-                            fs'4
+                            fs''4
                             - \tenuto
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
@@ -8030,6 +8082,7 @@
                                 }
                             - \tweak staff-padding #12
                             \startTextSpanTwo
+                            \ottava 0
                         }
                     }
                     {
@@ -8046,7 +8099,7 @@
                                 % [Voice 1 measure 64] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 \clef "varC"
-                                ef16
+                                g'16
                                 \ppp
                                 - \tenuto
                                 \<
@@ -8061,8 +8114,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            8
-                                                            8
+                                                            6
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -8085,7 +8138,8 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            1/2-clt.
+                                            \upright
+                                                1/2-clt.
                                             \hspace
                                                 #0.5
                                         }
@@ -8094,7 +8148,7 @@
                                 \startTextSpanThree
                                 [
                                 \once \override Staff.NoteHead.style = #'default
-                                d16.
+                                gqf'16.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -8105,8 +8159,8 @@
                                                 \center-align
                                                     \vcenter
                                                         \fraction
-                                                            5
-                                                            8
+                                                            1
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -8115,8 +8169,8 @@
                                 \startTextSpanOne
                                 ]
                             }
-                            \once \override Staff.NoteHead.style = #'diamond
-                            dqf2
+                            \once \override Staff.NoteHead.style = #'triangle
+                            fs'2
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
@@ -8127,8 +8181,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
-                                                        6
-                                                        8
+                                                        2
+                                                        7
                                         \hspace
                                             #0.5
                                     }
@@ -8138,7 +8192,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                cqs4
+                                dqs'4
                                 - \portato
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
@@ -8150,7 +8204,7 @@
                                                     \vcenter
                                                         \fraction
                                                             1
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -8158,51 +8212,8 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                dqf8
+                                eqs'8
                                 - \tenuto
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            2
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                                \once \override Staff.NoteHead.style = #'default
-                                cqs4
-                                - \accent
-                                \stopTextSpanOne
-                                - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                \center-align
-                                                    \vcenter
-                                                        \fraction
-                                                            1
-                                                            8
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                - \tweak staff-padding #9
-                                \startTextSpanOne
-                            }
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 6/7 {
-                                \once \override Staff.NoteHead.style = #'default
-                                c4
-                                - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -8213,7 +8224,7 @@
                                                     \vcenter
                                                         \fraction
                                                             4
-                                                            8
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -8221,8 +8232,8 @@
                                 - \tweak staff-padding #9
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
-                                cqs8.
-                                - \tenuto
+                                d'4
+                                - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -8233,7 +8244,50 @@
                                                     \vcenter
                                                         \fraction
                                                             3
-                                                            8
+                                                            7
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                            }
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 6/7 {
+                                \once \override Staff.NoteHead.style = #'default
+                                dqf'4
+                                - \espressivo
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            7
+                                                            7
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                - \tweak staff-padding #9
+                                \startTextSpanOne
+                                \once \override Staff.NoteHead.style = #'default
+                                cqs'8.
+                                - \tenuto
+                                \stopTextSpanOne
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup {
+                                    \concat
+                                        {
+                                            \upright
+                                                \center-align
+                                                    \vcenter
+                                                        \fraction
+                                                            5
+                                                            7
                                             \hspace
                                                 #0.5
                                         }
@@ -8242,7 +8296,7 @@
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            dqf4
+                            bqs4
                             \ff
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -8257,8 +8311,8 @@
                                             \center-align
                                                 \vcenter
                                                     \fraction
+                                                        6
                                                         7
-                                                        8
                                         \hspace
                                             #0.5
                                     }
@@ -8288,9 +8342,11 @@
                     }
                     {
                         % [Voice 1 measure 65] %! COMMENT_MEASURE_NUMBERS
+                        \ottava 1
+                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        a'2
+                        <ef'' af''>2
                         \ff
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -8315,7 +8371,8 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        flat-hair-arco
                                     \hspace
                                         #0.5
                                 }
@@ -8326,18 +8383,19 @@
                         \times 5/6 {
                             % [Voice 1 measure 66] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
-                            a'8
+                            <ef'' af''>8
+                            \ottava 0
+                            \ottava 0
                             \once \override Staff.NoteHead.style = #'default
-                            b'4.
+                            a4.
                             - \accent
-                            \ottava 1
                             \once \override Staff.NoteHead.style = #'default
-                            e''4
+                            f'4
                             - \tenuto
                             ~
                         }
                         \once \override Staff.NoteHead.style = #'default
-                        e''4.
+                        f'4.
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -8351,7 +8409,6 @@
                             }
                         - \tweak staff-padding #12
                         \startTextSpanTwo
-                        \ottava 0
                     }
                     {
                         % [Voice 1 measure 67] %! COMMENT_MEASURE_NUMBERS
@@ -8362,10 +8419,9 @@
                         \stopTextSpanThree
                     }
                     {
-                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        f''4.
+                        fs'4.
                         \ff
                         - \espressivo
                         - \tweak stencil #constante-hairpin
@@ -8389,47 +8445,48 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    arco
+                                    \upright
+                                        flat-hair-arco
                                     \hspace
                                         #0.5
                                 }
                             }
                         - \tweak staff-padding #15
                         \startTextSpanThree
-                        \ottava 0
                         % [Voice 1 measure 68] %! COMMENT_MEASURE_NUMBERS
-                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        bf''4
+                        a'4
                         - \tenuto
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             \once \override Staff.NoteHead.style = #'default
-                            bf''8
-                            \ottava 0
+                            a'8
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
-                            af''2
+                            <b' e''>2
                             - \tenuto
                             ~
                             \once \override Staff.NoteHead.style = #'default
-                            af''8
+                            <b' e''>8
                             \ottava 0
                         }
                         % [Voice 1 measure 69] %! COMMENT_MEASURE_NUMBERS
+                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        g4.
+                        f''4.
                         - \accent
+                        \ottava 0
+                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        b8
+                        bf''8
                         - \tenuto
                         ~
                         \once \override Staff.NoteHead.style = #'default
-                        b4
+                        bf''4
                         ~
                         \once \override Staff.NoteHead.style = #'default
-                        b4
+                        bf''4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -8443,6 +8500,7 @@
                             }
                         - \tweak staff-padding #12
                         \startTextSpanTwo
+                        \ottava 0
                     }
                 }
                 % [Staff 1 measure 70] %! COMMENT_MEASURE_NUMBERS

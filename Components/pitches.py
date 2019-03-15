@@ -57,6 +57,7 @@ rotated_sieve = rotate(mirrored_sieve, rotation)
 sieve_list = [x for x in randomWalk(
     random_seed=9,
     length=1000,
+    step_list=[1, 1, 4, 2, 3, 1, ],
     mapped_list=rotated_sieve
             )
         ]
@@ -66,7 +67,9 @@ lst = [5, 6, 9, 11, ]
 permutations = perm(lst)
 c = [0, 11, -10, 9, -8, 7, ]
 transpositions = [[l + c[i] for l in permutations[i]] for i in range(len(c))]
-perm_list = flatten(transpositions)
+perms = flatten(transpositions)
+perm_list = grouper(perms, [1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1])#keep experimenting with this...
+
 
 ######
 #list two is broken
@@ -135,6 +138,7 @@ rotated_walk_list = rotate(mirrored_walk_list, 18)
 random_walk_list = [x for x in randomWalk(
     random_seed=2,
     length=1000,
+    step_list=[1, 2, 2,],
     mapped_list=rotated_walk_list
             )
         ]

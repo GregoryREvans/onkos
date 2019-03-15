@@ -8,13 +8,8 @@ from evans.AttachmentHandlers.SlurHandler import SlurHandler
 from evans.AttachmentHandlers.TextSpanHandler import TextSpanHandler
 from Scores.onkos.Components.pitches import *
 
-# print(sieve_list)
-# print(perm_list)
-# print(analyzed_list)
-# print(random_walk_list)
-
 articulation_handler_one = ArticulationHandler(
-    articulation_list=['tenuto', 'tremolo', 'tremolo', 'portato', 'tremolo', 'tenuto', 'espressivo', 'tenuto', ],
+    articulation_list=['tenuto', 'tremolo', 'tremolo', 'snappizzicato', 'portato', 'tremolo', 'tenuto', 'snappizzicato', 'espressivo', 'tenuto', ],
     continuous=True,
     )
 
@@ -32,7 +27,7 @@ dynamic_handler_one = DynamicHandler(
     )
 
 notehead_handler_one = NoteheadHandler(
-    notehead_list=['default', 'harmonic-mixed', 'diamond', 'default',  'default', 'diamond', 'default',  'harmonic-mixed', 'diamond', 'default',  ],
+    notehead_list=['default', 'harmonic-mixed', 'triangle', 'default',  'default', 'triangle', 'default',  'harmonic-mixed', 'triangle', 'default',  ],
     continuous=True,
     )
 
@@ -42,11 +37,11 @@ pitch_handler_one = PitchHandler(
     )
 
 text_span_handler_one = TextSpanHandler(
-    span_two_positions=['st.', 'ord.', 'sp.', 'msp.', 'ord.',],
+    span_two_positions=['st.', 'ord.', 'st.', 'sp.', 'msp.', 'ord.',],
     span_two_style='dashed-line',
     span_two_padding=12,
     attach_span_two_to='bounds',
-    span_three_positions=['arco', '1/2-clt.', 'clt', '1/2-clt.',],
+    span_three_positions=['1/2-hair-arco', '1/2-clt.', 'clt.', '1/2-clt.',],
     span_three_style='solid-line',
     span_three_padding=15,
     attach_span_three_to='left',
@@ -73,7 +68,7 @@ dynamic_handler_two = DynamicHandler(
     )
 
 notehead_handler_two = NoteheadHandler(
-    notehead_list=['default', 'default', 'harmonic-mixed', 'default', 'diamond', 'harmonic-mixed', 'harmonic-mixed', 'default',  ],
+    notehead_list=['default', 'default', 'harmonic-mixed', 'default', 'triangle', 'harmonic-mixed', 'harmonic-mixed', 'default',  ],
     continuous=True,
     )
 
@@ -83,7 +78,7 @@ pitch_handler_two = PitchHandler(
     )
 
 text_span_handler_two = TextSpanHandler(
-    span_one_positions=['8/8', '5/8', '6/8', '1/8', '2/8', '1/8', '4/8', '3/8', '7/8', ],
+    span_one_positions=['7/7', '5/7', '6/7', '1/7', '2/7', '1/7', '4/7', '3/7', ],
     span_one_style='solid-line',
     span_one_padding=9,
     attach_span_one_to='leaves',
@@ -91,7 +86,7 @@ text_span_handler_two = TextSpanHandler(
     span_two_style='dashed-line',
     span_two_padding=12,
     attach_span_two_to='bounds',
-    span_three_positions=['clt', '1/2-clt.', 'arco', '1/2-clt.', ],
+    span_three_positions=['clt.', '1/2-clt.', '3/4-hair-arco', '1/2-clt.', ],
     span_three_style='solid-line',
     span_three_padding=15,
     attach_span_three_to='left',
@@ -123,7 +118,7 @@ glissando_handler_three = GlissandoHandler(
     )
 
 notehead_handler_three = NoteheadHandler(
-    notehead_list=['harmonic-mixed', 'diamond', 'default', 'diamond', 'default', 'harmonic-mixed', 'diamond', 'default', ],
+    notehead_list=['harmonic-mixed', 'triangle', 'default', 'triangle', 'default', 'harmonic-mixed', 'triangle', 'default', ],
     continuous=True,
     )
 
@@ -133,7 +128,7 @@ pitch_handler_three = PitchHandler(
     )
 
 text_span_handler_three = TextSpanHandler(
-    span_one_positions=['8/8', '7/8', '6/8', '5/8', '4/8', '3/8', '2/8', '1/8', ],
+    span_one_positions=['1/5', '4/5', '5/5', '3/5', '2/5', ],
     span_one_style='solid-line',
     span_one_padding=9,
     attach_span_one_to='leaves',
@@ -178,7 +173,7 @@ text_span_handler_four = TextSpanHandler(
     span_two_style='dashed-line',
     span_two_padding=12,
     attach_span_two_to='bounds',
-    span_three_positions=['arco',],
+    span_three_positions=['flat-hair-arco', ],
     span_three_style='solid-line',
     span_three_padding=15,
     attach_span_three_to='left',
