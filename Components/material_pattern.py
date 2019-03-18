@@ -52,8 +52,20 @@ material_list = []
 for x in materials:
     material_list.extend(x)
 
-# print(key_list_1)
-# print(key_list_2)
-# print(key_list_3)
-# print(key_list_4)
-# print(key_list_5)
+#### Segment_II
+
+key_list2 = ['music_maker_one', 'music_maker_two', 'music_maker_one', 'silence_maker', 'music_maker_two', 'music_maker_one', 'music_maker_two', 'music_maker_one', 'silence_maker', 'music_maker_two', 'music_maker_one', 'silence_maker', 'music_maker_two', 'music_maker_one', 'silence_maker', 'music_maker_one',]
+
+dict2 = {
+    'music_maker_one': music_maker_five,
+    'music_maker_two': music_maker_six,
+    'silence_maker': silence_maker,
+}
+
+
+material_list_1_2 = [dict2[x] for x in key_list2]
+
+materials2 = [material_list_1_2, ]
+material_list2 = []
+for x in materials2:
+    material_list2.extend(x)

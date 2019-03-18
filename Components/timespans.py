@@ -1,11 +1,14 @@
 import abjad
 from evans.abjad_functions.talea_timespan.TimespanMaker import TimespanMaker
 from Scores.onkos.Components.material_pattern import material_list
+from Scores.onkos.Components.material_pattern import material_list2
 from evans.general_tools.cyc import cyc
 from evans.abjad_functions.talea_timespan import timespan_functions
 from Scores.onkos.Components.music_makers import *
 from Scores.onkos.Components.time_signatures import time_signatures
+from Scores.onkos.Components.time_signatures import time_signatures2
 from Scores.onkos.Components.time_signatures import bounds
+from Scores.onkos.Components.time_signatures import bounds2
 
 timespan_maker = TimespanMaker(
     denominator=8,
@@ -61,3 +64,54 @@ offsets = abjad.mathtools.cumulative_sums(
 
 for voice, timespan_list in all_timespans.items():
     all_timespans[voice] = timespan_functions.make_split_list(timespan_list, offsets)
+
+
+######Segment_II
+
+
+timespan_maker2 = TimespanMaker(
+    denominator=8,
+    total_duration=abjad.Duration(65, 8),
+)
+
+counts2 = [2, 3, 5, 11, 13, 11, 7, 5, 3, 2, 3]
+
+timespan_list2 = timespan_maker2(counts2, max_duration=10)
+
+split_list2 = timespan_functions.make_split_list(timespan_list2, bounds2) #only use when I explicity define time signatures without automation
+
+cyclic_materials2 = timespan_functions.cyc(material_list2)
+
+# initial_list = [timespan_list, ]
+initial_list2 = [split_list2, ] #only use when I explicity define time signatures without automation
+
+master_list2 = []
+
+for i, timespan_list in enumerate(initial_list2):
+    for timespan in timespan_list:
+        if isinstance(timespan, abjad.AnnotatedTimespan):
+            timespan.annotation = timespan_functions.TimespanSpecifier(
+                voice_name = f'Voice {i}',
+                rhythm_maker = next(cyclic_materials2),
+            )
+        else:
+            timespan.annotation = timespan_functions.TimespanSpecifier(
+                voice_name = f'Voice {i}',
+                rhythm_maker = silence_maker,
+            )
+    timespan_list.sort()
+    master_list2.append(timespan_list)
+
+master_length2 = len(master_list2)
+voices2 = [f'Voice {i + 1}' for i in range(master_length2)]
+all_timespans2 = {voice : timespan_list for voice, timespan_list in zip(voices2, master_list2)}
+silence_specifier2 = timespan_functions.TimespanSpecifier(rhythm_maker=silence_maker)
+timespan_functions.add_silences_to_timespan_dict(all_timespans2, silence_specifier2)
+
+time_signatures2 = [abjad.TimeSignature(timespan.duration) for timespan in all_timespans2['Voice 1']]
+offsets2 = abjad.mathtools.cumulative_sums(
+    [abjad.Offset(t_s.duration) for t_s in time_signatures2]
+    )
+
+for voice, timespan_list in all_timespans2.items():
+    all_timespans2[voice] = timespan_functions.make_split_list(timespan_list, offsets2)

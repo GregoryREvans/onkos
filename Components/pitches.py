@@ -4,6 +4,7 @@ from Scores.onkos.Components.instruments import instrument_one_range_highest
 import numpy as np
 from evans.general_tools.reduce_mod import reduceMod
 from evans.tool_tests.audio_pitches import get_audio_pitches
+from evans.general_tools.cyc import cyc
 from evans.general_tools.flatten import flatten
 from evans.general_tools.perm import perm
 from evans.general_tools.random_walk import randomWalk
@@ -65,11 +66,18 @@ sieve_list = [x for x in randomWalk(
 
 lst = [5, 6, 9, 11, ]
 permutations = perm(lst)
-c = [0, 11, -10, 9, -8, 7, ]
+c = [0, 11, -10, 9, -8, 7, -6, 5, -4, 3, -2, 1, -11, 10, -9, 8, -7, 6, -5, 4, -3, 2, -1, 0]
 transpositions = [[l + c[i] for l in permutations[i]] for i in range(len(c))]
 perms = flatten(transpositions)
-perm_list = grouper(perms, [1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1])#keep experimenting with this...
-
+cyclic_group = cyc([1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1])
+group_list = []
+for x in perms:
+    group_list.append(next(cyclic_group))
+perm_list = grouper(perms, group_list)#keep experimenting with this...
+# print(permutations)
+# print(transpositions)
+# print(perms)
+# print(perm_list)
 
 ######
 #list two is broken
@@ -140,5 +148,18 @@ random_walk_list = [x for x in randomWalk(
     length=1000,
     step_list=[1, 2, 2,],
     mapped_list=rotated_walk_list
+            )
+        ]
+
+######
+chords = [[5, 8], [8, 16]]
+
+######
+rotated_walk_list2 = rotate(mirrored_walk_list, 20)
+runs = [x for x in randomWalk(
+    random_seed=2,
+    length=1000,
+    step_list=[1, ],
+    mapped_list=rotated_walk_list2
             )
         ]

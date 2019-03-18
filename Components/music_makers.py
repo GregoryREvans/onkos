@@ -57,3 +57,19 @@ music_maker_four = MusicMaker(
     text_span_handler = text_span_handler_four,
     continuous = True,
 )
+
+music_maker_five = MusicMaker(
+    rmaker = rmaker_five,
+    pitch_handler = pitch_handler_five,
+    dynamic_handler = dynamic_handler_five,
+    clef_handler = clef_handler_five,
+    continuous = True,
+)
+
+music_maker_six = MusicMaker(
+    rmaker = rmaker_six,
+    pitch_handler = pitch_handler_six,
+    dynamic_handler = dynamic_handler_six,
+    clef_handler = clef_handler_six,
+    continuous = True,
+)

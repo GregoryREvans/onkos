@@ -179,3 +179,35 @@ text_span_handler_four = TextSpanHandler(
     attach_span_three_to='left',
     continuous=True,
     )
+
+#######
+pitch_handler_five = PitchHandler(
+    pitch_list=chords,
+    continuous=True,
+    )
+dynamic_handler_five = DynamicHandler(
+    starting_dynamic='f',
+    hairpin='--',
+    continuous=True,
+    )
+clef_handler_five = ClefHandler(
+    clef='varC',
+    add_ottavas=True,
+    # ottava_shelf=5,
+    )
+
+#######
+pitch_handler_six = PitchHandler(
+    pitch_list=runs,
+    continuous=True,
+    )
+dynamic_handler_six = DynamicHandler(
+    starting_dynamic='pppp',
+    hairpin='--',
+    continuous=True,
+    )
+clef_handler_six = ClefHandler(
+    clef='varC',
+    add_ottavas=True,
+    # ottava_shelf=5,
+    )

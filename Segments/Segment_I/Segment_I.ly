@@ -250,6 +250,8 @@
             \time 1/1
             s1 * 1
             % [Global Context measure 70] %! COMMENT_MEASURE_NUMBERS
+            \once \override TimeSignature.color = #white
+            \time 1/32
             s1 * 1/32
         }
         \context StaffGroup = "Staff Group"
@@ -6344,7 +6346,7 @@
                         % [Voice 1 measure 47] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        f'4.
+                        ef'4.
                         \ff
                         - \espressivo
                         - \tweak stencil #constante-hairpin
@@ -6378,7 +6380,7 @@
                         - \tweak staff-padding #15
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
-                        f'4
+                        ef'4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -6644,7 +6646,7 @@
                         % [Voice 1 measure 49] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        fs'4
+                        bf4
                         \ff
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6677,7 +6679,7 @@
                         - \tweak staff-padding #15
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
-                        a'4.
+                        cs'4.
                         - \tenuto
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
@@ -7069,7 +7071,7 @@
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        <b' e''>8
+                        <c'' fs''>8
                         \ff
                         - \accent
                         - \tweak stencil #constante-hairpin
@@ -7104,13 +7106,13 @@
                         \ottava 0
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        f''8
+                        e''8
                         - \tenuto
                         ~
                         ]
                         % [Voice 1 measure 55] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        f''4
+                        e''4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -7588,10 +7590,9 @@
                         }
                     }
                     {
-                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        bf''4.
+                        cs''4.
                         \ff
                         - \espressivo
                         - \tweak stencil #constante-hairpin
@@ -7623,7 +7624,6 @@
                             }
                         - \tweak staff-padding #15
                         \startTextSpanThree
-                        \ottava 0
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -7722,10 +7722,9 @@
                     {
                         \times 8/9 {
                             % [Voice 1 measure 61] %! COMMENT_MEASURE_NUMBERS
-                            \ottava 1
                             \once \override Staff.NoteHead.style = #'default
                             \clef "varC"
-                            af''4
+                            c'4
                             \ff
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -7757,15 +7756,14 @@
                                 }
                             - \tweak staff-padding #15
                             \startTextSpanThree
-                            \ottava 0
                             \once \override Staff.NoteHead.style = #'default
-                            <g b>2
+                            <b ef'>2
                             - \tenuto
                             ~
                             \once \override Staff.NoteHead.style = #'default
-                            <g b>8
+                            <b ef'>8
                             \once \override Staff.NoteHead.style = #'default
-                            af4
+                            f'4
                             - \accent
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
@@ -8023,7 +8021,7 @@
                         % [Voice 1 measure 63] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        cs'8
+                        b'8
                         \ff
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -8055,19 +8053,17 @@
                             }
                         - \tweak staff-padding #15
                         \startTextSpanThree
-                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        d''2
+                        bf'2
                         - \espressivo
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             \once \override Staff.NoteHead.style = #'default
-                            d''8
-                            \ottava 0
+                            bf'8
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
-                            fs''4
+                            e''4
                             - \tenuto
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
@@ -8343,10 +8339,9 @@
                     {
                         % [Voice 1 measure 65] %! COMMENT_MEASURE_NUMBERS
                         \ottava 1
-                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        <ef'' af''>2
+                        <d' d''>2
                         \ff
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -8383,19 +8378,18 @@
                         \times 5/6 {
                             % [Voice 1 measure 66] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
-                            <ef'' af''>8
-                            \ottava 0
+                            <d' d''>8
                             \ottava 0
                             \once \override Staff.NoteHead.style = #'default
-                            a4.
+                            f'4.
                             - \accent
                             \once \override Staff.NoteHead.style = #'default
-                            f'4
+                            cs'4
                             - \tenuto
                             ~
                         }
                         \once \override Staff.NoteHead.style = #'default
-                        f'4.
+                        cs'4.
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -8421,7 +8415,7 @@
                     {
                         \once \override Staff.NoteHead.style = #'default
                         \clef "varC"
-                        fs'4.
+                        g'4.
                         \ff
                         - \espressivo
                         - \tweak stencil #constante-hairpin
@@ -8464,29 +8458,26 @@
                             a'8
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
-                            <b' e''>2
+                            <c'' d''>2
                             - \tenuto
                             ~
                             \once \override Staff.NoteHead.style = #'default
-                            <b' e''>8
+                            <c'' d''>8
                             \ottava 0
                         }
                         % [Voice 1 measure 69] %! COMMENT_MEASURE_NUMBERS
-                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        f''4.
+                        af'4.
                         - \accent
-                        \ottava 0
-                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        bf''8
+                        e'8
                         - \tenuto
                         ~
                         \once \override Staff.NoteHead.style = #'default
-                        bf''4
+                        e'4
                         ~
                         \once \override Staff.NoteHead.style = #'default
-                        bf''4
+                        e'4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -8500,19 +8491,19 @@
                             }
                         - \tweak staff-padding #12
                         \startTextSpanTwo
-                        \ottava 0
                     }
+                    % [Voice 1 measure 70] %! COMMENT_MEASURE_NUMBERS
+                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
+                    \once \override Rest.color = #white
+                    r32
+                    \shortfermata
+                    \!
+                    \stopTextSpanOne
+                    \stopTextSpanTwo
+                    \stopTextSpanThree
+                    \bar "||"
+                    \stopStaff \startStaff
                 }
-                % [Staff 1 measure 70] %! COMMENT_MEASURE_NUMBERS
-                \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
-                \once \override Rest.color = #white
-                r32
-                \shortfermata
-                \!
-                \stopTextSpanOne
-                \stopTextSpanTwo
-                \stopTextSpanThree
-                \bar "|."
             }
         >>
     >>

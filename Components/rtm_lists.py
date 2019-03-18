@@ -33,4 +33,4 @@ for x in tuple_list:
     final_rtm_list.append(funnels[a][b])
 
 # final_rtm_list.extend(rotations)
-print(final_rtm_list)
+# print(final_rtm_list)

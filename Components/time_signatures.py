@@ -50,5 +50,18 @@ time_signatures = []
 for x in sets:
     time_signatures.extend(x)
 
+time_signatures_6 = [
+    abjad.TimeSignature(pair) for pair in [
+        (1, 4), (3, 8), (1, 2), (5, 8), (3, 4),
+        (7, 8), (1, 1), (9, 8), (5, 4), (11, 8),
+    ]
+]
+
+sets2 = [time_signatures_6, ]
+time_signatures2 = []
+for x in sets2:
+    time_signatures2.extend(x)
+
 
 bounds = abjad.mathtools.cumulative_sums([_.duration for _ in time_signatures])
+bounds2 = abjad.mathtools.cumulative_sums([_.duration for _ in time_signatures2])
