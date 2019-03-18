@@ -11,11 +11,11 @@ from Scores.onkos.Components.time_signatures import bounds
 from Scores.onkos.Components.time_signatures import bounds2
 
 timespan_maker = TimespanMaker(
-    denominator=8,
-    total_duration=abjad.Duration(477, 8),
+    denominator=32,
+    total_duration=abjad.Duration(1909, 32),
 )
 
-counts = [3, 4, 5, 8, 4, 1, 3, 7, 3, 6, 3, 4, 9, 4, 4, 5, 2, 2, 3, 4, 4,
+counts_list = [3, 4, 5, 8, 4, 1, 3, 7, 3, 6, 3, 4, 9, 4, 4, 5, 2, 2, 3, 4, 4,
                 8, 2, 3, 4, 2, 4, 3, 4, 3, 2, 5, 2, 4, 2, 2, 2, 2, 6,
           3, 5, 8, 7, 2, 2, 9, 2, 2,
           8, 3, 4, 2, 2, 2, 1, 3, 2, 4, 3,
@@ -24,8 +24,9 @@ counts = [3, 4, 5, 8, 4, 1, 3, 7, 3, 6, 3, 4, 9, 4, 4, 5, 2, 2, 3, 4, 4,
                 8, 2, 3, 4, 2, 4, 3, 4, 3, 2, 5, 2, 4, 2, 2, 2, 2, 5,
           4, 3, 2, 2, 3, 4, 2, 3, 8, 9, 5, 4, 2, 7, 1, 4, 5, 3, 3, 3, 2, 5, 4, 2, 2,
                 ]
-
-timespan_list = timespan_maker(counts, max_duration=9)
+counts = [x * 4 for x in counts_list]
+counts.append(1)
+timespan_list = timespan_maker(counts, max_duration=36)
 
 split_list = timespan_functions.make_split_list(timespan_list, bounds) #only use when I explicity define time signatures without automation
 

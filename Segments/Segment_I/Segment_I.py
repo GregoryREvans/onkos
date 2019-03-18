@@ -68,15 +68,12 @@ for voice_name, timespan_list in all_timespans.items():
 #         abjad.mutate(shard).rewrite_meter(time_signature)
 
 print('Adding ending skips ...')
-fermata_time_signature = abjad.TimeSignature((1, 32))
-skip = abjad.Skip(1, multiplier=(fermata_time_signature))
-abjad.attach(fermata_time_signature, skip)
+last_skip = abjad.select(score['Global Context']).leaves()[-1]
 override_command = abjad.LilyPondLiteral(r'\once \override TimeSignature.color = #white', format_slot='before',)
-abjad.attach(override_command, skip)
-score['Global Context'].append(skip)
+abjad.attach(override_command, last_skip)
 
 for voice in abjad.select(score['Staff Group']).components(abjad.Voice):
-    final_rest = abjad.Rest((1, 32))
+    final_rest = abjad.select(voice).components(abjad.Rest)[-1]
     fermata = abjad.Fermata(command='shortfermata')
     start_command = abjad.LilyPondLiteral(
                 r'\stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff',
@@ -91,7 +88,6 @@ for voice in abjad.select(score['Staff Group']).components(abjad.Voice):
     abjad.attach(start_command, final_rest)
     abjad.attach(stop_command, final_rest)
     abjad.attach(note_literal, final_rest)
-    voice.append(final_rest)
 
 
 print('Beaming runs ...')
