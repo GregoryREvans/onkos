@@ -12,4 +12,6 @@ score = abjad.Score([
         ],
         name='Staff Group'
     )
-])
+],
+name='Onkos Score'
+)

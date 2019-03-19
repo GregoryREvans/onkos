@@ -13,7 +13,7 @@
 \paper {}
 
 \score { %! LilyPondFile
-    \new Score
+    \context Score = "Onkos Score"
     <<
         \context TimeSignatureContext = "Global Context"
         {
@@ -53,12 +53,11 @@
             \time 5/4
             s1 * 5/4
             % [Global Context measure 10] %! COMMENT_MEASURE_NUMBERS
-            \time 11/8
-            s1 * 11/8
+            \time 9/8
+            s1 * 9/8
             % [Global Context measure 11] %! COMMENT_MEASURE_NUMBERS
-            \once \override TimeSignature.color = #white
-            \time 1/32
-            s1 * 1/32
+            \time 1/16
+            s1 * 1/16
         }
         \context StaffGroup = "Staff Group"
         <<
@@ -258,25 +257,8 @@
                         \!
                     }
                     {
-                        \times 2/3 {
-                            \clef "varC"
-                            <f' af'>2..
-                            \f
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            \ottava 1
-                            <af' e''>4..
-                            \ottava 0
-                        }
-                    }
-                    {
-                        r4
-                        \!
-                    }
-                    {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 6/7 {
-                            % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        \times 14/15 {
                             \clef "varC"
                             fqs'16
                             \pppp
@@ -289,44 +271,72 @@
                             gqf'16
                             fs'16
                             gqf'16
+                            g'16
+                            gqs'16
+                            g'16
+                            gqs'16
+                            g'16
+                            gqs'16
+                            g'16
+                            gqf'16
                             ]
                         }
-                    }
-                    {
-                        \clef "varC"
-                        <f' af'>4
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \set stemLeftBeamCount = 1
-                        \set stemRightBeamCount = 0
-                        \ottava 1
-                        <af' e''>8
-                        \ottava 0
                     }
                     {
                         r4
                         \!
                     }
                     {
+                        % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
                         \clef "varC"
                         <f' af'>4
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
                         \set stemLeftBeamCount = 1
-                        \set stemRightBeamCount = 0
+                        \set stemRightBeamCount = 1
                         \ottava 1
                         <af' e''>8
                         \ottava 0
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/5 {
+                            r4
+                            \!
+                            \clef "varC"
+                            <f' af'>4.
+                            \f
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/5 {
+                            r4.
+                            \!
+                            \ottava 1
+                            \clef "varC"
+                            <af' e''>4
+                            \f
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \ottava 0
+                        }
                     }
-                    % [Voice 1 measure 11] %! COMMENT_MEASURE_NUMBERS
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
-                    \once \override Rest.color = #white
-                    r32
-                    \verylongfermata
-                    \!
-                    \bar "|."
+                    {
+                        % [Voice 1 measure 11] %! COMMENT_MEASURE_NUMBERS
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
+                        \once \override MultiMeasureRest.color = #white
+                        R1 * 1/16
+                        \!
+                        ^ \markup {
+                            \musicglyph
+                                #"scripts.uverylongfermata"
+                            }
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
+                        \bar "|."
+                        \stopStaff \startStaff
+                    }
                 }
             }
         >>

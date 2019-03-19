@@ -60,30 +60,25 @@ for voice_name, timespan_list in all_timespans2.items():
         voice = score[voice_name]
         voice.append(container)
 
-# print('Splitting and rewriting ...')
-# # split and rewite meters
-# for voice in abjad.iterate(score['Staff Group']).components(abjad.Voice):
-#     for i , shard in enumerate(abjad.mutate(voice[:]).split(time_signatures)):
-#         time_signature = time_signatures[i]
-#         abjad.mutate(shard).rewrite_meter(time_signature)
-
-# print('Restarting after fermata ...')
-# for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
-#     staff_literal = abjad.LilyPondLiteral(r'\stopStaff \once \override Staff.StaffSymbol.line-count = #5 \startStaff', 'before')
-#     leaf1 = abjad.select(staff).leaves()[0]
-#     abjad.attach(staff_literal, leaf1)
+print('Adding Multimeasure Rests ...')
+for voice in abjad.iterate(score['Staff Group']).components(abjad.Voice):
+    leaves = abjad.select(voice).leaves()
+    for shard in abjad.mutate(leaves).split(time_signatures2):
+        if not all(isinstance(leaf, abjad.Rest) for leaf in shard):
+            continue
+        multiplier = abjad.inspect(shard).duration()
+        multimeasure_rest = abjad.MultimeasureRest(1, multiplier=(multiplier))
+        abjad.mutate(shard).replace(multimeasure_rest)
 
 print('Adding ending skips ...')
-fermata_time_signature = abjad.TimeSignature((1, 32))
-skip = abjad.Skip(1, multiplier=(fermata_time_signature))
-abjad.attach(fermata_time_signature, skip)
-override_command = abjad.LilyPondLiteral(r'\once \override TimeSignature.color = #white', format_slot='before',)
-abjad.attach(override_command, skip)
-score['Global Context'].append(skip)
+last_skip = abjad.select(score['Global Context']).leaves()[-1]
+# override_command = abjad.LilyPondLiteral(r'\once \override TimeSignature.color = #white', format_slot='before',)
+# abjad.attach(override_command, last_skip)
 
 for voice in abjad.select(score['Staff Group']).components(abjad.Voice):
-    final_rest = abjad.Rest((1, 32))
-    fermata = abjad.Fermata(command='verylongfermata')
+    final_rest = abjad.select(voice).leaves()[-1]
+    markup = abjad.Markup.musicglyph('scripts.uverylongfermata',direction=abjad.Up,)
+    markup.center_align()
     start_command = abjad.LilyPondLiteral(
                 r'\stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff',
                 format_slot='before',
@@ -92,12 +87,15 @@ for voice in abjad.select(score['Staff Group']).components(abjad.Voice):
         r'\stopStaff \startStaff',
         format_slot='after',
         )
-    note_literal = abjad.LilyPondLiteral(r'\once \override Rest.color = #white', 'before')
-    abjad.attach(fermata, final_rest)
+    note_literal = abjad.LilyPondLiteral(r'\once \override MultiMeasureRest.color = #white', 'before')
+    abjad.attach(markup, final_rest)
     abjad.attach(start_command, final_rest)
-    # abjad.attach(stop_command, final_rest)
+    abjad.attach(stop_command, final_rest)
     abjad.attach(note_literal, final_rest)
-    voice.append(final_rest)
+    abjad.attach(abjad.StopHairpin(), final_rest)
+    abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanOne'), final_rest)
+    abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanTwo'), final_rest)
+    abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanThree'), final_rest)
 
 
 # print('Beaming runs ...')
@@ -186,10 +184,7 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
     abjad.attach(next(names), leaf1)
 
 for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
-    leaf1 = abjad.select(staff).leaves()[0]
     last_leaf = abjad.select(staff).leaves()[-1]
-    # abjad.attach(metric_modulation, leaf1)
-    # abjad.override(staff).text_script.staff_padding = 5
     abjad.attach(bar_line, last_leaf)
 
 for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):

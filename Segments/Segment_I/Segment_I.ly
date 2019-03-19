@@ -13,7 +13,7 @@
 \paper {}
 
 \score { %! LilyPondFile
-    \new Score
+    \context Score = "Onkos Score"
     <<
         \context TimeSignatureContext = "Global Context"
         {
@@ -251,8 +251,8 @@
             s1 * 1
             % [Global Context measure 70] %! COMMENT_MEASURE_NUMBERS
             \once \override TimeSignature.color = #white
-            \time 1/32
-            s1 * 1/32
+            \time 1/8
+            s1 * 1/8
         }
         \context StaffGroup = "Staff Group"
         <<
@@ -8618,18 +8618,21 @@
                             }
                         - \tweak staff-padding #12
                         \startTextSpanTwo
+                        \bar "||"
                     }
                     {
                         % [Voice 1 measure 70] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
-                        \once \override Rest.color = #white
-                        r32
-                        \shortfermata
+                        \once \override MultiMeasureRest.color = #white
+                        R1 * 1/8
                         \!
+                        ^ \markup {
+                            \musicglyph
+                                #"scripts.ushortfermata"
+                            }
                         \stopTextSpanOne
                         \stopTextSpanTwo
                         \stopTextSpanThree
-                        \bar "||"
                         \stopStaff \startStaff
                     }
                 }

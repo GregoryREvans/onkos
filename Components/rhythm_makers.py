@@ -82,7 +82,7 @@ rmaker_four = abjadext.rmakers.TaleaRhythmMaker(
 
 ######
 rmaker_five = abjadext.rmakers.TupletRhythmMaker(
-    tuplet_ratios=[(2, 1), (-2, 3), (1, 2), (-3, 2)],
+    tuplet_ratios=[(2, 1), (-2, 3), (-3, 2)],
     beam_specifier=abjadext.rmakers.BeamSpecifier(
         beam_divisions_together=True,
         beam_rests=False,
