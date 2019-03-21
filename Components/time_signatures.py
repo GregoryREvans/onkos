@@ -55,7 +55,7 @@ time_signatures_6 = [
     abjad.TimeSignature(pair) for pair in [
         (1, 4), (3, 8), (1, 2), (5, 8), (3, 4),
         (7, 8), (1, 1), (9, 8), (5, 4), (9, 8),
-        (1, 16),
+        (1, 8),
     ]
 ]
 

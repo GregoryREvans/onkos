@@ -12,7 +12,7 @@ from Scores.onkos.Components.time_signatures import bounds2
 
 timespan_maker = TimespanMaker(
     denominator=32,
-    total_duration=abjad.Duration(1919, 32),#8
+    total_duration=abjad.Duration(1915, 32),
 )
 
 counts_list = [3, 4, 5, 8, 4, 1, 3, 7, 3, 6, 3, 4, 9, 4, 4, 5, 2, 2, 3, 4, 4,
@@ -23,7 +23,7 @@ counts_list = [3, 4, 5, 8, 4, 1, 3, 7, 3, 6, 3, 4, 9, 4, 4, 5, 2, 2, 3, 4, 4,
           7, 9, 2, 2, 3, 4, 3, 1, 8, 3, 2,
                 8, 2, 3, 4, 2, 4, 3, 4, 3, 2, 5, 2, 4, 2, 2, 2, 2, 5,
           4, 3, 2, 2, 3, 4, 2, 3, 8, 9, 5, 4, 2, 7, 1, 4, 5, 3, 3, 3, 2, 5, 4, 2, 2,
-          1,
+          # 1,
                 ]
 counts = [x * 4 for x in counts_list]
 # counts.append(1)
@@ -73,10 +73,10 @@ for voice, timespan_list in all_timespans.items():
 
 timespan_maker2 = TimespanMaker(
     denominator=32,
-    total_duration=abjad.Duration(254, 32),
+    total_duration=abjad.Duration(252, 32),
 )
 
-counts_list2 = [2, 3, 5, 11, 13, 11, 7, 5, 3, 3, 0.5]
+counts_list2 = [2, 3, 5, 11, 10, 4, 9, 1, 7, 5, 3, 3, ]
 counts2 = [x * 4 for x in counts_list2]
 timespan_list2 = timespan_maker2(counts2, max_duration=40)
 

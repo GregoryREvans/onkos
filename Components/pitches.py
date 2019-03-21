@@ -152,14 +152,14 @@ random_walk_list = [x for x in randomWalk(
         ]
 
 ######
-chords = [[5, 8], [8, 16]]
+chords = [[-9, -8], [-9, -5], [-5, -3], [-8, -3], [-9, -3], [-3, 3], [-5, 3], [-8, -5], [-5, 4], [-3, 4], [-3, 7], [-8, 3], ]
 
 ######
 rotated_walk_list2 = rotate(mirrored_walk_list, 20)
 runs = [x for x in randomWalk(
     random_seed=2,
     length=1000,
-    step_list=[1, ],
+    step_list=[1, 2, 1, 2, 3, 1, 2, 3, 4],
     mapped_list=rotated_walk_list2
             )
         ]

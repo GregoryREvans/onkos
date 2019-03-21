@@ -14,9 +14,9 @@ articulation_handler_one = ArticulationHandler(
     )
 
 clef_handler_one = ClefHandler(
-    clef='treble',
+    clef='varC',
     add_ottavas=True,
-    ottava_shelf=24,
+    ottava_shelf=16,
     )
 
 dynamic_handler_one = DynamicHandler(
@@ -78,7 +78,7 @@ pitch_handler_two = PitchHandler(
     )
 
 text_span_handler_two = TextSpanHandler(
-    span_one_positions=['7/7', '5/7', '6/7', '1/7', '2/7', '1/7', '4/7', '3/7', ],
+    span_one_positions=['7/7', '6/7', '7/7', '5/7', '1/7', '7/7', '4/7', '3/7', '1/7', '6/7', '2/7', '5/7',],
     span_one_style='solid-line',
     span_one_padding=9,
     attach_span_one_to='leaves',
@@ -128,7 +128,7 @@ pitch_handler_three = PitchHandler(
     )
 
 text_span_handler_three = TextSpanHandler(
-    span_one_positions=['1/5', '4/5', '5/5', '3/5', '2/5', ],
+    span_one_positions=['1/5', '2/5', '1/5', '2/5', '3/5', '2/5', '3/5', '4/5', '5/5', '1/5', '4/5', '2/5', '3/5', ],
     span_one_style='solid-line',
     span_one_padding=9,
     attach_span_one_to='leaves',
@@ -187,7 +187,8 @@ pitch_handler_five = PitchHandler(
     )
 dynamic_handler_five = DynamicHandler(
     starting_dynamic='f',
-    hairpin='--',
+    hairpin='>',
+    ending_dynamic='mp',
     continuous=True,
     )
 clef_handler_five = ClefHandler(
@@ -195,6 +196,7 @@ clef_handler_five = ClefHandler(
     add_ottavas=True,
     # ottava_shelf=5,
     )
+text_span_handler_five = TextSpanHandler()
 
 #######
 pitch_handler_six = PitchHandler(
@@ -203,11 +205,20 @@ pitch_handler_six = PitchHandler(
     )
 dynamic_handler_six = DynamicHandler(
     starting_dynamic='pppp',
-    hairpin='--',
+    hairpin='<|',
+    ending_dynamic='fff',
     continuous=True,
     )
 clef_handler_six = ClefHandler(
     clef='varC',
     add_ottavas=True,
     # ottava_shelf=5,
+    )
+slur_handler_six = SlurHandler()
+text_span_handler_six = TextSpanHandler(
+    span_one_positions=['accel.', 'rit.', 'accel.', 'rit.', 'rit.', ],
+    span_one_style='solid-line',
+    span_one_padding=9,
+    attach_span_one_to='left',
+    continuous=True,
     )

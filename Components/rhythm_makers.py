@@ -81,12 +81,16 @@ rmaker_four = abjadext.rmakers.TaleaRhythmMaker(
     )
 
 ######
-rmaker_five = abjadext.rmakers.TupletRhythmMaker(
-    tuplet_ratios=[(2, 1), (-2, 3), (-3, 2)],
+rmaker_five = abjadext.rmakers.TaleaRhythmMaker(
+    talea=abjadext.rmakers.Talea(
+        counts=[2, 1, 1, 3, 2, 4, 2, 1, 4, 12 ],
+        denominator=8,
+        ),
     beam_specifier=abjadext.rmakers.BeamSpecifier(
         beam_divisions_together=True,
         beam_rests=False,
         ),
+    extra_counts_per_division=[1, 0, -1, 1, 0, 1, -1],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,
@@ -96,29 +100,8 @@ rmaker_five = abjadext.rmakers.TupletRhythmMaker(
     )
 
 ######
-# rmaker_six = abjadext.rmakers.AccelerandoRhythmMaker(
-#     beam_specifier=abjadext.rmakers.BeamSpecifier(
-#         beam_each_division=True,
-#         use_feather_beams=True,
-#         ),
-#     interpolation_specifiers=[
-#         abjadext.rmakers.InterpolationSpecifier(
-#             start_duration=(1, 8),
-#             stop_duration=(1, 20),
-#             written_duration=(1, 16),
-#             ),
-#         abjadext.rmakers.InterpolationSpecifier(
-#             start_duration=(1, 20),
-#             stop_duration=(1, 8),
-#             written_duration=(1, 16),
-#             ),
-#         ],
-#     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
-#         duration_bracket=True,
-#         ),
-#     )
 rmaker_six = abjadext.rmakers.EvenDivisionRhythmMaker(
-    denominators=[32, 32, 16, 32, 16, 8, 32, ],
+    denominators=[16, 16, 8, 16, 16, ],
     extra_counts_per_division=[0, 1, -1, 0, 1, 0, -1, ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,

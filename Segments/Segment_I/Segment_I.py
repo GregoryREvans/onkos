@@ -60,15 +60,15 @@ for voice_name, timespan_list in all_timespans.items():
         voice = score[voice_name]
         voice.append(container)
 
-print('Adding Multimeasure Rests ...')
-for voice in abjad.iterate(score['Staff Group']).components(abjad.Voice):
-    leaves = abjad.select(voice).leaves()
-    for shard in abjad.mutate(leaves).split(time_signatures):
-        if not all(isinstance(leaf, abjad.Rest) for leaf in shard):
-            continue
-        multiplier = abjad.inspect(shard).duration()
-        multimeasure_rest = abjad.MultimeasureRest(1, multiplier=(multiplier))
-        abjad.mutate(shard).replace(multimeasure_rest)
+# print('Adding Multimeasure Rests ...')
+# for voice in abjad.iterate(score['Staff Group']).components(abjad.Voice):
+#     leaves = abjad.select(voice).leaves()
+#     for shard in abjad.mutate(leaves).split(time_signatures):
+#         if not all(isinstance(leaf, abjad.Rest) for leaf in shard):
+#             continue
+#         multiplier = abjad.inspect(shard).duration()
+#         multimeasure_rest = abjad.MultimeasureRest(1, multiplier=(multiplier))
+#         abjad.mutate(shard).replace(multimeasure_rest)
 
 
 print('Adding ending skips ...')
@@ -77,7 +77,13 @@ override_command = abjad.LilyPondLiteral(r'\once \override TimeSignature.color =
 abjad.attach(override_command, last_skip)
 
 for voice in abjad.select(score['Staff Group']).components(abjad.Voice):
-    final_rest = abjad.select(voice).leaves()[-1]
+    container = abjad.Container()
+    sig = time_signatures[-1]
+    leaf_duration = sig.duration / 2
+    rest_leaf = abjad.Rest(1, multiplier=(leaf_duration))
+    mult_rest_leaf = abjad.MultimeasureRest(1, multiplier=(leaf_duration))
+    container.append(rest_leaf)
+    container.append(mult_rest_leaf)
     markup = abjad.Markup.musicglyph('scripts.ushortfermata',direction=abjad.Up,)
     markup.center_align()
     start_command = abjad.LilyPondLiteral(
@@ -88,15 +94,20 @@ for voice in abjad.select(score['Staff Group']).components(abjad.Voice):
         r'\stopStaff \startStaff',
         format_slot='after',
         )
-    note_literal = abjad.LilyPondLiteral(r'\once \override MultiMeasureRest.color = #white', 'before')
+    rest_literal = abjad.LilyPondLiteral(r'\once \override Rest.color = #white', 'before')
+    mult_rest_literal = abjad.LilyPondLiteral(r'\once \override MultiMeasureRest.color = #white', 'before')
+    penultimate_rest = container[0]
+    final_rest = container[-1]
     abjad.attach(markup, final_rest)
-    abjad.attach(start_command, final_rest)
+    abjad.attach(start_command, penultimate_rest)
     abjad.attach(stop_command, final_rest)
-    abjad.attach(note_literal, final_rest)
-    abjad.attach(abjad.StopHairpin(), final_rest)
-    abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanOne'), final_rest)
-    abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanTwo'), final_rest)
-    abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanThree'), final_rest)
+    abjad.attach(rest_literal, penultimate_rest)
+    abjad.attach(mult_rest_literal, final_rest)
+    # abjad.attach(abjad.StopHairpin(), penultimate_rest)
+    # abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanOne'), penultimate_rest)
+    # abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanTwo'), penultimate_rest)
+    # abjad.attach(abjad.StopTextSpan(command=r'\stopTextSpanThree'), penultimate_rest)
+    voice.append(container)
 
 
 print('Beaming runs ...')
@@ -188,7 +199,7 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
     abjad.attach(next(names), leaf1)
 
 for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
-    last_leaf = abjad.select(staff).leaves()[-2]
+    last_leaf = abjad.select(staff).leaves()[-3]
     abjad.attach(bar_line, last_leaf)
 
 for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
@@ -239,7 +250,7 @@ score_lines = open('/Users/evansdsg2/Scores/onkos/Segments/Segment_I/Segment_I.l
 open('/Users/evansdsg2/Scores/onkos/Build/Score/Segment_I.ly', 'w').writelines(score_lines[15:-1])
 
 # abjad.show(score_file)
-# abjad.play(score)
+# abjad.play(score_file)
 
 # for staff in abjad.iterate(score['Staff 1']).components(abjad.Staff):
 #     signatures = abjad.select(score['Global Context']).components(abjad.Staff)

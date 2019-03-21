@@ -8,11 +8,10 @@
             \mark \markup {
                 \bold
                     {
-                        e
+                        E
                     }
                 }
             s1 * 1/4
-            ^ \markup \abjad-metric-modulation-tuplet-rhs #3 #0 #2 #0 #2 #3 #'(1 . 1)
             % [Global Context measure 2] %! COMMENT_MEASURE_NUMBERS
             \time 3/8
             s1 * 3/8
@@ -41,8 +40,9 @@
             \time 9/8
             s1 * 9/8
             % [Global Context measure 11] %! COMMENT_MEASURE_NUMBERS
-            \time 1/16
-            s1 * 1/16
+            \once \override TimeSignature.color = #white
+            \time 1/8
+            s1 * 1/8
         }
         \context StaffGroup = "Staff Group"
         <<
@@ -57,271 +57,345 @@
                             \markup { vla. }
                             \set Staff.instrumentName =
                             \markup { Viola }
+                            \once \override TextScript.extra-offset = #'(0 . 10)
                             \clef "varC"
-                            <f' af'>4
-                            \stopTextSpanOne
+                            <ef e>4
                             \f
-                            - \tweak stencil #constante-hairpin
-                            \<
+                            ^ \markup \abjad-metric-modulation-tuplet-rhs #3 #0 #2 #0 #2 #3 #'(1 . 1)
+                            \>
+                            \stopTextSpanOne
+                            \stopTextSpanTwo
+                            \stopTextSpanThree
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 0
-                            \ottava 1
-                            <af' e''>8
-                            \ottava 0
+                            <ef g>8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                         }
                     }
                     {
                         % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS
                         \clef "varC"
-                        bqf32
+                        bf16
                         \pppp
+                        - \tweak stencil #abjad-flared-hairpin
+                        \<
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
+                        [
+                        - \abjad-solid-line-with-hook
+                        - \tweak bound-details.left.text \markup {
+                            \concat
+                                {
+                                    \upright
+                                        accel.
+                                    \hspace
+                                        #0.5
+                                }
+                            }
+                        - \tweak staff-padding #9
+                        \startTextSpanOne
+                        bqf16
+                        b16
+                        bf16
+                        aqs16
+                        bqf16
+                        \fff
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
-                        b32
-                        bqf32
-                        bf32
-                        bqf32
-                        b32
-                        bqs32
-                        b32
-                        bqs32
-                        c'32
-                        cqs'32
-                        c'32
                         ]
                     }
                     {
-                        \times 2/3 {
-                            % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS
-                            \clef "varC"
-                            <f' af'>2
-                            \f
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            \ottava 1
-                            <af' e''>4
-                            \ottava 0
-                        }
+                        % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
+                        \clef "varC"
+                        <g a>8
+                        \f
+                        \>
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
+                        <e a>4.
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
                         % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
                         r8
                         \!
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
                     }
                     {
-                        \times 16/17 {
+                        \times 8/9 {
                             \clef "varC"
-                            bqs32
+                            c'16
                             \pppp
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
+                            \stopTextSpanOne
+                            \stopTextSpanTwo
+                            \stopTextSpanThree
+                            [
+                            - \abjad-solid-line-with-hook
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            rit.
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            cqs'16
+                            bqs16
+                            cs'16
+                            ef'16
+                            eqf'16
+                            dqs'16
+                            d'16
+                            cs'16
+                            \fff
                             - \tweak stencil #constante-hairpin
                             \<
-                            [
-                            b32
-                            bqs32
-                            c'32
-                            cqs'32
-                            cs'32
-                            cqs'32
-                            c'32
-                            bqs32
-                            b32
-                            bqf32
-                            bf32
-                            aqs32
-                            bf32
-                            bqf32
-                            b32
-                            bqf32
                             ]
                         }
                     }
                     {
-                        % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        \clef "varC"
-                        <f' af'>2
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \ottava 1
-                        <af' e''>4
-                        \ottava 0
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 6/5 {
+                            % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
+                            \clef "varC"
+                            <ef a>4
+                            \f
+                            \>
+                            \stopTextSpanOne
+                            \stopTextSpanTwo
+                            \stopTextSpanThree
+                            <a ef'>4.
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         % [Voice 1 measure 6] %! COMMENT_MEASURE_NUMBERS
                         r8
                         \!
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 12/11 {
+                        \times 6/5 {
                             \clef "varC"
-                            bf16
+                            dqs'8
                             \pppp
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
+                            \stopTextSpanOne
+                            \stopTextSpanTwo
+                            \stopTextSpanThree
+                            [
+                            - \abjad-solid-line-with-hook
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            accel.
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
+                            ef'8
+                            e'8
+                            fqs'8
+                            eqf'8
+                            \fff
                             - \tweak stencil #constante-hairpin
                             \<
-                            [
-                            aqs16
-                            a16
-                            aqs16
-                            bf16
-                            bqf16
-                            bf16
-                            bqf16
-                            b16
-                            bqs16
-                            c'16
                             ]
                         }
                     }
                     {
-                        \times 2/3 {
+                        \times 4/5 {
                             % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
+                            \set stemLeftBeamCount = 0
+                            \set stemRightBeamCount = 1
                             \clef "varC"
-                            <f' af'>2
+                            <g ef'>8
                             \f
+                            \>
+                            \stopTextSpanOne
+                            \stopTextSpanTwo
+                            \stopTextSpanThree
+                            <e g>4
+                            \set stemLeftBeamCount = 0
+                            \set stemRightBeamCount = 1
+                            <g e'>8
+                            [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 0
+                            <a e'>8
+                            \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            \ottava 1
-                            <af' e''>4
-                            \ottava 0
+                            ]
                         }
                     }
                     {
-                        r4.
+                        r2
                         \!
-                        r8
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
                     }
                     {
                         % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
                         \clef "varC"
-                        cqs'32
+                        ef'16
                         \pppp
+                        - \tweak stencil #abjad-flared-hairpin
+                        \<
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
+                        [
+                        - \abjad-solid-line-with-hook
+                        - \tweak bound-details.left.text \markup {
+                            \concat
+                                {
+                                    \upright
+                                        rit.
+                                    \hspace
+                                        #0.5
+                                }
+                            }
+                        - \tweak staff-padding #9
+                        \startTextSpanOne
+                        d'16
+                        dqf'16
+                        cqs'16
+                        b16
+                        bqf16
+                        bqs16
+                        cs'16
+                        ef'16
+                        dqs'16
+                        dqf'16
+                        cs'16
+                        c'16
+                        dqf'16
+                        d'16
+                        ef'16
+                        dqf'16
+                        eqf'16
+                        \fff
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
-                        cs'32
-                        cqs'32
-                        cs'32
-                        dqf'32
-                        cs'32
-                        dqf'32
-                        d'32
-                        dqf'32
-                        d'32
-                        dqf'32
-                        d'32
-                        dqs'32
-                        ef'32
-                        dqs'32
-                        ef'32
-                        eqf'32
-                        ef'32
-                        eqf'32
-                        e'32
-                        eqs'32
-                        e'32
-                        eqf'32
-                        ef'32
-                        eqf'32
-                        ef'32
-                        eqf'32
-                        ef'32
-                        eqf'32
-                        ef'32
-                        eqf'32
-                        e'32
-                        eqs'32
-                        f'32
-                        fqs'32
-                        fs'32
                         ]
                     }
                     {
                         % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r8
                         \!
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 14/15 {
                             \clef "varC"
-                            fqs'16
+                            e'16
                             \pppp
-                            - \tweak stencil #constante-hairpin
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            \stopTextSpanOne
+                            \stopTextSpanTwo
+                            \stopTextSpanThree
                             [
+                            - \abjad-solid-line-with-hook
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            rit.
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak staff-padding #9
+                            \startTextSpanOne
                             f'16
                             fqs'16
-                            fs'16
                             gqf'16
-                            fs'16
-                            gqf'16
-                            g'16
+                            af'16
                             gqs'16
-                            g'16
-                            gqs'16
-                            g'16
-                            gqs'16
-                            g'16
-                            gqf'16
+                            aqf'16
+                            bf'16
+                            af'16
+                            aqf'16
+                            aqs'16
+                            a'16
+                            bf'16
+                            aqf'16
+                            a'16
+                            \fff
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
                         }
                     }
                     {
                         r4
                         \!
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
                     }
                     {
                         % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
                         \clef "varC"
-                        <f' af'>4
+                        <a g'>4.
                         \f
+                        \>
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
+                        <e ef'>4.
+                        ~
+                        <e ef'>4.
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        \set stemLeftBeamCount = 1
-                        \set stemRightBeamCount = 1
-                        \ottava 1
-                        <af' e''>8
-                        \ottava 0
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 3/5 {
-                            r4
-                            \!
-                            \clef "varC"
-                            <f' af'>4.
-                            \f
-                            - \tweak stencil #constante-hairpin
-                            \<
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 3/5 {
-                            r4.
-                            \!
-                            \ottava 1
-                            \clef "varC"
-                            <af' e''>4
-                            \f
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            \ottava 0
-                        }
                     }
                     {
                         % [Voice 1 measure 11] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
+                        \once \override Rest.color = #white
+                        r1 * 1/16
+                        \!
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
                         \once \override MultiMeasureRest.color = #white
                         R1 * 1/16
-                        \!
                         ^ \markup {
                             \musicglyph
                                 #"scripts.uverylongfermata"
                             }
-                        \stopTextSpanOne
-                        \stopTextSpanTwo
-                        \stopTextSpanThree
                         \bar "|."
-                        %{ \stopStaff \startStaff %}
                     }
                 }
             }

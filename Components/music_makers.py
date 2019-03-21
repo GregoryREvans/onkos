@@ -63,6 +63,7 @@ music_maker_five = MusicMaker(
     pitch_handler = pitch_handler_five,
     dynamic_handler = dynamic_handler_five,
     clef_handler = clef_handler_five,
+    text_span_handler = text_span_handler_five,
     continuous = True,
 )
 
@@ -71,5 +72,7 @@ music_maker_six = MusicMaker(
     pitch_handler = pitch_handler_six,
     dynamic_handler = dynamic_handler_six,
     clef_handler = clef_handler_six,
+    slur_handler = slur_handler_six,
+    text_span_handler = text_span_handler_six,
     continuous = True,
 )

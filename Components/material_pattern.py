@@ -54,7 +54,7 @@ for x in materials:
 
 #### Segment_II
 
-key_list2 = ['music_maker_one', 'music_maker_two', 'music_maker_one', 'silence_maker', 'music_maker_two', 'music_maker_one', 'music_maker_two', 'music_maker_one', 'silence_maker', 'music_maker_two', 'music_maker_two', 'silence_maker', 'music_maker_one', 'music_maker_one', 'music_maker_one', 'silence_maker',]
+key_list2 = ['music_maker_one', 'music_maker_two', 'music_maker_one', 'silence_maker', 'music_maker_two', 'music_maker_one', 'music_maker_two', 'music_maker_one', 'silence_maker', 'music_maker_two', 'silence_maker', 'music_maker_two', 'silence_maker', 'music_maker_one', 'music_maker_one', 'music_maker_one',]
 
 dict2 = {
     'music_maker_one': music_maker_five,
