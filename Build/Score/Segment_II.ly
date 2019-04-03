@@ -53,10 +53,12 @@
                     {
                         \times 2/3 {
                             % [Voice 1 measure 1] %! COMMENT_MEASURE_NUMBERS
-                            \set Staff.shortInstrumentName =
-                            \markup { vla. }
                             \set Staff.instrumentName =
-                            \markup { Viola }
+                            \markup {
+                                \hcenter-in
+                                    #14
+                                    Viola
+                                }
                             \once \override TextScript.extra-offset = #'(0 . 10)
                             \clef "varC"
                             <ef e>4
@@ -95,6 +97,7 @@
                                         #0.5
                                 }
                             }
+                        - \tweak bound-details.right.padding 2.8
                         - \tweak staff-padding #9
                         \startTextSpanOne
                         bqf16
@@ -152,6 +155,7 @@
                                             #0.5
                                     }
                                 }
+                            - \tweak bound-details.right.padding 2.8
                             - \tweak staff-padding #9
                             \startTextSpanOne
                             cqs'16
@@ -215,6 +219,7 @@
                                             #0.5
                                     }
                                 }
+                            - \tweak bound-details.right.padding 2.8
                             - \tweak staff-padding #9
                             \startTextSpanOne
                             ef'8
@@ -281,6 +286,7 @@
                                         #0.5
                                 }
                             }
+                        - \tweak bound-details.right.padding 2.8
                         - \tweak staff-padding #9
                         \startTextSpanOne
                         d'16
@@ -335,6 +341,7 @@
                                             #0.5
                                     }
                                 }
+                            - \tweak bound-details.right.padding 2.8
                             - \tweak staff-padding #9
                             \startTextSpanOne
                             f'16

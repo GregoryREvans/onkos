@@ -1,0 +1,7 @@
+3.) rewrite preface notes (a la trevor)
+4.) allude to Section E a little earlier so it isn’t so abrupt
+5.) make articulations make a little more sense (and remove bartok pizz)
+6.) make titles a column to fix spacing (and fix kerning)
+8.) add trebles clefs and remove material that is obstructed by the clef changes
+10.) remove hyphens in bow angle
+12.) fix tuplet bracket angle with tweaks about staff padding (this lets you fix nested tuplets)

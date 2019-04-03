@@ -184,18 +184,22 @@ instruments = cyc([
     abjad.Viola(),
 ])
 
+mark_abbreviation = abjad.Markup('vla.')
+mark_abbreviation = mark_abbreviation.hcenter_in(12)
 abbreviations = cyc([
-    abjad.MarginMarkup(markup=abjad.Markup('vla.'),),
+    abjad.MarginMarkup(markup=mark_abbreviation,),
 ])
 
+mark_name = abjad.Markup('Viola')
+mark_name = mark_name.hcenter_in(14)
 names = cyc([
-    abjad.StartMarkup(markup=abjad.Markup('Viola'),),
+    abjad.StartMarkup(markup=mark_name,),
 ])
 
 for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]
     abjad.attach(next(instruments), leaf1)
-    abjad.attach(next(abbreviations), leaf1)
+    # abjad.attach(next(abbreviations), leaf1)
     abjad.attach(next(names), leaf1)
 
 for staff in abjad.select(score['Staff Group']).components(abjad.Staff):

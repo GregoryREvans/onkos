@@ -14,20 +14,21 @@ articulation_handler_one = ArticulationHandler(
     )
 
 clef_handler_one = ClefHandler(
-    clef='varC',
+    clef='treble',
     add_ottavas=True,
-    ottava_shelf=16,
+    # ottava_shelf=16,
     )
 
 dynamic_handler_one = DynamicHandler(
-    starting_dynamic='f',
+    starting_dynamic='mf',
     hairpin='>',
-    ending_dynamic='mf',
+    ending_dynamic='mp',
     continuous=True,
     )
 
 notehead_handler_one = NoteheadHandler(
     notehead_list=['default', 'harmonic-mixed', 'triangle', 'default',  'default', 'triangle', 'default',  'harmonic-mixed', 'triangle', 'default',  ],
+    transition=True,
     continuous=True,
     )
 
@@ -61,14 +62,15 @@ clef_handler_two = ClefHandler(
     )
 
 dynamic_handler_two = DynamicHandler(
-    starting_dynamic='ppp',
+    starting_dynamic='"ppp"',
     hairpin='<',
-    ending_dynamic='ff',
+    ending_dynamic='"ff"',
     continuous=True,
     )
 
 notehead_handler_two = NoteheadHandler(
     notehead_list=['default', 'default', 'harmonic-mixed', 'default', 'triangle', 'harmonic-mixed', 'harmonic-mixed', 'default',  ],
+    transition=False,
     continuous=True,
     )
 
@@ -108,7 +110,7 @@ clef_handler_three = ClefHandler(
 dynamic_handler_three = DynamicHandler(
     starting_dynamic='mp',
     hairpin='>',
-    ending_dynamic='niente',
+    ending_dynamic='ppppp',
     continuous=True,
     )
 
@@ -119,6 +121,7 @@ glissando_handler_three = GlissandoHandler(
 
 notehead_handler_three = NoteheadHandler(
     notehead_list=['harmonic-mixed', 'triangle', 'default', 'triangle', 'default', 'harmonic-mixed', 'triangle', 'default', ],
+    transition=False,
     continuous=True,
     )
 
