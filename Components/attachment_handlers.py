@@ -9,7 +9,7 @@ from evans.AttachmentHandlers.TextSpanHandler import TextSpanHandler
 from Scores.onkos.Components.pitches import *
 
 articulation_handler_one = ArticulationHandler(
-    articulation_list=['tenuto', 'tremolo', 'tremolo', 'snappizzicato', 'portato', 'tremolo', 'tenuto', 'snappizzicato', 'espressivo', 'tenuto', ],
+    articulation_list=['tenuto', 'tremolo', 'tremolo', 'accent', 'default', 'tremolo', 'tenuto', 'accent', 'espressivo', 'tenuto', ],
     continuous=True,
     )
 
@@ -42,7 +42,7 @@ text_span_handler_one = TextSpanHandler(
     span_two_style='dashed-line',
     span_two_padding=12,
     attach_span_two_to='bounds',
-    span_three_positions=['1/2-hair-arco', '1/2-clt.', 'clt.', '1/2-clt.',],
+    span_three_positions=['1/2 hair', '1/2 clt.', 'clt.', '1/2 clt.',],
     span_three_style='solid-line',
     span_three_padding=15,
     attach_span_three_to='left',
@@ -51,7 +51,7 @@ text_span_handler_one = TextSpanHandler(
 
 #######
 articulation_handler_two = ArticulationHandler(
-    articulation_list=['espressivo', 'tenuto', 'tenuto', 'accent', 'portato', 'tenuto', 'accent', ],
+    articulation_list=['espressivo', 'tenuto', 'tenuto', 'accent', 'default', 'tenuto', 'accent', ],
     continuous=True,
     )
 
@@ -88,7 +88,7 @@ text_span_handler_two = TextSpanHandler(
     span_two_style='dashed-line',
     span_two_padding=12,
     attach_span_two_to='bounds',
-    span_three_positions=['clt.', '1/2-clt.', '3/4-hair-arco', '1/2-clt.', ],
+    span_three_positions=['clt.', '1/2 clt.', '3/4 hair', '1/2 clt.', ],
     span_three_style='solid-line',
     span_three_padding=15,
     attach_span_three_to='left',
@@ -108,9 +108,9 @@ clef_handler_three = ClefHandler(
     )
 
 dynamic_handler_three = DynamicHandler(
-    starting_dynamic='mp',
+    starting_dynamic='"mp"',
     hairpin='>',
-    ending_dynamic='ppppp',
+    ending_dynamic='"ppppp"',
     continuous=True,
     )
 
@@ -176,7 +176,7 @@ text_span_handler_four = TextSpanHandler(
     span_two_style='dashed-line',
     span_two_padding=12,
     attach_span_two_to='bounds',
-    span_three_positions=['flat-hair-arco', ],
+    span_three_positions=['flat hair', ],
     span_three_style='solid-line',
     span_three_padding=15,
     attach_span_three_to='left',
