@@ -114,14 +114,14 @@ dynamic_handler_three = DynamicHandler(
     continuous=True,
     )
 
-glissando_handler_three = GlissandoHandler(
-    # glissando_style='hide_middle_note_heads',
-    line_style='solid-line',
-    )
+# glissando_handler_three = GlissandoHandler(
+#     # glissando_style='hide_middle_note_heads',
+#     line_style='solid-line',
+#     )
 
 notehead_handler_three = NoteheadHandler(
     notehead_list=['harmonic-mixed', 'triangle', 'default', 'triangle', 'default', 'harmonic-mixed', 'triangle', 'default', ],
-    transition=False,
+    transition=True,
     continuous=True,
     )
 

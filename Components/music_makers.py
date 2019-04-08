@@ -37,7 +37,7 @@ music_maker_two = MusicMaker(
 
 music_maker_three = MusicMaker(
     rmaker = rmaker_three,
-    glissando_handler = glissando_handler_three,
+    # glissando_handler = glissando_handler_three,
     notehead_handler = notehead_handler_three,
     pitch_handler = pitch_handler_three,
     articulation_handler = articulation_handler_three,
