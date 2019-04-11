@@ -75,7 +75,7 @@
                                     Viola
                                 }
                             \once \override TextScript.extra-offset = #'(0 . 10)
-                            \clef "varC"
+                            \clef "treble"
                             <ef' e'>4
                             \f
                             ^ \markup \abjad-metric-modulation-tuplet-rhs #3 #0 #2 #0 #2 #3 #'(1 . 1)
@@ -129,7 +129,7 @@
                         % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 1
-                        \clef "varC"
+                        \clef "treble"
                         <g' a'>8
                         \f
                         \>
@@ -191,19 +191,17 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
                             % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
-                            \clef "varC"
+                            \clef "treble"
                             <ef' a'>4
                             \f
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             \stopTextSpanThree
-                            \ottava 1
                             <a' ef''>4.
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            \ottava 0
                         }
                     }
                     {
@@ -254,31 +252,25 @@
                             % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
                             \set stemLeftBeamCount = 0
                             \set stemRightBeamCount = 1
-                            \ottava 1
-                            \clef "varC"
+                            \clef "treble"
                             <g' ef''>8
                             \f
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             \stopTextSpanThree
-                            \ottava 0
                             <e' g'>4
                             \set stemLeftBeamCount = 0
                             \set stemRightBeamCount = 1
-                            \ottava 1
                             <g' e''>8
                             [
-                            \ottava 0
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 0
-                            \ottava 1
                             <a' e''>8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                            \ottava 0
                         }
                     }
                     {
@@ -396,23 +388,19 @@
                     }
                     {
                         % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        \ottava 1
-                        \clef "varC"
+                        \clef "treble"
                         <a' g''>4.
                         \f
                         \>
                         \stopTextSpanOne
                         \stopTextSpanTwo
                         \stopTextSpanThree
-                        \ottava 0
-                        \ottava 1
                         <e' ef''>4.
                         ~
                         <e' ef''>4.
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        \ottava 0
                     }
                     {
                         % [Voice 1 measure 11] %! COMMENT_MEASURE_NUMBERS

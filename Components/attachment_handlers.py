@@ -195,7 +195,7 @@ dynamic_handler_five = DynamicHandler(
     continuous=True,
     )
 clef_handler_five = ClefHandler(
-    clef='varC',
+    clef='treble',
     add_ottavas=True,
     # ottava_shelf=5,
     )
