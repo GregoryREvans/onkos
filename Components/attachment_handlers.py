@@ -28,7 +28,7 @@ dynamic_handler_one = DynamicHandler(
 
 notehead_handler_one = NoteheadHandler(
     notehead_list=['default', 'harmonic-mixed', 'triangle', 'default',  'default', 'triangle', 'default',  'harmonic-mixed', 'triangle', 'default',  ],
-    transition=True,
+    transition=False,
     continuous=True,
     )
 
@@ -40,11 +40,11 @@ pitch_handler_one = PitchHandler(
 text_span_handler_one = TextSpanHandler(
     span_two_positions=['st.', 'ord.', 'st.', 'sp.', 'msp.', 'ord.',],
     span_two_style='dashed-line',
-    span_two_padding=12,
+    span_two_padding=13,
     attach_span_two_to='bounds',
     span_three_positions=['1/2 hair', '1/2 clt.', 'clt.', '1/2 clt.',],
     span_three_style='solid-line',
-    span_three_padding=15,
+    span_three_padding=16,
     attach_span_three_to='left',
     continuous=True,
     )
@@ -82,15 +82,15 @@ pitch_handler_two = PitchHandler(
 text_span_handler_two = TextSpanHandler(
     span_one_positions=['7/7', '6/7', '7/7', '5/7', '1/7', '7/7', '4/7', '3/7', '1/7', '6/7', '2/7', '5/7',],
     span_one_style='solid-line',
-    span_one_padding=9,
+    span_one_padding=10,
     attach_span_one_to='leaves',
     span_two_positions=['msp.', 'ord.', 'st.', 'ord.', 'sp.', ],
     span_two_style='dashed-line',
-    span_two_padding=12,
+    span_two_padding=13,
     attach_span_two_to='bounds',
     span_three_positions=['clt.', '1/2 clt.', '3/4 hair', '1/2 clt.', ],
     span_three_style='solid-line',
-    span_three_padding=15,
+    span_three_padding=16,
     attach_span_three_to='left',
     continuous=True,
     )
@@ -133,11 +133,11 @@ pitch_handler_three = PitchHandler(
 text_span_handler_three = TextSpanHandler(
     span_one_positions=['1/5', '2/5', '1/5', '2/5', '3/5', '2/5', '3/5', '4/5', '5/5', '1/5', '4/5', '2/5', '3/5', ],
     span_one_style='solid-line',
-    span_one_padding=9,
+    span_one_padding=10,
     attach_span_one_to='leaves',
     span_two_positions=['st.', 'ord.', 'sp.', 'msp.', 'ord.',],
     span_two_style='dashed-line',
-    span_two_padding=12,
+    span_two_padding=13,
     attach_span_two_to='bounds',
     continuous=True,
     )
@@ -174,11 +174,11 @@ pitch_handler_four = PitchHandler(
 text_span_handler_four = TextSpanHandler(
     span_two_positions=['st.', 'ord.', 'sp.', 'msp.', 'ord.',],
     span_two_style='dashed-line',
-    span_two_padding=12,
+    span_two_padding=13,
     attach_span_two_to='bounds',
     span_three_positions=['flat hair', ],
     span_three_style='solid-line',
-    span_three_padding=15,
+    span_three_padding=16,
     attach_span_three_to='left',
     continuous=True,
     )
@@ -221,7 +221,7 @@ slur_handler_six = SlurHandler()
 text_span_handler_six = TextSpanHandler(
     span_one_positions=['accel.', 'rit.', 'accel.', 'rit.', 'rit.', ],
     span_one_style='solid-line',
-    span_one_padding=9,
+    span_one_padding=10,
     attach_span_one_to='left',
     continuous=True,
     )

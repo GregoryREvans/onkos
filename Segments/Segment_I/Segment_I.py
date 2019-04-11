@@ -208,10 +208,10 @@ for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
 
 for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]
-    leaf2 = abjad.select(staff).leaves()[22]
-    leaf3 = abjad.select(staff).leaves()[29]
-    leaf4 = abjad.select(staff).leaves()[43]
-    leaf5 = abjad.select(staff).leaves()[57]
+    leaf2 = abjad.select(staff).leaves()[21]
+    leaf3 = abjad.select(staff).leaves()[27]
+    leaf4 = abjad.select(staff).leaves()[41]
+    leaf5 = abjad.select(staff).leaves()[56]
     abjad.attach(metro, leaf1)
     abjad.attach(mark2, leaf2)
     abjad.attach(mark3, leaf3)

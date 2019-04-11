@@ -14,15 +14,15 @@ material_chain = MarkovChain(transition_prob=transition_prob)
 
 # np.random.seed(7)
 # key_list_1 = [x for x in material_chain.generate_states(current_state='music_maker_two', no=14)]
-key_list_1 = ['music_maker_one', 'music_maker_one', 'music_maker_one', 'music_maker_two', 'music_maker_one', 'silence_maker', 'music_maker_three', 'music_maker_two', 'music_maker_one', 'music_maker_two', 'music_maker_three', 'music_maker_three', 'music_maker_two', 'music_maker_three', 'music_maker_three', 'music_maker_one', 'music_maker_one', 'silence_maker', 'music_maker_one', 'music_maker_three', 'music_maker_three', 'music_maker_two', 'music_maker_four', 'music_maker_four', 'music_maker_one', 'music_maker_one', 'music_maker_one', 'music_maker_three', 'music_maker_three', 'music_maker_three', 'silence_maker', 'music_maker_three', 'music_maker_three', 'music_maker_one', 'music_maker_one', 'music_maker_four', 'music_maker_four', 'silence_maker', 'music_maker_two', ]
+key_list_1 = ['music_maker_one', 'music_maker_one', 'music_maker_one', 'music_maker_two', 'music_maker_one', 'silence_maker', 'music_maker_six', 'music_maker_two', 'music_maker_one', 'music_maker_two', 'music_maker_three', 'music_maker_three', 'music_maker_two', 'music_maker_three', 'music_maker_three', 'music_maker_one', 'music_maker_one', 'silence_maker', 'music_maker_one', 'music_maker_three', 'music_maker_three', 'music_maker_two', 'music_maker_four', 'music_maker_four', 'music_maker_one', 'music_maker_one', 'music_maker_one', 'music_maker_three', 'music_maker_three', 'music_maker_three', 'silence_maker', 'music_maker_three', 'music_maker_three', 'music_maker_one', 'music_maker_one', 'music_maker_four', 'music_maker_four', 'silence_maker', 'music_maker_two', ]
 
 # np.random.seed(11)
 # key_list_2 = [x for x in material_chain.generate_states(current_state='music_maker_three', no=7)]
-key_list_2 = ['music_maker_one', 'music_maker_one', 'music_maker_two', 'music_maker_two', 'music_maker_one', 'music_maker_one', 'music_maker_two', 'music_maker_four', 'music_maker_four', ]
+key_list_2 = ['music_maker_one', 'music_maker_one', 'music_maker_two', 'music_maker_two', 'music_maker_one', 'music_maker_six', 'music_maker_two', 'music_maker_four', 'music_maker_four', ]
 
 # np.random.seed(5)
 # key_list_3 = [x for x in material_chain.generate_states(current_state='music_maker_one', no=20)]
-key_list_3 = ['music_maker_two', 'music_maker_three', 'music_maker_three', 'music_maker_three', 'music_maker_one', 'music_maker_one', 'silence_maker', 'music_maker_four', 'music_maker_four', 'music_maker_three', 'music_maker_four', 'music_maker_two', 'music_maker_four', 'music_maker_four', 'music_maker_one', 'music_maker_one', 'music_maker_one', 'music_maker_three', 'music_maker_three', 'music_maker_three', 'music_maker_three', 'music_maker_three', 'music_maker_three', 'music_maker_one', 'music_maker_one', 'music_maker_four', 'music_maker_four', 'music_maker_three', 'music_maker_two', ]
+key_list_3 = ['music_maker_two', 'music_maker_three', 'music_maker_three', 'music_maker_three', 'music_maker_one', 'music_maker_one', 'silence_maker', 'music_maker_four', 'music_maker_four', 'music_maker_three', 'music_maker_four', 'music_maker_two', 'music_maker_four', 'music_maker_four', 'music_maker_one', 'music_maker_one', 'music_maker_one', 'music_maker_three', 'music_maker_three', 'music_maker_three', 'music_maker_three', 'music_maker_three', 'music_maker_three', 'music_maker_one', 'music_maker_one', 'music_maker_four', 'music_maker_four', 'music_maker_six', 'music_maker_two', ]
 
 # np.random.seed(17)
 # key_list_4 = [x for x in material_chain.generate_states(current_state='music_maker_two', no=20)]
@@ -37,6 +37,7 @@ dict = {
     'music_maker_two': music_maker_two,
     'music_maker_three': music_maker_three,
     'music_maker_four': music_maker_four,
+    'music_maker_six': music_maker_six,
     'silence_maker': silence_maker,
 }
 

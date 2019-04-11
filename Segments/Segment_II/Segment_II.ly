@@ -76,7 +76,7 @@
                                 }
                             \once \override TextScript.extra-offset = #'(0 . 10)
                             \clef "varC"
-                            <ef e>4
+                            <ef' e'>4
                             \f
                             ^ \markup \abjad-metric-modulation-tuplet-rhs #3 #0 #2 #0 #2 #3 #'(1 . 1)
                             \>
@@ -85,7 +85,7 @@
                             \stopTextSpanThree
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 0
-                            <ef g>8
+                            <ef' g'>8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -112,8 +112,8 @@
                                         #0.5
                                 }
                             }
-                        - \tweak bound-details.right.padding 2.8
-                        - \tweak staff-padding #9
+                        - \tweak bound-details.right.padding 3
+                        - \tweak staff-padding #10
                         \startTextSpanOne
                         bqf16
                         b16
@@ -130,13 +130,13 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 1
                         \clef "varC"
-                        <g a>8
+                        <g' a'>8
                         \f
                         \>
                         \stopTextSpanOne
                         \stopTextSpanTwo
                         \stopTextSpanThree
-                        <e a>4.
+                        <e' a'>4.
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -170,8 +170,8 @@
                                             #0.5
                                     }
                                 }
-                            - \tweak bound-details.right.padding 2.8
-                            - \tweak staff-padding #9
+                            - \tweak bound-details.right.padding 3
+                            - \tweak staff-padding #10
                             \startTextSpanOne
                             cqs'16
                             bqs16
@@ -192,16 +192,18 @@
                         \times 6/5 {
                             % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
                             \clef "varC"
-                            <ef a>4
+                            <ef' a'>4
                             \f
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             \stopTextSpanThree
-                            <a ef'>4.
+                            \ottava 1
+                            <a' ef''>4.
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
+                            \ottava 0
                         }
                     }
                     {
@@ -234,8 +236,8 @@
                                             #0.5
                                     }
                                 }
-                            - \tweak bound-details.right.padding 2.8
-                            - \tweak staff-padding #9
+                            - \tweak bound-details.right.padding 3
+                            - \tweak staff-padding #10
                             \startTextSpanOne
                             ef'8
                             e'8
@@ -252,25 +254,31 @@
                             % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
                             \set stemLeftBeamCount = 0
                             \set stemRightBeamCount = 1
+                            \ottava 1
                             \clef "varC"
-                            <g ef'>8
+                            <g' ef''>8
                             \f
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             \stopTextSpanThree
-                            <e g>4
+                            \ottava 0
+                            <e' g'>4
                             \set stemLeftBeamCount = 0
                             \set stemRightBeamCount = 1
-                            <g e'>8
+                            \ottava 1
+                            <g' e''>8
                             [
+                            \ottava 0
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 0
-                            <a e'>8
+                            \ottava 1
+                            <a' e''>8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            \ottava 0
                         }
                     }
                     {
@@ -301,8 +309,8 @@
                                         #0.5
                                 }
                             }
-                        - \tweak bound-details.right.padding 2.8
-                        - \tweak staff-padding #9
+                        - \tweak bound-details.right.padding 3
+                        - \tweak staff-padding #10
                         \startTextSpanOne
                         d'16
                         dqf'16
@@ -356,8 +364,8 @@
                                             #0.5
                                     }
                                 }
-                            - \tweak bound-details.right.padding 2.8
-                            - \tweak staff-padding #9
+                            - \tweak bound-details.right.padding 3
+                            - \tweak staff-padding #10
                             \startTextSpanOne
                             f'16
                             fqs'16
@@ -388,19 +396,23 @@
                     }
                     {
                         % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        \ottava 1
                         \clef "varC"
-                        <a g'>4.
+                        <a' g''>4.
                         \f
                         \>
                         \stopTextSpanOne
                         \stopTextSpanTwo
                         \stopTextSpanThree
-                        <e ef'>4.
+                        \ottava 0
+                        \ottava 1
+                        <e' ef''>4.
                         ~
-                        <e ef'>4.
+                        <e' ef''>4.
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        \ottava 0
                     }
                     {
                         % [Voice 1 measure 11] %! COMMENT_MEASURE_NUMBERS

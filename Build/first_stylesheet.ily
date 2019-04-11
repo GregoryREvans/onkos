@@ -14,7 +14,7 @@
 	breakbefore = ##t
 	dedication = \markup \override #'(font-name . "Didot") \fontsize #3.5 \center-column {"to  Andrew  Grishaw"}
 	title =  \markup \override #'(font-name . "Didot") \fontsize #16 \bold\center-column {"ὄ γ κ ο ς" }
-	subtitle = \markup \override #'(font-name . "Didot") \fontsize #7 \center-column {"f o r    v i o l a    a l o n e"}
+	subtitle = \markup \override #'(font-name . "Didot") \center-column { \line{ \fontsize #25 ".                                   ."} \line{ \fontsize #7 "f o r    v i o l a    a l o n e"} \line{ \fontsize #25 ".                                   ."} }
 	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #3 \center-column {"in memory of Janice Evans and Rosa María Pérez de Cervantes"}
 	arranger = \markup \override #'(font-name . "Didot") \fontsize #2.3 {"Gregory Rowland Evans"}
 }
@@ -73,7 +73,7 @@
 		%\override TimeSignature.stencil = ##f
 		\override TimeSignature.whiteout-style = #'outline
 		\override TimeSignature.whiteout = ##t
-        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 22) (padding . 8) (stretchability . 0))
+        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 23) (padding . 8) (stretchability . 0))
     }
     \context {
         \Score
@@ -90,8 +90,9 @@
 		\override Clef.whiteout-style = #'outline
   		\override Clef.whiteout = 1
 		\override DynamicText.font-size = #-2
-		\override DynamicLineSpanner.staff-padding = 4
+		\override DynamicLineSpanner.staff-padding = 5 %was 4.5
         %{ \override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5) %}
+		\override Hairpin.bound-padding = #2 %is this necessary?
 		\override Glissando.breakable = ##t
 		%{ \override Glissando.thickness = #2 %}
 		\override Glissando.thickness = #1.8
@@ -116,8 +117,8 @@
 		\override TupletBracket.direction = #up
 		\override TupletNumber.font-size = 0.5
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-		proportionalNotationDuration = #(ly:make-moment 1 39)
-		%{ proportionalNotationDuration = #(ly:make-moment 1 30) %}
+		proportionalNotationDuration = #(ly:make-moment 1 47)
+		%{ proportionalNotationDuration = #(ly:make-moment 1 39) %}
         autoBeaming = ##f
         tupletFullLength = ##t
     }
@@ -141,7 +142,7 @@
 
 \paper {
 	%system-system-spacing = #'((basic-distance . 25) (minimum-distance . 25) (padding . 5))
-	system-system-spacing = #'((basic-distance . 24) (minimum-distance . 24) (padding . 5))
+	system-system-spacing = #'((basic-distance . 21) (minimum-distance . 21) (padding . 5))
 
 	%{ top-margin = 1\cm
 	bottom-margin = 0.4\cm
