@@ -615,6 +615,7 @@
                         }
                     }
                     {
+                        \tweak staff-padding 4
                         \times 8/9 {
                             % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -1981,6 +1982,7 @@
                         :32
                         ~
                         ]
+                        \tweak staff-padding 5
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'triangle
                             aqf'''4
@@ -2596,6 +2598,7 @@
                         btef''8.
                         :32
                         ~
+                        \tweak staff-padding 4
                         \times 8/9 {
                             % [Voice 1 measure 16] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -2980,6 +2983,7 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak staff-padding 4
                         \times 8/7 {
                             \once \override Staff.NoteHead.style = #'triangle
                             \clef "treble"
@@ -3962,6 +3966,7 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak staff-padding 4
                         \times 4/3 {
                             % [Voice 1 measure 25] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -5427,6 +5432,7 @@
                         def'''16
                         - \accent
                         ]
+                        \tweak staff-padding 4
                         \times 8/9 {
                             % [Voice 1 measure 36] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -6637,6 +6643,7 @@
                             ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak staff-padding 4
                         \times 6/5 {
                             \once \override Staff.NoteHead.style = #'triangle
                             def'''8
@@ -8635,6 +8642,7 @@
                         \startTextSpanThree
                     }
                     {
+                        \tweak staff-padding 4
                         \times 8/9 {
                             % [Voice 1 measure 59] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default

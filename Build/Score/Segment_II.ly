@@ -60,6 +60,7 @@
                                     Viola
                                 }
                             \once \override TextScript.extra-offset = #'(0 . 10)
+                            \once \override Staff.Clef.whiteout-style = #'box
                             \clef "treble"
                             <ef' e'>4
                             \f
