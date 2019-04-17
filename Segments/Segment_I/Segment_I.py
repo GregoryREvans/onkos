@@ -9,6 +9,7 @@ from Scores.onkos.Components.time_signatures import time_signatures
 from Scores.onkos.Components.time_signatures import bounds
 from Scores.onkos.Components.music_makers import *
 from evans.general_tools.cyc import cyc
+from evans.abjad_functions.NoteheadBracketMaker import NoteheadBracketMaker
 
 global_timespan = abjad.Timespan(
     start_offset=0,
@@ -220,6 +221,10 @@ for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
 
 # for staff in abjad.iterate(score['Staff Group 1']).components(abjad.Staff):
 #     abjad.Instrument.transpose_from_sounding_pitch(staff)
+
+print('Transforming Tuplet Brackets ...')
+transformer = NoteheadBracketMaker()
+transformer(score)
 
 score_file = abjad.LilyPondFile.new(
     score,

@@ -73,7 +73,7 @@
 		%\override TimeSignature.stencil = ##f
 		\override TimeSignature.whiteout-style = #'outline
 		\override TimeSignature.whiteout = ##t
-        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 23) (padding . 8) (stretchability . 0))
+        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 25) (minimum-distance . 25) (padding . 8) (stretchability . 0))
     }
     \context {
         \Score
@@ -111,12 +111,13 @@
 		\override StemTremolo.beam-thickness = #0.3
 		\override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
-        \override TupletBracket.padding = #2
-		\override TupletBracket.staff-padding = #1.5
+        \override TupletBracket.padding = #1.5
+		%{ \override TupletBracket.staff-padding = #1.5 %}
+		\override TupletBracket.staff-padding = #4
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
 		\override TupletBracket.direction = #up
 		\override TupletNumber.font-size = 0.5
-        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+        %{ \override TupletNumber.text = #tuplet-number::calc-fraction-text %}
 		proportionalNotationDuration = #(ly:make-moment 1 47)
 		%{ proportionalNotationDuration = #(ly:make-moment 1 39) %}
         autoBeaming = ##f

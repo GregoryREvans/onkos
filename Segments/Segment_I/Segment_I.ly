@@ -288,7 +288,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -301,7 +301,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         [
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -312,6 +312,7 @@
                         :32
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             \once \override Staff.NoteHead.style = #'triangle
                             d'''8.
@@ -349,11 +350,13 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 17 16) "16")
                         \times 16/17 {
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "32")
                             \times 2/3 {
                                 % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
@@ -391,7 +394,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -404,7 +407,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #13
+                                - \tweak staff-padding #14.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
                                 - \tweak bound-details.left.text \markup {
@@ -417,7 +420,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #16
+                                - \tweak staff-padding #17.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'default
                                 bqs8
@@ -439,7 +442,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 bqs32
@@ -464,8 +467,9 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "32")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
                                 bf16
@@ -486,7 +490,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'triangle
@@ -507,7 +511,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bqs8
@@ -528,11 +532,12 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "40")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 d'4
@@ -553,7 +558,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 dqs'8.
@@ -574,7 +579,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                             }
@@ -612,7 +617,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -625,11 +630,12 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
                             % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -652,7 +658,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -665,7 +671,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             ]
                             \once \override Staff.NoteHead.style = #'triangle
@@ -689,7 +695,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -720,7 +726,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         [
                         bqf16
@@ -733,8 +739,10 @@
                         \<
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "16")
                         \times 2/3 {
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 10) "80")
                             \times 10/11 {
                                 % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
@@ -772,7 +780,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -785,7 +793,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #13
+                                - \tweak staff-padding #14.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
                                 - \tweak bound-details.left.text \markup {
@@ -798,7 +806,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #16
+                                - \tweak staff-padding #17.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fs'8
@@ -820,7 +828,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fs'32
@@ -844,8 +852,9 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "32")
                             \times 4/5 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 d'16
@@ -866,7 +875,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -889,7 +898,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 dqs'64
@@ -912,11 +921,12 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "40")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'default
                                 dqs'4
@@ -937,7 +947,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 bqs8.
@@ -958,7 +968,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
@@ -995,7 +1005,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -1008,12 +1018,13 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "48")
                         \times 6/5 {
                             % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -1036,7 +1047,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -1049,7 +1060,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             [
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -1070,14 +1081,16 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 12) "48")
                         \times 12/13 {
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "48")
                             \times 6/11 {
                                 % [Voice 1 measure 6] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -1114,7 +1127,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -1127,7 +1140,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #13
+                                - \tweak staff-padding #14.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
                                 - \tweak bound-details.left.text \markup {
@@ -1140,7 +1153,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #16
+                                - \tweak staff-padding #17.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'default
                                 aqf8
@@ -1162,7 +1175,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 aqf32
@@ -1186,9 +1199,10 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "320")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bf16.
@@ -1209,7 +1223,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 dqf'16.
@@ -1230,7 +1244,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 bqs16.
@@ -1251,10 +1265,11 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "320")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'default
                                 d'8
@@ -1275,7 +1290,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 dqf'8
@@ -1296,7 +1311,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 dqf'32
@@ -1335,7 +1350,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -1348,7 +1363,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             ]
                         }
@@ -1390,7 +1405,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
                         - \tweak bound-details.left.text \markup {
@@ -1403,7 +1418,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
 
                                         - \tweak arrow-length #2
@@ -1412,6 +1427,7 @@
                                         - \tweak thickness #2.5
                                         \glissando
 
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'triangle
                             aqs4
@@ -1432,7 +1448,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -1475,7 +1491,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -1488,14 +1504,16 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 29 18) "36")
                         \times 18/29 {
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "96")
                             \times 6/11 {
                                 % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
@@ -1533,7 +1551,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -1546,7 +1564,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #13
+                                - \tweak staff-padding #14.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
                                 - \tweak bound-details.left.text \markup {
@@ -1559,7 +1577,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #16
+                                - \tweak staff-padding #17.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'triangle
                                 eqs'4
@@ -1581,7 +1599,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'triangle
                                 eqs'16
@@ -1605,8 +1623,9 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "32")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 cqs'8.
@@ -1627,7 +1646,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -1649,7 +1668,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 b8.
@@ -1669,10 +1688,11 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "40")
                             \times 5/6 {
                                 \once \override Staff.NoteHead.style = #'default
                                 bf8.
@@ -1693,7 +1713,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 dqf'8.
@@ -1714,7 +1734,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 ]
                             }
@@ -1752,7 +1772,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -1765,12 +1785,13 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "8")
                         \times 4/3 {
                             % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -1808,7 +1829,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
                             - \tweak bound-details.left.text \markup {
@@ -1821,7 +1842,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             [
 
@@ -1850,7 +1871,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -1879,10 +1900,11 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             ]
                         }
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             aqf2
@@ -1927,7 +1949,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -1940,7 +1962,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -1967,7 +1989,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -1980,7 +2002,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'triangle
                         eqf''16
@@ -1996,6 +2018,7 @@
                         :32
                         ~
                         ]
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'triangle
                             aqf'''4
@@ -2018,7 +2041,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -2051,7 +2074,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -2064,7 +2087,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         [
                         \once \override Staff.NoteHead.style = #'triangle
@@ -2085,7 +2108,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         ]
                     }
@@ -2126,7 +2149,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
                         - \tweak bound-details.left.text \markup {
@@ -2139,7 +2162,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
 
                                         - \tweak arrow-length #2
@@ -2167,7 +2190,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
 
                                         - \tweak arrow-length #2
@@ -2210,7 +2233,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         - \abjad-dashed-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -2223,10 +2246,11 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 15 8) "8")
                         \times 8/15 {
                             % [Voice 1 measure 13] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -2264,7 +2288,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
                             - \tweak bound-details.left.text \markup {
@@ -2277,7 +2301,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -2290,7 +2314,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             [
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -2312,7 +2336,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             ]
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -2334,8 +2358,9 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
                                 dqf'8.
@@ -2355,7 +2380,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -2377,7 +2402,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 aqf8.
@@ -2398,7 +2423,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -2420,7 +2445,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'default
                             g8.
@@ -2441,7 +2466,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             ]
                             \once \override Staff.NoteHead.style = #'triangle
@@ -2478,7 +2503,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -2491,7 +2516,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -2519,7 +2544,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -2532,9 +2557,10 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 3) "24")
                         \times 3/4 {
                             \once \override Staff.NoteHead.style = #'default
                             f'8
@@ -2553,12 +2579,13 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             % [Voice 1 measure 15] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -2582,7 +2609,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -2595,7 +2622,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'default
                             eef'''16
@@ -2611,6 +2638,7 @@
                         btef''8.
                         :32
                         ~
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
                             % [Voice 1 measure 16] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -2637,7 +2665,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             [
                         }
@@ -2678,7 +2706,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
                         - \tweak bound-details.left.text \markup {
@@ -2691,7 +2719,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
 
                                         - \tweak arrow-length #2
@@ -2719,7 +2747,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
 
                                         - \tweak arrow-length #2
@@ -2748,9 +2776,10 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         ]
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             % [Voice 1 measure 17] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -2782,7 +2811,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                         }
                         % [Voice 1 measure 18] %! COMMENT_MEASURE_NUMBERS
@@ -2814,7 +2843,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                     }
                     {
@@ -2826,6 +2855,7 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "20")
                         \times 5/6 {
                             \once \override Staff.NoteHead.style = #'triangle
                             \clef "varC"
@@ -2862,7 +2892,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
                             - \tweak bound-details.left.text \markup {
@@ -2875,7 +2905,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
 
                                             - \tweak arrow-length #2
@@ -2903,7 +2933,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -2933,7 +2963,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         [
 
@@ -2977,7 +3007,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         - \abjad-dashed-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -2990,11 +3020,12 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             \once \override Staff.NoteHead.style = #'triangle
                             \clef "treble"
@@ -3016,7 +3047,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -3029,7 +3060,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             ]
                             \once \override Staff.NoteHead.style = #'default
@@ -3067,7 +3098,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         ]
                     }
@@ -3093,7 +3124,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -3106,7 +3137,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         % [Voice 1 measure 20] %! COMMENT_MEASURE_NUMBERS
                         \ottava 1
@@ -3125,7 +3156,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         \ottava 0
                     }
@@ -3138,7 +3169,9 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 12) "48")
                         \times 12/13 {
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "128")
                             \times 4/5 {
                                 % [Voice 1 measure 21] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -3176,7 +3209,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -3189,7 +3222,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #13
+                                - \tweak staff-padding #14.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
                                 - \tweak bound-details.left.text \markup {
@@ -3202,7 +3235,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #16
+                                - \tweak staff-padding #17.5
                                 \startTextSpanThree
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -3223,7 +3256,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 ]
                             }
@@ -3246,9 +3279,10 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 3) "24")
                             \times 3/5 {
                                 \once \override Staff.NoteHead.style = #'default
                                 af8
@@ -3269,7 +3303,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -3291,7 +3325,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 gqf8
@@ -3312,10 +3346,11 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "48")
                             \times 6/7 {
                                 \once \override Staff.NoteHead.style = #'default
                                 fs8
@@ -3336,7 +3371,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'triangle
                                 aqf16.
@@ -3357,7 +3392,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -3393,7 +3428,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -3406,13 +3441,14 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             ]
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "48")
                         \times 6/7 {
                             % [Voice 1 measure 22] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -3435,7 +3471,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -3448,7 +3484,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             aqs'8.
@@ -3487,11 +3523,13 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 17 16) "16")
                         \times 16/17 {
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "32")
                             \times 2/3 {
                                 % [Voice 1 measure 23] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -3529,7 +3567,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -3542,7 +3580,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #13
+                                - \tweak staff-padding #14.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
                                 - \tweak bound-details.left.text \markup {
@@ -3555,7 +3593,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #16
+                                - \tweak staff-padding #17.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'default
                                 f8
@@ -3577,7 +3615,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 f32
@@ -3602,8 +3640,9 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "32")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
                                 f16
@@ -3624,7 +3663,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -3646,7 +3685,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 ef8
@@ -3667,11 +3706,12 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "40")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 cqs4
@@ -3691,7 +3731,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 dqf8.
@@ -3712,7 +3752,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                             }
@@ -3735,11 +3775,13 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                         }
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "16")
                         \times 2/3 {
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 10) "80")
                             \times 10/11 {
                                 % [Voice 1 measure 24] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
@@ -3761,7 +3803,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 f8
@@ -3783,7 +3825,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 f32
@@ -3808,8 +3850,9 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "32")
                             \times 4/5 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fqs16
@@ -3830,7 +3873,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -3852,7 +3895,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 fs64
@@ -3875,11 +3918,12 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "40")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 f4
@@ -3900,7 +3944,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 g8.
@@ -3921,7 +3965,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
@@ -3958,7 +4002,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -3971,12 +4015,13 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "16")
                         \times 4/3 {
                             % [Voice 1 measure 25] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -3999,7 +4044,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -4012,7 +4057,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             [
                             \once \override Staff.NoteHead.style = #'default
@@ -4036,11 +4081,12 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                         \times 4/5 {
                             \clef "varC"
                             c'16
@@ -4061,7 +4107,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             cqs'16
                             bqs16
@@ -4075,8 +4121,10 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 9) "18")
                         \times 9/13 {
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "96")
                             \times 6/11 {
                                 % [Voice 1 measure 26] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
@@ -4114,7 +4162,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -4127,7 +4175,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #13
+                                - \tweak staff-padding #14.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
                                 - \tweak bound-details.left.text \markup {
@@ -4140,7 +4188,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #16
+                                - \tweak staff-padding #17.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'default
                                 g4
@@ -4162,7 +4210,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 g16
@@ -4185,9 +4233,10 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "40")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'default
                                 g8.
@@ -4208,7 +4257,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'triangle
@@ -4230,7 +4279,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 aqf8.
@@ -4251,11 +4300,12 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "40")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 gqf4
@@ -4276,7 +4326,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 g4
@@ -4298,7 +4348,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 g16
@@ -4337,7 +4387,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -4350,7 +4400,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -4379,7 +4429,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -4392,7 +4442,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
                         f''4
@@ -4408,13 +4458,15 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         \ottava 0
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 29 16) "16")
                         \times 16/29 {
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "48")
                             \times 6/11 {
                                 % [Voice 1 measure 28] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
@@ -4451,7 +4503,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -4464,7 +4516,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #13
+                                - \tweak staff-padding #14.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
                                 - \tweak bound-details.left.text \markup {
@@ -4477,7 +4529,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #16
+                                - \tweak staff-padding #17.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fs4
@@ -4499,7 +4551,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fs16
@@ -4523,8 +4575,9 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "16")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 gqf8.
@@ -4545,7 +4598,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -4567,7 +4620,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 gqf8.
@@ -4588,10 +4641,11 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "40")
                             \times 5/6 {
                                 \once \override Staff.NoteHead.style = #'default
                                 fs8.
@@ -4612,7 +4666,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 aqf8.
@@ -4632,7 +4686,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 ]
                             }
@@ -4670,7 +4724,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -4683,7 +4737,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -4725,7 +4779,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
                         - \tweak bound-details.left.text \markup {
@@ -4738,7 +4792,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         \once \override Staff.NoteHead.style = #'default
                         dqf'4
@@ -4769,8 +4823,9 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 30] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -4816,7 +4871,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -4829,7 +4884,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -4855,7 +4910,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -4868,8 +4923,9 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'triangle
                             ees''16
@@ -4891,7 +4947,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -4926,7 +4982,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -4939,7 +4995,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \ottava 0
                         \ottava 1
@@ -4961,7 +5017,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         \ottava 0
                     }
@@ -4997,7 +5053,7 @@
                                         #0.5
                                 }
                             }
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                     }
                     {
@@ -5022,7 +5078,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -5035,7 +5091,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
                         af8
@@ -5052,11 +5108,12 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         [
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 15 8) "8")
                         \times 8/15 {
                             % [Voice 1 measure 33] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -5094,7 +5151,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
                             - \tweak bound-details.left.text \markup {
@@ -5107,7 +5164,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -5120,7 +5177,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'default
                             aqf8.
@@ -5141,7 +5198,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             ]
                             \once \override Staff.NoteHead.style = #'triangle
@@ -5163,8 +5220,9 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 g8.
@@ -5185,7 +5243,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -5207,7 +5265,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 ef8.
@@ -5227,7 +5285,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
@@ -5249,7 +5307,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'default
                             c8.
@@ -5270,7 +5328,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             ]
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -5307,7 +5365,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -5320,11 +5378,12 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 34] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -5348,7 +5407,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -5361,7 +5420,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
@@ -5383,12 +5442,13 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         \ottava 0
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             % [Voice 1 measure 35] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -5411,7 +5471,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -5424,7 +5484,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             e'4
@@ -5442,6 +5502,7 @@
                         def'''16
                         - \accent
                         ]
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
                             % [Voice 1 measure 36] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -5464,7 +5525,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             [
                         }
@@ -5505,7 +5566,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
                         - \tweak bound-details.left.text \markup {
@@ -5518,7 +5579,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
 
                                         - \tweak arrow-length #2
@@ -5546,7 +5607,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
 
                                         - \tweak arrow-length #2
@@ -5575,7 +5636,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         ]
                         % [Voice 1 measure 37] %! COMMENT_MEASURE_NUMBERS
@@ -5608,7 +5669,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         % [Voice 1 measure 38] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'triangle
@@ -5639,7 +5700,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
 
                                         - \tweak arrow-length #2
@@ -5649,6 +5710,7 @@
                                         \glissando
 
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "20")
                         \times 5/6 {
                             \once \override Staff.NoteHead.style = #'triangle
                             a2
@@ -5669,7 +5731,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -5697,7 +5759,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             [
 
@@ -5727,7 +5789,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             ]
                         }
@@ -5760,7 +5822,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                     }
                     {
@@ -5784,7 +5846,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -5797,7 +5859,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         [
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -5809,6 +5871,7 @@
                         - \espressivo
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "16")
                         \times 4/3 {
                             \once \override Staff.NoteHead.style = #'triangle
                             dtef'''16
@@ -5831,7 +5894,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             ]
                         }
@@ -5860,7 +5923,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -5873,7 +5936,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         % [Voice 1 measure 40] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
@@ -5890,7 +5953,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         \ottava 0
                     }
@@ -5914,7 +5977,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         [
                         dqs'8
@@ -5924,7 +5987,9 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 12) "48")
                         \times 12/13 {
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "128")
                             \times 4/5 {
                                 % [Voice 1 measure 41] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
@@ -5962,7 +6027,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -5975,7 +6040,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #13
+                                - \tweak staff-padding #14.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
                                 - \tweak bound-details.left.text \markup {
@@ -5988,7 +6053,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #16
+                                - \tweak staff-padding #17.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'triangle
                                 ef32.
@@ -6009,7 +6074,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 ]
                             }
@@ -6032,9 +6097,10 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 3) "24")
                             \times 3/5 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 e8
@@ -6054,7 +6120,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -6076,7 +6142,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 e8
@@ -6097,10 +6163,11 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "48")
                             \times 6/7 {
                                 \once \override Staff.NoteHead.style = #'default
                                 f8
@@ -6121,7 +6188,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 dqf16.
@@ -6142,7 +6209,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
@@ -6164,11 +6231,13 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                         }
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 7) "56")
                         \times 7/13 {
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "256")
                             \times 4/5 {
                                 % [Voice 1 measure 42] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'triangle
@@ -6190,7 +6259,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 c16.
@@ -6210,7 +6279,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 ]
                             }
@@ -6233,9 +6302,10 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 3) "24")
                             \times 3/5 {
                                 \once \override Staff.NoteHead.style = #'default
                                 c4
@@ -6256,7 +6326,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 ef8
@@ -6277,7 +6347,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 dqf4
@@ -6298,10 +6368,11 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "48")
                             \times 6/7 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 e4
@@ -6322,7 +6393,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 ef8.
@@ -6343,7 +6414,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'triangle
@@ -6364,11 +6435,13 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                         }
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 17 9) "18")
                         \times 9/17 {
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "64")
                             \times 2/3 {
                                 % [Voice 1 measure 43] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -6390,7 +6463,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fs4
@@ -6412,7 +6485,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fs16
@@ -6436,8 +6509,9 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "64")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
                                 fqs8
@@ -6458,7 +6532,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -6480,7 +6554,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 ]
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -6502,10 +6576,11 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "40")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'default
                                 f2
@@ -6525,7 +6600,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'triangle
                                 dqf4.
@@ -6546,7 +6621,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -6583,7 +6658,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -6596,7 +6671,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -6622,7 +6697,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -6635,13 +6710,14 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         [
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
                         dtef'''8.
                         :32
                         ~
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             dtef'''8.
@@ -6652,6 +6728,7 @@
                             ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "48")
                         \times 6/5 {
                             \once \override Staff.NoteHead.style = #'triangle
                             def'''8
@@ -6674,12 +6751,13 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             ]
                         }
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             % [Voice 1 measure 45] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -6717,7 +6795,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
                             - \tweak bound-details.left.text \markup {
@@ -6730,7 +6808,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
 
                                             - \tweak arrow-length #2
@@ -6773,7 +6851,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -6786,12 +6864,13 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 3) "24")
                         \times 3/4 {
                             \ottava 1
                             \ottava 1
@@ -6816,7 +6895,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -6829,7 +6908,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             \ottava 0
                             \ottava 0
@@ -6848,7 +6927,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -6860,8 +6939,10 @@
                         \stopTextSpanThree
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 21 16) "16")
                         \times 16/21 {
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 10) "80")
                             \times 10/11 {
                                 % [Voice 1 measure 46] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -6899,7 +6980,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -6912,7 +6993,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #13
+                                - \tweak staff-padding #14.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
                                 - \tweak bound-details.left.text \markup {
@@ -6925,7 +7006,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #16
+                                - \tweak staff-padding #17.5
                                 \startTextSpanThree
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -6948,7 +7029,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 fs32
@@ -6973,8 +7054,9 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                             \times 4/5 {
                                 \once \override Staff.NoteHead.style = #'default
                                 fs16
@@ -6995,7 +7077,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -7017,7 +7099,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 ef64
@@ -7040,11 +7122,12 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "40")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 gqf4
@@ -7065,7 +7148,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fs8.
@@ -7086,7 +7169,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -7123,7 +7206,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -7136,7 +7219,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -7164,7 +7247,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -7177,7 +7260,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
                         ef'4
@@ -7193,12 +7276,14 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 8) "8")
                         \times 8/13 {
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "48")
                             \times 6/11 {
                                 % [Voice 1 measure 48] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
@@ -7236,7 +7321,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -7249,7 +7334,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #13
+                                - \tweak staff-padding #14.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
                                 - \tweak bound-details.left.text \markup {
@@ -7262,7 +7347,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #16
+                                - \tweak staff-padding #17.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'default
                                 f4
@@ -7284,7 +7369,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 f16
@@ -7307,9 +7392,10 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "40")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fqs8.
@@ -7330,7 +7416,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -7352,7 +7438,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'triangle
                                 fqs8.
@@ -7373,11 +7459,12 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "40")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 f4
@@ -7398,7 +7485,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 g4
@@ -7420,7 +7507,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 g16
@@ -7459,7 +7546,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -7472,7 +7559,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -7499,7 +7586,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -7512,7 +7599,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
                         cs'4.
@@ -7529,7 +7616,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                     }
                     {
@@ -7554,7 +7641,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -7567,7 +7654,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
                         gtef''16
@@ -7607,7 +7694,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         [
                     }
@@ -7647,7 +7734,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
                         - \tweak bound-details.left.text \markup {
@@ -7660,7 +7747,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         ]
 
@@ -7689,7 +7776,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
 
                                         - \tweak arrow-length #2
@@ -7719,7 +7806,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         % [Voice 1 measure 53] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
@@ -7751,7 +7838,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
 
                                         - \tweak arrow-length #2
@@ -7780,13 +7867,14 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         ]
                         \once \override Staff.NoteHead.style = #'default
                         aqf4
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "20")
                         \times 5/4 {
                             \once \override Staff.NoteHead.style = #'default
                             aqf8
@@ -7816,7 +7904,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -7826,6 +7914,7 @@
                                             \glissando
 
                         }
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 54] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -7847,7 +7936,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -7890,7 +7979,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -7903,12 +7992,13 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             \once \override Staff.NoteHead.style = #'default
                             \clef "treble"
@@ -7931,7 +8021,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -7944,7 +8034,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'default
                             dqs''16
@@ -7974,7 +8064,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                     }
                     {
@@ -8000,7 +8090,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -8013,7 +8103,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \ottava 0
                         \ottava 1
@@ -8037,7 +8127,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         \ottava 0
                     }
@@ -8072,13 +8162,15 @@
                                         #0.5
                                 }
                             }
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 29 20) "80")
                         \times 20/29 {
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "384")
                             \times 6/11 {
                                 % [Voice 1 measure 56] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
@@ -8115,7 +8207,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -8128,7 +8220,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #13
+                                - \tweak staff-padding #14.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
                                 - \tweak bound-details.left.text \markup {
@@ -8141,7 +8233,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #16
+                                - \tweak staff-padding #17.5
                                 \startTextSpanThree
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -8164,7 +8256,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 g32
@@ -8188,8 +8280,9 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "128")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
                                 fs16.
@@ -8210,7 +8303,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'triangle
                                 aqf16.
@@ -8231,7 +8324,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bf16.
@@ -8252,10 +8345,11 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "160")
                             \times 5/6 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 cqs'16.
@@ -8276,7 +8370,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 bqs16.
@@ -8296,7 +8390,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
@@ -8333,7 +8427,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -8346,12 +8440,13 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "8")
                         \times 4/3 {
                             % [Voice 1 measure 57] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -8389,7 +8484,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
                             - \tweak bound-details.left.text \markup {
@@ -8402,7 +8497,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
 
                                             - \tweak arrow-length #2
@@ -8430,7 +8525,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -8459,7 +8554,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             ]
                         }
@@ -8491,7 +8586,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                     }
                     {
@@ -8502,6 +8597,7 @@
                         \stopTextSpanThree
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 58] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -8539,7 +8635,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
                             - \tweak bound-details.left.text \markup {
@@ -8552,7 +8648,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
 
                                             - \tweak arrow-length #2
@@ -8595,7 +8691,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -8608,7 +8704,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -8633,7 +8729,7 @@
                                         #0.5
                                 }
                             }
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -8646,10 +8742,11 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
                             % [Voice 1 measure 59] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -8671,7 +8768,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -8684,7 +8781,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'triangle
                             eef'''4
@@ -8696,6 +8793,7 @@
                             [
                         }
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "16")
                         \times 4/3 {
                             % [Voice 1 measure 60] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -8728,11 +8826,12 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         ]
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "8")
                         \times 8/9 {
                             % [Voice 1 measure 61] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -8756,7 +8855,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -8769,7 +8868,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'default
                             <b ef'>2
@@ -8792,12 +8891,13 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 3) "6")
                         \times 3/5 {
                             % [Voice 1 measure 62] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -8835,7 +8935,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
                             - \tweak bound-details.left.text \markup {
@@ -8848,7 +8948,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -8861,7 +8961,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             [
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -8883,7 +8983,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             ]
                             \once \override Staff.NoteHead.style = #'default
@@ -8905,8 +9005,9 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "16")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 eqf'8.
@@ -8927,7 +9028,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -8949,7 +9050,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fqs'8.
@@ -8969,7 +9070,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
@@ -8991,7 +9092,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'default
                             dqs'8.
@@ -9012,7 +9113,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             ]
                             \once \override Staff.NoteHead.style = #'default
@@ -9049,7 +9150,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -9062,7 +9163,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -9089,7 +9190,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -9102,13 +9203,14 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
                         bf'2
                         - \espressivo
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "8")
                         \times 4/3 {
                             \once \override Staff.NoteHead.style = #'default
                             bf'8
@@ -9128,7 +9230,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             \ottava 0
                         }
@@ -9142,7 +9244,9 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 7) "56")
                         \times 7/13 {
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "256")
                             \times 4/5 {
                                 % [Voice 1 measure 64] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -9180,7 +9284,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup {
@@ -9193,7 +9297,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #13
+                                - \tweak staff-padding #14.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
                                 - \tweak bound-details.left.text \markup {
@@ -9206,7 +9310,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #16
+                                - \tweak staff-padding #17.5
                                 \startTextSpanThree
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -9228,7 +9332,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 ]
                             }
@@ -9251,9 +9355,10 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 3) "24")
                             \times 3/5 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fs'4
@@ -9273,7 +9378,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 dqs'8
@@ -9294,7 +9399,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 eqs'4
@@ -9315,10 +9420,11 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "48")
                             \times 6/7 {
                                 \once \override Staff.NoteHead.style = #'default
                                 d'4
@@ -9339,7 +9445,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 dqf'8.
@@ -9360,7 +9466,7 @@
                                         }
                                     }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #10
+                                - \tweak staff-padding #11.5
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -9397,7 +9503,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -9410,7 +9516,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -9444,7 +9550,7 @@
                                         #0.5
                                 }
                             }
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -9457,12 +9563,13 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \ottava 0
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "20")
                         \times 5/4 {
                             % [Voice 1 measure 66] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -9500,7 +9607,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
                             - \tweak bound-details.left.text \markup {
@@ -9513,7 +9620,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
 
                                             - \tweak arrow-length #2
@@ -9541,7 +9648,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -9584,7 +9691,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -9597,13 +9704,14 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             [
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 3) "24")
                         \times 3/4 {
                             \once \override Staff.NoteHead.style = #'default
                             \clef "varC"
@@ -9626,7 +9734,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
                             - \tweak bound-details.left.text \markup {
@@ -9639,7 +9747,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16
+                            - \tweak staff-padding #17.5
                             \startTextSpanThree
                             ]
                             \once \override Staff.NoteHead.style = #'default
@@ -9657,7 +9765,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #13
+                            - \tweak staff-padding #14.5
                             \startTextSpanTwo
                         }
                     }
@@ -9692,7 +9800,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
                         - \tweak bound-details.left.text \markup {
@@ -9705,7 +9813,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16
+                        - \tweak staff-padding #17.5
                         \startTextSpanThree
                         % [Voice 1 measure 68] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
@@ -9717,6 +9825,7 @@
                         a'4
                         - \tenuto
                         ~
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             % [Voice 1 measure 69] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -9750,7 +9859,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #13
+                        - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         \bar "||"
                     }

@@ -51,6 +51,7 @@
                 \context Voice = "Voice 1"
                 {
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 1] %! COMMENT_MEASURE_NUMBERS
                             \set Staff.instrumentName =
@@ -60,7 +61,6 @@
                                     Viola
                                 }
                             \once \override TextScript.extra-offset = #'(0 . 10)
-                            \once \override Staff.Clef.whiteout-style = #'box
                             \clef "treble"
                             <ef' e'>4
                             \f
@@ -99,7 +99,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         bqf16
                         b16
@@ -136,6 +136,7 @@
                         \stopTextSpanThree
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
                             \clef "varC"
                             c'16
@@ -157,7 +158,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             cqs'16
                             bqs16
@@ -175,6 +176,7 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "24")
                         \times 6/5 {
                             % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
                             \clef "treble"
@@ -200,6 +202,7 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "24")
                         \times 6/5 {
                             \clef "varC"
                             dqs'8
@@ -221,7 +224,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             ef'8
                             e'8
@@ -234,6 +237,7 @@
                         }
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
                             \set stemLeftBeamCount = 0
@@ -288,7 +292,7 @@
                                 }
                             }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #10
+                        - \tweak staff-padding #11.5
                         \startTextSpanOne
                         d'16
                         dqf'16
@@ -322,6 +326,7 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 15 14) "112")
                         \times 14/15 {
                             \clef "varC"
                             e'16
@@ -343,7 +348,7 @@
                                     }
                                 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #10
+                            - \tweak staff-padding #11.5
                             \startTextSpanOne
                             f'16
                             fqs'16
