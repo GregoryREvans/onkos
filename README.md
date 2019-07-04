@@ -1,2 +1,2 @@
 # onkos
-onkos (2019) composed for Andrew Grishaw
+onkos (2019) for viola - in memory of Janice Evans
