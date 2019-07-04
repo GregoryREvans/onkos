@@ -2,8 +2,8 @@
 
 \version "2.19.83"
 \language "english"
-#(set-default-paper-size "11x17landscape")
-%{ #(set-default-paper-size "letterportrait") %}
+%{ #(set-default-paper-size "11x17landscape") %}
+#(set-default-paper-size "letterportrait")
 %{ #(set-global-staff-size 13) %}
 #(set-global-staff-size 14)
 \include "ekmel.ily"
@@ -12,10 +12,10 @@
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	%dedication = \markup \override #'(font-name . "Didot") \fontsize #3.5 \center-column {"to  Andrew  Grishaw"}
+	dedication = \markup \override #'(font-name . "Didot") \fontsize #3.5 \center-column {"in memory of Janice Evans"}
 	title =  \markup \override #'(font-name . "Didot") \fontsize #16 \bold\center-column {"ὄ γ κ ο ς" }
 	subtitle = \markup \override #'(font-name . "Didot") \center-column { \line{ \fontsize #25 ".                                   ."} \line{ \fontsize #7 "f o r    v i o l a    a l o n e"} \line{ \fontsize #25 ".                                   ."} }
-	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #3 \center-column {"in memory of Janice Evans"}
+	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #3 \center-column {"version for violoncello"}
 	arranger = \markup \override #'(font-name . "Didot") \fontsize #2.3 {"Gregory Rowland Evans"}
 }
 
@@ -24,7 +24,7 @@
 	%\accidentalStyle modern
 	%\accidentalStyle modern-cautionary
 	%\accidentalStyle modern
-    indent = #0
+    indent = #1
 	ragged-last = ##t
     ragged-right = ##t
     %left-margin = #15
@@ -157,21 +157,28 @@
 	right-margin = 1\cm
 
 	%top-margin = .90\in
-	oddHeaderMarkup = \markup ""
-	evenHeaderMarkup = \markup ""
-	oddFooterMarkup = \markup \fill-line {
-    ""
-    \concat {
-      "ὄγκος ~"
-	  \fontsize #2
-	  \fromproperty #'page:page-number-string "~ Evans"
-     }
-    ""
-  }
-  evenFooterMarkup = \markup \fill-line {
-    ""
-	\concat { "ὄγκος ~" \fontsize #2
-	\fromproperty #'page:page-number-string "~ Evans"
-    } ""
-  }
+oddHeaderMarkup = \markup ""
+evenHeaderMarkup = \markup ""
+oddFooterMarkup = \markup
+	\fill-line {
+		\override #'(font-name . "Didot")
+			\bold \fontsize #3 "ὄγκος"
+		\concat {
+			\override #'(font-name . "Didot")
+				\bold \fontsize #3
+					%{ \on-the-fly #print-page-number-check-first %}
+					\fromproperty #'page:page-number-string
+			}
+		}
+evenFooterMarkup = \markup
+	\fill-line {
+		\concat {
+			\override #'(font-name . "Didot")
+				\bold \fontsize #3
+					%{ \on-the-fly #print-page-number-check-first %}
+					\fromproperty #'page:page-number-string
+			}
+		\override #'(font-name . "Didot")
+			\bold \fontsize #3 "ὄγκος"
+		}
 }

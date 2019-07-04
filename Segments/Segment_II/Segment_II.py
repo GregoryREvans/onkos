@@ -223,9 +223,9 @@ for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
 # for staff in abjad.iterate(score['Staff Group 1']).components(abjad.Staff):
 #     abjad.Instrument.transpose_from_sounding_pitch(staff)
 
-print('Transforming Tuplet Brackets ...')
-transformer = NoteheadBracketMaker()
-transformer(score)
+# print('Transforming Tuplet Brackets ...')
+# transformer = NoteheadBracketMaker()
+# transformer(score)
 
 score_file = abjad.LilyPondFile.new(
     score,

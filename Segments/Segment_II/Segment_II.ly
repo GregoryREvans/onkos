@@ -1,18 +1,18 @@
-\version "2.19.82"  %! LilyPondFile
-\language "english" %! LilyPondFile
+\version "2.19.83"  %! abjad.LilyPondFile
+\language "english" %! abjad.LilyPondFile
 
-\include "/Users/evansdsg2/Scores/onkos/Build/first_stylesheet.ily"  %! LilyPondFile
-\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
+\include "/Users/evansdsg2/Scores/onkos/Build/first_stylesheet.ily"  %! abjad.LilyPondFile
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! abjad.LilyPondFile
 
-\header { %! LilyPondFile
+\header { %! abjad.LilyPondFile
     tagline = ##f
-} %! LilyPondFile
+} %! abjad.LilyPondFile
 
 \layout {}
 
 \paper {}
 
-\score { %! LilyPondFile
+\score { %! abjad.LilyPondFile
     \context Score = "Onkos Score"
     <<
         \context TimeSignatureContext = "Global Context"
@@ -66,7 +66,6 @@
                 \context Voice = "Voice 1"
                 {
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 1] %! COMMENT_MEASURE_NUMBERS
                             \set Staff.instrumentName =
@@ -94,7 +93,7 @@
                     }
                     {
                         % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        \clef "varC"
+                        \clef "tenorvarC"
                         bf16
                         \pppp
                         - \tweak stencil #abjad-flared-hairpin
@@ -151,9 +150,8 @@
                         \stopTextSpanThree
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
-                            \clef "varC"
+                            \clef "tenorvarC"
                             c'16
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
@@ -191,7 +189,6 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "24")
                         \times 6/5 {
                             % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
                             \clef "treble"
@@ -217,9 +214,8 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "24")
                         \times 6/5 {
-                            \clef "varC"
+                            \clef "tenorvarC"
                             dqs'8
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
@@ -252,7 +248,6 @@
                         }
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
                             \set stemLeftBeamCount = 0
@@ -287,7 +282,7 @@
                     }
                     {
                         % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \clef "varC"
+                        \clef "tenorvarC"
                         ef'16
                         \pppp
                         - \tweak stencil #abjad-flared-hairpin
@@ -341,9 +336,8 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 15 14) "112")
                         \times 14/15 {
-                            \clef "varC"
+                            \clef "tenorvarC"
                             e'16
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
@@ -429,4 +423,4 @@
             }
         >>
     >>
-} %! LilyPondFile
+} %! abjad.LilyPondFile

@@ -1,11 +1,11 @@
-from evans.AttachmentHandlers.ArticulationHandler import ArticulationHandler
-from evans.AttachmentHandlers.ClefHandler import ClefHandler
-from evans.AttachmentHandlers.DynamicHandler import DynamicHandler
-from evans.AttachmentHandlers.GlissandoHandler import GlissandoHandler
-from evans.AttachmentHandlers.NoteheadHandler import NoteheadHandler
-from evans.AttachmentHandlers.PitchHandler import PitchHandler
-from evans.AttachmentHandlers.SlurHandler import SlurHandler
-from evans.AttachmentHandlers.TextSpanHandler import TextSpanHandler
+from Scores.onkos.AttachmentHandlers.ArticulationHandler import ArticulationHandler
+from Scores.onkos.AttachmentHandlers.ClefHandler import ClefHandler
+from Scores.onkos.AttachmentHandlers.DynamicHandler import DynamicHandler
+from Scores.onkos.AttachmentHandlers.GlissandoHandler import GlissandoHandler
+from Scores.onkos.AttachmentHandlers.NoteheadHandler import NoteheadHandler
+from Scores.onkos.AttachmentHandlers.PitchHandler import PitchHandler
+from Scores.onkos.AttachmentHandlers.SlurHandler import SlurHandler
+from Scores.onkos.AttachmentHandlers.TextSpanHandler import TextSpanHandler
 from Scores.onkos.Components.pitches import *
 
 articulation_handler_one = ArticulationHandler(
@@ -56,7 +56,7 @@ articulation_handler_two = ArticulationHandler(
     )
 
 clef_handler_two = ClefHandler(
-    clef='varC',
+    clef='tenorvarC',
     add_ottavas=True,
     # ottava_shelf=5,
     )
@@ -102,7 +102,7 @@ articulation_handler_three = ArticulationHandler(
     )
 
 clef_handler_three = ClefHandler(
-    clef='varC',
+    clef='tenorvarC',
     add_ottavas=True,
     # ottava_shelf=5,
     )
@@ -150,7 +150,7 @@ articulation_handler_four = ArticulationHandler(
     )
 
 clef_handler_four = ClefHandler(
-    clef='varC',
+    clef='tenorvarC',
     add_ottavas=True,
     # ottava_shelf=5,
     )
@@ -213,7 +213,7 @@ dynamic_handler_six = DynamicHandler(
     continuous=True,
     )
 clef_handler_six = ClefHandler(
-    clef='varC',
+    clef='tenorvarC',
     add_ottavas=True,
     # ottava_shelf=5,
     )

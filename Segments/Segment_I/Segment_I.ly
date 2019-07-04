@@ -1,18 +1,18 @@
-\version "2.19.82"  %! LilyPondFile
-\language "english" %! LilyPondFile
+\version "2.19.83"  %! abjad.LilyPondFile
+\language "english" %! abjad.LilyPondFile
 
-\include "/Users/evansdsg2/Scores/onkos/Build/first_stylesheet.ily"  %! LilyPondFile
-\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
+\include "/Users/evansdsg2/Scores/onkos/Build/first_stylesheet.ily"  %! abjad.LilyPondFile
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! abjad.LilyPondFile
 
-\header { %! LilyPondFile
+\header { %! abjad.LilyPondFile
     tagline = ##f
-} %! LilyPondFile
+} %! abjad.LilyPondFile
 
 \layout {}
 
 \paper {}
 
-\score { %! LilyPondFile
+\score { %! abjad.LilyPondFile
     \context Score = "Onkos Score"
     <<
         \context TimeSignatureContext = "Global Context"
@@ -266,7 +266,7 @@
                         \markup {
                             \hcenter-in
                                 #14
-                                Viola
+                                Violoncello
                             }
                         \once \override Staff.NoteHead.style = #'default
                         \clef "treble"
@@ -312,7 +312,6 @@
                         :32
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             \once \override Staff.NoteHead.style = #'triangle
                             d'''8.
@@ -354,13 +353,11 @@
                         \startTextSpanTwo
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 17 16) "16")
                         \times 16/17 {
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "32")
                             \times 2/3 {
                                 % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "varC"
+                                \clef "tenorvarC"
                                 cqs'8
                                 _ #(make-dynamic-script
                                     (markup
@@ -469,7 +466,6 @@
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "32")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
                                 bf16
@@ -537,7 +533,6 @@
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "40")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 d'4
@@ -635,7 +630,6 @@
                         }
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
                             % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -707,7 +701,7 @@
                         \stopTextSpanThree
                     }
                     {
-                        \clef "varC"
+                        \clef "tenorvarC"
                         bf16
                         \pppp
                         - \tweak stencil #abjad-flared-hairpin
@@ -739,14 +733,12 @@
                         \<
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "16")
                         \times 2/3 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 10) "80")
                             \times 10/11 {
                                 % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "varC"
+                                \clef "tenorvarC"
                                 dqs'8.
                                 _ #(make-dynamic-script
                                     (markup
@@ -854,7 +846,6 @@
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "32")
                             \times 4/5 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 d'16
@@ -926,7 +917,6 @@
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "40")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'default
                                 dqs'4
@@ -1024,7 +1014,6 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "48")
                         \times 6/5 {
                             % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -1087,14 +1076,12 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 12) "48")
                         \times 12/13 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "48")
                             \times 6/11 {
                                 % [Voice 1 measure 6] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                \clef "varC"
+                                \clef "tenorvarC"
                                 af8.
                                 _ #(make-dynamic-script
                                     (markup
@@ -1202,7 +1189,6 @@
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "320")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bf16.
@@ -1269,7 +1255,6 @@
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "320")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'default
                                 d'8
@@ -1371,7 +1356,7 @@
                     {
                         % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        \clef "varC"
+                        \clef "tenorvarC"
                         a4.
                         _ #(make-dynamic-script
                             (markup
@@ -1427,7 +1412,6 @@
                                         - \tweak thickness #2.5
                                         \glissando
 
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'triangle
                             aqs4
@@ -1510,14 +1494,12 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 29 18) "36")
                         \times 18/29 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "96")
                             \times 6/11 {
                                 % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "varC"
+                                \clef "tenorvarC"
                                 dqf'4.
                                 _ #(make-dynamic-script
                                     (markup
@@ -1625,7 +1607,6 @@
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "32")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 cqs'8.
@@ -1692,7 +1673,6 @@
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "40")
                             \times 5/6 {
                                 \once \override Staff.NoteHead.style = #'default
                                 bf8.
@@ -1791,11 +1771,10 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "8")
                         \times 4/3 {
                             % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
-                            \clef "varC"
+                            \clef "tenorvarC"
                             a8
                             _ #(make-dynamic-script
                                 (markup
@@ -1904,7 +1883,6 @@
                             \startTextSpanOne
                             ]
                         }
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             aqf2
@@ -2018,7 +1996,6 @@
                         :32
                         ~
                         ]
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'triangle
                             aqf'''4
@@ -2115,7 +2092,7 @@
                     {
                         % [Voice 1 measure 12] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         bqf4
                         _ #(make-dynamic-script
                             (markup
@@ -2250,11 +2227,10 @@
                         \startTextSpanTwo
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 15 8) "8")
                         \times 8/15 {
                             % [Voice 1 measure 13] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
-                            \clef "varC"
+                            \clef "tenorvarC"
                             d'8.
                             _ #(make-dynamic-script
                                 (markup
@@ -2360,7 +2336,6 @@
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
                                 dqf'8.
@@ -2523,7 +2498,7 @@
                     {
                         % [Voice 1 measure 14] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         f'4
                         \ff
                         - \tenuto
@@ -2560,7 +2535,6 @@
                         - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 3) "24")
                         \times 3/4 {
                             \once \override Staff.NoteHead.style = #'default
                             f'8
@@ -2585,7 +2559,6 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             % [Voice 1 measure 15] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -2638,7 +2611,6 @@
                         btef''8.
                         :32
                         ~
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
                             % [Voice 1 measure 16] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -2672,7 +2644,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         c'8
                         _ #(make-dynamic-script
                             (markup
@@ -2779,7 +2751,6 @@
                         - \tweak staff-padding #11.5
                         \startTextSpanOne
                         ]
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             % [Voice 1 measure 17] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -2855,10 +2826,9 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "20")
                         \times 5/6 {
                             \once \override Staff.NoteHead.style = #'triangle
-                            \clef "varC"
+                            \clef "tenorvarC"
                             bf4
                             _ #(make-dynamic-script
                                 (markup
@@ -3025,7 +2995,6 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             \once \override Staff.NoteHead.style = #'triangle
                             \clef "treble"
@@ -3104,7 +3073,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         a'4
                         \ff
                         - \accent
@@ -3141,6 +3110,7 @@
                         \startTextSpanThree
                         % [Voice 1 measure 20] %! COMMENT_MEASURE_NUMBERS
                         \ottava 1
+                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         <b' e''>4
                         - \tenuto
@@ -3159,6 +3129,7 @@
                         - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         \ottava 0
+                        \ottava 0
                     }
                     {
                         r4
@@ -3169,13 +3140,11 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 12) "48")
                         \times 12/13 {
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "128")
                             \times 4/5 {
                                 % [Voice 1 measure 21] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                \clef "varC"
+                                \clef "tenorvarC"
                                 g32
                                 _ #(make-dynamic-script
                                     (markup
@@ -3282,7 +3251,6 @@
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 3) "24")
                             \times 3/5 {
                                 \once \override Staff.NoteHead.style = #'default
                                 af8
@@ -3350,7 +3318,6 @@
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "48")
                             \times 6/7 {
                                 \once \override Staff.NoteHead.style = #'default
                                 fs8
@@ -3448,7 +3415,6 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "48")
                         \times 6/7 {
                             % [Voice 1 measure 22] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -3527,13 +3493,11 @@
                         \startTextSpanTwo
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 17 16) "16")
                         \times 16/17 {
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "32")
                             \times 2/3 {
                                 % [Voice 1 measure 23] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                \clef "varC"
+                                \clef "tenorvarC"
                                 fqs8
                                 _ #(make-dynamic-script
                                     (markup
@@ -3642,7 +3606,6 @@
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "32")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
                                 f16
@@ -3711,7 +3674,6 @@
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "40")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 cqs4
@@ -3778,10 +3740,8 @@
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
                         }
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "16")
                         \times 2/3 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 10) "80")
                             \times 10/11 {
                                 % [Voice 1 measure 24] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
@@ -3852,7 +3812,6 @@
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "32")
                             \times 4/5 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fqs16
@@ -3923,7 +3882,6 @@
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "40")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 f4
@@ -4021,7 +3979,6 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "16")
                         \times 4/3 {
                             % [Voice 1 measure 25] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -4086,9 +4043,8 @@
                         }
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                         \times 4/5 {
-                            \clef "varC"
+                            \clef "tenorvarC"
                             c'16
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
@@ -4121,14 +4077,12 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 9) "18")
                         \times 9/13 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "96")
                             \times 6/11 {
                                 % [Voice 1 measure 26] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "varC"
+                                \clef "tenorvarC"
                                 gqf4.
                                 _ #(make-dynamic-script
                                     (markup
@@ -4236,7 +4190,6 @@
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "40")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'default
                                 g8.
@@ -4305,7 +4258,6 @@
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "40")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 gqf4
@@ -4408,7 +4360,7 @@
                         % [Voice 1 measure 27] %! COMMENT_MEASURE_NUMBERS
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         f''4
                         \ff
                         - \espressivo
@@ -4463,14 +4415,12 @@
                         \ottava 0
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 29 16) "16")
                         \times 16/29 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "48")
                             \times 6/11 {
                                 % [Voice 1 measure 28] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "varC"
+                                \clef "tenorvarC"
                                 aqf4.
                                 _ #(make-dynamic-script
                                     (markup
@@ -4577,7 +4527,6 @@
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "16")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 gqf8.
@@ -4645,7 +4594,6 @@
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "40")
                             \times 5/6 {
                                 \once \override Staff.NoteHead.style = #'default
                                 fs8.
@@ -4744,7 +4692,7 @@
                     {
                         % [Voice 1 measure 29] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         dqf'4.
                         _ #(make-dynamic-script
                             (markup
@@ -4825,7 +4773,6 @@
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #11.5
                         \startTextSpanOne
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 30] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -4925,7 +4872,6 @@
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #17.5
                         \startTextSpanThree
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'triangle
                             ees''16
@@ -4962,7 +4908,7 @@
                     {
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         bf''8
                         \ff
                         - \tenuto
@@ -5024,7 +4970,7 @@
                     {
                         % [Voice 1 measure 32] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        \clef "varC"
+                        \clef "tenorvarC"
                         b2
                         _ #(make-dynamic-script
                             (markup
@@ -5058,7 +5004,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         <g b>4
                         \ff
                         - \accent
@@ -5113,11 +5059,10 @@
                         [
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 15 8) "8")
                         \times 8/15 {
                             % [Voice 1 measure 33] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            \clef "varC"
+                            \clef "tenorvarC"
                             af8.
                             _ #(make-dynamic-script
                                 (markup
@@ -5222,7 +5167,6 @@
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 g8.
@@ -5383,11 +5327,10 @@
                         }
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 34] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "varC"
+                            \clef "tenorvarC"
                             cs'4
                             \ff
                             - \espressivo
@@ -5448,7 +5391,6 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             % [Voice 1 measure 35] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -5502,7 +5444,6 @@
                         def'''16
                         - \accent
                         ]
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
                             % [Voice 1 measure 36] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -5532,7 +5473,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'triangle
-                        \clef "varC"
+                        \clef "tenorvarC"
                         bf16.
                         _ #(make-dynamic-script
                             (markup
@@ -5710,7 +5651,6 @@
                                         \glissando
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "20")
                         \times 5/6 {
                             \once \override Staff.NoteHead.style = #'triangle
                             a2
@@ -5871,7 +5811,6 @@
                         - \espressivo
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "16")
                         \times 4/3 {
                             \once \override Staff.NoteHead.style = #'triangle
                             dtef'''16
@@ -5902,7 +5841,7 @@
                     {
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         fs''4
                         \ff
                         - \tenuto
@@ -5958,7 +5897,7 @@
                         \ottava 0
                     }
                     {
-                        \clef "varC"
+                        \clef "tenorvarC"
                         eqf'8
                         \pppp
                         - \tweak stencil #abjad-flared-hairpin
@@ -5987,13 +5926,11 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 12) "48")
                         \times 12/13 {
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "128")
                             \times 4/5 {
                                 % [Voice 1 measure 41] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "varC"
+                                \clef "tenorvarC"
                                 c32
                                 _ #(make-dynamic-script
                                     (markup
@@ -6100,7 +6037,6 @@
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 3) "24")
                             \times 3/5 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 e8
@@ -6167,7 +6103,6 @@
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "48")
                             \times 6/7 {
                                 \once \override Staff.NoteHead.style = #'default
                                 f8
@@ -6235,9 +6170,7 @@
                             \startTextSpanOne
                         }
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 7) "56")
                         \times 7/13 {
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "256")
                             \times 4/5 {
                                 % [Voice 1 measure 42] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'triangle
@@ -6305,7 +6238,6 @@
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 3) "24")
                             \times 3/5 {
                                 \once \override Staff.NoteHead.style = #'default
                                 c4
@@ -6372,7 +6304,6 @@
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "48")
                             \times 6/7 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 e4
@@ -6439,9 +6370,7 @@
                             \startTextSpanOne
                         }
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 17 9) "18")
                         \times 9/17 {
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "64")
                             \times 2/3 {
                                 % [Voice 1 measure 43] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -6511,7 +6440,6 @@
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "64")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
                                 fqs8
@@ -6580,7 +6508,6 @@
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "40")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'default
                                 f2
@@ -6717,7 +6644,6 @@
                         dtef'''8.
                         :32
                         ~
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             dtef'''8.
@@ -6728,7 +6654,6 @@
                             ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "48")
                         \times 6/5 {
                             \once \override Staff.NoteHead.style = #'triangle
                             def'''8
@@ -6757,11 +6682,10 @@
                         }
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             % [Voice 1 measure 45] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
-                            \clef "varC"
+                            \clef "tenorvarC"
                             aqf4.
                             _ #(make-dynamic-script
                                 (markup
@@ -6870,12 +6794,11 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 3) "24")
                         \times 3/4 {
                             \ottava 1
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "varC"
+                            \clef "tenorvarC"
                             <ef'' af''>4.
                             \ff
                             - \accent
@@ -6939,14 +6862,12 @@
                         \stopTextSpanThree
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 21 16) "16")
                         \times 16/21 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 10) "80")
                             \times 10/11 {
                                 % [Voice 1 measure 46] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                \clef "varC"
+                                \clef "tenorvarC"
                                 fqs8.
                                 _ #(make-dynamic-script
                                     (markup
@@ -7056,7 +6977,6 @@
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                             \times 4/5 {
                                 \once \override Staff.NoteHead.style = #'default
                                 fs16
@@ -7127,7 +7047,6 @@
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "40")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 gqf4
@@ -7226,7 +7145,7 @@
                     {
                         % [Voice 1 measure 47] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         ef'4.
                         \ff
                         - \espressivo
@@ -7280,14 +7199,12 @@
                         \startTextSpanTwo
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 8) "8")
                         \times 8/13 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "48")
                             \times 6/11 {
                                 % [Voice 1 measure 48] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "varC"
+                                \clef "tenorvarC"
                                 g4.
                                 _ #(make-dynamic-script
                                     (markup
@@ -7395,7 +7312,6 @@
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "40")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fqs8.
@@ -7464,7 +7380,6 @@
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "40")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 f4
@@ -7566,7 +7481,7 @@
                     {
                         % [Voice 1 measure 49] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         bf4
                         \ff
                         - \tenuto
@@ -7700,7 +7615,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        \clef "varC"
+                        \clef "tenorvarC"
                         g8
                         _ #(make-dynamic-script
                             (markup
@@ -7874,7 +7789,6 @@
                         aqf4
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "20")
                         \times 5/4 {
                             \once \override Staff.NoteHead.style = #'default
                             aqf8
@@ -7914,7 +7828,6 @@
                                             \glissando
 
                         }
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 54] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
@@ -7998,7 +7911,6 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             \once \override Staff.NoteHead.style = #'default
                             \clef "treble"
@@ -8069,8 +7981,9 @@
                     }
                     {
                         \ottava 1
+                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         <c'' fs''>8
                         \ff
                         - \accent
@@ -8106,6 +8019,7 @@
                         - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \ottava 0
+                        \ottava 0
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         e''8
@@ -8133,7 +8047,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        \clef "varC"
+                        \clef "tenorvarC"
                         c'4
                         _ #(make-dynamic-script
                             (markup
@@ -8167,14 +8081,12 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 29 20) "80")
                         \times 20/29 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "384")
                             \times 6/11 {
                                 % [Voice 1 measure 56] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "varC"
+                                \clef "tenorvarC"
                                 af8.
                                 _ #(make-dynamic-script
                                     (markup
@@ -8282,7 +8194,6 @@
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "128")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
                                 fs16.
@@ -8349,7 +8260,6 @@
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "160")
                             \times 5/6 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 cqs'16.
@@ -8446,11 +8356,10 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "8")
                         \times 4/3 {
                             % [Voice 1 measure 57] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
-                            \clef "varC"
+                            \clef "tenorvarC"
                             cqs'8
                             _ #(make-dynamic-script
                                 (markup
@@ -8597,11 +8506,10 @@
                         \stopTextSpanThree
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 58] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "varC"
+                            \clef "tenorvarC"
                             cs'8
                             _ #(make-dynamic-script
                                 (markup
@@ -8709,8 +8617,9 @@
                         }
                     }
                     {
+                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         cs''4.
                         \ff
                         - \espressivo
@@ -8744,9 +8653,9 @@
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #17.5
                         \startTextSpanThree
+                        \ottava 0
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
                             % [Voice 1 measure 59] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -8793,7 +8702,6 @@
                             [
                         }
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "16")
                         \times 4/3 {
                             % [Voice 1 measure 60] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
@@ -8831,11 +8739,10 @@
                         ]
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "8")
                         \times 8/9 {
                             % [Voice 1 measure 61] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "varC"
+                            \clef "tenorvarC"
                             c'4
                             \ff
                             - \tenuto
@@ -8897,11 +8804,10 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 3) "6")
                         \times 3/5 {
                             % [Voice 1 measure 62] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "varC"
+                            \clef "tenorvarC"
                             bqs8.
                             _ #(make-dynamic-script
                                 (markup
@@ -9007,7 +8913,6 @@
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "16")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 eqf'8.
@@ -9169,8 +9074,9 @@
                     }
                     {
                         % [Voice 1 measure 63] %! COMMENT_MEASURE_NUMBERS
+                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         b'8
                         \ff
                         - \tenuto
@@ -9205,12 +9111,12 @@
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #17.5
                         \startTextSpanThree
+                        \ottava 0
                         \once \override Staff.NoteHead.style = #'default
                         bf'2
                         - \espressivo
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "8")
                         \times 4/3 {
                             \once \override Staff.NoteHead.style = #'default
                             bf'8
@@ -9244,13 +9150,11 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 7) "56")
                         \times 7/13 {
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "256")
                             \times 4/5 {
                                 % [Voice 1 measure 64] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                \clef "varC"
+                                \clef "tenorvarC"
                                 gqf'16
                                 _ #(make-dynamic-script
                                     (markup
@@ -9358,7 +9262,6 @@
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 3) "24")
                             \times 3/5 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fs'4
@@ -9424,7 +9327,6 @@
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "48")
                             \times 6/7 {
                                 \once \override Staff.NoteHead.style = #'default
                                 d'4
@@ -9531,7 +9433,7 @@
                         % [Voice 1 measure 65] %! COMMENT_MEASURE_NUMBERS
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         <d' d''>2
                         \ff
                         - \tenuto
@@ -9569,11 +9471,10 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "20")
                         \times 5/4 {
                             % [Voice 1 measure 66] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
-                            \clef "varC"
+                            \clef "tenorvarC"
                             cs'8
                             _ #(make-dynamic-script
                                 (markup
@@ -9711,10 +9612,9 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 3) "24")
                         \times 3/4 {
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "varC"
+                            \clef "tenorvarC"
                             f'8
                             \ff
                             - \accent
@@ -9779,7 +9679,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "varC"
+                        \clef "tenorvarC"
                         g'4.
                         \ff
                         - \espressivo
@@ -9825,11 +9725,11 @@
                         a'4
                         - \tenuto
                         ~
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             % [Voice 1 measure 69] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
                             a'8
+                            \ottava 1
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
                             <c'' d''>2
@@ -9839,6 +9739,7 @@
                         \once \override Staff.NoteHead.style = #'default
                         <c'' d''>8
                         [
+                        \ottava 0
                         \ottava 0
                         \once \override Staff.NoteHead.style = #'default
                         af'8
@@ -9884,4 +9785,4 @@
             }
         >>
     >>
-} %! LilyPondFile
+} %! abjad.LilyPondFile
