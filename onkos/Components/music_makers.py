@@ -1,8 +1,8 @@
 import abjad
 import abjadext.rmakers
-from onkos.AttachmentHandlers.MusicMaker import MusicMaker
-from onkos.Components.rhythm_makers import *
-from onkos.Components.attachment_handlers import *
+from onkos.onkos.AttachmentHandlers.MusicMaker import MusicMaker
+from onkos.onkos.Components.rhythm_makers import *
+from onkos.onkos.Components.attachment_handlers import *
 
 silence_maker = abjadext.rmakers.NoteRhythmMaker(
     division_masks=[abjadext.rmakers.SilenceMask(pattern=abjad.index([0], 1))]

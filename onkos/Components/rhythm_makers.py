@@ -1,7 +1,7 @@
 import abjad
 import abjadext.rmakers
 from evans.abjad_functions.rtm.rtm_maker import RTMMaker_4
-from onkos.Components.rtm_lists import final_rtm_list
+from onkos.onkos.Components.rtm_lists import final_rtm_list
 
 rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(counts=[2, 1, 6, 4, 3, 5], denominator=16),

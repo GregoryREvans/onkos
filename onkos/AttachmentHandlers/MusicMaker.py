@@ -1,12 +1,12 @@
 import abjad
-from onkos.AttachmentHandlers.GlissandoHandler import GlissandoHandler
-from onkos.AttachmentHandlers.NoteheadHandler import NoteheadHandler
-from onkos.AttachmentHandlers.PitchHandler import PitchHandler
-from onkos.AttachmentHandlers.ArticulationHandler import ArticulationHandler
-from onkos.AttachmentHandlers.DynamicHandler import DynamicHandler
-from onkos.AttachmentHandlers.TextSpanHandler import TextSpanHandler
-from onkos.AttachmentHandlers.ClefHandler import ClefHandler
-from onkos.AttachmentHandlers.SlurHandler import SlurHandler
+from onkos.onkos.AttachmentHandlers.GlissandoHandler import GlissandoHandler
+from onkos.onkos.AttachmentHandlers.NoteheadHandler import NoteheadHandler
+from onkos.onkos.AttachmentHandlers.PitchHandler import PitchHandler
+from onkos.onkos.AttachmentHandlers.ArticulationHandler import ArticulationHandler
+from onkos.onkos.AttachmentHandlers.DynamicHandler import DynamicHandler
+from onkos.onkos.AttachmentHandlers.TextSpanHandler import TextSpanHandler
+from onkos.onkos.AttachmentHandlers.ClefHandler import ClefHandler
+from onkos.onkos.AttachmentHandlers.SlurHandler import SlurHandler
 
 # from evans.AttachmentHandlers.GraceHandler import GraceHandler
 # from evans.AttachmentHandlers.TrillHandler import TrillHandler
