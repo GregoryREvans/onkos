@@ -1,14 +1,14 @@
 import abjad
 from evans.abjad_functions.talea_timespan.TimespanMaker import TimespanMaker
-from Scores.onkos.Components.material_pattern import material_list
-from Scores.onkos.Components.material_pattern import material_list2
+from onkos.Components.material_pattern import material_list
+from onkos.Components.material_pattern import material_list2
 from evans.general_tools.cyc import cyc
 from evans.abjad_functions.talea_timespan import timespan_functions
-from Scores.onkos.Components.music_makers import *
-from Scores.onkos.Components.time_signatures import time_signatures
-from Scores.onkos.Components.time_signatures import time_signatures2
-from Scores.onkos.Components.time_signatures import bounds
-from Scores.onkos.Components.time_signatures import bounds2
+from onkos.Components.music_makers import *
+from onkos.Components.time_signatures import time_signatures
+from onkos.Components.time_signatures import time_signatures2
+from onkos.Components.time_signatures import bounds
+from onkos.Components.time_signatures import bounds2
 
 timespan_maker = TimespanMaker(denominator=32, total_duration=abjad.Duration(1915, 32))
 
@@ -167,11 +167,11 @@ for i, timespan_list in enumerate(initial_list):
     for timespan in timespan_list:
         if isinstance(timespan, abjad.AnnotatedTimespan):
             timespan.annotation = timespan_functions.TimespanSpecifier(
-                voice_name=f"Voice {i}", rhythm_maker=next(cyclic_materials)
+                voice_name=f"Voice {i}", handler=next(cyclic_materials)
             )
         else:
             timespan.annotation = timespan_functions.TimespanSpecifier(
-                voice_name=f"Voice {i}", rhythm_maker=silence_maker
+                voice_name=f"Voice {i}", handler=silence_maker
             )
     timespan_list.sort()
     master_list.append(timespan_list)
@@ -181,7 +181,7 @@ voices = [f"Voice {i + 1}" for i in range(master_length)]
 all_timespans = {
     voice: timespan_list for voice, timespan_list in zip(voices, master_list)
 }
-silence_specifier = timespan_functions.TimespanSpecifier(rhythm_maker=silence_maker)
+silence_specifier = timespan_functions.TimespanSpecifier(handler=silence_maker)
 timespan_functions.add_silences_to_timespan_dict(all_timespans, silence_specifier)
 
 time_signatures = [
@@ -221,11 +221,11 @@ for i, timespan_list in enumerate(initial_list2):
     for timespan in timespan_list:
         if isinstance(timespan, abjad.AnnotatedTimespan):
             timespan.annotation = timespan_functions.TimespanSpecifier(
-                voice_name=f"Voice {i}", rhythm_maker=next(cyclic_materials2)
+                voice_name=f"Voice {i}", handler=next(cyclic_materials2)
             )
         else:
             timespan.annotation = timespan_functions.TimespanSpecifier(
-                voice_name=f"Voice {i}", rhythm_maker=silence_maker
+                voice_name=f"Voice {i}", handler=silence_maker
             )
     timespan_list.sort()
     master_list2.append(timespan_list)
@@ -235,7 +235,7 @@ voices2 = [f"Voice {i + 1}" for i in range(master_length2)]
 all_timespans2 = {
     voice: timespan_list for voice, timespan_list in zip(voices2, master_list2)
 }
-silence_specifier2 = timespan_functions.TimespanSpecifier(rhythm_maker=silence_maker)
+silence_specifier2 = timespan_functions.TimespanSpecifier(handler=silence_maker)
 timespan_functions.add_silences_to_timespan_dict(all_timespans2, silence_specifier2)
 
 time_signatures2 = [

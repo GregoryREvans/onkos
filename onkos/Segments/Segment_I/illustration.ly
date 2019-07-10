@@ -1,8 +1,8 @@
 \version "2.19.83"  %! abjad.LilyPondFile
 \language "english" %! abjad.LilyPondFile
 
-\include "/Users/evansdsg2/Scores/onkos/Build/first_stylesheet.ily"  %! abjad.LilyPondFile
-\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! abjad.LilyPondFile
+\include "/Users/evansdsg2/Scores/onkos/onkos/Build/first_stylesheet.ily" %! abjad.LilyPondFile
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily"      %! abjad.LilyPondFile
 
 \header { %! abjad.LilyPondFile
     tagline = ##f
@@ -266,11 +266,11 @@
                         \markup {
                             \hcenter-in
                                 #14
-                                Violoncello
+                                Viola
                             }
                         \once \override Staff.NoteHead.style = #'default
                         \clef "treble"
-                        bef'8
+                        b'8
                         \mf
                         - \tenuto
                         \>
@@ -324,11 +324,11 @@
                         \once \override Staff.NoteHead.style = #'default
                         dqf'''8.
                         \once \override Staff.NoteHead.style = #'triangle
-                        aef''4
+                        a''4
                         :32
                         ~
                         \once \override Staff.NoteHead.style = #'triangle
-                        aef''16
+                        a''16
                         :32
                         [
                         \once \override Staff.NoteHead.style = #'default
@@ -357,7 +357,7 @@
                             \times 2/3 {
                                 % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "tenorvarC"
+                                \clef "varC"
                                 cqs'8
                                 _ #(make-dynamic-script
                                     (markup
@@ -669,10 +669,10 @@
                             \startTextSpanThree
                             ]
                             \once \override Staff.NoteHead.style = #'triangle
-                            etes''4.
+                            f''4.
                             - \espressivo
                             \once \override Staff.NoteHead.style = #'default
-                            ees''8
+                            e''8
                             \mp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -701,7 +701,7 @@
                         \stopTextSpanThree
                     }
                     {
-                        \clef "tenorvarC"
+                        \clef "varC"
                         bf16
                         \pppp
                         - \tweak stencil #abjad-flared-hairpin
@@ -738,7 +738,7 @@
                             \times 10/11 {
                                 % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "tenorvarC"
+                                \clef "varC"
                                 dqs'8.
                                 _ #(make-dynamic-script
                                     (markup
@@ -1018,7 +1018,7 @@
                             % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
                             \clef "treble"
-                            eef''8
+                            e''8
                             \mf
                             - \tenuto
                             \>
@@ -1081,7 +1081,7 @@
                             \times 6/11 {
                                 % [Voice 1 measure 6] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                \clef "tenorvarC"
+                                \clef "varC"
                                 af8.
                                 _ #(make-dynamic-script
                                     (markup
@@ -1356,7 +1356,7 @@
                     {
                         % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        \clef "tenorvarC"
+                        \clef "varC"
                         a4.
                         _ #(make-dynamic-script
                             (markup
@@ -1499,7 +1499,7 @@
                             \times 6/11 {
                                 % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "tenorvarC"
+                                \clef "varC"
                                 dqf'4.
                                 _ #(make-dynamic-script
                                     (markup
@@ -1774,7 +1774,7 @@
                         \times 4/3 {
                             % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
-                            \clef "tenorvarC"
+                            \clef "varC"
                             a8
                             _ #(make-dynamic-script
                                 (markup
@@ -1987,7 +1987,7 @@
                         :32
                         [
                         \once \override Staff.NoteHead.style = #'default
-                        etef''8
+                        ef''8
                         - \accent
                         \once \override Staff.NoteHead.style = #'default
                         eqf''16
@@ -2033,7 +2033,7 @@
                     {
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
                         \clef "treble"
-                        ctes'''8.
+                        cs'''8.
                         \mf
                         - \accent
                         \>
@@ -2068,7 +2068,7 @@
                         \startTextSpanThree
                         [
                         \once \override Staff.NoteHead.style = #'triangle
-                        eef'''8.
+                        e'''8.
                         \mp
                         - \espressivo
                         - \tweak stencil #constante-hairpin
@@ -2092,7 +2092,7 @@
                     {
                         % [Voice 1 measure 12] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         bqf4
                         _ #(make-dynamic-script
                             (markup
@@ -2230,7 +2230,7 @@
                         \times 8/15 {
                             % [Voice 1 measure 13] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
-                            \clef "tenorvarC"
+                            \clef "varC"
                             d'8.
                             _ #(make-dynamic-script
                                 (markup
@@ -2498,7 +2498,7 @@
                     {
                         % [Voice 1 measure 14] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         f'4
                         \ff
                         - \tenuto
@@ -2563,7 +2563,7 @@
                             % [Voice 1 measure 15] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
                             \clef "treble"
-                            eef'''4
+                            e'''4
                             \mf
                             - \tenuto
                             \>
@@ -2598,30 +2598,30 @@
                             - \tweak staff-padding #17.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'default
-                            eef'''16
+                            e'''16
                             [
                             \once \override Staff.NoteHead.style = #'default
                             e'''8
                             - \tenuto
                         }
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        btef''16
+                        bf''16
                         :32
                         \once \override Staff.NoteHead.style = #'triangle
-                        btef''8.
+                        bf''8.
                         :32
                         ~
                         \times 8/9 {
                             % [Voice 1 measure 16] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
-                            btef''8.
+                            bf''8.
                             :32
                             ]
                             \once \override Staff.NoteHead.style = #'default
                             eqf'''4
                             - \accent
                             \once \override Staff.NoteHead.style = #'default
-                            eef'''8
+                            e'''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -2644,7 +2644,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         c'8
                         _ #(make-dynamic-script
                             (markup
@@ -2828,7 +2828,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/6 {
                             \once \override Staff.NoteHead.style = #'triangle
-                            \clef "tenorvarC"
+                            \clef "varC"
                             bf4
                             _ #(make-dynamic-script
                                 (markup
@@ -3033,19 +3033,19 @@
                             \startTextSpanThree
                             ]
                             \once \override Staff.NoteHead.style = #'default
-                            def'''4
+                            d'''4
                             - \tenuto
                             ~
                             \once \override Staff.NoteHead.style = #'default
-                            def'''16
+                            d'''16
                             [
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            ates''16
+                            bf''16
                             - \accent
                             ~
                         }
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        ates''16
+                        bf''16
                         \once \override Staff.NoteHead.style = #'triangle
                         eqf'''16
                         - \espressivo
@@ -3073,7 +3073,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         a'4
                         \ff
                         - \accent
@@ -3110,7 +3110,6 @@
                         \startTextSpanThree
                         % [Voice 1 measure 20] %! COMMENT_MEASURE_NUMBERS
                         \ottava 1
-                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         <b' e''>4
                         - \tenuto
@@ -3129,7 +3128,6 @@
                         - \tweak staff-padding #14.5
                         \startTextSpanTwo
                         \ottava 0
-                        \ottava 0
                     }
                     {
                         r4
@@ -3144,7 +3142,7 @@
                             \times 4/5 {
                                 % [Voice 1 measure 21] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                \clef "tenorvarC"
+                                \clef "varC"
                                 g32
                                 _ #(make-dynamic-script
                                     (markup
@@ -3419,7 +3417,7 @@
                             % [Voice 1 measure 22] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
                             \clef "treble"
-                            aes'4
+                            a'4
                             \mf
                             - \tenuto
                             \>
@@ -3473,7 +3471,7 @@
                         gqf''16
                         [
                         \once \override Staff.NoteHead.style = #'default
-                        ctes''16
+                        cs''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -3497,7 +3495,7 @@
                             \times 2/3 {
                                 % [Voice 1 measure 23] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                \clef "tenorvarC"
+                                \clef "varC"
                                 fqs8
                                 _ #(make-dynamic-script
                                     (markup
@@ -4021,7 +4019,7 @@
                             eqs''16
                             - \tenuto
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            ees''16
+                            e''16
                             \mp
                             - \accent
                             - \tweak stencil #constante-hairpin
@@ -4044,7 +4042,7 @@
                     }
                     {
                         \times 4/5 {
-                            \clef "tenorvarC"
+                            \clef "varC"
                             c'16
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
@@ -4082,7 +4080,7 @@
                             \times 6/11 {
                                 % [Voice 1 measure 26] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "tenorvarC"
+                                \clef "varC"
                                 gqf4.
                                 _ #(make-dynamic-script
                                     (markup
@@ -4360,7 +4358,7 @@
                         % [Voice 1 measure 27] %! COMMENT_MEASURE_NUMBERS
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         f''4
                         \ff
                         - \espressivo
@@ -4420,7 +4418,7 @@
                             \times 6/11 {
                                 % [Voice 1 measure 28] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "tenorvarC"
+                                \clef "varC"
                                 aqf4.
                                 _ #(make-dynamic-script
                                     (markup
@@ -4692,7 +4690,7 @@
                     {
                         % [Voice 1 measure 29] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         dqf'4.
                         _ #(make-dynamic-script
                             (markup
@@ -4838,7 +4836,7 @@
                     {
                         \once \override Staff.NoteHead.style = #'triangle
                         \clef "treble"
-                        ees''4
+                        e''4
                         \mf
                         - \espressivo
                         \>
@@ -4874,9 +4872,9 @@
                         \startTextSpanThree
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'triangle
-                            ees''16
+                            e''16
                             \once \override Staff.NoteHead.style = #'default
-                            ees''4
+                            e''4
                             \mp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -4908,7 +4906,7 @@
                     {
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         bf''8
                         \ff
                         - \tenuto
@@ -4970,7 +4968,7 @@
                     {
                         % [Voice 1 measure 32] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        \clef "tenorvarC"
+                        \clef "varC"
                         b2
                         _ #(make-dynamic-script
                             (markup
@@ -5004,7 +5002,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         <g b>4
                         \ff
                         - \accent
@@ -5062,7 +5060,7 @@
                         \times 8/15 {
                             % [Voice 1 measure 33] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            \clef "tenorvarC"
+                            \clef "varC"
                             af8.
                             _ #(make-dynamic-script
                                 (markup
@@ -5330,7 +5328,7 @@
                         \times 2/3 {
                             % [Voice 1 measure 34] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "tenorvarC"
+                            \clef "varC"
                             cs'4
                             \ff
                             - \espressivo
@@ -5395,7 +5393,7 @@
                             % [Voice 1 measure 35] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
                             \clef "treble"
-                            ees''8.
+                            e''8.
                             \mf
                             - \tenuto
                             \>
@@ -5441,7 +5439,7 @@
                         aqs''8
                         :32
                         \once \override Staff.NoteHead.style = #'default
-                        def'''16
+                        d'''16
                         - \accent
                         ]
                         \times 8/9 {
@@ -5449,7 +5447,7 @@
                             \once \override Staff.NoteHead.style = #'default
                             d'''4.
                             \once \override Staff.NoteHead.style = #'triangle
-                            ces'''8.
+                            c'''8.
                             :32
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -5473,7 +5471,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'triangle
-                        \clef "tenorvarC"
+                        \clef "varC"
                         bf16.
                         _ #(make-dynamic-script
                             (markup
@@ -5803,17 +5801,17 @@
                         \startTextSpanThree
                         [
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        bes''8.
+                        b''8.
                         - \accent
                         ]
                         \once \override Staff.NoteHead.style = #'triangle
-                        dtef'''4
+                        cs'''4
                         - \espressivo
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             \once \override Staff.NoteHead.style = #'triangle
-                            dtef'''16
+                            cs'''16
                             [
                             \once \override Staff.NoteHead.style = #'default
                             d'''8
@@ -5841,7 +5839,7 @@
                     {
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         fs''4
                         \ff
                         - \tenuto
@@ -5897,7 +5895,7 @@
                         \ottava 0
                     }
                     {
-                        \clef "tenorvarC"
+                        \clef "varC"
                         eqf'8
                         \pppp
                         - \tweak stencil #abjad-flared-hairpin
@@ -5930,7 +5928,7 @@
                             \times 4/5 {
                                 % [Voice 1 measure 41] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "tenorvarC"
+                                \clef "varC"
                                 c32
                                 _ #(make-dynamic-script
                                     (markup
@@ -6606,7 +6604,7 @@
                         % [Voice 1 measure 44] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
                         \clef "treble"
-                        bef''16
+                        b''16
                         \mf
                         - \tenuto
                         \>
@@ -6641,22 +6639,22 @@
                         \startTextSpanThree
                         [
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        dtef'''8.
+                        cs'''8.
                         :32
                         ~
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            dtef'''8.
+                            cs'''8.
                             :32
                             \once \override Staff.NoteHead.style = #'triangle
-                            def'''8
+                            d'''8
                             :32
                             ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
                             \once \override Staff.NoteHead.style = #'triangle
-                            def'''8
+                            d'''8
                             :32
                             \once \override Staff.NoteHead.style = #'default
                             eqf'''8.
@@ -6685,7 +6683,7 @@
                         \times 4/5 {
                             % [Voice 1 measure 45] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
-                            \clef "tenorvarC"
+                            \clef "varC"
                             aqf4.
                             _ #(make-dynamic-script
                                 (markup
@@ -6798,7 +6796,7 @@
                             \ottava 1
                             \ottava 1
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "tenorvarC"
+                            \clef "varC"
                             <ef'' af''>4.
                             \ff
                             - \accent
@@ -6867,7 +6865,7 @@
                             \times 10/11 {
                                 % [Voice 1 measure 46] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                \clef "tenorvarC"
+                                \clef "varC"
                                 fqs8.
                                 _ #(make-dynamic-script
                                     (markup
@@ -7145,7 +7143,7 @@
                     {
                         % [Voice 1 measure 47] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         ef'4.
                         \ff
                         - \espressivo
@@ -7204,7 +7202,7 @@
                             \times 6/11 {
                                 % [Voice 1 measure 48] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "tenorvarC"
+                                \clef "varC"
                                 g4.
                                 _ #(make-dynamic-script
                                     (markup
@@ -7481,7 +7479,7 @@
                     {
                         % [Voice 1 measure 49] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         bf4
                         \ff
                         - \tenuto
@@ -7538,7 +7536,7 @@
                         % [Voice 1 measure 50] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
                         \clef "treble"
-                        gtef''4
+                        fs''4
                         \mf
                         \>
                         \stopTextSpanOne
@@ -7572,13 +7570,13 @@
                         - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
-                        gtef''16
+                        fs''16
                         [
                         \once \override Staff.NoteHead.style = #'triangle
-                        eef'''8
+                        e'''8
                         :32
                         \once \override Staff.NoteHead.style = #'default
-                        ates''16
+                        bf''16
                         - \tenuto
                         ]
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -7589,7 +7587,7 @@
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
                         fqs''16
                         \once \override Staff.NoteHead.style = #'triangle
-                        eef''4
+                        e''4
                         - \espressivo
                         \once \override Staff.NoteHead.style = #'default
                         c''8.
@@ -7615,7 +7613,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        \clef "tenorvarC"
+                        \clef "varC"
                         g8
                         _ #(make-dynamic-script
                             (markup
@@ -7981,9 +7979,8 @@
                     }
                     {
                         \ottava 1
-                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         <c'' fs''>8
                         \ff
                         - \accent
@@ -8019,7 +8016,6 @@
                         - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \ottava 0
-                        \ottava 0
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
                         e''8
@@ -8047,7 +8043,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        \clef "tenorvarC"
+                        \clef "varC"
                         c'4
                         _ #(make-dynamic-script
                             (markup
@@ -8086,7 +8082,7 @@
                             \times 6/11 {
                                 % [Voice 1 measure 56] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'default
-                                \clef "tenorvarC"
+                                \clef "varC"
                                 af8.
                                 _ #(make-dynamic-script
                                     (markup
@@ -8359,7 +8355,7 @@
                         \times 4/3 {
                             % [Voice 1 measure 57] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
-                            \clef "tenorvarC"
+                            \clef "varC"
                             cqs'8
                             _ #(make-dynamic-script
                                 (markup
@@ -8509,7 +8505,7 @@
                         \times 2/3 {
                             % [Voice 1 measure 58] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "tenorvarC"
+                            \clef "varC"
                             cs'8
                             _ #(make-dynamic-script
                                 (markup
@@ -8617,9 +8613,8 @@
                         }
                     }
                     {
-                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         cs''4.
                         \ff
                         - \espressivo
@@ -8653,14 +8648,13 @@
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #17.5
                         \startTextSpanThree
-                        \ottava 0
                     }
                     {
                         \times 8/9 {
                             % [Voice 1 measure 59] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
                             \clef "treble"
-                            bes''8.
+                            b''8.
                             \mf
                             \>
                             \stopTextSpanOne
@@ -8693,10 +8687,10 @@
                             - \tweak staff-padding #17.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'triangle
-                            eef'''4
+                            e'''4
                             :32
                             \once \override Staff.NoteHead.style = #'default
-                            dtef'''8
+                            cs'''8
                             - \tenuto
                             ~
                             [
@@ -8705,19 +8699,19 @@
                         \times 4/3 {
                             % [Voice 1 measure 60] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
-                            dtef'''16
+                            cs'''16
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            ctes'''8
+                            cs'''8
                             - \accent
                             ~
                         }
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        ctes'''8.
+                        cs'''8.
                         \once \override Staff.NoteHead.style = #'triangle
-                        ctes'''8
+                        cs'''8
                         - \espressivo
                         \once \override Staff.NoteHead.style = #'default
-                        ctes'''16
+                        cs'''16
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -8742,7 +8736,7 @@
                         \times 8/9 {
                             % [Voice 1 measure 61] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "tenorvarC"
+                            \clef "varC"
                             c'4
                             \ff
                             - \tenuto
@@ -8807,7 +8801,7 @@
                         \times 3/5 {
                             % [Voice 1 measure 62] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "tenorvarC"
+                            \clef "varC"
                             bqs8.
                             _ #(make-dynamic-script
                                 (markup
@@ -9074,9 +9068,8 @@
                     }
                     {
                         % [Voice 1 measure 63] %! COMMENT_MEASURE_NUMBERS
-                        \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         b'8
                         \ff
                         - \tenuto
@@ -9111,7 +9104,6 @@
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #17.5
                         \startTextSpanThree
-                        \ottava 0
                         \once \override Staff.NoteHead.style = #'default
                         bf'2
                         - \espressivo
@@ -9154,7 +9146,7 @@
                             \times 4/5 {
                                 % [Voice 1 measure 64] %! COMMENT_MEASURE_NUMBERS
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
-                                \clef "tenorvarC"
+                                \clef "varC"
                                 gqf'16
                                 _ #(make-dynamic-script
                                     (markup
@@ -9433,7 +9425,7 @@
                         % [Voice 1 measure 65] %! COMMENT_MEASURE_NUMBERS
                         \ottava 1
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         <d' d''>2
                         \ff
                         - \tenuto
@@ -9474,7 +9466,7 @@
                         \times 5/4 {
                             % [Voice 1 measure 66] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
-                            \clef "tenorvarC"
+                            \clef "varC"
                             cs'8
                             _ #(make-dynamic-script
                                 (markup
@@ -9614,7 +9606,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "tenorvarC"
+                            \clef "varC"
                             f'8
                             \ff
                             - \accent
@@ -9679,7 +9671,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "varC"
                         g'4.
                         \ff
                         - \espressivo
@@ -9730,7 +9722,6 @@
                             \once \override Staff.NoteHead.style = #'default
                             a'8
                             \ottava 1
-                            \ottava 1
                             \once \override Staff.NoteHead.style = #'default
                             <c'' d''>2
                             - \tenuto
@@ -9739,7 +9730,6 @@
                         \once \override Staff.NoteHead.style = #'default
                         <c'' d''>8
                         [
-                        \ottava 0
                         \ottava 0
                         \once \override Staff.NoteHead.style = #'default
                         af'8

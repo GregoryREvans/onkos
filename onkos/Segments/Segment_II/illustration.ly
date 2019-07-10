@@ -1,8 +1,8 @@
 \version "2.19.83"  %! abjad.LilyPondFile
 \language "english" %! abjad.LilyPondFile
 
-\include "/Users/evansdsg2/Scores/onkos/Build/first_stylesheet.ily"  %! abjad.LilyPondFile
-\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! abjad.LilyPondFile
+\include "/Users/evansdsg2/Scores/onkos/onkos/Build/first_stylesheet.ily" %! abjad.LilyPondFile
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily"      %! abjad.LilyPondFile
 
 \header { %! abjad.LilyPondFile
     tagline = ##f
@@ -93,7 +93,7 @@
                     }
                     {
                         % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        \clef "tenorvarC"
+                        \clef "varC"
                         bf16
                         \pppp
                         - \tweak stencil #abjad-flared-hairpin
@@ -151,7 +151,7 @@
                     }
                     {
                         \times 8/9 {
-                            \clef "tenorvarC"
+                            \clef "varC"
                             c'16
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
@@ -215,7 +215,7 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
-                            \clef "tenorvarC"
+                            \clef "varC"
                             dqs'8
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
@@ -282,7 +282,7 @@
                     }
                     {
                         % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \clef "tenorvarC"
+                        \clef "varC"
                         ef'16
                         \pppp
                         - \tweak stencil #abjad-flared-hairpin
@@ -337,7 +337,7 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 14/15 {
-                            \clef "tenorvarC"
+                            \clef "varC"
                             e'16
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin

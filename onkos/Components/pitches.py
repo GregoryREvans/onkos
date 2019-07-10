@@ -1,7 +1,8 @@
 import abjad
-from Scores.onkos.Components.instruments import instrument_one_range_lowest
-from Scores.onkos.Components.instruments import instrument_one_range_highest
+from onkos.Components.instruments import instrument_one_range_lowest
+from onkos.Components.instruments import instrument_one_range_highest
 import numpy as np
+import pathlib
 from evans.general_tools.reduce_mod import reduceMod
 from evans.tool_tests.audio_pitches import get_audio_pitches
 from evans.general_tools.cyc import cyc
@@ -108,12 +109,9 @@ perm_list = grouper(perms, group_list)  # keep experimenting with this...
 
 ######
 # list two is broken
-old_analyzed_list_1 = [
-    x
-    for x in get_audio_pitches(
-        path="/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_1.wav"
-    )
-]
+parent_path = pathlib.Path(__file__).parent
+path1 = f"{parent_path}/audio_sources/Eatern_Towhee_1.wav"
+old_analyzed_list_1 = [x for x in get_audio_pitches(path=path1)]
 analyzed_list_1 = []
 for x in old_analyzed_list_1:
     if x < instrument_one_range_lowest:
@@ -126,13 +124,8 @@ for x in old_analyzed_list_1:
         analyzed_list_1.append(x)
 
 # analyzed_list_2 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_2.wav')]
-
-old_analyzed_list_3 = [
-    x
-    for x in get_audio_pitches(
-        path="/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_3.wav"
-    )
-]
+path3 = f"{parent_path}/audio_sources/Eatern_Towhee_3.wav"
+old_analyzed_list_3 = [x for x in get_audio_pitches(path=path3)]
 analyzed_list_3 = []
 for x in old_analyzed_list_3:
     if x < instrument_one_range_lowest:
@@ -144,12 +137,8 @@ for x in old_analyzed_list_3:
     else:
         analyzed_list_3.append(x)
 
-old_analyzed_list_4 = [
-    x
-    for x in get_audio_pitches(
-        path="/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_4.wav"
-    )
-]
+path4 = f"{parent_path}/audio_sources/Eatern_Towhee_4.wav"
+old_analyzed_list_4 = [x for x in get_audio_pitches(path=path4)]
 analyzed_list_4 = []
 for x in old_analyzed_list_4:
     if x < instrument_one_range_lowest:
@@ -161,12 +150,8 @@ for x in old_analyzed_list_4:
     else:
         analyzed_list_4.append(x)
 
-old_analyzed_list_5 = [
-    x
-    for x in get_audio_pitches(
-        path="/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_5.wav"
-    )
-]
+path5 = f"{parent_path}/audio_sources/Eatern_Towhee_5.wav"
+old_analyzed_list_5 = [x for x in get_audio_pitches(path=path5)]
 analyzed_list_5 = []
 for x in old_analyzed_list_5:
     if x < instrument_one_range_lowest:
