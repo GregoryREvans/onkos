@@ -7,8 +7,10 @@ from Scores.onkos.AttachmentHandlers.DynamicHandler import DynamicHandler
 from Scores.onkos.AttachmentHandlers.TextSpanHandler import TextSpanHandler
 from Scores.onkos.AttachmentHandlers.ClefHandler import ClefHandler
 from Scores.onkos.AttachmentHandlers.SlurHandler import SlurHandler
+
 # from evans.AttachmentHandlers.GraceHandler import GraceHandler
 # from evans.AttachmentHandlers.TrillHandler import TrillHandler
+
 
 class MusicMaker:
     def __init__(
@@ -22,7 +24,7 @@ class MusicMaker:
         text_span_handler=None,
         clef_handler=None,
         slur_handler=None,
-        #grace_handler=None,
+        # grace_handler=None,
         trill_handler=None,
         continuous=False,
         state=None,
@@ -35,7 +37,7 @@ class MusicMaker:
         self.text_span_handler = text_span_handler
         self.clef_handler = clef_handler
         self.slur_handler = slur_handler
-        #self.grace_handler = grace_handler
+        # self.grace_handler = grace_handler
         self.trill_handler = trill_handler
         self.continuous = continuous
         self.rmaker = rmaker
@@ -51,22 +53,23 @@ class MusicMaker:
             selections = self.rmaker(durations, previous_state=self.rmaker.state)
             self.state = self.rmaker.state
         else:
-            selections = self.rmaker(durations, )
+            selections = self.rmaker(durations)
         return selections
 
     def _make_music(self, durations):
         selections = self._make_basic_rhythm(durations)
         if self.pitch_handler == None:
             start_command = abjad.LilyPondLiteral(
-                r'\stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff',
-                format_slot='before',
-                )
+                r"\stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff",
+                format_slot="before",
+            )
             stop_command = abjad.LilyPondLiteral(
-                r'\stopStaff \startStaff',
-                format_slot='after',
-                )
-            literal = abjad.LilyPondLiteral(r'\once \override Staff.Clef.transparent = ##t', 'before')
-            c_clef = abjad.LilyPondLiteral(r'\clef alto', 'before')
+                r"\stopStaff \startStaff", format_slot="after"
+            )
+            literal = abjad.LilyPondLiteral(
+                r"\once \override Staff.Clef.transparent = ##t", "before"
+            )
+            c_clef = abjad.LilyPondLiteral(r"\clef alto", "before")
             abjad.attach(literal, selections[0][0])
             abjad.attach(c_clef, selections[0][0])
             abjad.attach(start_command, selections[0][0])

@@ -1,20 +1,17 @@
 import abjad
 
-class DynamicHandler:
 
+class DynamicHandler:
     def __init__(
-        self,
-        starting_dynamic=None,
-        ending_dynamic=None,
-        hairpin=None,
-        continuous=False,
-        ):
+        self, starting_dynamic=None, ending_dynamic=None, hairpin=None, continuous=False
+    ):
         def cyc(lst):
             if self.continuous == False:
                 self._count = -1
             while True:
                 self._count += 1
                 yield lst[self._count % len(lst)]
+
         self.starting_dynamic = starting_dynamic
         self.ending_dynamic = ending_dynamic
         self.hairpin = hairpin
@@ -37,7 +34,9 @@ class DynamicHandler:
                     abjad.attach(abjad.StartHairpin(self.hairpin), leaves[0])
                 if self.ending_dynamic != None:
                     abjad.attach(abjad.Dynamic(self.ending_dynamic), leaves[-1])
-                    abjad.attach(abjad.StartHairpin('--'), leaves[-1]) #makes ending with a logical tie weird. If problematic: reduce indentation by 1
+                    abjad.attach(
+                        abjad.StartHairpin("--"), leaves[-1]
+                    )  # makes ending with a logical tie weird. If problematic: reduce indentation by 1
             else:
                 leaves = abjad.select(run).leaves()
                 dynamic = next(self._cyc_dynamics)
@@ -49,5 +48,5 @@ class DynamicHandler:
                 if self.starting_dynamic == None:
                     if self.ending_dynamic != None:
                         abjad.attach(abjad.Dynamic(self.ending_dynamic), leaves[0])
-                abjad.attach(abjad.StartHairpin('--'), leaves[0])
+                abjad.attach(abjad.StartHairpin("--"), leaves[0])
         return selections
