@@ -3,11 +3,11 @@ import itertools
 import os
 import pathlib
 import time
-from onkos.timespans import all_timespans2
-from onkos.score_structure import score
-from onkos.time_signatures import time_signatures2
-from onkos.time_signatures import bounds2
-from onkos.music_makers import *
+from onkos.Components.timespans import all_timespans2
+from onkos.Components.score_structure import score
+from onkos.Components.time_signatures import time_signatures2
+from onkos.Components.time_signatures import bounds2
+from onkos.Components.music_makers import *
 from evans.general_tools.cyc import cyc
 from evans.abjad_functions.NoteheadBracketMaker import NoteheadBracketMaker
 

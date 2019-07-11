@@ -1,6 +1,6 @@
-import numpy as np
-from evans.general_tools.Markov_Chain import MarkovChain
-from onkos.music_makers import *
+# import numpy as np
+# from evans.general_tools.Markov_Chain import MarkovChain
+from onkos.Components.music_makers import *
 
 
 transition_prob = {
@@ -30,7 +30,7 @@ transition_prob = {
     },
 }
 
-material_chain = MarkovChain(transition_prob=transition_prob)
+# material_chain = MarkovChain(transition_prob=transition_prob)
 
 # np.random.seed(7)
 # key_list_1 = [x for x in material_chain.generate_states(current_state='music_maker_two', no=14)]

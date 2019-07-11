@@ -1,5 +1,5 @@
 import abjad
-from onkos.instruments import voices
+from onkos.Components.instruments import voices
 
 voice_staff_names = [[f"Voice {i + 1}", f"Staff {i + 1}"] for i in range(voices)]
 score = abjad.Score(
