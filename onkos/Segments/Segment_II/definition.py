@@ -223,14 +223,17 @@ for staff in abjad.iterate(score["Global Context"]).components(abjad.Staff):
 # print('Transforming Tuplet Brackets ...')
 # transformer = NoteheadBracketMaker()
 # transformer(score)
-
+abjad_stylesheet_path = os.path.join(
+    os.environ.get('HOME'),
+    'abjad/docs/source/_stylesheets/abjad.ily'
+)
 current_directory = pathlib.Path(__file__).parent
 stylesheet_path = (current_directory / ".." / ".." / "Build").resolve()
 score_file = abjad.LilyPondFile.new(
     score,
     includes=[
+        abjad_stylesheet_path,
         f"{stylesheet_path}/first_stylesheet.ily",
-        "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
     ],
 )
 
