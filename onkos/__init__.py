@@ -1,3 +1,3 @@
-from .AttachmentHandlers import *
-from .Components import *
-import Segments
+from onkos.AttachmentHandlers import *
+from onkos.Components import *
+import onkos.Segments
