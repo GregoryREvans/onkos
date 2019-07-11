@@ -1,6 +1,7 @@
 import abjad
 from onkos.Components.instruments import instrument_one_range_lowest
 from onkos.Components.instruments import instrument_one_range_highest
+
 # import numpy as np
 import pathlib
 from evans.general_tools.reduce_mod import reduceMod
