@@ -1,6 +1,6 @@
 import numpy as np
 from evans.general_tools.Markov_Chain import MarkovChain
-from onkos.onkos.Components.music_makers import *
+from onkos.music_makers import *
 
 
 transition_prob = {
