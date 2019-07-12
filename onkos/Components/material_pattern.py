@@ -1,6 +1,12 @@
 # import numpy as np
 # from evans.general_tools.Markov_Chain import MarkovChain
-from onkos.Components.music_makers import *
+from onkos.Components.music_makers import music_maker_one
+from onkos.Components.music_makers import music_maker_two
+from onkos.Components.music_makers import music_maker_three
+from onkos.Components.music_makers import music_maker_four
+from onkos.Components.music_makers import music_maker_five
+from onkos.Components.music_makers import music_maker_six
+from onkos.Components.music_makers import silence_maker
 
 
 transition_prob = {

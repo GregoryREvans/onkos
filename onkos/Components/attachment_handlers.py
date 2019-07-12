@@ -1,14 +1,19 @@
-from onkos.AttachmentHandlers.ArticulationHandler import ArticulationHandler
-from onkos.AttachmentHandlers.ClefHandler import ClefHandler
-from onkos.AttachmentHandlers.DynamicHandler import DynamicHandler
-from onkos.AttachmentHandlers.GlissandoHandler import GlissandoHandler
-from onkos.AttachmentHandlers.NoteheadHandler import NoteheadHandler
-from onkos.AttachmentHandlers.PitchHandler import PitchHandler
-from onkos.AttachmentHandlers.SlurHandler import SlurHandler
-from onkos.AttachmentHandlers.TextSpanHandler import TextSpanHandler
-from onkos.Components.pitches import *
+import onkos.AttachmentHandlers.ArticulationHandler
+import onkos.AttachmentHandlers.ClefHandler
+import onkos.AttachmentHandlers.DynamicHandler
+import onkos.AttachmentHandlers.GlissandoHandler
+import onkos.AttachmentHandlers.NoteheadHandler
+import onkos.AttachmentHandlers.PitchHandler
+import onkos.AttachmentHandlers.SlurHandler
+import onkos.AttachmentHandlers.TextSpanHandler
+from onkos.Components.pitches import analyzed_list
+from onkos.Components.pitches import sieve_list
+from onkos.Components.pitches import random_walk_list
+from onkos.Components.pitches import perm_list
+from onkos.Components.pitches import chords
+from onkos.Components.pitches import runs
 
-articulation_handler_one = ArticulationHandler(
+articulation_handler_one = onkos.AttachmentHandlers.ArticulationHandler(
     articulation_list=[
         "tenuto",
         "tremolo",
@@ -24,17 +29,17 @@ articulation_handler_one = ArticulationHandler(
     continuous=True,
 )
 
-clef_handler_one = ClefHandler(
+clef_handler_one = onkos.AttachmentHandlers.ClefHandler(
     clef="treble",
     add_ottavas=True,
     # ottava_shelf=16,
 )
 
-dynamic_handler_one = DynamicHandler(
+dynamic_handler_one = onkos.AttachmentHandlers.DynamicHandler(
     starting_dynamic="mf", hairpin=">", ending_dynamic="mp", continuous=True
 )
 
-notehead_handler_one = NoteheadHandler(
+notehead_handler_one = onkos.AttachmentHandlers.NoteheadHandler(
     notehead_list=[
         "default",
         "harmonic-mixed",
@@ -51,9 +56,9 @@ notehead_handler_one = NoteheadHandler(
     continuous=True,
 )
 
-pitch_handler_one = PitchHandler(pitch_list=analyzed_list, continuous=True)
+pitch_handler_one = onkos.AttachmentHandlers.PitchHandler(pitch_list=analyzed_list, continuous=True)
 
-text_span_handler_one = TextSpanHandler(
+text_span_handler_one = onkos.AttachmentHandlers.TextSpanHandler(
     span_two_positions=["st.", "ord.", "st.", "sp.", "msp.", "ord."],
     span_two_style="dashed-line",
     span_two_padding=14.5,
@@ -66,7 +71,7 @@ text_span_handler_one = TextSpanHandler(
 )
 
 #######
-articulation_handler_two = ArticulationHandler(
+articulation_handler_two = onkos.AttachmentHandlers.ArticulationHandler(
     articulation_list=[
         "espressivo",
         "tenuto",
@@ -79,17 +84,17 @@ articulation_handler_two = ArticulationHandler(
     continuous=True,
 )
 
-clef_handler_two = ClefHandler(
+clef_handler_two = onkos.AttachmentHandlers.ClefHandler(
     clef="varC",
     add_ottavas=True,
     # ottava_shelf=5,
 )
 
-dynamic_handler_two = DynamicHandler(
+dynamic_handler_two = onkos.AttachmentHandlers.DynamicHandler(
     starting_dynamic='"ppp"', hairpin="<", ending_dynamic='"ff"', continuous=True
 )
 
-notehead_handler_two = NoteheadHandler(
+notehead_handler_two = onkos.AttachmentHandlers.NoteheadHandler(
     notehead_list=[
         "default",
         "default",
@@ -104,9 +109,9 @@ notehead_handler_two = NoteheadHandler(
     continuous=True,
 )
 
-pitch_handler_two = PitchHandler(pitch_list=sieve_list, continuous=True)
+pitch_handler_two = onkos.AttachmentHandlers.PitchHandler(pitch_list=sieve_list, continuous=True)
 
-text_span_handler_two = TextSpanHandler(
+text_span_handler_two = onkos.AttachmentHandlers.TextSpanHandler(
     span_one_positions=[
         "7/7",
         "6/7",
@@ -136,7 +141,7 @@ text_span_handler_two = TextSpanHandler(
 )
 
 #######
-articulation_handler_three = ArticulationHandler(
+articulation_handler_three = onkos.AttachmentHandlers.ArticulationHandler(
     articulation_list=[
         "accent",
         "tenuto",
@@ -149,22 +154,22 @@ articulation_handler_three = ArticulationHandler(
     continuous=True,
 )
 
-clef_handler_three = ClefHandler(
+clef_handler_three = onkos.AttachmentHandlers.ClefHandler(
     clef="varC",
     add_ottavas=True,
     # ottava_shelf=5,
 )
 
-dynamic_handler_three = DynamicHandler(
+dynamic_handler_three = onkos.AttachmentHandlers.DynamicHandler(
     starting_dynamic='"mp"', hairpin=">", ending_dynamic='"ppppp"', continuous=True
 )
 
-# glissando_handler_three = GlissandoHandler(
+# glissando_handler_three = onkos.AttachmentHandlers.GlissandoHandler(
 #     # glissando_style='hide_middle_note_heads',
 #     line_style='solid-line',
 #     )
 
-notehead_handler_three = NoteheadHandler(
+notehead_handler_three = onkos.AttachmentHandlers.NoteheadHandler(
     notehead_list=[
         "harmonic-mixed",
         "triangle",
@@ -179,9 +184,9 @@ notehead_handler_three = NoteheadHandler(
     continuous=True,
 )
 
-pitch_handler_three = PitchHandler(pitch_list=random_walk_list, continuous=True)
+pitch_handler_three = onkos.AttachmentHandlers.PitchHandler(pitch_list=random_walk_list, continuous=True)
 
-text_span_handler_three = TextSpanHandler(
+text_span_handler_three = onkos.AttachmentHandlers.TextSpanHandler(
     span_one_positions=[
         "1/5",
         "2/5",
@@ -209,26 +214,26 @@ text_span_handler_three = TextSpanHandler(
 
 
 #######
-articulation_handler_four = ArticulationHandler(
+articulation_handler_four = onkos.AttachmentHandlers.ArticulationHandler(
     articulation_list=["tenuto", "tenuto", "accent", "tenuto", "espressivo"],
     continuous=True,
 )
 
-clef_handler_four = ClefHandler(
+clef_handler_four = onkos.AttachmentHandlers.ClefHandler(
     clef="varC",
     add_ottavas=True,
     # ottava_shelf=5,
 )
 
-dynamic_handler_four = DynamicHandler(
+dynamic_handler_four = onkos.AttachmentHandlers.DynamicHandler(
     starting_dynamic="ff", hairpin="--", continuous=True
 )
 
-notehead_handler_four = NoteheadHandler(notehead_list=["default"], continuous=True)
+notehead_handler_four = onkos.AttachmentHandlers.NoteheadHandler(notehead_list=["default"], continuous=True)
 
-pitch_handler_four = PitchHandler(pitch_list=perm_list, continuous=True)
+pitch_handler_four = onkos.AttachmentHandlers.PitchHandler(pitch_list=perm_list, continuous=True)
 
-text_span_handler_four = TextSpanHandler(
+text_span_handler_four = onkos.AttachmentHandlers.TextSpanHandler(
     span_two_positions=["st.", "ord.", "sp.", "msp.", "ord."],
     span_two_style="dashed-line",
     span_two_padding=14.5,
@@ -241,29 +246,29 @@ text_span_handler_four = TextSpanHandler(
 )
 
 #######
-pitch_handler_five = PitchHandler(pitch_list=chords, continuous=True)
-dynamic_handler_five = DynamicHandler(
+pitch_handler_five = onkos.AttachmentHandlers.PitchHandler(pitch_list=chords, continuous=True)
+dynamic_handler_five = onkos.AttachmentHandlers.DynamicHandler(
     starting_dynamic="f", hairpin=">", ending_dynamic="mp", continuous=True
 )
-clef_handler_five = ClefHandler(
+clef_handler_five = onkos.AttachmentHandlers.ClefHandler(
     clef="treble",
     add_ottavas=True,
     # ottava_shelf=5,
 )
-text_span_handler_five = TextSpanHandler()
+text_span_handler_five = onkos.AttachmentHandlers.TextSpanHandler()
 
 #######
-pitch_handler_six = PitchHandler(pitch_list=runs, continuous=True)
-dynamic_handler_six = DynamicHandler(
+pitch_handler_six = onkos.AttachmentHandlers.PitchHandler(pitch_list=runs, continuous=True)
+dynamic_handler_six = onkos.AttachmentHandlers.DynamicHandler(
     starting_dynamic="pppp", hairpin="<|", ending_dynamic="fff", continuous=True
 )
-clef_handler_six = ClefHandler(
+clef_handler_six = onkos.AttachmentHandlers.ClefHandler(
     clef="varC",
     add_ottavas=True,
     # ottava_shelf=5,
 )
-slur_handler_six = SlurHandler()
-text_span_handler_six = TextSpanHandler(
+slur_handler_six = onkos.AttachmentHandlers.SlurHandler()
+text_span_handler_six = onkos.AttachmentHandlers.TextSpanHandler(
     span_one_positions=["accel.", "rit.", "accel.", "rit.", "rit."],
     span_one_style="solid-line",
     span_one_padding=11.5,
