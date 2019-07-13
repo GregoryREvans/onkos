@@ -1,6 +1,6 @@
 import abjad
 import abjadext.rmakers
-import onkos.AttachmentHandlers.MusicMaker
+from onkos.AttachmentHandlers import MusicMaker
 from onkos.Components.rhythm_makers import rmaker_one
 from onkos.Components.rhythm_makers import rmaker_two
 from onkos.Components.rhythm_makers import rmaker_three
@@ -14,7 +14,7 @@ silence_maker = abjadext.rmakers.NoteRhythmMaker(
 )
 
 
-music_maker_one = onkos.MusicMaker(
+music_maker_one = MusicMaker(
     rmaker=rmaker_one,
     notehead_handler=notehead_handler_one,
     pitch_handler=pitch_handler_one,
@@ -25,7 +25,7 @@ music_maker_one = onkos.MusicMaker(
     continuous=True,
 )
 
-music_maker_two = onkos.MusicMaker(
+music_maker_two = MusicMaker(
     rmaker=rmaker_two,
     notehead_handler=notehead_handler_two,
     pitch_handler=pitch_handler_two,
@@ -36,7 +36,7 @@ music_maker_two = onkos.MusicMaker(
     continuous=True,
 )
 
-music_maker_three = onkos.MusicMaker(
+music_maker_three = MusicMaker(
     rmaker=rmaker_three,
     # glissando_handler = glissando_handler_three,
     notehead_handler=notehead_handler_three,
@@ -48,7 +48,7 @@ music_maker_three = onkos.MusicMaker(
     continuous=True,
 )
 
-music_maker_four = onkos.MusicMaker(
+music_maker_four = MusicMaker(
     rmaker=rmaker_four,
     notehead_handler=notehead_handler_four,
     pitch_handler=pitch_handler_four,
@@ -59,7 +59,7 @@ music_maker_four = onkos.MusicMaker(
     continuous=True,
 )
 
-music_maker_five = onkos.MusicMaker(
+music_maker_five = MusicMaker(
     rmaker=rmaker_five,
     pitch_handler=pitch_handler_five,
     dynamic_handler=dynamic_handler_five,
@@ -68,7 +68,7 @@ music_maker_five = onkos.MusicMaker(
     continuous=True,
 )
 
-music_maker_six = onkos.MusicMaker(
+music_maker_six = MusicMaker(
     rmaker=rmaker_six,
     pitch_handler=pitch_handler_six,
     dynamic_handler=dynamic_handler_six,

@@ -1,4 +1,3 @@
-
 from .attachment_handlers import (
     articulation_handler_one,
     clef_handler_one,
@@ -43,7 +42,7 @@ from .instruments import (
     voices,
 )
 
-from .material_pattern import (material_list, material_list2)
+from .material_pattern import material_list, material_list2
 
 from .music_makers import (
     silence_maker,
@@ -80,14 +79,6 @@ from .rtm_lists import final_rtm_list
 
 from .score_structure import score
 
-from .time_signatures import (
-    time_signatures,
-    bounds,
-    time_signatures2,
-    bounds2,
-)
+from .time_signatures import time_signatures, bounds, time_signatures2, bounds2
 
-from .timespans import (
-    all_timespans,
-    all_timespans2,
-)
+from .timespans import all_timespans, all_timespans2
