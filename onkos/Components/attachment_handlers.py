@@ -56,9 +56,7 @@ notehead_handler_one = NoteheadHandler(
     continuous=True,
 )
 
-pitch_handler_one = PitchHandler(
-    pitch_list=analyzed_list, continuous=True
-)
+pitch_handler_one = PitchHandler(pitch_list=analyzed_list, continuous=True)
 
 text_span_handler_one = TextSpanHandler(
     span_two_positions=["st.", "ord.", "st.", "sp.", "msp.", "ord."],
@@ -111,9 +109,7 @@ notehead_handler_two = NoteheadHandler(
     continuous=True,
 )
 
-pitch_handler_two = PitchHandler(
-    pitch_list=sieve_list, continuous=True
-)
+pitch_handler_two = PitchHandler(pitch_list=sieve_list, continuous=True)
 
 text_span_handler_two = TextSpanHandler(
     span_one_positions=[
@@ -188,9 +184,7 @@ notehead_handler_three = NoteheadHandler(
     continuous=True,
 )
 
-pitch_handler_three = PitchHandler(
-    pitch_list=random_walk_list, continuous=True
-)
+pitch_handler_three = PitchHandler(pitch_list=random_walk_list, continuous=True)
 
 text_span_handler_three = TextSpanHandler(
     span_one_positions=[
@@ -235,13 +229,9 @@ dynamic_handler_four = DynamicHandler(
     starting_dynamic="ff", hairpin="--", continuous=True
 )
 
-notehead_handler_four = NoteheadHandler(
-    notehead_list=["default"], continuous=True
-)
+notehead_handler_four = NoteheadHandler(notehead_list=["default"], continuous=True)
 
-pitch_handler_four = PitchHandler(
-    pitch_list=perm_list, continuous=True
-)
+pitch_handler_four = PitchHandler(pitch_list=perm_list, continuous=True)
 
 text_span_handler_four = TextSpanHandler(
     span_two_positions=["st.", "ord.", "sp.", "msp.", "ord."],
@@ -256,9 +246,7 @@ text_span_handler_four = TextSpanHandler(
 )
 
 #######
-pitch_handler_five = PitchHandler(
-    pitch_list=chords, continuous=True
-)
+pitch_handler_five = PitchHandler(pitch_list=chords, continuous=True)
 dynamic_handler_five = DynamicHandler(
     starting_dynamic="f", hairpin=">", ending_dynamic="mp", continuous=True
 )
@@ -270,9 +258,7 @@ clef_handler_five = ClefHandler(
 text_span_handler_five = TextSpanHandler()
 
 #######
-pitch_handler_six = PitchHandler(
-    pitch_list=runs, continuous=True
-)
+pitch_handler_six = PitchHandler(pitch_list=runs, continuous=True)
 dynamic_handler_six = DynamicHandler(
     starting_dynamic="pppp", hairpin="<|", ending_dynamic="fff", continuous=True
 )

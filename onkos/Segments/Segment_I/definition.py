@@ -3,6 +3,7 @@ import itertools
 import os
 import pathlib
 import time
+import datetime
 from onkos.Components.timespans import all_timespans
 from onkos.Components.score_structure import score
 from onkos.Components.time_signatures import time_signatures
@@ -10,6 +11,8 @@ from onkos.Components.time_signatures import bounds
 from onkos.Components.music_makers import *
 from evans.general_tools.cyc import cyc
 from evans.abjad_functions.NoteheadBracketMaker import NoteheadBracketMaker
+
+time_1 = time.time()
 
 global_timespan = abjad.Timespan(
     start_offset=0, stop_offset=max(_.stop_offset for _ in all_timespans.values())
@@ -228,6 +231,7 @@ score_file = abjad.LilyPondFile.new(
 )
 
 abjad.SegmentMaker.comment_measure_numbers(score)
+time_2 = time.time()
 ###################
 directory = pathlib.Path(__file__).parent
 print("directory")
@@ -239,7 +243,7 @@ path = pathlib.Path("illustration.pdf")
 if path.exists():
     print(f"Removing {pdf_path} ...")
     path.unlink()
-time_1 = time.time()
+time_3 = time.time()
 print(f"Persisting {pdf_path} ...")
 result = abjad.persist(score_file).as_pdf(pdf_path)
 print(result[0])
@@ -248,15 +252,20 @@ print(result[2])
 success = result[3]
 if success is False:
     print("LilyPond failed!")
-time_2 = time.time()
-total_time = time_2 - time_1
-print(f"Total time: {total_time} seconds")
+time_4 = time.time()
+abjad_time = time_4 - time_3
+print(f"Total time: {abjad_time} seconds")
 if path.exists():
     print(f"Opening {pdf_path} ...")
     os.system(f"open {pdf_path}")
 score_lines = open(f"{directory}/illustration.ly").readlines()
 build_path = (directory / ".." / ".." / "Build/Score").resolve()
 open(f"{build_path}/Segment_I.ly", "w").writelines(score_lines[15:-1])
+
+segment_time = time_2 - time_1
+open(f"{directory}/.optimization", "a").writelines(
+    f"{datetime.datetime.now()}\nSegment runtime: {int(round(segment_time))} seconds \nAbjad/Lilypond runtime: {int(round(abjad_time))} seconds \n\n"
+)
 
 # abjad.show(score_file)
 # abjad.play(score_file)
