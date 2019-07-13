@@ -3,6 +3,7 @@ import itertools
 import os
 import pathlib
 import time
+import datetime
 from onkos.Components.timespans import all_timespans2
 from onkos.Components.score_structure import score
 from onkos.Components.time_signatures import time_signatures2
