@@ -36,6 +36,7 @@ before_install:
     # clone & install rmakers:
     - RMAKERS=/tmp/abjad-ext-rmakers
     - git clone https://github.com/Abjad/abjad-ext-rmakers.git $RMAKERS
+    - git checkout 49bd2d86258d0c209fed3a93ff9434b18c784cdd
     - pip install -e $RMAKERS
     - export MYPYPATH=$MYPYPATH:$RMAKERS
 

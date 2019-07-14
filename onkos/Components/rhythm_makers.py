@@ -22,7 +22,7 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
         extract_trivial=True,
         rewrite_rest_filled=True,
         rewrite_sustained=True,
-        denominator="divisions",
+        # denominator="divisions",
     ),
 )
 
@@ -51,7 +51,7 @@ rmaker_three = abjadext.rmakers.TaleaRhythmMaker(
         extract_trivial=True,
         rewrite_rest_filled=True,
         rewrite_sustained=True,
-        denominator="divisions",
+        # denominator="divisions",
     ),
 )
 
@@ -69,7 +69,7 @@ rmaker_four = abjadext.rmakers.TaleaRhythmMaker(
         extract_trivial=True,
         rewrite_rest_filled=True,
         rewrite_sustained=True,
-        denominator="divisions",
+        # denominator="divisions",
     ),
 )
 
@@ -85,7 +85,7 @@ rmaker_five = abjadext.rmakers.TaleaRhythmMaker(
         extract_trivial=True,
         rewrite_rest_filled=True,
         rewrite_sustained=True,
-        denominator="divisions",
+        # denominator="divisions",
     ),
 )
 
@@ -98,6 +98,6 @@ rmaker_six = abjadext.rmakers.EvenDivisionRhythmMaker(
         extract_trivial=True,
         rewrite_rest_filled=True,
         rewrite_sustained=True,
-        denominator="divisions",
+        # denominator="divisions",
     ),
 )
