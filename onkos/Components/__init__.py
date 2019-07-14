@@ -57,10 +57,7 @@ from .music_makers import (
 from .pitches import (
     sieve_list,
     perm_list,
-    analyzed_list_1,
-    analyzed_list_3,
-    analyzed_list_4,
-    analyzed_list_5,
+    analyzed_list,
     random_walk_list,
     chords,
     runs,

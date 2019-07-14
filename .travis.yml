@@ -45,16 +45,6 @@ before_install:
     # - pip install -e $EVANS
     - export PYTHONPATH=$EVANS/..:$PYTHONPATH
 
-    # clone & install pyaudio:
-    - PYAUDIO=/tmp/pyaudio
-    - git clone https://github.com/jleb/pyaudio.git
-    # - pip install -e $PYAUDIO
-
-    # clone & install numpy:
-    - NUMPY=/tmp/numpy
-    - git clone https://github.com/numpy/numpy.git
-    # - pip install -e $NUMPY
-
     # # log setup:
     # - echo $MYPYPATH
     # - echo $PATH

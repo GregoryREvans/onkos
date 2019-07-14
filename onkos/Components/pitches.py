@@ -1,11 +1,7 @@
 import abjad
 from onkos.Components.instruments import instrument_one_range_lowest
 from onkos.Components.instruments import instrument_one_range_highest
-
-# import numpy as np
-import pathlib
 from evans.general_tools.reduce_mod import reduceMod
-from evans.tool_tests.audio_pitches import get_audio_pitches
 from evans.general_tools.cyc import cyc
 from evans.general_tools.flatten import flatten
 from evans.general_tools.perm import perm
@@ -109,64 +105,7 @@ perm_list = grouper(perms, group_list)  # keep experimenting with this...
 # print(perm_list)
 
 ######
-# list two is broken
-parent_path = pathlib.Path(__file__).parent
-path1 = f"{parent_path}/audio_sources/Eatern_Towhee_1.wav"
-old_analyzed_list_1 = [x for x in get_audio_pitches(path=path1)]
-analyzed_list_1 = []
-for x in old_analyzed_list_1:
-    if x < instrument_one_range_lowest:
-        x = x + 36
-        analyzed_list_1.append(x)
-    elif x > instrument_one_range_highest:
-        x = x - 24
-        analyzed_list_1.append(x)
-    else:
-        analyzed_list_1.append(x)
-
-# analyzed_list_2 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_2.wav')]
-path3 = f"{parent_path}/audio_sources/Eatern_Towhee_3.wav"
-old_analyzed_list_3 = [x for x in get_audio_pitches(path=path3)]
-analyzed_list_3 = []
-for x in old_analyzed_list_3:
-    if x < instrument_one_range_lowest:
-        x = x + 36
-        analyzed_list_3.append(x)
-    elif x > instrument_one_range_highest:
-        x = x - 24
-        analyzed_list_3.append(x)
-    else:
-        analyzed_list_3.append(x)
-
-path4 = f"{parent_path}/audio_sources/Eatern_Towhee_4.wav"
-old_analyzed_list_4 = [x for x in get_audio_pitches(path=path4)]
-analyzed_list_4 = []
-for x in old_analyzed_list_4:
-    if x < instrument_one_range_lowest:
-        x = x + 36
-        analyzed_list_4.append(x)
-    elif x > instrument_one_range_highest:
-        x = x - 24
-        analyzed_list_4.append(x)
-    else:
-        analyzed_list_4.append(x)
-
-path5 = f"{parent_path}/audio_sources/Eatern_Towhee_5.wav"
-old_analyzed_list_5 = [x for x in get_audio_pitches(path=path5)]
-analyzed_list_5 = []
-for x in old_analyzed_list_5:
-    if x < instrument_one_range_lowest:
-        x = x + 36
-        analyzed_list_5.append(x)
-    elif x > instrument_one_range_highest:
-        x = x - 24
-        analyzed_list_5.append(x)
-    else:
-        analyzed_list_5.append(x)
-analyses = [analyzed_list_1, analyzed_list_3, analyzed_list_4, analyzed_list_5]
-analyzed_list = []
-for x in analyses:
-    analyzed_list.extend(x)
+analyzed_list = [abjad.NumberedPitch(11), abjad.NumberedPitch(23.5), abjad.NumberedPitch(26), abjad.NumberedPitch(25.5), abjad.NumberedPitch(25.5), abjad.NumberedPitch(21), abjad.NumberedPitch(25.5), abjad.NumberedPitch(25.5), abjad.NumberedPitch(17), abjad.NumberedPitch(16), abjad.NumberedPitch(16), abjad.NumberedPitch(15.5), abjad.NumberedPitch(15.5), abjad.NumberedPitch(15), abjad.NumberedPitch(15.5), abjad.NumberedPitch(32.5), abjad.NumberedPitch(28.5), abjad.NumberedPitch(25), abjad.NumberedPitch(28), abjad.NumberedPitch(28), abjad.NumberedPitch(28), abjad.NumberedPitch(22), abjad.NumberedPitch(22), abjad.NumberedPitch(27.5), abjad.NumberedPitch(28), abjad.NumberedPitch(28), abjad.NumberedPitch(26), abjad.NumberedPitch(22), abjad.NumberedPitch(27.5), abjad.NumberedPitch(9.5), abjad.NumberedPitch(9), abjad.NumberedPitch(9.5), abjad.NumberedPitch(9.5), abjad.NumberedPitch(18.5), abjad.NumberedPitch(13), abjad.NumberedPitch(22), abjad.NumberedPitch(16.5), abjad.NumberedPitch(16), abjad.NumberedPitch(16), abjad.NumberedPitch(16), abjad.NumberedPitch(16), abjad.NumberedPitch(4), abjad.NumberedPitch(21.5), abjad.NumberedPitch(26), abjad.NumberedPitch(26), abjad.NumberedPitch(24), abjad.NumberedPitch(26), abjad.NumberedPitch(23), abjad.NumberedPitch(25), abjad.NumberedPitch(26), abjad.NumberedPitch(23), abjad.NumberedPitch(25), abjad.NumberedPitch(26), abjad.NumberedPitch(27.5), abjad.NumberedPitch(18), abjad.NumberedPitch(28), abjad.NumberedPitch(22), abjad.NumberedPitch(17.5), abjad.NumberedPitch(16), abjad.NumberedPitch(12), abjad.NumberedPitch(14.5), abjad.NumberedPitch(15), abjad.NumberedPitch(15.5), abjad.NumberedPitch(14.5), abjad.NumberedPitch(23), abjad.NumberedPitch(28), abjad.NumberedPitch(25), abjad.NumberedPitch(25), abjad.NumberedPitch(25), abjad.NumberedPitch(25), abjad.NumberedPitch(25), abjad.NumberedPitch(19), abjad.NumberedPitch(18), abjad.NumberedPitch(18.5), abjad.NumberedPitch(24), abjad.NumberedPitch(18.5), abjad.NumberedPitch(23.5), abjad.NumberedPitch(1.5), abjad.NumberedPitch(10), abjad.NumberedPitch(28), abjad.NumberedPitch(23), abjad.NumberedPitch(22), abjad.NumberedPitch(33.5), abjad.NumberedPitch(21), abjad.NumberedPitch(19.5), abjad.NumberedPitch(34.5), abjad.NumberedPitch(12), abjad.NumberedPitch(9), abjad.NumberedPitch(6), abjad.NumberedPitch(16), abjad.NumberedPitch(10), abjad.NumberedPitch(28), abjad.NumberedPitch(25), abjad.NumberedPitch(22), abjad.NumberedPitch(22), abjad.NumberedPitch(21.5), abjad.NumberedPitch(23), abjad.NumberedPitch(32.5), abjad.NumberedPitch(26), abjad.NumberedPitch(34), abjad.NumberedPitch(26.5), abjad.NumberedPitch(34), abjad.NumberedPitch(27), abjad.NumberedPitch(34), abjad.NumberedPitch(27), abjad.NumberedPitch(34), abjad.NumberedPitch(31), abjad.NumberedPitch(33), abjad.NumberedPitch(21.5), abjad.NumberedPitch(25.5)]
 ######
 walk_list = []
 for x in range(-12, 26):
