@@ -270,7 +270,7 @@
                             }
                         \once \override Staff.NoteHead.style = #'default
                         \clef "treble"
-                        b'8
+                        bef'8
                         \mf
                         - \tenuto
                         \>
@@ -324,11 +324,11 @@
                         \once \override Staff.NoteHead.style = #'default
                         dqf'''8.
                         \once \override Staff.NoteHead.style = #'triangle
-                        a''4
+                        aef''4
                         :32
                         ~
                         \once \override Staff.NoteHead.style = #'triangle
-                        a''16
+                        aef''16
                         :32
                         [
                         \once \override Staff.NoteHead.style = #'default
@@ -669,10 +669,10 @@
                             \startTextSpanThree
                             ]
                             \once \override Staff.NoteHead.style = #'triangle
-                            f''4.
+                            etes''4.
                             - \espressivo
                             \once \override Staff.NoteHead.style = #'default
-                            e''8
+                            ees''8
                             \mp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -1018,7 +1018,7 @@
                             % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
                             \clef "treble"
-                            e''8
+                            eef''8
                             \mf
                             - \tenuto
                             \>
@@ -1987,7 +1987,7 @@
                         :32
                         [
                         \once \override Staff.NoteHead.style = #'default
-                        ef''8
+                        etef''8
                         - \accent
                         \once \override Staff.NoteHead.style = #'default
                         eqf''16
@@ -2033,7 +2033,7 @@
                     {
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
                         \clef "treble"
-                        cs'''8.
+                        ctes'''8.
                         \mf
                         - \accent
                         \>
@@ -2068,7 +2068,7 @@
                         \startTextSpanThree
                         [
                         \once \override Staff.NoteHead.style = #'triangle
-                        e'''8.
+                        eef'''8.
                         \mp
                         - \espressivo
                         - \tweak stencil #constante-hairpin
@@ -2563,7 +2563,7 @@
                             % [Voice 1 measure 15] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
                             \clef "treble"
-                            e'''4
+                            eef'''4
                             \mf
                             - \tenuto
                             \>
@@ -2598,30 +2598,30 @@
                             - \tweak staff-padding #17.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'default
-                            e'''16
+                            eef'''16
                             [
                             \once \override Staff.NoteHead.style = #'default
                             e'''8
                             - \tenuto
                         }
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        bf''16
+                        btef''16
                         :32
                         \once \override Staff.NoteHead.style = #'triangle
-                        bf''8.
+                        btef''8.
                         :32
                         ~
                         \times 8/9 {
                             % [Voice 1 measure 16] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'triangle
-                            bf''8.
+                            btef''8.
                             :32
                             ]
                             \once \override Staff.NoteHead.style = #'default
                             eqf'''4
                             - \accent
                             \once \override Staff.NoteHead.style = #'default
-                            e'''8
+                            eef'''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -3033,19 +3033,19 @@
                             \startTextSpanThree
                             ]
                             \once \override Staff.NoteHead.style = #'default
-                            d'''4
+                            def'''4
                             - \tenuto
                             ~
                             \once \override Staff.NoteHead.style = #'default
-                            d'''16
+                            def'''16
                             [
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            bf''16
+                            ates''16
                             - \accent
                             ~
                         }
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        bf''16
+                        ates''16
                         \once \override Staff.NoteHead.style = #'triangle
                         eqf'''16
                         - \espressivo
@@ -3417,7 +3417,7 @@
                             % [Voice 1 measure 22] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
                             \clef "treble"
-                            a'4
+                            aes'4
                             \mf
                             - \tenuto
                             \>
@@ -3471,7 +3471,7 @@
                         gqf''16
                         [
                         \once \override Staff.NoteHead.style = #'default
-                        cs''16
+                        ctes''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4019,7 +4019,7 @@
                             eqs''16
                             - \tenuto
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            e''16
+                            ees''16
                             \mp
                             - \accent
                             - \tweak stencil #constante-hairpin
@@ -4836,7 +4836,7 @@
                     {
                         \once \override Staff.NoteHead.style = #'triangle
                         \clef "treble"
-                        e''4
+                        ees''4
                         \mf
                         - \espressivo
                         \>
@@ -4872,9 +4872,9 @@
                         \startTextSpanThree
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'triangle
-                            e''16
+                            ees''16
                             \once \override Staff.NoteHead.style = #'default
-                            e''4
+                            ees''4
                             \mp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -5393,7 +5393,7 @@
                             % [Voice 1 measure 35] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
                             \clef "treble"
-                            e''8.
+                            ees''8.
                             \mf
                             - \tenuto
                             \>
@@ -5439,7 +5439,7 @@
                         aqs''8
                         :32
                         \once \override Staff.NoteHead.style = #'default
-                        d'''16
+                        def'''16
                         - \accent
                         ]
                         \times 8/9 {
@@ -5447,7 +5447,7 @@
                             \once \override Staff.NoteHead.style = #'default
                             d'''4.
                             \once \override Staff.NoteHead.style = #'triangle
-                            c'''8.
+                            ces'''8.
                             :32
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -5801,17 +5801,17 @@
                         \startTextSpanThree
                         [
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        b''8.
+                        bes''8.
                         - \accent
                         ]
                         \once \override Staff.NoteHead.style = #'triangle
-                        cs'''4
+                        dtef'''4
                         - \espressivo
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             \once \override Staff.NoteHead.style = #'triangle
-                            cs'''16
+                            dtef'''16
                             [
                             \once \override Staff.NoteHead.style = #'default
                             d'''8
@@ -6604,7 +6604,7 @@
                         % [Voice 1 measure 44] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
                         \clef "treble"
-                        b''16
+                        bef''16
                         \mf
                         - \tenuto
                         \>
@@ -6639,22 +6639,22 @@
                         \startTextSpanThree
                         [
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        cs'''8.
+                        dtef'''8.
                         :32
                         ~
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            cs'''8.
+                            dtef'''8.
                             :32
                             \once \override Staff.NoteHead.style = #'triangle
-                            d'''8
+                            def'''8
                             :32
                             ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
                             \once \override Staff.NoteHead.style = #'triangle
-                            d'''8
+                            def'''8
                             :32
                             \once \override Staff.NoteHead.style = #'default
                             eqf'''8.
@@ -7536,7 +7536,7 @@
                         % [Voice 1 measure 50] %! COMMENT_MEASURE_NUMBERS
                         \once \override Staff.NoteHead.style = #'default
                         \clef "treble"
-                        fs''4
+                        gtef''4
                         \mf
                         \>
                         \stopTextSpanOne
@@ -7570,13 +7570,13 @@
                         - \tweak staff-padding #17.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
-                        fs''16
+                        gtef''16
                         [
                         \once \override Staff.NoteHead.style = #'triangle
-                        e'''8
+                        eef'''8
                         :32
                         \once \override Staff.NoteHead.style = #'default
-                        bf''16
+                        ates''16
                         - \tenuto
                         ]
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -7587,7 +7587,7 @@
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
                         fqs''16
                         \once \override Staff.NoteHead.style = #'triangle
-                        e''4
+                        eef''4
                         - \espressivo
                         \once \override Staff.NoteHead.style = #'default
                         c''8.
@@ -8654,7 +8654,7 @@
                             % [Voice 1 measure 59] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
                             \clef "treble"
-                            b''8.
+                            bes''8.
                             \mf
                             \>
                             \stopTextSpanOne
@@ -8687,10 +8687,10 @@
                             - \tweak staff-padding #17.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'triangle
-                            e'''4
+                            eef'''4
                             :32
                             \once \override Staff.NoteHead.style = #'default
-                            cs'''8
+                            dtef'''8
                             - \tenuto
                             ~
                             [
@@ -8699,19 +8699,19 @@
                         \times 4/3 {
                             % [Voice 1 measure 60] %! COMMENT_MEASURE_NUMBERS
                             \once \override Staff.NoteHead.style = #'default
-                            cs'''16
+                            dtef'''16
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            cs'''8
+                            ctes'''8
                             - \accent
                             ~
                         }
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        cs'''8.
+                        ctes'''8.
                         \once \override Staff.NoteHead.style = #'triangle
-                        cs'''8
+                        ctes'''8
                         - \espressivo
                         \once \override Staff.NoteHead.style = #'default
-                        cs'''16
+                        ctes'''16
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin

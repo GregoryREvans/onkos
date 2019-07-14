@@ -76,7 +76,7 @@
                                 }
                             \once \override TextScript.extra-offset = #'(0 . 10)
                             \clef "treble"
-                            <ef' f'>4
+                            <ef' e'>4
                             \f
                             ^ \markup \abjad-metric-modulation-tuplet-rhs #3 #0 #2 #0 #2 #3 #'(1 . 1)
                             \>
