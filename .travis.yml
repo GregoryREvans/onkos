@@ -42,7 +42,7 @@ before_install:
     # clone & install moscotta:
     - MOSCOTTA=/tmp/moscotta
     - git clone https://github.com/ivanalexandermoscotta/moscotta.git $MOSCOTTA
-    - export PYTHONPATH=$MOSCOTTA:$RMAKERS
+    - export PYTHONPATH=$MOSCOTTA:$PYTHONPATH
 
     # clone & install evans:
     - EVANS=/tmp/evans
@@ -50,12 +50,8 @@ before_install:
     # - pip install -e $EVANS
     - export PYTHONPATH=$EVANS/..:$PYTHONPATH
 
-    # # log setup:
-    # - echo $MYPYPATH
-    # - echo $PATH
-    # - ls
-    # - ls /tmp
-    # - pwd
+    # log setup:
+    - echo $PYTHONPATH
 
 install:
     - pip install coverage
