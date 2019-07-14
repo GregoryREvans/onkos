@@ -28,7 +28,7 @@ before_install:
 
     # clone & install abjad dev branch:
     - ABJAD=/tmp/abjad
-    - git clone -b master https://github.com/Abjad/abjad.git $ABJAD
+    - git clone -b greg/dev https://github.com/Abjad/abjad.git $ABJAD
     - pip install -e $ABJAD
     - export MYPYPATH=$ABJAD
     - export PATH=$PATH:$ABJAD/abjad/scr
@@ -36,8 +36,10 @@ before_install:
     # clone & install rmakers:
     - RMAKERS=/tmp/abjad-ext-rmakers
     - git clone https://github.com/Abjad/abjad-ext-rmakers.git $RMAKERS
-    # - git checkout 49bd2d86258d0c209fed3a93ff9434b18c784cdd $RMAKERS
+    - cd $RMAKERS
+    - git checkout 49bd2d86258d0c209fed3a93ff9434b18c784cdd # doesn't work
     - pip install -e $RMAKERS
+    - cd ~
     - export MYPYPATH=$MYPYPATH:$RMAKERS
 
     # clone & install moscotta:
@@ -48,7 +50,6 @@ before_install:
     # clone & install evans:
     - EVANS=/tmp/evans
     - git clone https://github.com/GregoryREvans/evans.git $EVANS
-    # - pip install -e $EVANS
     - export PYTHONPATH=$EVANS/..:$PYTHONPATH
 
     # log setup:
