@@ -25,7 +25,11 @@ before_install:
     - wget -q -O $LILYPOND $LILYPOND_URL/$LILYPOND_SOURCE
     - sh $LILYPOND --batch
 
-    # clone & install abjad dev branch: # you don't have to install
+    # clone & install uqbar:
+    - UQBAR=/tmp/uqbar
+    -git clone https://github.com/josiah-wolf-oberholtzer/uqbar.git $UQBAR
+
+    # clone & install abjad dev branch:
     - ABJAD=/tmp/abjad
     - git clone -b greg/dev https://github.com/Abjad/abjad.git $ABJAD
     - pip install -e $ABJAD
