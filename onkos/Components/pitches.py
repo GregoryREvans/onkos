@@ -124,7 +124,7 @@ random_walk_list = [
 
 ######
 chords = [
-    [3, 5], #5 was 4
+    [3, 4], #change 4 to 5 to check testing
     [3, 7],
     [7, 9],
     [4, 9],
