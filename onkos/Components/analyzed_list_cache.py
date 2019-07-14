@@ -2,6 +2,7 @@ import pathlib
 from onkos.Components.instruments import instrument_one_range_lowest
 from onkos.Components.instruments import instrument_one_range_highest
 from evans.tool_tests.audio_pitches import get_audio_pitches
+
 ######
 # list two is broken
 parent_path = pathlib.Path(__file__).parent
@@ -62,6 +63,4 @@ analyzed_list = []
 for x in analyses:
     analyzed_list.extend(x)
 
-open(f"{parent_path}/.analyzed_list_pitches", "w").writelines(
-    f"{analyzed_list}"
-)
+open(f"{parent_path}/.analyzed_list_pitches", "w").writelines(f"{analyzed_list}")
