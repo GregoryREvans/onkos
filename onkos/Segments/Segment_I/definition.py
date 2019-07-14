@@ -245,7 +245,7 @@ if path.exists():
     path.unlink()
 time_3 = time.time()
 print(f"Persisting {pdf_path} ...")
-result = abjad.persist(score_file).as_ly(pdf_path) #or pdf
+result = abjad.persist(score_file).as_pdf(pdf_path) #or ly
 print(result[0])
 print(result[1])
 print(result[2])
