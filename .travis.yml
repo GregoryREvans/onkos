@@ -41,14 +41,17 @@ before_install:
     # clone & install evans:
     - EVANS=/tmp/evans
     - git clone https://github.com/GregoryREvans/evans.git $EVANS
+    # - pip install -e $EVANS
 
     # clone & install pyaudio:
     - PYAUDIO=/tmp/pyaudio
     - git clone https://github.com/jleb/pyaudio.git
+    # - pip install -e $PYAUDIO
 
     # clone & install numpy:
     - NUMPY=/tmp/numpy
     - git clone https://github.com/numpy/numpy.git
+    # - pip install -e $NUMPY
 
     # # log setup:
     # - echo $MYPYPATH
