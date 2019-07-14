@@ -12,7 +12,10 @@ python:
     #- "3.8-dev"
 
 before_install:
-    # alias package
+    # name working directory:
+    - LOCATION=`pwd`
+
+    # alias package:
     - PACKAGE=`pwd`/onkos
     - export PYTHONPATH=$PACKAGE:$PYTHONPATH
 
@@ -39,7 +42,7 @@ before_install:
     - cd $RMAKERS
     - git checkout 49bd2d86258d0c209fed3a93ff9434b18c784cdd # doesn't work
     - pip install -e $RMAKERS
-    - cd ~
+    - cd $LOCATION
     - export MYPYPATH=$MYPYPATH:$RMAKERS
 
     # clone & install moscotta:
