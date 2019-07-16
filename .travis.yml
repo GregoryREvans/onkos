@@ -65,9 +65,9 @@ install:
 script:
     - coverage run -a `which py.test` -rf $PACKAGE
 
-# after_success:
-#     - pip install --quiet coveralls
-#     - coveralls
+after_success:
+    - pip install --quiet coveralls
+    - coveralls
 
 notifications:
     email: false
