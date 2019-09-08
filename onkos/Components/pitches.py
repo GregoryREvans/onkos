@@ -1,11 +1,10 @@
 import abjad
 from onkos.Components.instruments import instrument_one_range_lowest
 from onkos.Components.instruments import instrument_one_range_highest
-from evans.general_tools.reduce_mod import reduceMod
 from evans.general_tools.cyc import cyc
 from evans.general_tools.flatten import flatten
 from evans.general_tools.perm import perm
-from evans.general_tools.random_walk import randomWalk
+from evans.general_tools.random_walk import random_walk
 from evans.general_tools.grouper import grouper
 from evans.general_tools.rotate import rotate
 from evans.general_tools.mirror import mirror
@@ -55,7 +54,7 @@ mirrored_sieve = mirror(new_sieve_l, sequential_duplicates=False)
 rotated_sieve = rotate(mirrored_sieve, rotation)
 sieve_list = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=9,
         length=1000,
         step_list=[1, 1, 4, 2, 3, 1],
@@ -228,7 +227,7 @@ rotated_walk_list = rotate(mirrored_walk_list, 18)
 
 random_walk_list = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=2, length=1000, step_list=[1, 2, 2], mapped_list=rotated_walk_list
     )
 ]
@@ -253,7 +252,7 @@ chords = [
 rotated_walk_list2 = rotate(mirrored_walk_list, 20)
 runs = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=2,
         length=1000,
         step_list=[1, 2, 1, 2, 3, 1, 2, 3, 4],
