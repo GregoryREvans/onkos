@@ -55,6 +55,11 @@ before_install:
     - git clone https://github.com/GregoryREvans/evans.git $EVANS
     - export PYTHONPATH=$EVANS/:$PYTHONPATH
 
+    # clone & install tsmakers:
+    - TSMAKERS=/tmp/tsmakers
+    - git clone https://github.com/ivanalexandermoscotta/tsmakers.git $TSMAKERS
+    - export PYTHONPATH=$TSMAKERS:$PYTHONPATH
+
     # log setup:
     - echo $PYTHONPATH
 
