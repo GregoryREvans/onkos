@@ -2,7 +2,6 @@
     <<
         \context TimeSignatureContext = "Global Context"
         {
-            % [Global Context measure 1] %! COMMENT_MEASURE_NUMBERS
             \tempo 4=83-95
             \time 1/4
             \mark \markup {
@@ -12,34 +11,24 @@
                     }
                 }
             s1 * 1/4
-            % [Global Context measure 2] %! COMMENT_MEASURE_NUMBERS
             \time 3/8
             s1 * 3/8
-            % [Global Context measure 3] %! COMMENT_MEASURE_NUMBERS
             \time 1/2
             s1 * 1/2
-            % [Global Context measure 4] %! COMMENT_MEASURE_NUMBERS
             \time 5/8
             s1 * 5/8
-            % [Global Context measure 5] %! COMMENT_MEASURE_NUMBERS
             \time 3/4
             s1 * 3/4
-            % [Global Context measure 6] %! COMMENT_MEASURE_NUMBERS
             \time 7/8
             s1 * 7/8
-            % [Global Context measure 7] %! COMMENT_MEASURE_NUMBERS
             \time 1/1
             s1 * 1
-            % [Global Context measure 8] %! COMMENT_MEASURE_NUMBERS
             \time 9/8
             s1 * 9/8
-            % [Global Context measure 9] %! COMMENT_MEASURE_NUMBERS
             \time 5/4
             s1 * 5/4
-            % [Global Context measure 10] %! COMMENT_MEASURE_NUMBERS
             \time 9/8
             s1 * 9/8
-            % [Global Context measure 11] %! COMMENT_MEASURE_NUMBERS
             \once \override TimeSignature.color = #white
             \time 1/8
             s1 * 1/8
@@ -52,7 +41,6 @@
                 {
                     {
                         \times 2/3 {
-                            % [Voice 1 measure 1] %! COMMENT_MEASURE_NUMBERS
                             \set Staff.instrumentName =
                             \markup {
                                 \hcenter-in
@@ -68,8 +56,6 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             \stopTextSpanThree
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 0
                             <ef' g'>8
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -77,131 +63,48 @@
                         }
                     }
                     {
-                        % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        \clef "varC"
-                        bf16
-                        \pppp
-                        - \tweak stencil #abjad-flared-hairpin
-                        \<
-                        \stopTextSpanOne
-                        \stopTextSpanTwo
-                        \stopTextSpanThree
-                        [
-                        - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        accel.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
-                        - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #11.5
-                        \startTextSpanOne
-                        bqf16
-                        b16
-                        bf16
-                        aqs16
-                        bqf16
-                        \fff
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                    }
-                    {
-                        % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        \set stemLeftBeamCount = 0
-                        \set stemRightBeamCount = 1
-                        \clef "treble"
-                        <g' a'>8
-                        \f
-                        \>
-                        \stopTextSpanOne
-                        \stopTextSpanTwo
-                        \stopTextSpanThree
-                        <e' a'>4.
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        r8
-                        \!
-                        \stopTextSpanOne
-                        \stopTextSpanTwo
-                        \stopTextSpanThree
-                    }
-                    {
-                        \times 8/9 {
-                            \clef "varC"
-                            c'16
-                            \pppp
-                            - \tweak stencil #abjad-flared-hairpin
-                            \<
-                            \stopTextSpanOne
-                            \stopTextSpanTwo
-                            \stopTextSpanThree
-                            [
-                            - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
+                        \override TupletNumber.text = \markup {
+                            \scale
+                                #'(0.75 . 0.75)
+                                \score
                                     {
-                                        \upright
-                                            rit.
-                                        \hspace
-                                            #0.5
+                                        \new Score
+                                        \with
+                                        {
+                                            \override SpacingSpanner.spacing-increment = #0.5
+                                            proportionalNotationDuration = ##f
+                                        }
+                                        <<
+                                            \new RhythmicStaff
+                                            \with
+                                            {
+                                                \remove Time_signature_engraver
+                                                \remove Staff_symbol_engraver
+                                                \override Stem.direction = #up
+                                                \override Stem.length = #5
+                                                \override TupletBracket.bracket-visibility = ##t
+                                                \override TupletBracket.direction = #up
+                                                \override TupletBracket.minimum-length = #4
+                                                \override TupletBracket.padding = #1.25
+                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                \override TupletNumber.font-size = #0
+                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                tupletFullLength = ##t
+                                            }
+                                            {
+                                                c'4.
+                                            }
+                                        >>
+                                        \layout {
+                                            indent = #0
+                                            ragged-right = ##t
+                                        }
                                     }
-                                }
-                            - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #11.5
-                            \startTextSpanOne
-                            cqs'16
-                            bqs16
-                            cs'16
-                            ef'16
-                            eqf'16
-                            dqs'16
-                            d'16
-                            cs'16
-                            \fff
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 6/5 {
-                            % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
-                            \clef "treble"
-                            <ef' a'>4
-                            \f
-                            \>
-                            \stopTextSpanOne
-                            \stopTextSpanTwo
-                            \stopTextSpanThree
-                            <a' ef''>4.
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                        }
-                    }
-                    {
-                        % [Voice 1 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        r8
-                        \!
-                        \stopTextSpanOne
-                        \stopTextSpanTwo
-                        \stopTextSpanThree
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 6/5 {
+                            }
+                        \times 1/1 {
                             \clef "varC"
-                            dqs'8
+                            bf32
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
                             \<
@@ -222,97 +125,37 @@
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
-                            ef'8
-                            e'8
-                            fqs'8
-                            eqf'8
+                            bqf32
+                            b32
+                            bf32
+                            aqs32
+                            bqf32
+                            c'32
                             \fff
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                         }
+                        \revert TupletNumber.text
                     }
                     {
-                        \times 4/5 {
-                            % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
-                            \set stemLeftBeamCount = 0
-                            \set stemRightBeamCount = 1
-                            \clef "treble"
-                            <g' ef''>8
-                            \f
-                            \>
-                            \stopTextSpanOne
-                            \stopTextSpanTwo
-                            \stopTextSpanThree
-                            <e' g'>4
-                            \set stemLeftBeamCount = 0
-                            \set stemRightBeamCount = 1
-                            <g' e''>8
-                            [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 0
-                            <a' e''>8
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
-                    }
-                    {
-                        r2
-                        \!
+                        \clef "treble"
+                        <g' a'>8
+                        \f
+                        \>
                         \stopTextSpanOne
                         \stopTextSpanTwo
                         \stopTextSpanThree
-                    }
-                    {
-                        % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \clef "varC"
-                        ef'16
-                        \pppp
-                        - \tweak stencil #abjad-flared-hairpin
-                        \<
-                        \stopTextSpanOne
-                        \stopTextSpanTwo
-                        \stopTextSpanThree
-                        [
-                        - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        rit.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
-                        - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #11.5
-                        \startTextSpanOne
-                        d'16
-                        dqf'16
-                        cqs'16
-                        b16
-                        bqf16
-                        bqs16
-                        cs'16
-                        ef'16
-                        dqs'16
-                        dqf'16
-                        cs'16
-                        c'16
-                        dqf'16
-                        d'16
-                        ef'16
-                        dqf'16
-                        eqf'16
-                        \fff
+                        <e' a'>32
+                        \mp
+                        ~
+                        <e' a'>4
+                        ~
+                        <e' a'>16.
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                     {
-                        % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r8
                         \!
                         \stopTextSpanOne
@@ -320,10 +163,48 @@
                         \stopTextSpanThree
                     }
                     {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 14/15 {
+                        \override TupletNumber.text = \markup {
+                            \scale
+                                #'(0.75 . 0.75)
+                                \score
+                                    {
+                                        \new Score
+                                        \with
+                                        {
+                                            \override SpacingSpanner.spacing-increment = #0.5
+                                            proportionalNotationDuration = ##f
+                                        }
+                                        <<
+                                            \new RhythmicStaff
+                                            \with
+                                            {
+                                                \remove Time_signature_engraver
+                                                \remove Staff_symbol_engraver
+                                                \override Stem.direction = #up
+                                                \override Stem.length = #5
+                                                \override TupletBracket.bracket-visibility = ##t
+                                                \override TupletBracket.direction = #up
+                                                \override TupletBracket.minimum-length = #4
+                                                \override TupletBracket.padding = #1.25
+                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                \override TupletNumber.font-size = #0
+                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                tupletFullLength = ##t
+                                            }
+                                            {
+                                                c'2
+                                            }
+                                        >>
+                                        \layout {
+                                            indent = #0
+                                            ragged-right = ##t
+                                        }
+                                    }
+                            }
+                        \times 1/1 {
                             \clef "varC"
-                            e'16
+                            cqs'32
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
                             \<
@@ -344,25 +225,337 @@
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #11.5
                             \startTextSpanOne
-                            f'16
-                            fqs'16
-                            gqf'16
-                            af'16
-                            gqs'16
-                            aqf'16
-                            bf'16
-                            af'16
-                            aqf'16
-                            aqs'16
-                            a'16
-                            bf'16
-                            aqf'16
-                            a'16
+                            bqs32
+                            cs'32
+                            ef'32
+                            eqf'32
+                            dqs'32
+                            d'32
+                            cs'32
+                            dqs'32
                             \fff
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                         }
+                        \revert TupletNumber.text
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 6/5 {
+                            \clef "treble"
+                            <ef' a'>4
+                            \f
+                            \>
+                            \stopTextSpanOne
+                            \stopTextSpanTwo
+                            \stopTextSpanThree
+                            <a' ef''>16
+                            \mp
+                            ~
+                            <a' ef''>4
+                            ~
+                            <a' ef''>16
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        r8
+                        \!
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
+                    }
+                    {
+                        \override TupletNumber.text = \markup {
+                            \scale
+                                #'(0.75 . 0.75)
+                                \score
+                                    {
+                                        \new Score
+                                        \with
+                                        {
+                                            \override SpacingSpanner.spacing-increment = #0.5
+                                            proportionalNotationDuration = ##f
+                                        }
+                                        <<
+                                            \new RhythmicStaff
+                                            \with
+                                            {
+                                                \remove Time_signature_engraver
+                                                \remove Staff_symbol_engraver
+                                                \override Stem.direction = #up
+                                                \override Stem.length = #5
+                                                \override TupletBracket.bracket-visibility = ##t
+                                                \override TupletBracket.direction = #up
+                                                \override TupletBracket.minimum-length = #4
+                                                \override TupletBracket.padding = #1.25
+                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                \override TupletNumber.font-size = #0
+                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                tupletFullLength = ##t
+                                            }
+                                            {
+                                                c'2.
+                                            }
+                                        >>
+                                        \layout {
+                                            indent = #0
+                                            ragged-right = ##t
+                                        }
+                                    }
+                            }
+                        \times 1/1 {
+                            \clef "varC"
+                            ef'32
+                            \pppp
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
+                            \stopTextSpanOne
+                            \stopTextSpanTwo
+                            \stopTextSpanThree
+                            [
+                            - \abjad-solid-line-with-hook
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            accel.
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak bound-details.right.padding 3
+                            - \tweak staff-padding #11.5
+                            \startTextSpanOne
+                            e'32
+                            fqs'32
+                            eqf'32
+                            ef'32
+                            d'32
+                            dqf'32
+                            cqs'32
+                            b32
+                            bqf32
+                            bqs32
+                            cs'32
+                            ef'32
+                            \fff
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
+                        \revert TupletNumber.text
+                    }
+                    {
+                        \times 4/5 {
+                            \clef "treble"
+                            <g' ef''>8
+                            \f
+                            \>
+                            \stopTextSpanOne
+                            \stopTextSpanTwo
+                            \stopTextSpanThree
+                            <e' g'>4
+                            <g' e''>8
+                            <a' e''>8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        r8..
+                        \!
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
+                        r4
+                        r32
+                    }
+                    {
+                        \override TupletNumber.text = \markup {
+                            \scale
+                                #'(0.75 . 0.75)
+                                \score
+                                    {
+                                        \new Score
+                                        \with
+                                        {
+                                            \override SpacingSpanner.spacing-increment = #0.5
+                                            proportionalNotationDuration = ##f
+                                        }
+                                        <<
+                                            \new RhythmicStaff
+                                            \with
+                                            {
+                                                \remove Time_signature_engraver
+                                                \remove Staff_symbol_engraver
+                                                \override Stem.direction = #up
+                                                \override Stem.length = #5
+                                                \override TupletBracket.bracket-visibility = ##t
+                                                \override TupletBracket.direction = #up
+                                                \override TupletBracket.minimum-length = #4
+                                                \override TupletBracket.padding = #1.25
+                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                \override TupletNumber.font-size = #0
+                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                tupletFullLength = ##t
+                                            }
+                                            {
+                                                c'1
+                                                ~
+                                                c'8
+                                            }
+                                        >>
+                                        \layout {
+                                            indent = #0
+                                            ragged-right = ##t
+                                        }
+                                    }
+                            }
+                        \times 1/1 {
+                            \clef "varC"
+                            dqs'32
+                            \pppp
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
+                            \stopTextSpanOne
+                            \stopTextSpanTwo
+                            \stopTextSpanThree
+                            [
+                            - \abjad-solid-line-with-hook
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            rit.
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak bound-details.right.padding 3
+                            - \tweak staff-padding #11.5
+                            \startTextSpanOne
+                            dqf'32
+                            cs'32
+                            c'32
+                            dqf'32
+                            d'32
+                            ef'32
+                            dqf'32
+                            eqf'32
+                            e'32
+                            f'32
+                            fqs'32
+                            gqf'32
+                            af'32
+                            gqs'32
+                            aqf'32
+                            bf'32
+                            af'32
+                            \fff
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
+                        \revert TupletNumber.text
+                    }
+                    {
+                        r8
+                        \!
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
+                    }
+                    {
+                        \override TupletNumber.text = \markup {
+                            \scale
+                                #'(0.75 . 0.75)
+                                \score
+                                    {
+                                        \new Score
+                                        \with
+                                        {
+                                            \override SpacingSpanner.spacing-increment = #0.5
+                                            proportionalNotationDuration = ##f
+                                        }
+                                        <<
+                                            \new RhythmicStaff
+                                            \with
+                                            {
+                                                \remove Time_signature_engraver
+                                                \remove Staff_symbol_engraver
+                                                \override Stem.direction = #up
+                                                \override Stem.length = #5
+                                                \override TupletBracket.bracket-visibility = ##t
+                                                \override TupletBracket.direction = #up
+                                                \override TupletBracket.minimum-length = #4
+                                                \override TupletBracket.padding = #1.25
+                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                \override TupletNumber.font-size = #0
+                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                tupletFullLength = ##t
+                                            }
+                                            {
+                                                c'2..
+                                            }
+                                        >>
+                                        \layout {
+                                            indent = #0
+                                            ragged-right = ##t
+                                        }
+                                    }
+                            }
+                        \times 1/1 {
+                            \clef "varC"
+                            aqf'32
+                            \pppp
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
+                            \stopTextSpanOne
+                            \stopTextSpanTwo
+                            \stopTextSpanThree
+                            [
+                            - \abjad-solid-line-with-hook
+                            - \tweak bound-details.left.text \markup {
+                                \concat
+                                    {
+                                        \upright
+                                            rit.
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            - \tweak bound-details.right.padding 3
+                            - \tweak staff-padding #11.5
+                            \startTextSpanOne
+                            aqs'32
+                            a'32
+                            bf'32
+                            aqf'32
+                            a'32
+                            bf'32
+                            bqs'32
+                            aqs'32
+                            bf'32
+                            b'32
+                            bqf'32
+                            bqs'32
+                            cs''32
+                            \ottava 1
+                            dqf''32
+                            \fff
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            \ottava 0
+                        }
+                        \revert TupletNumber.text
                     }
                     {
                         r4
@@ -372,7 +565,6 @@
                         \stopTextSpanThree
                     }
                     {
-                        % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
                         \clef "treble"
                         <a' g''>4.
                         \f
@@ -380,7 +572,11 @@
                         \stopTextSpanOne
                         \stopTextSpanTwo
                         \stopTextSpanThree
-                        <e' ef''>4.
+                        <e' ef''>16
+                        ~
+                        <e' ef''>4
+                        ~
+                        <e' ef''>16
                         ~
                         <e' ef''>4.
                         \mp
@@ -388,7 +584,6 @@
                         \<
                     }
                     {
-                        % [Voice 1 measure 11] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                         \once \override Rest.color = #white
                         r1 * 1/16

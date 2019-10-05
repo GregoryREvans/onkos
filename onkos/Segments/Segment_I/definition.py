@@ -115,9 +115,6 @@ for voice in abjad.select(score["Staff Group"]).components(abjad.Voice):
 
 print("Beaming runs ...")
 for voice in abjad.select(score).components(abjad.Voice):
-    for run in abjad.select(voice).runs():
-        specifier = abjadext.rmakers.BeamSpecifier(beam_each_division=False)
-        specifier(run)
     abjad.beam(voice[:], beam_lone_notes=False, beam_rests=False)
 
 # print('Beautifying score ...')
@@ -229,7 +226,7 @@ score_file = abjad.LilyPondFile.new(
     ],
 )
 
-abjad.SegmentMaker.comment_measure_numbers(score)
+# abjad.SegmentMaker.comment_measure_numbers(score)
 time_2 = time.time()
 ###################
 directory = pathlib.Path(__file__).parent

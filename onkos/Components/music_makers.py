@@ -9,10 +9,10 @@ from onkos.Components.rhythm_makers import rmaker_five
 from onkos.Components.rhythm_makers import rmaker_six
 from onkos.Components.attachment_handlers import *
 
-silence_maker = abjadext.rmakers.NoteRhythmMaker(
-    division_masks=[abjadext.rmakers.SilenceMask(pattern=abjad.index([0], 1))]
+silence_maker = abjadext.rmakers.stack(
+    abjadext.rmakers.NoteRhythmMaker(),
+    abjadext.rmakers.force_rest(abjad.select().leaves(pitched=True)),
 )
-
 
 music_maker_one = MusicMaker(
     rmaker=rmaker_one,
