@@ -1,4 +1,5 @@
 import abjad
+from fractions import Fraction
 
 
 class TextSpanHandler:
@@ -216,40 +217,68 @@ class TextSpanHandler:
         container = abjad.Container()
         container.extend(selections)
         for run in abjad.select(container).runs():
-            if len(abjad.select(run).logical_ties()) > 1:
-                ties = abjad.select(run).logical_ties()
-                start_strings = [next(positions) for _ in ties]
-                for i, start_string in enumerate(start_strings):
+            if len(run) > 1:
+                ties = abjad.select(run).logical_ties(pitched=True)
+                distance = len(ties)
+                start_strings = [next(positions) for _ in range(distance)]
+                for i, start_string in enumerate(start_strings[:-1]):
                     if all(start_string[_].isdigit() for _ in (0, -1)):
+                        if Fraction(
+                            int(start_strings[i][0]), int(start_strings[i][-1])
+                        ) > Fraction(
+                            int(start_strings[i + 1][0]), int(start_strings[i + 1][-1])
+                        ):
+                            start_strings[
+                                i
+                            ] = f"""\\center-column {{ \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction {start_string[0]} {start_string[-1]} }}"""
+                        elif Fraction(
+                            int(start_strings[i][0]), int(start_strings[i][-1])
+                        ) < Fraction(
+                            int(start_strings[i + 1][0]), int(start_strings[i + 1][-1])
+                        ):
+                            start_strings[
+                                i
+                            ] = f"""\\center-column {{ \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction {start_string[0]} {start_string[-1]} }}"""
+                        else:
+                            start_strings[
+                                i
+                            ] = f"""\\center-column {{ \\center-align \\vcenter \\upright \\fraction {start_string[0]} {start_string[-1]} }}"""
+                    else:
                         start_strings[
                             i
-                        ] = f"\\upright \\center-align \\vcenter \\fraction {start_string[0]} {start_string[-1]}"
+                        ] = f"""\\center-column {{ \\upright \\center-align \\vcenter {start_string} }}"""
                 start_indicators = [
                     abjad.StartTextSpan(
-                        left_text=abjad.Markup(start_string),
+                        left_text=abjad.Markup(start_string, literal=True),
                         style=f"{style}-with-arrow",
                         command=r"\startTextSpan" + span_command,
                         right_padding=1.4,
                     )
-                    for start_string in start_strings[:-1]
+                    for start_string in start_strings
                 ]
-                start_indicators.append(
-                    abjad.StartTextSpan(
-                        left_text=abjad.Markup(start_strings[-1]),
-                        style=f"invisible-line",
-                        command=r"\startTextSpan" + span_command,
-                        right_padding=3,
-                    )
+                final_indicator = abjad.StartTextSpan(
+                    left_text=abjad.Markup(
+                        f"""\\center-column {{ \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction {start_strings[-1][0]} {start_strings[-1][-1]} }}""",
+                        literal=True,
+                    ),
+                    style=f"invisible-line",
+                    command=r"\startTextSpan" + span_command,
+                    right_padding=3,
                 )
                 for indicator in start_indicators:
                     abjad.tweak(indicator).staff_padding = span_padding
-                for i, pair in enumerate(zip(ties, start_indicators)):
+                abjad.tweak(final_indicator).staff_padding = span_padding
+                for pair in zip(ties[:-1], start_indicators):
                     tie, start_indicator = pair
                     abjad.attach(
-                        abjad.StopTextSpan(command=r"\stopTextSpan" + span_command),
-                        tie[0],
+                        abjad.StopTextSpan(command=r"\stopTextSpan" + span_command), tie[0]
                     )
                     abjad.attach(start_indicator, tie[0])
+                abjad.attach(
+                    abjad.StopTextSpan(command=r"\stopTextSpan" + span_command),
+                    ties[-1][0],
+                )
+                abjad.attach(final_indicator, ties[-1][0])
         return selections
 
     def _apply_position_and_span_to_left(

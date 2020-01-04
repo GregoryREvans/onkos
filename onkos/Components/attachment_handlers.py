@@ -30,7 +30,7 @@ articulation_handler_one = ArticulationHandler(
 )
 
 clef_handler_one = ClefHandler(
-    clef="treble",
+    clef="tenorvarC",
     add_ottavas=True,
     # ottava_shelf=16,
 )
@@ -61,11 +61,11 @@ pitch_handler_one = PitchHandler(pitch_list=analyzed_list, continuous=True)
 text_span_handler_one = TextSpanHandler(
     span_two_positions=["st.", "ord.", "st.", "sp.", "msp.", "ord."],
     span_two_style="dashed-line",
-    span_two_padding=14.5,
+    span_two_padding=16.5,
     attach_span_two_to="bounds",
     span_three_positions=["1/2 hair", "1/2 clt.", "clt.", "1/2 clt."],
     span_three_style="solid-line",
-    span_three_padding=17.5,
+    span_three_padding=19.5,
     attach_span_three_to="left",
     continuous=True,
 )
@@ -85,7 +85,8 @@ articulation_handler_two = ArticulationHandler(
 )
 
 clef_handler_two = ClefHandler(
-    clef="varC",
+    clef="bass",
+    # clef="varC",
     add_ottavas=True,
     # ottava_shelf=5,
 )
@@ -127,15 +128,15 @@ text_span_handler_two = TextSpanHandler(
         "5/7",
     ],
     span_one_style="solid-line",
-    span_one_padding=11.5,
+    span_one_padding=12,
     attach_span_one_to="leaves",
     span_two_positions=["msp.", "ord.", "st.", "ord.", "sp."],
     span_two_style="dashed-line",
-    span_two_padding=14.5,
+    span_two_padding=16.5,
     attach_span_two_to="bounds",
     span_three_positions=["clt.", "1/2 clt.", "3/4 hair", "1/2 clt."],
     span_three_style="solid-line",
-    span_three_padding=17.5,
+    span_three_padding=19.5,
     attach_span_three_to="left",
     continuous=True,
 )
@@ -155,7 +156,8 @@ articulation_handler_three = ArticulationHandler(
 )
 
 clef_handler_three = ClefHandler(
-    clef="varC",
+    clef="bass",
+    # clef="varC",
     add_ottavas=True,
     # ottava_shelf=5,
 )
@@ -203,11 +205,11 @@ text_span_handler_three = TextSpanHandler(
         "3/5",
     ],
     span_one_style="solid-line",
-    span_one_padding=11.5,
+    span_one_padding=12,
     attach_span_one_to="leaves",
     span_two_positions=["st.", "ord.", "sp.", "msp.", "ord."],
     span_two_style="dashed-line",
-    span_two_padding=14.5,
+    span_two_padding=16.5,
     attach_span_two_to="bounds",
     continuous=True,
 )
@@ -220,7 +222,8 @@ articulation_handler_four = ArticulationHandler(
 )
 
 clef_handler_four = ClefHandler(
-    clef="varC",
+    clef="bass",
+    # clef="varC",
     add_ottavas=True,
     # ottava_shelf=5,
 )
@@ -236,11 +239,11 @@ pitch_handler_four = PitchHandler(pitch_list=perm_list, continuous=True)
 text_span_handler_four = TextSpanHandler(
     span_two_positions=["st.", "ord.", "sp.", "msp.", "ord."],
     span_two_style="dashed-line",
-    span_two_padding=14.5,
+    span_two_padding=16.5,
     attach_span_two_to="bounds",
     span_three_positions=["flat hair"],
     span_three_style="solid-line",
-    span_three_padding=17.5,
+    span_three_padding=19.5,
     attach_span_three_to="left",
     continuous=True,
 )
@@ -251,7 +254,7 @@ dynamic_handler_five = DynamicHandler(
     starting_dynamic="f", hairpin=">", ending_dynamic="mp", continuous=True
 )
 clef_handler_five = ClefHandler(
-    clef="treble",
+    clef="tenorvarC",
     add_ottavas=True,
     # ottava_shelf=5,
 )
@@ -263,15 +266,10 @@ dynamic_handler_six = DynamicHandler(
     starting_dynamic="pppp", hairpin="<|", ending_dynamic="fff", continuous=True
 )
 clef_handler_six = ClefHandler(
-    clef="varC",
+    clef="bass",
+    # clef="varC",
     add_ottavas=True,
     # ottava_shelf=5,
 )
 slur_handler_six = SlurHandler()
-text_span_handler_six = TextSpanHandler(
-    span_one_positions=["accel.", "rit.", "accel.", "rit.", "rit."],
-    span_one_style="solid-line",
-    span_one_padding=11.5,
-    attach_span_one_to="left",
-    continuous=True,
-)
+text_span_handler_six = TextSpanHandler()

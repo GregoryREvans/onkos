@@ -2,6 +2,7 @@
     <<
         \context TimeSignatureContext = "Global Context"
         {
+            % [Global Context measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \tempo 4=83-95
             \time 1/4
             \mark \markup {
@@ -11,24 +12,34 @@
                     }
                 }
             s1 * 1/4
+            % [Global Context measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 3/8
             s1 * 3/8
+            % [Global Context measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 1/2
             s1 * 1/2
+            % [Global Context measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 5/8
             s1 * 5/8
+            % [Global Context measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 3/4
             s1 * 3/4
+            % [Global Context measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 7/8
             s1 * 7/8
+            % [Global Context measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 1/1
             s1 * 1
+            % [Global Context measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 9/8
             s1 * 9/8
+            % [Global Context measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 5/4
             s1 * 5/4
+            % [Global Context measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 9/8
             s1 * 9/8
+            % [Global Context measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \once \override TimeSignature.color = #white
             \time 1/8
             s1 * 1/8
@@ -40,15 +51,17 @@
                 \context Voice = "Voice 1"
                 {
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
+                            % [Voice 1 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \set Staff.instrumentName =
                             \markup {
                                 \hcenter-in
                                     #14
-                                    Viola
+                                    Contrabass
                                 }
                             \once \override TextScript.extra-offset = #'(0 . 10)
-                            \clef "treble"
+                            \clef "tenorvarC"
                             <ef' e'>4
                             \f
                             ^ \markup \abjad-metric-modulation-tuplet-rhs #3 #0 #2 #0 #2 #3 #'(1 . 1)
@@ -63,7 +76,9 @@
                         }
                     }
                     {
-                        \override TupletNumber.text = \markup {
+                        % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \clef "bass"
+                        \once \override TupletNumber.text = \markup {
                             \scale
                                 #'(0.75 . 0.75)
                                 \score
@@ -103,59 +118,44 @@
                                     }
                             }
                         \times 1/1 {
-                            \clef "varC"
-                            bf32
-                            \pppp
-                            - \tweak stencil #abjad-flared-hairpin
-                            \<
-                            \stopTextSpanOne
-                            \stopTextSpanTwo
-                            \stopTextSpanThree
-                            [
-                            - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            accel.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #11.5
-                            \startTextSpanOne
-                            bqf32
-                            b32
-                            bf32
-                            aqs32
-                            bqf32
-                            c'32
-                            \fff
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
-                        \revert TupletNumber.text
+                            \override Beam.grow-direction = #RIGHT
+                            \featherDurations #(ly:make-moment 1/3)
+                        d16
+                        [
+                        \pppp
+                        - \tweak stencil #abjad-flared-hairpin
+                        \<
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
+                        dqs16
+                        ef16
+                        d16
+                        dqf16
+                        dqs16
+                        \fff
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
                     }
                     {
-                        \clef "treble"
+                        % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \clef "tenorvarC"
+                        \override Beam.grow-direction = #'()
                         <g' a'>8
                         \f
                         \>
                         \stopTextSpanOne
                         \stopTextSpanTwo
                         \stopTextSpanThree
-                        <e' a'>32
+                        <e' a'>4.
                         \mp
-                        ~
-                        <e' a'>4
-                        ~
-                        <e' a'>16.
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
+                        % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         r8
                         \!
                         \stopTextSpanOne
@@ -163,7 +163,7 @@
                         \stopTextSpanThree
                     }
                     {
-                        \override TupletNumber.text = \markup {
+                        \once \override TupletNumber.text = \markup {
                             \scale
                                 #'(0.75 . 0.75)
                                 \score
@@ -202,9 +202,11 @@
                                         }
                                     }
                             }
-                        \times 1/1 {
-                            \clef "varC"
-                            cqs'32
+                        \times 8/9 {
+                            \clef "bass"
+                            \override Beam.grow-direction = #LEFT
+                            \featherDurations #(ly:make-moment 1/3)
+                            e16
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
                             \<
@@ -212,55 +214,43 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             [
-                            - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            rit.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #11.5
-                            \startTextSpanOne
-                            bqs32
-                            cs'32
-                            ef'32
-                            eqf'32
-                            dqs'32
-                            d'32
-                            cs'32
-                            dqs'32
+                            eqs16
+                            eqf16
+                            f16
+                            g16
+                            gqs16
+                            gqf16
+                            fs16
+                            f16
                             \fff
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                         }
-                        \revert TupletNumber.text
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
                         \times 6/5 {
-                            \clef "treble"
+                            % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \clef "tenorvarC"
+                            \override Beam.grow-direction = #'()
                             <ef' a'>4
                             \f
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             \stopTextSpanThree
-                            <a' ef''>16
+                            \ottava 1
+                            <a' ef''>4.
                             \mp
-                            ~
-                            <a' ef''>4
-                            ~
-                            <a' ef''>16
                             - \tweak stencil #constante-hairpin
                             \<
+                            \ottava 0
                         }
                     }
                     {
+                        % [Voice 1 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         r8
                         \!
                         \stopTextSpanOne
@@ -268,7 +258,7 @@
                         \stopTextSpanThree
                     }
                     {
-                        \override TupletNumber.text = \markup {
+                        \once \override TupletNumber.text = \markup {
                             \scale
                                 #'(0.75 . 0.75)
                                 \score
@@ -307,9 +297,11 @@
                                         }
                                     }
                             }
-                        \times 1/1 {
-                            \clef "varC"
-                            ef'32
+                        \times 6/5 {
+                            \clef "bass"
+                            \override Beam.grow-direction = #RIGHT
+                            \featherDurations #(ly:make-moment 1/3)
+                            gqf16
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
                             \<
@@ -317,66 +309,60 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             [
-                            - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            accel.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #11.5
-                            \startTextSpanOne
-                            e'32
-                            fqs'32
-                            eqf'32
-                            ef'32
-                            d'32
-                            dqf'32
-                            cqs'32
-                            b32
-                            bqf32
-                            bqs32
-                            cs'32
-                            ef'32
+                            g16
+                            af16
+                            aqs16
+                            gqs16
+                            gqf16
+                            g16
+                            af16
+                            aqs16
+                            gqs16
                             \fff
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                         }
-                        \revert TupletNumber.text
                     }
                     {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
-                            \clef "treble"
+                            % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \ottava 1
+                            \clef "tenorvarC"
+                            \override Beam.grow-direction = #'()
                             <g' ef''>8
                             \f
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             \stopTextSpanThree
+                            \ottava 0
                             <e' g'>4
+                            \ottava 1
                             <g' e''>8
+                            [
+                            \ottava 0
+                            \ottava 1
                             <a' e''>8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
+                            \ottava 0
                         }
                     }
                     {
-                        r8..
+                        r2
                         \!
                         \stopTextSpanOne
                         \stopTextSpanTwo
                         \stopTextSpanThree
-                        r4
-                        r32
                     }
                     {
-                        \override TupletNumber.text = \markup {
+                        % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \clef "bass"
+                        \once \override TupletNumber.text = \markup {
                             \scale
                                 #'(0.75 . 0.75)
                                 \score
@@ -406,9 +392,7 @@
                                                 tupletFullLength = ##t
                                             }
                                             {
-                                                c'1
-                                                ~
-                                                c'8
+                                                c'1 ~ c'8
                                             }
                                         >>
                                         \layout {
@@ -418,53 +402,42 @@
                                     }
                             }
                         \times 1/1 {
-                            \clef "varC"
-                            dqs'32
-                            \pppp
-                            - \tweak stencil #abjad-flared-hairpin
-                            \<
-                            \stopTextSpanOne
-                            \stopTextSpanTwo
-                            \stopTextSpanThree
-                            [
-                            - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            rit.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #11.5
-                            \startTextSpanOne
-                            dqf'32
-                            cs'32
-                            c'32
-                            dqf'32
-                            d'32
-                            ef'32
-                            dqf'32
-                            eqf'32
-                            e'32
-                            f'32
-                            fqs'32
-                            gqf'32
-                            af'32
-                            gqs'32
-                            aqf'32
-                            bf'32
-                            af'32
-                            \fff
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
-                        \revert TupletNumber.text
+                            \override Beam.grow-direction = #LEFT
+                            \featherDurations #(ly:make-moment 1/3)
+                        g16
+                        \pppp
+                        - \tweak stencil #abjad-flared-hairpin
+                        \<
+                        \stopTextSpanOne
+                        \stopTextSpanTwo
+                        \stopTextSpanThree
+                        [
+                        fs16
+                        fqs16
+                        eqs16
+                        ef16
+                        dqs16
+                        eqf16
+                        f16
+                        g16
+                        gqf16
+                        fqs16
+                        f16
+                        e16
+                        fqs16
+                        fs16
+                        g16
+                        fqs16
+                        gqs16
+                        \fff
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
                     }
                     {
+                        % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \override Beam.grow-direction = #'()
                         r8
                         \!
                         \stopTextSpanOne
@@ -472,7 +445,7 @@
                         \stopTextSpanThree
                     }
                     {
-                        \override TupletNumber.text = \markup {
+                        \once \override TupletNumber.text = \markup {
                             \scale
                                 #'(0.75 . 0.75)
                                 \score
@@ -502,7 +475,7 @@
                                                 tupletFullLength = ##t
                                             }
                                             {
-                                                c'2..
+                                                c'2. ~ 8
                                             }
                                         >>
                                         \layout {
@@ -511,9 +484,11 @@
                                         }
                                     }
                             }
-                        \times 1/1 {
-                            \clef "varC"
-                            aqf'32
+                        \times 14/15 {
+                            \clef "bass"
+                            \override Beam.grow-direction = #LEFT
+                            \featherDurations #(ly:make-moment 1/3)
+                            af16
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
                             \<
@@ -521,43 +496,28 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             [
-                            - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            rit.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
-                            - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #11.5
-                            \startTextSpanOne
-                            aqs'32
-                            a'32
-                            bf'32
-                            aqf'32
-                            a'32
-                            bf'32
-                            bqs'32
-                            aqs'32
-                            bf'32
-                            b'32
-                            bqf'32
-                            bqs'32
-                            cs''32
-                            \ottava 1
-                            dqf''32
+                            a16
+                            aqs16
+                            bqf16
+                            c16
+                            bqs16
+                            cqs'16
+                            d'16
+                            c'16
+                            cqs'16
+                            dqf'16
+                            cs'16
+                            d'16
+                            cqs'16
+                            cs'16
                             \fff
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                            \ottava 0
                         }
-                        \revert TupletNumber.text
                     }
                     {
+                        \override Beam.grow-direction = #'()
                         r4
                         \!
                         \stopTextSpanOne
@@ -565,25 +525,27 @@
                         \stopTextSpanThree
                     }
                     {
-                        \clef "treble"
+                        % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \ottava 1
+                        \clef "tenorvarC"
                         <a' g''>4.
                         \f
                         \>
                         \stopTextSpanOne
                         \stopTextSpanTwo
                         \stopTextSpanThree
-                        <e' ef''>16
-                        ~
-                        <e' ef''>4
-                        ~
-                        <e' ef''>16
+                        \ottava 0
+                        \ottava 1
+                        <e' ef''>4.
                         ~
                         <e' ef''>4.
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        \ottava 0
                     }
                     {
+                        % [Voice 1 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                         \once \override Rest.color = #white
                         r1 * 1/16

@@ -12,9 +12,9 @@
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	%dedication = \markup \override #'(font-name . "Didot") \fontsize #3.5 \center-column {"to  Andrew  Grishaw"}
+	dedication = \markup \override #'(font-name . "Didot") \fontsize #3.5 \center-column {"to  Will  Yager"}
 	title =  \markup \override #'(font-name . "Didot") \fontsize #16 \bold\center-column {"ὄ γ κ ο ς" }
-	subtitle = \markup \override #'(font-name . "Didot") \center-column { \line{ \fontsize #25 ".                                   ."} \line{ \fontsize #7 "f o r    v i o l a    a l o n e"} \line{ \fontsize #25 ".                                   ."} }
+	subtitle = \markup \override #'(font-name . "Didot") \center-column { \line{ \fontsize #25 ".                                   ."} \line{ \fontsize #5 "f o r    c o n t r a b a s s    a l o n e"} \line{ \fontsize #25 ".                                   ."} }
 	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #3 \center-column {"in memory of Janice Evans"}
 	arranger = \markup \override #'(font-name . "Didot") \fontsize #2.3 {"Gregory Rowland Evans"}
 }
@@ -73,7 +73,7 @@
 		%\override TimeSignature.stencil = ##f
 		\override TimeSignature.whiteout-style = #'outline
 		\override TimeSignature.whiteout = ##t
-        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 25) (minimum-distance . 25) (padding . 8) (stretchability . 0))
+        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 27) (minimum-distance . 27) (padding . 8) (stretchability . 0))
     }
     \context {
         \Score
@@ -144,7 +144,7 @@
 \paper {
 	%system-system-spacing = #'((basic-distance . 25) (minimum-distance . 25) (padding . 5))
 	%{ system-system-spacing = #'((basic-distance . 21) (minimum-distance . 21) (padding . 5)) %}
-	system-system-spacing = #'((basic-distance . 19) (minimum-distance . 19) (padding . 5))
+	system-system-spacing = #'((basic-distance . 15) (minimum-distance . 15) (padding . 5))
 
 	%{ top-margin = 1\cm
 	bottom-margin = 0.4\cm
@@ -164,14 +164,14 @@
     \concat {
       "ὄγκος ~"
 	  \fontsize #2
-	  \fromproperty #'page:page-number-string "~ Evans"
+	  \fromproperty #'page:page-number-string "~ GR Evans"
      }
     ""
   }
   evenFooterMarkup = \markup \fill-line {
     ""
 	\concat { "ὄγκος ~" \fontsize #2
-	\fromproperty #'page:page-number-string "~ Evans"
+	\fromproperty #'page:page-number-string "~ GR Evans"
     } ""
   }
 }

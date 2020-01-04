@@ -160,6 +160,28 @@ for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
 #     stop = abjad.LilyPondLiteral(r'\!', format_slot='after',)
 #     abjad.attach(stop, first_leaf)
 
+for tuplet in abjad.select(score["Staff Group"]).components(abjad.Tuplet):
+    tuplet.rewrite_dots()
+    if tuplet.trivial() is True:
+        tuplet.hide = True
+    else:
+        # if tuplet.augmentation() is True:  # is this necessary? diminution?
+        #     tuplet.toggle_prolation()
+        time_duration = tuplet.multiplied_duration
+        imp_num, imp_den = tuplet.implied_prolation.pair
+        notehead_wrapper = time_duration / imp_num
+        wrapper_pair = notehead_wrapper.pair
+        if wrapper_pair[0] == 3:
+            notehead_wrapper = wrapper_pair[1] // 2
+            dots = "."
+        else:
+            notehead_wrapper = wrapper_pair[1]
+            dots = ""
+        multiplier = 1
+        abjad.tweak(
+            tuplet
+        ).TupletNumber.text = f'#(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text {imp_den * multiplier} {imp_num * multiplier}) "{notehead_wrapper}{dots}")'
+
 staffs = [
     staff for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff)
 ]
@@ -180,13 +202,16 @@ mark4 = abjad.RehearsalMark(markup=markup4)
 markup5 = abjad.Markup(r"\bold { D }")
 mark5 = abjad.RehearsalMark(markup=markup5)
 
-instruments = cyc([abjad.Viola()])
+# instruments = cyc([abjad.Viola()])
+instruments = cyc([abjad.Contrabass()])
 
-mark_abbreviation = abjad.Markup("vla.")
+# mark_abbreviation = abjad.Markup("vla.")
+mark_abbreviation = abjad.Markup("cb.")
 mark_abbreviation = mark_abbreviation.hcenter_in(12)
 abbreviations = cyc([abjad.MarginMarkup(markup=mark_abbreviation)])
 
-mark_name = abjad.Markup("Viola")
+# mark_name = abjad.Markup("Viola")
+mark_name = abjad.Markup("Contrabass")
 mark_name = mark_name.hcenter_in(14)
 names = cyc([abjad.StartMarkup(markup=mark_name)])
 
@@ -212,8 +237,8 @@ for staff in abjad.iterate(score["Global Context"]).components(abjad.Staff):
     abjad.attach(mark4, leaf4)
     abjad.attach(mark5, leaf5)
 
-# for staff in abjad.iterate(score['Staff Group 1']).components(abjad.Staff):
-#     abjad.Instrument.transpose_from_sounding_pitch(staff)
+for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
+    abjad.Instrument.transpose_from_sounding_pitch(staff)
 
 # print('Transforming Tuplet Brackets ...')
 # transformer = NoteheadBracketMaker()
@@ -222,11 +247,11 @@ score_file = abjad.LilyPondFile.new(
     score,
     includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
-        "/Users/evansdsg2/Scores/onkos/onkos/Build/first_stylesheet.ily",
+        "/Users/evansdsg2/evans/evans/lilypond/evans-markups.ily",
     ],
 )
 
-# abjad.SegmentMaker.comment_measure_numbers(score)
+abjad.SegmentMaker.comment_measure_numbers(score)
 time_2 = time.time()
 ###################
 directory = pathlib.Path(__file__).parent

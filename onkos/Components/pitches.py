@@ -61,9 +61,13 @@ sieve_list = [
         mapped_list=rotated_sieve,
     )
 ]
+
+sieve_list = [_ - 20 for _ in sieve_list]
+
 ######
 
 lst = [5, 6, 9, 11]
+lst = [_ - 24 for _ in lst]
 permutations = perm(lst)
 c = [
     0,
@@ -216,6 +220,8 @@ analyzed_list = [
     abjad.NumberedPitch(21.5),
     abjad.NumberedPitch(25.5),
 ]
+
+analyzed_list = [_ - 24 for _ in analyzed_list]
 ######
 walk_list = []
 for x in range(-12, 26):
@@ -231,10 +237,10 @@ random_walk_list = [
         random_seed=2, length=1000, step_list=[1, 2, 2], mapped_list=rotated_walk_list
     )
 ]
-
+random_walk_list = [_ - 20 for _ in random_walk_list]
 ######
 chords = [
-    [3, 4],  # change 4 to 5 to check testing
+    [3, 4],
     [3, 7],
     [7, 9],
     [4, 9],
@@ -248,6 +254,9 @@ chords = [
     [4, 15],
 ]
 
+for x in chords:
+    for y in x:
+        y = y - 20
 ######
 rotated_walk_list2 = rotate(mirrored_walk_list, 20)
 runs = [
@@ -259,3 +268,22 @@ runs = [
         mapped_list=rotated_walk_list2,
     )
 ]
+runs = [_ - 20 for _ in runs]
+#
+# cello_pitches = [ #-12
+#     sieve_list,
+#     perm_list,
+#     analyzed_list,
+#     random_walk_list,
+#     chords,
+#     runs,
+# ]
+#
+# bass_pitches = [ #-20
+#     sieve_list,
+#     perm_list,
+#     analyzed_list,
+#     random_walk_list,
+#     chords,
+#     runs,
+# ]
