@@ -112,7 +112,7 @@ for voice in abjad.select(score["Staff Group"]).components(abjad.Voice):
     voice.append(container)
 
 
-print('Beaming runs ...')
+print("Beaming runs ...")
 for voice in abjad.select(score).components(abjad.Voice):
     abjad.beam(voice[:], beam_lone_notes=False, beam_rests=False)
 
@@ -241,7 +241,7 @@ for staff in abjad.iterate(score["Global Context"]).components(abjad.Staff):
     abjad.attach(metro, leaf1)
     abjad.attach(mark, leaf1)
 
-for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
+for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
     abjad.Instrument.transpose_from_sounding_pitch(staff)
 
 # print('Transforming Tuplet Brackets ...')

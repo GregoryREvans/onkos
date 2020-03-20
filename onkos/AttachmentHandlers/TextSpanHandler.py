@@ -271,7 +271,8 @@ class TextSpanHandler:
                 for pair in zip(ties[:-1], start_indicators):
                     tie, start_indicator = pair
                     abjad.attach(
-                        abjad.StopTextSpan(command=r"\stopTextSpan" + span_command), tie[0]
+                        abjad.StopTextSpan(command=r"\stopTextSpan" + span_command),
+                        tie[0],
                     )
                     abjad.attach(start_indicator, tie[0])
                 abjad.attach(
