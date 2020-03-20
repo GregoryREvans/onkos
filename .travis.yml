@@ -44,11 +44,6 @@ before_install:
     - cd $LOCATION
     - export MYPYPATH=$MYPYPATH:$RMAKERS
 
-    # clone & install moscotta:
-    - MOSCOTTA=/tmp/moscotta
-    - git clone https://github.com/ivanalexandermoscotta/moscotta.git $MOSCOTTA
-    - export PYTHONPATH=$MOSCOTTA:$PYTHONPATH
-
     # clone & install evans:
     - EVANS=/tmp/evans
     - git clone https://github.com/GregoryREvans/evans.git $EVANS
