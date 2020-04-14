@@ -61,7 +61,7 @@
                                     Contrabass
                                 }
                             \once \override TextScript.extra-offset = #'(0 . 10)
-                            \clef "tenorvarC"
+                            \clef "treble"
                             <ef' e'>4
                             \f
                             ^ \markup \abjad-metric-modulation-tuplet-rhs #3 #0 #2 #0 #2 #3 #'(1 . 1)
@@ -141,7 +141,7 @@
                     }
                     {
                         % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-                        \clef "tenorvarC"
+                        \clef "treble"
                         \override Beam.grow-direction = #'()
                         <g' a'>8
                         \f
@@ -233,7 +233,7 @@
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
                         \times 6/5 {
                             % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-                            \clef "tenorvarC"
+                            \clef "treble"
                             \override Beam.grow-direction = #'()
                             <ef' a'>4
                             \f
@@ -329,7 +329,7 @@
                         \times 4/5 {
                             % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \ottava 1
-                            \clef "tenorvarC"
+                            \clef "treble"
                             \override Beam.grow-direction = #'()
                             <g' ef''>8
                             \f
@@ -527,7 +527,7 @@
                     {
                         % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \ottava 1
-                        \clef "tenorvarC"
+                        \clef "treble"
                         <a' g''>4.
                         \f
                         \>
@@ -549,6 +549,17 @@
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                         \once \override Rest.color = #white
                         r1 * 1/16
+                        _ \markup {
+                            \override #'(font-name . "STIXGeneral")
+                            \with-color #white
+                            \right-column {
+                                \line { "\hspace #0.75 ..........." }
+                                \with-color #black
+                                \line { \hspace #0.75 Miami, Fl. }
+                                \with-color #black
+                                \line { \hspace #0.75 April 2019 }
+                            }
+                        }
                         \!
                         \stopTextSpanOne
                         \stopTextSpanTwo

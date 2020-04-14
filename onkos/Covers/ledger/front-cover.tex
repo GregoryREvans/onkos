@@ -1,17 +1,20 @@
-\documentclass[11pt]{report}
-\usepackage[T1]{fontenc}
-\usepackage[papersize={17in, 11in}, margin=0.5in]{geometry}
-\usepackage{graphicx}
-\usepackage{tikz}
-\usepackage{xltxtra,fontspec,xunicode}
-\usetikzlibrary{calc}
-\defaultfontfeatures{Scale=MatchLowercase}
-\newlength{\drop}
-\pagenumbering{gobble}
+\documentclass[11pt]{article}
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+\setmainfont{STIXGeneral}
+\usepackage[paperwidth=17in,paperheight=11in,margin=1in,headheight=0.0in,footskip=0.5in,includehead,includefoot,portrait]{geometry}
+\usepackage[absolute]{textpos}
+\TPGrid[0.5in, 0.25in]{23}{24}
 \parindent=0pt
-\setmainfont{Didot}
-\usepackage{microtype}
-%Adobe Garamond Pro Bold
+\parskip=12pt
+\usepackage{nopageno}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{amsmath}
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+
 \begin{document}
     \begin{titlepage}
 

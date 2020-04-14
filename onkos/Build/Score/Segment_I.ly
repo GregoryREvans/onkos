@@ -1,4 +1,4 @@
-    \context Score = "Onkos Score"
+\context Score = "Onkos Score"
     <<
         \context TimeSignatureContext = "Global Context"
         {
@@ -254,7 +254,7 @@
                                 Contrabass
                             }
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "treble"
                         bef8
                         \mf
                         - \tenuto
@@ -579,7 +579,7 @@
                         \times 8/9 {
                             % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
-                            \clef "tenorvarC"
+                            \clef "treble"
                             dqf''16
                             \mf
                             - \accent
@@ -956,7 +956,7 @@
                         \times 6/5 {
                             % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "tenorvarC"
+                            \clef "treble"
                             eef'8
                             \mf
                             - \tenuto
@@ -1771,7 +1771,7 @@
                     {
                         % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \once \override Staff.NoteHead.style = #'triangle
-                        \clef "tenorvarC"
+                        \clef "treble"
                         eqf'4
                         :32
                         \mf
@@ -1857,7 +1857,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
-                        \clef "tenorvarC"
+                        \clef "treble"
                         ctes''8.
                         \mf
                         - \accent
@@ -2330,7 +2330,7 @@
                         \times 8/7 {
                             % [Voice 1 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "tenorvarC"
+                            \clef "treble"
                             eef''4
                             \mf
                             - \tenuto
@@ -2729,7 +2729,7 @@
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             \once \override Staff.NoteHead.style = #'triangle
-                            \clef "tenorvarC"
+                            \clef "treble"
                             e''16
                             :32
                             \mf
@@ -3106,7 +3106,7 @@
                         \times 6/7 {
                             % [Voice 1 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "tenorvarC"
+                            \clef "treble"
                             aes4
                             \mf
                             - \tenuto
@@ -3589,7 +3589,7 @@
                         \times 4/3 {
                             % [Voice 1 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'triangle
-                            \clef "tenorvarC"
+                            \clef "treble"
                             bf'16
                             :32
                             \mf
@@ -4376,7 +4376,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'triangle
-                        \clef "tenorvarC"
+                        \clef "treble"
                         ees'4
                         \mf
                         - \espressivo
@@ -4886,7 +4886,7 @@
                         \times 8/7 {
                             % [Voice 1 measure 35] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "tenorvarC"
+                            \clef "treble"
                             ees'8.
                             \mf
                             - \tenuto
@@ -5222,7 +5222,7 @@
                     }
                     {
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "treble"
                         d''16
                         \mf
                         - \tenuto
@@ -5971,7 +5971,7 @@
                     {
                         % [Voice 1 measure 44] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "treble"
                         bef'16
                         \mf
                         - \tenuto
@@ -6811,7 +6811,7 @@
                     {
                         % [Voice 1 measure 50] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \once \override Staff.NoteHead.style = #'default
-                        \clef "tenorvarC"
+                        \clef "treble"
                         gtef'4
                         \mf
                         \>
@@ -7152,7 +7152,7 @@
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "tenorvarC"
+                            \clef "treble"
                             dqs'4
                             \mf
                             - \tenuto
@@ -7826,7 +7826,7 @@
                         \times 8/9 {
                             % [Voice 1 measure 59] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
-                            \clef "tenorvarC"
+                            \clef "treble"
                             bes'8.
                             \mf
                             \>

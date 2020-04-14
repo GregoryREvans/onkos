@@ -1,22 +1,22 @@
 % 2018-07-17 19:54
 
-\version "2.19.83"
+\version "2.19.84"
 \language "english"
 #(set-default-paper-size "11x17landscape")
 %{ #(set-default-paper-size "letterportrait") %}
 %{ #(set-global-staff-size 13) %}
-#(set-global-staff-size 14)
+#(set-global-staff-size 13.5)
 \include "ekmel.ily"
 \ekmelicStyle evans
 
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	dedication = \markup \override #'(font-name . "Didot") \fontsize #3.5 \center-column {"to  Will  Yager"}
+	dedication = \markup \override #'(font-name . "STIXgeneral") \fontsize #3.5 \center-column {"to  Will  Yager"}
 	title =  \markup \override #'(font-name . "Didot") \fontsize #16 \bold\center-column {"ὄ γ κ ο ς" }
-	subtitle = \markup \override #'(font-name . "Didot") \center-column { \line{ \fontsize #25 ".                                   ."} \line{ \fontsize #5 "f o r    c o n t r a b a s s    a l o n e"} \line{ \fontsize #25 ".                                   ."} }
-	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #3 \center-column {"in memory of Janice Evans"}
-	arranger = \markup \override #'(font-name . "Didot") \fontsize #2.3 {"Gregory Rowland Evans"}
+	subtitle = \markup \override #'(font-name . "STIXgeneral") \center-column { \line{ \fontsize #25 ".                                   ."} \line{ \fontsize #5 "f o r    c o n t r a b a s s    a l o n e"} \line{ \fontsize #25 ".                                   ."} }
+	subsubtitle = \markup \override #'(font-name . "STIXgeneral") \fontsize #3 \center-column {"in memory of Franklin Rowland and Janice Evans"}
+	arranger = \markup \override #'(font-name . "STIXgeneral") \fontsize #2.3 {"Gregory Rowland Evans (*1995)"}
 }
 
 \layout {
@@ -41,7 +41,7 @@
 		\override BarNumber.Y-extent = #'(0 . 0)
 		\override BarNumber.Y-offset = 0
 		\override BarNumber.extra-offset = #'(-4 . 0)
-		%\override BarNumber.font-name = "Didot"
+		%\override BarNumber.font-name = "STIXgeneral"
 		%{ \override BarNumber.stencil = #(make-stencil-boxer 0.1 0.7 ly:text-interface::print) %}
 		\override BarNumber.stencil = #(make-stencil-boxer 0.1 0.7 ly:text-interface::print)
 		\override BarNumber.font-size = 5
@@ -59,7 +59,7 @@
 		\override RehearsalMark.Y-offset = -2.5
 		\override RehearsalMark.break-align-symbols = #'(time-signature)
 		\override RehearsalMark.break-visibility = #end-of-line-invisible
-		\override RehearsalMark.font-name = "Didot"
+		\override RehearsalMark.font-name = "STIXgeneral"
 		\override RehearsalMark.font-size = 9.5
 		\override RehearsalMark.outside-staff-priority = 500
 		\override RehearsalMark.self-alignment-X = #center
@@ -68,7 +68,8 @@
         \override TimeSignature.Y-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = ##f
         \override TimeSignature.break-visibility = #end-of-line-invisible
-        \override TimeSignature.font-size = #4
+		\override TimeSignature.font-name = "STIXgeneral"
+        \override TimeSignature.font-size = #7
         \override TimeSignature.self-alignment-X = #center
 		%\override TimeSignature.stencil = ##f
 		\override TimeSignature.whiteout-style = #'outline
@@ -83,7 +84,7 @@
         \accepts TimeSignatureContext
 		\override BarLine.bar-extent = #'(-2 . 2)
 		\override BarLine.hair-thickness = #0.9
-		\override BarLine.thick-thickness = #2.7
+		\override BarLine.thick-thickness = #8
 		%\override BarLine.stencil = ##f
         \override Beam.breakable = ##t
 		\override Beam.concaveness = #10000
@@ -92,7 +93,7 @@
 		\override DynamicText.font-size = #-2
 		\override DynamicLineSpanner.staff-padding = 5 %was 4.5
         %{ \override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5) %}
-		\override Hairpin.bound-padding = #2 %is this necessary?
+		%{ \override Hairpin.bound-padding = #2 %is this necessary? %}
 		\override Glissando.breakable = ##t
 		%{ \override Glissando.thickness = #2 %}
 		\override Glissando.thickness = #1.8
@@ -118,7 +119,7 @@
 		\override TupletBracket.direction = #up
 		\override TupletNumber.font-size = 0.5
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-		proportionalNotationDuration = #(ly:make-moment 1 47)
+		proportionalNotationDuration = #(ly:make-moment 1 58)
 		%{ proportionalNotationDuration = #(ly:make-moment 1 39) %}
         autoBeaming = ##f
         tupletFullLength = ##t
@@ -159,19 +160,26 @@
 	%top-margin = .90\in
 	oddHeaderMarkup = \markup ""
 	evenHeaderMarkup = \markup ""
-	oddFooterMarkup = \markup \fill-line {
-    ""
-    \concat {
-      "ὄγκος ~"
-	  \fontsize #2
-	  \fromproperty #'page:page-number-string "~ GR Evans"
-     }
-    ""
-  }
-  evenFooterMarkup = \markup \fill-line {
-    ""
-	\concat { "ὄγκος ~" \fontsize #2
-	\fromproperty #'page:page-number-string "~ GR Evans"
-    } ""
-  }
+	oddFooterMarkup = \markup
+        \fill-line {
+            \override #'(font-name . "STIXGeneral")
+                \bold \fontsize #3 "oγκος - GR Evans"
+            \concat {
+                \override #'(font-name . "STIXGeneral")
+                    \bold \fontsize #3
+                        %{ \on-the-fly #print-page-number-check-first %}
+                        \fromproperty #'page:page-number-string
+                }
+            }
+    evenFooterMarkup = \markup
+        \fill-line {
+            \concat {
+                \override #'(font-name . "STIXGeneral")
+                    \bold \fontsize #3
+                        %{ \on-the-fly #print-page-number-check-first %}
+                        \fromproperty #'page:page-number-string
+                }
+            \override #'(font-name . "STIXGeneral")
+                \bold \fontsize #3 "oγκος - GR Evans"
+            }
 }
