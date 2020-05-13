@@ -1,5 +1,6 @@
-import abjad
 from fractions import Fraction
+
+import abjad
 
 
 class TextSpanHandler:

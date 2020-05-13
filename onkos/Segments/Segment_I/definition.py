@@ -1,16 +1,16 @@
-import abjad
+import datetime
 import itertools
 import os
 import pathlib
 import time
-import datetime
-from onkos.Components.timespans import all_timespans
-from onkos.Components.score_structure import score
-from onkos.Components.time_signatures import time_signatures
-from onkos.Components.time_signatures import bounds
-from onkos.Components.music_makers import *
-from evans.general_tools.cyc import cyc
+
+import abjad
 from evans.abjad_functions.NoteheadBracketMaker import NoteheadBracketMaker
+from evans.general_tools.cyc import cyc
+from onkos.Components.music_makers import *
+from onkos.Components.score_structure import score
+from onkos.Components.time_signatures import bounds, time_signatures
+from onkos.Components.timespans import all_timespans
 
 time_1 = time.time()
 

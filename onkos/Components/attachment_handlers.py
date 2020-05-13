@@ -1,17 +1,21 @@
-from onkos.AttachmentHandlers import ArticulationHandler
-from onkos.AttachmentHandlers import ClefHandler
-from onkos.AttachmentHandlers import DynamicHandler
-from onkos.AttachmentHandlers import GlissandoHandler
-from onkos.AttachmentHandlers import NoteheadHandler
-from onkos.AttachmentHandlers import PitchHandler
-from onkos.AttachmentHandlers import SlurHandler
-from onkos.AttachmentHandlers import TextSpanHandler
-from onkos.Components.pitches import analyzed_list
-from onkos.Components.pitches import sieve_list
-from onkos.Components.pitches import random_walk_list
-from onkos.Components.pitches import perm_list
-from onkos.Components.pitches import chords
-from onkos.Components.pitches import runs
+from onkos.AttachmentHandlers import (
+    ArticulationHandler,
+    ClefHandler,
+    DynamicHandler,
+    GlissandoHandler,
+    NoteheadHandler,
+    PitchHandler,
+    SlurHandler,
+    TextSpanHandler,
+)
+from onkos.Components.pitches import (
+    analyzed_list,
+    chords,
+    perm_list,
+    random_walk_list,
+    runs,
+    sieve_list,
+)
 
 articulation_handler_one = ArticulationHandler(
     articulation_list=[

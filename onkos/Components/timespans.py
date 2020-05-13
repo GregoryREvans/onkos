@@ -1,14 +1,15 @@
 import abjad
-from evans.abjad_functions.talea_timespan.TimespanMaker import TimespanMaker
-from onkos.Components.material_pattern import material_list
-from onkos.Components.material_pattern import material_list2
-from evans.general_tools.cyc import cyc
 from evans.abjad_functions.talea_timespan import timespan_functions
+from evans.abjad_functions.talea_timespan.TimespanMaker import TimespanMaker
+from evans.general_tools.cyc import cyc
+from onkos.Components.material_pattern import material_list, material_list2
 from onkos.Components.music_makers import *
-from onkos.Components.time_signatures import time_signatures
-from onkos.Components.time_signatures import time_signatures2
-from onkos.Components.time_signatures import bounds
-from onkos.Components.time_signatures import bounds2
+from onkos.Components.time_signatures import (
+    bounds,
+    bounds2,
+    time_signatures,
+    time_signatures2,
+)
 
 timespan_maker = TimespanMaker(denominator=32, total_duration=abjad.Duration(1915, 32))
 

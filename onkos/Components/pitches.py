@@ -1,13 +1,15 @@
 import abjad
-from onkos.Components.instruments import instrument_one_range_lowest
-from onkos.Components.instruments import instrument_one_range_highest
 from evans.general_tools.cyc import cyc
 from evans.general_tools.flatten import flatten
+from evans.general_tools.grouper import grouper
+from evans.general_tools.mirror import mirror
 from evans.general_tools.perm import perm
 from evans.general_tools.random_walk import random_walk
-from evans.general_tools.grouper import grouper
 from evans.general_tools.rotate import rotate
-from evans.general_tools.mirror import mirror
+from onkos.Components.instruments import (
+    instrument_one_range_highest,
+    instrument_one_range_lowest,
+)
 
 sieve_1a = abjad.index([0, 1, 7], 8)
 sieve_1b = abjad.index([1, 3], 5)

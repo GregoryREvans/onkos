@@ -1,12 +1,13 @@
 import abjad
+
+from .ArticulationHandler import ArticulationHandler
+from .ClefHandler import ClefHandler
+from .DynamicHandler import DynamicHandler
 from .GlissandoHandler import GlissandoHandler
 from .NoteheadHandler import NoteheadHandler
 from .PitchHandler import PitchHandler
-from .ArticulationHandler import ArticulationHandler
-from .DynamicHandler import DynamicHandler
-from .TextSpanHandler import TextSpanHandler
-from .ClefHandler import ClefHandler
 from .SlurHandler import SlurHandler
+from .TextSpanHandler import TextSpanHandler
 
 # from evans.AttachmentHandlers.GraceHandler import GraceHandler
 # from evans.AttachmentHandlers.TrillHandler import TrillHandler

@@ -1,2 +1,1 @@
-from . import AttachmentHandlers
-from . import Components
+from . import AttachmentHandlers, Components

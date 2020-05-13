@@ -1,13 +1,15 @@
 import abjad
 import abjadext.rmakers
 from onkos.AttachmentHandlers import MusicMaker
-from onkos.Components.rhythm_makers import rmaker_one
-from onkos.Components.rhythm_makers import rmaker_two
-from onkos.Components.rhythm_makers import rmaker_three
-from onkos.Components.rhythm_makers import rmaker_four
-from onkos.Components.rhythm_makers import rmaker_five
-from onkos.Components.rhythm_makers import rmaker_six
 from onkos.Components.attachment_handlers import *
+from onkos.Components.rhythm_makers import (
+    rmaker_five,
+    rmaker_four,
+    rmaker_one,
+    rmaker_six,
+    rmaker_three,
+    rmaker_two,
+)
 
 silence_maker = abjadext.rmakers.stack(
     abjadext.rmakers.NoteRhythmMaker(),

@@ -1,7 +1,10 @@
 import pathlib
-from onkos.Components.instruments import instrument_one_range_lowest
-from onkos.Components.instruments import instrument_one_range_highest
+
 from evans.tool_tests.audio_pitches import get_audio_pitches
+from onkos.Components.instruments import (
+    instrument_one_range_highest,
+    instrument_one_range_lowest,
+)
 
 ######
 # list two is broken
