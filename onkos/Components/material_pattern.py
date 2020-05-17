@@ -1,5 +1,3 @@
-# import numpy as np
-# from evans.general_tools.Markov_Chain import MarkovChain
 from onkos.Components.music_makers import (
     music_maker_five,
     music_maker_four,

@@ -1,6 +1,5 @@
 import abjad
 
-# from Scores.onkos.Components.timespans import all_timespans
 
 time_signatures_1 = [
     abjad.TimeSignature(pair)

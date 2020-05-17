@@ -9,9 +9,6 @@ from .PitchHandler import PitchHandler
 from .SlurHandler import SlurHandler
 from .TextSpanHandler import TextSpanHandler
 
-# from evans.AttachmentHandlers.GraceHandler import GraceHandler
-# from evans.AttachmentHandlers.TrillHandler import TrillHandler
-
 
 class MusicMaker:
     def __init__(
