@@ -1,6 +1,5 @@
 import abjad
 
-
 time_signatures_1 = [
     abjad.TimeSignature(pair)
     for pair in [
