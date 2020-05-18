@@ -50,7 +50,14 @@ from .music_makers import (
     music_maker_two,
     silence_maker,
 )
-from .pitches import analyzed_list, chords, perm_list, random_walk_list, runs, sieve_list
+from .pitches import (
+    analyzed_list,
+    chords,
+    perm_list,
+    random_walk_list,
+    runs,
+    sieve_list,
+)
 from .rhythm_makers import (
     rmaker_five,
     rmaker_four,
