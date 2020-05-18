@@ -61,7 +61,7 @@
                                     Contrabass
                                 }
                             \once \override TextScript.extra-offset = #'(0 . 10)
-                            \clef "treble"
+                            \clef "tenorvarC"
                             <ef' e'>4
                             \f
                             ^ \markup \abjad-metric-modulation-tuplet-rhs #3 #0 #2 #0 #2 #3 #'(1 . 1)
@@ -73,82 +73,38 @@
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
                         }
                     }
                     {
                         % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \clef "bass"
-                        \once \override TupletNumber.text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score
-                                        \with
-                                        {
-                                            \override SpacingSpanner.spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        }
-                                        <<
-                                            \new RhythmicStaff
-                                            \with
-                                            {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem.direction = #up
-                                                \override Stem.length = #5
-                                                \override TupletBracket.bracket-visibility = ##t
-                                                \override TupletBracket.direction = #up
-                                                \override TupletBracket.minimum-length = #4
-                                                \override TupletBracket.padding = #1.25
-                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
-                                                \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
-                                                \override TupletNumber.font-size = #0
-                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            }
-                                            {
-                                                c'4.
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \override Beam.grow-direction = #RIGHT
-                            \featherDurations #(ly:make-moment 1/3)
-                        d16
-                        [
+                        d,16
                         \pppp
                         - \tweak stencil #abjad-flared-hairpin
                         \<
                         \stopTextSpanOne
                         \stopTextSpanTwo
                         \stopTextSpanThree
-                        dqs16
-                        ef16
-                        d16
-                        dqf16
-                        dqs16
+                        dqs,16
+                        ef,16
+                        d,16
+                        dqf,16
+                        dqs,16
                         \fff
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
-                    }
                     }
                     {
                         % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-                        \clef "treble"
-                        \override Beam.grow-direction = #'()
+                        \clef "tenorvarC"
                         <g' a'>8
                         \f
                         \>
                         \stopTextSpanOne
                         \stopTextSpanTwo
                         \stopTextSpanThree
+                        ]
                         <e' a'>4.
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -163,50 +119,10 @@
                         \stopTextSpanThree
                     }
                     {
-                        \once \override TupletNumber.text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score
-                                        \with
-                                        {
-                                            \override SpacingSpanner.spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        }
-                                        <<
-                                            \new RhythmicStaff
-                                            \with
-                                            {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem.direction = #up
-                                                \override Stem.length = #5
-                                                \override TupletBracket.bracket-visibility = ##t
-                                                \override TupletBracket.direction = #up
-                                                \override TupletBracket.minimum-length = #4
-                                                \override TupletBracket.padding = #1.25
-                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
-                                                \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
-                                                \override TupletNumber.font-size = #0
-                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            }
-                                            {
-                                                c'2
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
                             \clef "bass"
-                            \override Beam.grow-direction = #LEFT
-                            \featherDurations #(ly:make-moment 1/3)
-                            e16
+                            e,16
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
                             \<
@@ -214,14 +130,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             [
-                            eqs16
-                            eqf16
-                            f16
-                            g16
-                            gqs16
-                            gqf16
-                            fs16
-                            f16
+                            eqs,16
+                            eqf,16
+                            f,16
+                            g,16
+                            gqs,16
+                            gqf,16
+                            fs,16
+                            f,16
                             \fff
                             - \tweak stencil #constante-hairpin
                             \<
@@ -233,8 +149,7 @@
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
                         \times 6/5 {
                             % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-                            \clef "treble"
-                            \override Beam.grow-direction = #'()
+                            \clef "tenorvarC"
                             <ef' a'>4
                             \f
                             \>
@@ -258,50 +173,11 @@
                         \stopTextSpanThree
                     }
                     {
-                        \once \override TupletNumber.text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score
-                                        \with
-                                        {
-                                            \override SpacingSpanner.spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        }
-                                        <<
-                                            \new RhythmicStaff
-                                            \with
-                                            {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem.direction = #up
-                                                \override Stem.length = #5
-                                                \override TupletBracket.bracket-visibility = ##t
-                                                \override TupletBracket.direction = #up
-                                                \override TupletBracket.minimum-length = #4
-                                                \override TupletBracket.padding = #1.25
-                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
-                                                \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
-                                                \override TupletNumber.font-size = #0
-                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            }
-                                            {
-                                                c'2.
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
                         \times 6/5 {
                             \clef "bass"
-                            \override Beam.grow-direction = #RIGHT
-                            \featherDurations #(ly:make-moment 1/3)
-                            gqf16
+                            gqf,8
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
                             \<
@@ -309,19 +185,13 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             [
-                            g16
-                            af16
-                            aqs16
-                            gqs16
-                            gqf16
-                            g16
-                            af16
-                            aqs16
-                            gqs16
+                            g,8
+                            af,8
+                            aqs,8
+                            gqs,8
                             \fff
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
                         }
                     }
                     {
@@ -329,14 +199,14 @@
                         \times 4/5 {
                             % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \ottava 1
-                            \clef "treble"
-                            \override Beam.grow-direction = #'()
+                            \clef "tenorvarC"
                             <g' ef''>8
                             \f
                             \>
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             \stopTextSpanThree
+                            ]
                             \ottava 0
                             <e' g'>4
                             \ottava 1
@@ -362,49 +232,7 @@
                     {
                         % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \clef "bass"
-                        \once \override TupletNumber.text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score
-                                        \with
-                                        {
-                                            \override SpacingSpanner.spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        }
-                                        <<
-                                            \new RhythmicStaff
-                                            \with
-                                            {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem.direction = #up
-                                                \override Stem.length = #5
-                                                \override TupletBracket.bracket-visibility = ##t
-                                                \override TupletBracket.direction = #up
-                                                \override TupletBracket.minimum-length = #4
-                                                \override TupletBracket.padding = #1.25
-                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
-                                                \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
-                                                \override TupletNumber.font-size = #0
-                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            }
-                                            {
-                                                c'1 ~ c'8
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \override Beam.grow-direction = #LEFT
-                            \featherDurations #(ly:make-moment 1/3)
-                        g16
+                        g,16
                         \pppp
                         - \tweak stencil #abjad-flared-hairpin
                         \<
@@ -412,32 +240,30 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         [
-                        fs16
-                        fqs16
-                        eqs16
-                        ef16
-                        dqs16
-                        eqf16
-                        f16
-                        g16
-                        gqf16
-                        fqs16
-                        f16
-                        e16
-                        fqs16
-                        fs16
-                        g16
-                        fqs16
-                        gqs16
+                        fs,16
+                        fqs,16
+                        eqs,16
+                        ef,16
+                        dqs,16
+                        eqf,16
+                        f,16
+                        g,16
+                        gqf,16
+                        fqs,16
+                        f,16
+                        e,16
+                        fqs,16
+                        fs,16
+                        g,16
+                        fqs,16
+                        gqs,16
                         \fff
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
-                    }
                     {
                         % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-                        \override Beam.grow-direction = #'()
                         r8
                         \!
                         \stopTextSpanOne
@@ -445,50 +271,11 @@
                         \stopTextSpanThree
                     }
                     {
-                        \once \override TupletNumber.text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score
-                                        \with
-                                        {
-                                            \override SpacingSpanner.spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        }
-                                        <<
-                                            \new RhythmicStaff
-                                            \with
-                                            {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem.direction = #up
-                                                \override Stem.length = #5
-                                                \override TupletBracket.bracket-visibility = ##t
-                                                \override TupletBracket.direction = #up
-                                                \override TupletBracket.minimum-length = #4
-                                                \override TupletBracket.padding = #1.25
-                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
-                                                \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
-                                                \override TupletNumber.font-size = #0
-                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            }
-                                            {
-                                                c'2. ~ 8
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 15 14) "16")
                         \times 14/15 {
                             \clef "bass"
-                            \override Beam.grow-direction = #LEFT
-                            \featherDurations #(ly:make-moment 1/3)
-                            af16
+                            af,16
                             \pppp
                             - \tweak stencil #abjad-flared-hairpin
                             \<
@@ -496,20 +283,20 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             [
-                            a16
-                            aqs16
-                            bqf16
+                            a,16
+                            aqs,16
+                            bqf,16
                             c16
-                            bqs16
-                            cqs'16
-                            d'16
-                            c'16
-                            cqs'16
-                            dqf'16
-                            cs'16
-                            d'16
-                            cqs'16
-                            cs'16
+                            bqs,16
+                            cqs16
+                            d16
+                            c16
+                            cqs16
+                            dqf16
+                            cs16
+                            d16
+                            cqs16
+                            cs16
                             \fff
                             - \tweak stencil #constante-hairpin
                             \<
@@ -517,7 +304,6 @@
                         }
                     }
                     {
-                        \override Beam.grow-direction = #'()
                         r4
                         \!
                         \stopTextSpanOne
@@ -527,7 +313,7 @@
                     {
                         % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \ottava 1
-                        \clef "treble"
+                        \clef "tenorvarC"
                         <a' g''>4.
                         \f
                         \>
@@ -549,17 +335,6 @@
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                         \once \override Rest.color = #white
                         r1 * 1/16
-                        _ \markup {
-                            \override #'(font-name . "STIXGeneral")
-                            \with-color #white
-                            \right-column {
-                                \line { "\hspace #0.75 ..........." }
-                                \with-color #black
-                                \line { \hspace #0.75 Miami, Fl. }
-                                \with-color #black
-                                \line { \hspace #0.75 April 2019 }
-                            }
-                        }
                         \!
                         \stopTextSpanOne
                         \stopTextSpanTwo
