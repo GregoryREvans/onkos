@@ -4,7 +4,7 @@ import abjad
 class ArticulationHandler:
     def __init__(self, articulation_list=None, continuous=False):
         def cyc(lst):
-            if self.continuous == False:
+            if self.continuous is False:
                 self._count = -1
             while True:
                 self._count += 1
@@ -21,7 +21,7 @@ class ArticulationHandler:
     def add_articulations(self, selections):
         ties = abjad.select(selections).logical_ties(pitched=True)
         for tie in ties:
-            if self.articulation_list != None:
+            if self.articulation_list is not None:
                 articulation = self._cyc_articulations
                 articulation = next(articulation)
                 if articulation == "tremolo":

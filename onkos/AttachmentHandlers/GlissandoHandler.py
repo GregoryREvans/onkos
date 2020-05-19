@@ -12,7 +12,7 @@ class GlissandoHandler:
     def add_glissando(self, selections):
         runs = abjad.select(selections).runs()
         if self.glissando_style == "hide_middle_note_heads":
-            if self.line_style != None:
+            if self.line_style is not None:
                 for run in runs:
                     if len(run) > 1:
                         abjad.glissando(
@@ -25,7 +25,7 @@ class GlissandoHandler:
                     if len(run) > 1:
                         abjad.glissando(run[:], hide_middle_note_heads=True)
         elif self.glissando_style == "hide_middle_stems":
-            if self.line_style != None:
+            if self.line_style is not None:
                 for run in runs:
                     if len(run) > 1:
                         abjad.glissando(
@@ -41,7 +41,7 @@ class GlissandoHandler:
                             run[:], hide_middle_note_heads=True, hide_middle_stems=True
                         )
         else:
-            if self.line_style != None:
+            if self.line_style is not None:
                 for run in runs:
                     if len(run) > 1:
                         abjad.glissando(

@@ -1,9 +1,8 @@
 import abjad
 from evans.abjad_functions.talea_timespan import timespan_functions
 from evans.abjad_functions.talea_timespan.TimespanMaker import TimespanMaker
-from evans.general_tools.cyc import cyc
 from onkos.Components.material_pattern import material_list, material_list2
-from onkos.Components.music_makers import *
+from onkos.Components.music_makers import silence_maker
 from onkos.Components.time_signatures import (
     bounds,
     bounds2,

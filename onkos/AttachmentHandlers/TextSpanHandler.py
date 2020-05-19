@@ -21,7 +21,7 @@ class TextSpanHandler:
         continuous=False,
     ):
         def cyc(lst, count):
-            if self.continuous == False:
+            if self.continuous is False:
                 count = -1
             while True:
                 count += 1
@@ -76,7 +76,7 @@ class TextSpanHandler:
 
     def _add_spanners(self, selections):
         # print('Adding spanners ...')
-        if self.attach_span_one_to == None:
+        if self.attach_span_one_to is None:
             self._apply_empty_spanner(selections, r"One")
         elif self.attach_span_one_to == "bounds":
             self._apply_position_and_span_to_bounds(
@@ -102,7 +102,7 @@ class TextSpanHandler:
                 r"One",
                 self.span_one_padding,
             )
-        if self.attach_span_two_to == None:
+        if self.attach_span_two_to is None:
             self._apply_empty_spanner(selections, r"Two")
         elif self.attach_span_two_to == "bounds":
             self._apply_position_and_span_to_bounds(
@@ -128,7 +128,7 @@ class TextSpanHandler:
                 r"Two",
                 self.span_two_padding,
             )
-        if self.attach_span_three_to == None:
+        if self.attach_span_three_to is None:
             self._apply_empty_spanner(selections, r"Three")
         elif self.attach_span_three_to == "bounds":
             self._apply_position_and_span_to_bounds(
@@ -231,7 +231,7 @@ class TextSpanHandler:
                         ):
                             start_strings[
                                 i
-                            ] = f"""\\center-column {{ \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction {start_string[0]} {start_string[-1]} }}"""
+                            ] = fr"""\\center-column {{ \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction {start_string[0]} {start_string[-1]} }}"""
                         elif Fraction(
                             int(start_strings[i][0]), int(start_strings[i][-1])
                         ) < Fraction(
@@ -239,19 +239,19 @@ class TextSpanHandler:
                         ):
                             start_strings[
                                 i
-                            ] = f"""\\center-column {{ \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction {start_string[0]} {start_string[-1]} }}"""
+                            ] = fr"""\\center-column {{ \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction {start_string[0]} {start_string[-1]} }}"""
                         else:
                             start_strings[
                                 i
-                            ] = f"""\\center-column {{ \\center-align \\vcenter \\upright \\fraction {start_string[0]} {start_string[-1]} }}"""
+                            ] = fr"""\\center-column {{ \\center-align \\vcenter \\upright \\fraction {start_string[0]} {start_string[-1]} }}"""
                     else:
                         start_strings[
                             i
-                        ] = f"""\\center-column {{ \\upright \\center-align \\vcenter {start_string} }}"""
+                        ] = fr"""\\center-column {{ \\upright \\center-align \\vcenter {start_string} }}"""
                 start_indicators = [
                     abjad.StartTextSpan(
                         left_text=abjad.Markup(start_string, literal=True),
-                        style=f"{style}-with-arrow",
+                        style=fr"{style}-with-arrow",
                         command=r"\startTextSpan" + span_command,
                         right_padding=1.4,
                     )
@@ -259,10 +259,10 @@ class TextSpanHandler:
                 ]
                 final_indicator = abjad.StartTextSpan(
                     left_text=abjad.Markup(
-                        f"""\\center-column {{ \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction {start_strings[-1][0]} {start_strings[-1][-1]} }}""",
+                        fr"""\\center-column {{ \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction {start_strings[-1][0]} {start_strings[-1][-1]} }}""",
                         literal=True,
                     ),
-                    style=f"invisible-line",
+                    style=r"invisible-line",
                     command=r"\startTextSpan" + span_command,
                     right_padding=3,
                 )
@@ -294,7 +294,7 @@ class TextSpanHandler:
         start_indicators = [
             abjad.StartTextSpan(
                 left_text=abjad.Markup(start_string).upright(),
-                style=f"{style}-with-hook",
+                style=fr"{style}-with-hook",
                 command=r"\startTextSpan" + span_command,
                 right_padding=3,
             )

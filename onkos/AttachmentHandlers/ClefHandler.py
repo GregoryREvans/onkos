@@ -20,15 +20,15 @@ class ClefHandler:
     def add_clef(self, selections):
         for run in abjad.select(selections).runs():
             ties = abjad.select(run).logical_ties(pitched=True)
-            if self.clef != None:
+            if self.clef is not None:
                 abjad.attach(abjad.Clef(self.clef), ties[0][0])
-        if self.add_ottavas == True:
+        if self.add_ottavas is True:
             self._add_ottavas(selections)
         return selections
 
     def _add_ottavas(self, selections):
         if self.clef == "treble":
-            if self.ottava_shelf != None:
+            if self.ottava_shelf is not None:
                 shelf = self.ottava_shelf
                 for tie in abjad.select(selections).logical_ties():
                     for pitch in abjad.inspect(tie[0]).pitches():
@@ -41,7 +41,7 @@ class ClefHandler:
                         if pitch > shelf:
                             abjad.ottava(tie)
         if self.clef == "alto":
-            if self.ottava_shelf != None:
+            if self.ottava_shelf is not None:
                 shelf = self.ottava_shelf
                 for tie in abjad.select(selections).logical_ties(pitched=True):
                     for pitch in abjad.inspect(tie).pitches():
@@ -54,7 +54,7 @@ class ClefHandler:
                         if pitch > shelf:
                             abjad.ottava(tie)
         if self.clef == "varC":
-            if self.ottava_shelf != None:
+            if self.ottava_shelf is not None:
                 shelf = self.ottava_shelf
                 for tie in abjad.select(selections).logical_ties(pitched=True):
                     for pitch in abjad.inspect(tie[0]).pitches():
@@ -67,7 +67,7 @@ class ClefHandler:
                         if pitch > shelf:
                             abjad.ottava(tie)
         if self.clef == "tenor":
-            if self.ottava_shelf != None:
+            if self.ottava_shelf is not None:
                 shelf = self.ottava_shelf
                 for tie in abjad.select(selections).logical_ties(pitched=True):
                     for pitch in abjad.inspect(tie[0]).pitches():
@@ -80,7 +80,7 @@ class ClefHandler:
                         if pitch > shelf:
                             abjad.ottava(tie)
         if self.clef == "tenorvarC":
-            if self.ottava_shelf != None:
+            if self.ottava_shelf is not None:
                 shelf = self.ottava_shelf
                 for tie in abjad.select(selections).logical_ties(pitched=True):
                     for pitch in abjad.inspect(tie[0]).pitches():
@@ -93,7 +93,7 @@ class ClefHandler:
                         if pitch > shelf:
                             abjad.ottava(tie)
         if self.clef == "bass":
-            if self.ottava_shelf != None:
+            if self.ottava_shelf is not None:
                 shelf = self.ottava_shelf
                 for tie in abjad.select(selections).logical_ties(pitched=True):
                     for pitch in abjad.inspect(tie[0]).pitches():

@@ -97,7 +97,7 @@ c = [
     -1,
     0,
 ]
-transpositions = [[l + c[i] for l in permutations[i]] for i in range(len(c))]
+transpositions = [[list_ + c[i] for list_ in permutations[i]] for i in range(len(c))]
 perms = flatten(transpositions)
 cyclic_group = cyc([1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1])
 group_list = []

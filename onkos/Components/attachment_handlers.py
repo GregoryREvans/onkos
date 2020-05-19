@@ -2,7 +2,6 @@ from onkos.AttachmentHandlers import (
     ArticulationHandler,
     ClefHandler,
     DynamicHandler,
-    GlissandoHandler,
     NoteheadHandler,
     PitchHandler,
     SlurHandler,

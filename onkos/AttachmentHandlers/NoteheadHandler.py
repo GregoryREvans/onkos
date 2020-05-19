@@ -4,7 +4,7 @@ import abjad
 class NoteheadHandler:
     def __init__(self, notehead_list=None, transition=False, continuous=False):
         def cyc(lst):
-            if self.continuous == False:
+            if self.continuous is False:
                 self._count = -1
             while True:
                 self._count += 1
@@ -20,7 +20,7 @@ class NoteheadHandler:
         return self.add_noteheads(selections)
 
     def add_noteheads(self, selections):
-        if self.notehead_list != None:
+        if self.notehead_list is not None:
             head = self._cyc_noteheads
             for tie in abjad.select(selections).logical_ties(pitched=True):
                 head_name = next(head)
@@ -29,7 +29,7 @@ class NoteheadHandler:
                 style = abjad.LilyPondLiteral(full_string, format_slot="before")
                 for leaf in abjad.select(tie).leaves(pitched=True):
                     abjad.attach(style, leaf)
-        if self.transition == True:
+        if self.transition is True:
             transition_arrow = abjad.LilyPondLiteral(
                 r"""
                 - \tweak arrow-length #2

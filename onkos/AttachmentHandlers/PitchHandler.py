@@ -12,7 +12,7 @@ class PitchHandler:
 
     def _collect_pitches_durations_leaves(self, logical_ties, pitches):
         def cyc(lst):
-            if self.continuous == False:
+            if self.continuous is False:
                 self._count = -1
             while True:
                 self._count += 1

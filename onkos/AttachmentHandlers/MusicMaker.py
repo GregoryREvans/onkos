@@ -1,14 +1,5 @@
 import abjad
 
-from .ArticulationHandler import ArticulationHandler
-from .ClefHandler import ClefHandler
-from .DynamicHandler import DynamicHandler
-from .GlissandoHandler import GlissandoHandler
-from .NoteheadHandler import NoteheadHandler
-from .PitchHandler import PitchHandler
-from .SlurHandler import SlurHandler
-from .TextSpanHandler import TextSpanHandler
-
 
 class MusicMaker:
     def __init__(
@@ -46,8 +37,7 @@ class MusicMaker:
         return self._make_music(durations)
 
     def _make_basic_rhythm(self, durations):
-        if self.continuous == True:
-            state = self.state
+        if self.continuous is True:
             selections = self.rmaker(durations, previous_state=self.rmaker.state)
             self.state = self.rmaker.state
         else:
@@ -56,7 +46,7 @@ class MusicMaker:
 
     def _make_music(self, durations):
         selections = self._make_basic_rhythm(durations)
-        if self.pitch_handler == None:
+        if self.pitch_handler is None:
             start_command = abjad.LilyPondLiteral(
                 r"\stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff",
                 format_slot="before",
@@ -72,24 +62,24 @@ class MusicMaker:
             abjad.attach(c_clef, selections[0][0])
             abjad.attach(start_command, selections[0][0])
             abjad.attach(stop_command, selections[0][-1])
-        # if self.grace_handler != None:
+        # if self.grace_handler is not None:
         #     selections = self.grace_handler(selections)
-        if self.pitch_handler != None:
+        if self.pitch_handler is not None:
             selections = self.pitch_handler(selections)
-            if self.clef_handler != None:
+            if self.clef_handler is not None:
                 selections = self.clef_handler(selections)
-            if self.glissando_handler != None:
+            if self.glissando_handler is not None:
                 selections = self.glissando_handler(selections)
-            if self.trill_handler != None:
+            if self.trill_handler is not None:
                 selections = self.trill_handler(selections)
-        if self.notehead_handler != None:
+        if self.notehead_handler is not None:
             selections = self.notehead_handler(selections)
-        if self.articulation_handler != None:
+        if self.articulation_handler is not None:
             selections = self.articulation_handler(selections)
-        if self.dynamic_handler != None:
+        if self.dynamic_handler is not None:
             selections = self.dynamic_handler(selections)
-        if self.text_span_handler != None:
+        if self.text_span_handler is not None:
             selections = self.text_span_handler(selections)
-        if self.slur_handler != None:
+        if self.slur_handler is not None:
             selections = self.slur_handler(selections)
         return selections

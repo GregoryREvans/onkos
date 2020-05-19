@@ -1,7 +1,41 @@
 import abjad
 import abjadext.rmakers
 from onkos.AttachmentHandlers import MusicMaker
-from onkos.Components.attachment_handlers import *
+from onkos.Components.attachment_handlers import (
+    articulation_handler_one,
+    clef_handler_one,
+    dynamic_handler_one,
+    notehead_handler_one,
+    pitch_handler_one,
+    text_span_handler_one,
+    articulation_handler_two,
+    clef_handler_two,
+    dynamic_handler_two,
+    notehead_handler_two,
+    pitch_handler_two,
+    text_span_handler_two,
+    articulation_handler_three,
+    clef_handler_three,
+    dynamic_handler_three,
+    notehead_handler_three,
+    pitch_handler_three,
+    text_span_handler_three,
+    articulation_handler_four,
+    clef_handler_four,
+    dynamic_handler_four,
+    notehead_handler_four,
+    pitch_handler_four,
+    text_span_handler_four,
+    pitch_handler_five,
+    clef_handler_five,
+    dynamic_handler_five,
+    text_span_handler_five,
+    pitch_handler_six,
+    dynamic_handler_six,
+    clef_handler_six,
+    slur_handler_six,
+    text_span_handler_six,
+)
 from onkos.Components.rhythm_makers import (
     rmaker_five,
     rmaker_four,
