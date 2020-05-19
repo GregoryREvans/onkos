@@ -6,10 +6,17 @@ import time
 
 import abjad
 from evans.general_tools.cyc import cyc
-from onkos.Components.music_makers import silence_maker, MusicSpecifier
+from onkos.Components.music_makers import MusicSpecifier, silence_maker
 from onkos.Components.score_structure import score
 from onkos.Components.time_signatures import time_signatures2
 from onkos.Components.timespans import all_timespans2
+
+
+class MusicSpecifier:
+    def __init__(self, music_maker, voice_name):
+        self.music_maker = music_maker
+        self.voice_name = voice_name
+
 
 time_1 = time.time()
 

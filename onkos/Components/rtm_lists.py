@@ -1,8 +1,8 @@
 from evans.abjad_functions.rtm.rotate_rtm import (
-    nested_list_to_rtm,
     flatten,
-    rotate_tree,
     funnel_inner_tree_to_x,
+    nested_list_to_rtm,
+    rotate_tree,
 )
 from evans.general_tools.cyc import cyc
 
