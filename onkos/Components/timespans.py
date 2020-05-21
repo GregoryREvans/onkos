@@ -9,7 +9,9 @@ from onkos.Components.time_signatures import (
     time_signatures2,
 )
 
-timespan_maker = evans.TimespanMaker(denominator=32, total_duration=abjad.Duration(1915, 32))
+timespan_maker = evans.TimespanMaker(
+    denominator=32, total_duration=abjad.Duration(1915, 32)
+)
 
 counts_list = [
     3,
@@ -197,7 +199,9 @@ for voice, timespan_list in all_timespans.items():
 ######Segment_II
 
 
-timespan_maker2 = evans.TimespanMaker(denominator=32, total_duration=abjad.Duration(252, 32))
+timespan_maker2 = evans.TimespanMaker(
+    denominator=32, total_duration=abjad.Duration(252, 32)
+)
 
 counts_list2 = [2, 3, 5, 11, 10, 4, 9, 1, 7, 5, 3, 3]
 counts2 = [x * 4 for x in counts_list2]
