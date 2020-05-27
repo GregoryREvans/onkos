@@ -16,25 +16,26 @@ flat = flatten(nested_list)
 
 rtm = "(1 ((1 (2 3)) 4 (3 (2 1 2)) (3 (4 3)) 2))"
 rotations = []
-for x in range(len(flatten(nested_list))):
-    new_rtm = rotate_tree(rtm, x)
+for i in range(len(flatten(nested_list))):
+    new_rtm = rotate_tree(rtm, i)
     rotations.append(new_rtm)
 
 funnels = []
 # funnels.extend(funnel_inner_tree_to_x(rtm_string=rtm, x=6))
-for x in rotations:
-    funnels.append(funnel_inner_tree_to_x(rtm_string=x, x=6))
+for rotation in rotations:
+    funnel = funnel_inner_tree_to_x(rtm_string=rotation, x=6)
+    funnels.append(funnel)
 
-index_cycle = cyc([x for x in range(len(funnels[0]))])
+index_cycle = cyc([i for i in range(len(funnels[0]))])
 tuple_list = []
-for x in range(len(rotations)):
-    tuple = (x, next(index_cycle))
-    tuple_list.append(tuple)
+for i in range(len(rotations)):
+    tuple_ = (i, next(index_cycle))
+    tuple_list.append(tuple_)
 
 final_rtm_list = []
-for x in tuple_list:
-    a = x[0]
-    b = x[-1]
+for tuple_ in tuple_list:
+    a = tuple_[0]
+    b = tuple_[-1]
     final_rtm_list.append(funnels[a][b])
 
 # final_rtm_list.extend(rotations)

@@ -1,3 +1,5 @@
+import typing
+
 import abjad
 from evans.general_tools.cyc import cyc
 from evans.general_tools.flatten import flatten
@@ -31,7 +33,7 @@ sieve_7 = sieve_7a & sieve_7b
 sieve = sieve_1 | sieve_2 | sieve_3 | sieve_4 | sieve_5 | sieve_6 | sieve_7
 
 nums = [x for x in sieve.get_boolean_vector(total_length=100)]
-list = [-12]
+list: typing.List = [-12]
 for x in nums:
     base = list[-1]
     list.append(base + 0.5)
