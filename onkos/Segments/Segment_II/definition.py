@@ -263,7 +263,7 @@ score_file = abjad.LilyPondFile.new(
 
 abjad.SegmentMaker.comment_measure_numbers(score)
 time_2 = time.time()
-###################
+# ##################
 directory = pathlib.Path(__file__).parent
 pdf_path = f"{directory}/illustration.pdf"
 path = pathlib.Path("illustration.pdf")

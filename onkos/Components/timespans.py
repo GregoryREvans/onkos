@@ -2,12 +2,7 @@ import abjad
 import evans
 from onkos.Components.material_pattern import material_list, material_list2
 from onkos.Components.music_makers import silence_maker
-from onkos.Components.time_signatures import (
-    bounds,
-    bounds2,
-    time_signatures,
-    time_signatures2,
-)
+from onkos.Components.time_signatures import bounds, bounds2
 
 timespan_maker = evans.TimespanMaker(
     denominator=32, total_duration=abjad.Duration(1915, 32)
@@ -196,7 +191,7 @@ for voice, timespan_list in all_timespans.items():
     all_timespans[voice] = evans.make_split_list(timespan_list, offsets)
 
 
-######Segment_II
+# #####Segment_II
 
 
 timespan_maker2 = evans.TimespanMaker(

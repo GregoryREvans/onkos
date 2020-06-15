@@ -73,7 +73,7 @@ text_span_handler_one = TextSpanHandler(
     continuous=True,
 )
 
-#######
+# ######
 articulation_handler_two = ArticulationHandler(
     articulation_list=[
         "espressivo",
@@ -144,7 +144,7 @@ text_span_handler_two = TextSpanHandler(
     continuous=True,
 )
 
-#######
+# ######
 articulation_handler_three = ArticulationHandler(
     articulation_list=[
         "accent",
@@ -218,7 +218,7 @@ text_span_handler_three = TextSpanHandler(
 )
 
 
-#######
+# ######
 articulation_handler_four = ArticulationHandler(
     articulation_list=["tenuto", "tenuto", "accent", "tenuto", "espressivo"],
     continuous=True,
@@ -251,7 +251,7 @@ text_span_handler_four = TextSpanHandler(
     continuous=True,
 )
 
-#######
+# ######
 pitch_handler_five = PitchHandler(pitch_list=chords, continuous=True)
 dynamic_handler_five = DynamicHandler(
     starting_dynamic="f", hairpin=">", ending_dynamic="mp", continuous=True
@@ -263,7 +263,7 @@ clef_handler_five = ClefHandler(
 )
 text_span_handler_five = TextSpanHandler()
 
-#######
+# ######
 pitch_handler_six = PitchHandler(pitch_list=runs, continuous=True)
 dynamic_handler_six = DynamicHandler(
     starting_dynamic="pppp", hairpin="<|", ending_dynamic="fff", continuous=True

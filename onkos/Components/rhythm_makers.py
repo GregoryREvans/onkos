@@ -23,7 +23,7 @@ rmaker_three = abjadext.rmakers.stack(
     abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
 )
 
-######
+# #####
 rmaker_four = abjadext.rmakers.stack(
     abjadext.rmakers.talea(
         [3, 5, 7, 5, 3, 7, 3, 7, 5, 7, 5, 3, 5, 7, 3, 7, 3, 5],
@@ -36,7 +36,7 @@ rmaker_four = abjadext.rmakers.stack(
     abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
 )
 
-######
+# #####
 rmaker_five = abjadext.rmakers.stack(
     abjadext.rmakers.talea(
         [2, 1, 1, 3, 2, 4, 2, 1, 4, 12], 8, extra_counts=[1, 0, -1, 1, 0, 1, -1]
@@ -47,7 +47,7 @@ rmaker_five = abjadext.rmakers.stack(
     abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
 )
 
-######
+# #####
 rmaker_six = abjadext.rmakers.stack(
     abjadext.rmakers.even_division(
         [16, 16, 8, 16, 16], extra_counts=[0, 1, -1, 0, 1, 0, -1]

@@ -68,7 +68,7 @@ sieve_list = [
 
 sieve_list = [_ - 20 for _ in sieve_list]
 
-######
+# #####
 
 lst = [5, 6, 9, 11]
 lst = [_ - 24 for _ in lst]
@@ -111,7 +111,7 @@ perm_list = grouper(perms, group_list)  # keep experimenting with this...
 # print(perms)
 # print(perm_list)
 
-######
+# #####
 analyzed_list = [
     abjad.NumberedPitch(10.75),
     abjad.NumberedPitch(23.5),
@@ -226,7 +226,7 @@ analyzed_list = [
 ]
 
 analyzed_list = [_ - 24 for _ in analyzed_list]
-######
+# #####
 walk_list = []
 for x in range(-12, 26):
     walk_list.append(x)
@@ -242,7 +242,7 @@ random_walk_list = [
     )
 ]
 random_walk_list = [_ - 20 for _ in random_walk_list]
-######
+# #####
 chords = [
     [3, 4],
     [3, 7],
@@ -261,7 +261,7 @@ chords = [
 for x in chords:
     for y in x:
         y = y - 20
-######
+# #####
 rotated_walk_list2 = rotate(mirrored_walk_list, 20)
 runs = [
     x
