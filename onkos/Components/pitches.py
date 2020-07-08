@@ -8,6 +8,7 @@ from evans.general_tools.mirror import mirror
 from evans.general_tools.perm import perm
 from evans.general_tools.random_walk import random_walk
 from evans.general_tools.rotate import rotate
+
 from onkos.Components.instruments import (
     instrument_one_range_highest,
     instrument_one_range_lowest,
