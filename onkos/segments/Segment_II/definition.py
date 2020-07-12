@@ -5,7 +5,7 @@ import pathlib
 import time
 
 import abjad
-from evans.general_tools.cyc import cyc
+from evans import cyc
 
 from onkos.Components.music_makers import silence_maker
 from onkos.Components.score_structure import score

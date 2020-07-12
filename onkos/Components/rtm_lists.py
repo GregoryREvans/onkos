@@ -3,8 +3,8 @@ from evans import (
     funnel_inner_tree_to_x,
     nested_list_to_rtm,
     rotate_tree,
+    cyc,
 )
-from evans.general_tools.cyc import cyc
 
 # [1, [[1, [[4, [2, 1]], 1]], [2, [2, 2, 1]], [1, [1, 3, 1]]]]
 # nested_list = [1, [3, [2, [1, 2, 1, 1,],], 3,],]
