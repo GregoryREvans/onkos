@@ -249,7 +249,7 @@ for staff in abjad.iterate(score["Global Context"]).components(abjad.Staff):
     abjad.attach(mark, leaf1)
 
 for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
-    abjad.Instrument.transpose_from_sounding_pitch(staff)
+    abjad.iterpitches.transpose_from_sounding_pitch(staff)
 
 # print('Transforming Tuplet Brackets ...')
 # transformer = NoteheadBracketMaker()

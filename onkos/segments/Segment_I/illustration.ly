@@ -2,7 +2,7 @@
 \language "english" %! abjad.LilyPondFile._get_format_pieces()
 
 \include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! abjad.LilyPondFile._get_formatted_includes()
-\include "/Users/evansdsg2/evans/lilypond/evans-markups.ily"   %! abjad.LilyPondFile._get_formatted_includes()
+\include "/Users/evansdsg2/evans/lilypond/evans-markups.ily"         %! abjad.LilyPondFile._get_formatted_includes()
 
 \header { %! abjad.LilyPondFile._get_formatted_blocks()
     tagline = ##f
@@ -383,7 +383,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -425,7 +425,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -443,7 +443,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -462,7 +462,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -477,7 +477,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -493,7 +493,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -513,7 +513,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -529,7 +529,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -561,7 +561,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 1 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -705,7 +705,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -748,7 +748,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -767,7 +767,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -785,7 +785,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -802,7 +802,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -818,7 +818,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -839,7 +839,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -855,7 +855,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -888,7 +888,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -1003,7 +1003,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -1046,7 +1046,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -1066,7 +1066,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -1084,7 +1084,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -1102,7 +1102,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -1120,7 +1120,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -1141,7 +1141,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -1156,7 +1156,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -1188,7 +1188,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -1237,7 +1237,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -1275,7 +1275,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -1313,7 +1313,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 1 5 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -1368,7 +1368,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -1411,7 +1411,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -1430,7 +1430,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -1449,7 +1449,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -1466,7 +1466,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -1481,7 +1481,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -1502,7 +1502,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -1519,7 +1519,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -1553,7 +1553,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 5 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 5 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -1605,7 +1605,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -1642,7 +1642,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -1666,7 +1666,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -1710,7 +1710,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 3 5 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -1905,7 +1905,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 4 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -1941,7 +1941,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -1979,7 +1979,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 1 5 }
+                                    \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -2032,7 +2032,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -2075,7 +2075,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -2094,7 +2094,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -2110,7 +2110,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -2127,7 +2127,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -2143,7 +2143,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -2163,7 +2163,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -2179,7 +2179,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -2212,7 +2212,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 1 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -2410,7 +2410,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -2446,7 +2446,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -2470,7 +2470,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -2500,7 +2500,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 1 5 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -2576,7 +2576,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -2612,7 +2612,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -2637,7 +2637,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -2676,7 +2676,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 3 5 }
+                                    \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -2868,7 +2868,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -2910,7 +2910,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -2926,7 +2926,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -2943,7 +2943,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -2959,7 +2959,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -2975,7 +2975,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -2992,7 +2992,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -3008,7 +3008,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -3038,7 +3038,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -3172,7 +3172,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3214,7 +3214,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3232,7 +3232,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -3251,7 +3251,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3267,7 +3267,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3283,7 +3283,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3302,7 +3302,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3318,7 +3318,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3335,7 +3335,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -3358,7 +3358,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3376,7 +3376,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3396,7 +3396,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -3414,7 +3414,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3430,7 +3430,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3446,7 +3446,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3467,7 +3467,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3483,7 +3483,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3516,7 +3516,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 5 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 5 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -3656,7 +3656,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3699,7 +3699,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3718,7 +3718,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -3736,7 +3736,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3754,7 +3754,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3772,7 +3772,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3793,7 +3793,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3809,7 +3809,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3841,7 +3841,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 1 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -3950,7 +3950,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -3993,7 +3993,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -4012,7 +4012,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -4031,7 +4031,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -4048,7 +4048,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -4064,7 +4064,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -4085,7 +4085,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -4101,7 +4101,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -4135,7 +4135,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -4185,7 +4185,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -4224,7 +4224,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 3 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -4267,7 +4267,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 4 5 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 4 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -4540,7 +4540,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -4583,7 +4583,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -4602,7 +4602,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -4619,7 +4619,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -4636,7 +4636,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -4651,7 +4651,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -4671,7 +4671,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -4687,7 +4687,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -4720,7 +4720,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -4915,7 +4915,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -4951,7 +4951,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -4975,7 +4975,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -5003,7 +5003,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -5029,7 +5029,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -5055,7 +5055,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -5078,7 +5078,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -5103,7 +5103,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 1 5 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -5318,7 +5318,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -5360,7 +5360,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -5376,7 +5376,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -5392,7 +5392,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5408,7 +5408,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5424,7 +5424,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5441,7 +5441,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -5457,7 +5457,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -5473,7 +5473,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -5496,7 +5496,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5511,7 +5511,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5529,7 +5529,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -5548,7 +5548,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5564,7 +5564,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5580,7 +5580,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5600,7 +5600,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5616,7 +5616,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5632,7 +5632,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -5655,7 +5655,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5672,7 +5672,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5690,7 +5690,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -5709,7 +5709,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5725,7 +5725,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5741,7 +5741,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5760,7 +5760,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5776,7 +5776,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -5808,7 +5808,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -5940,7 +5940,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -5991,7 +5991,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 3 5 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -6110,7 +6110,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -6154,7 +6154,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -6174,7 +6174,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -6192,7 +6192,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -6208,7 +6208,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -6224,7 +6224,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -6245,7 +6245,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -6261,7 +6261,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -6294,7 +6294,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -6405,7 +6405,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -6449,7 +6449,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -6468,7 +6468,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -6486,7 +6486,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -6504,7 +6504,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -6522,7 +6522,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -6543,7 +6543,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -6559,7 +6559,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -6591,7 +6591,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 5 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 5 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -6776,7 +6776,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -6813,7 +6813,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 3 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -6838,7 +6838,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 4 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -6865,7 +6865,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -6889,7 +6889,7 @@
                         - \tweak bound-details.left.text \markup {
                             \concat
                                 {
-                                    \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 5 }
+                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 }
                                     \hspace
                                         #0.5
                                 }
@@ -6921,7 +6921,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -6948,7 +6948,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -6986,7 +6986,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 3 5 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -7205,7 +7205,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -7249,7 +7249,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -7268,7 +7268,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -7287,7 +7287,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -7303,7 +7303,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -7319,7 +7319,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -7339,7 +7339,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -7355,7 +7355,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -7389,7 +7389,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 1 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -7441,7 +7441,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -7477,7 +7477,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -7501,7 +7501,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 1 5 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -7577,7 +7577,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -7628,7 +7628,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 3 5 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -7870,7 +7870,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -7913,7 +7913,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -7932,7 +7932,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -7949,7 +7949,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -7966,7 +7966,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -7981,7 +7981,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -8001,7 +8001,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -8017,7 +8017,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -8050,7 +8050,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -8175,7 +8175,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 4 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -8218,7 +8218,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 3 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -8234,7 +8234,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 1 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -8250,7 +8250,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -8266,7 +8266,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -8282,7 +8282,7 @@
                                 - \tweak bound-details.left.text \markup {
                                     \concat
                                         {
-                                            \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 5 7 }
+                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
                                             \hspace
                                                 #0.5
                                         }
@@ -8299,7 +8299,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -8315,7 +8315,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 6 7 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -8346,7 +8346,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 7 7 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
                                         \hspace
                                             #0.5
                                     }
@@ -8444,7 +8444,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 2 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -8480,7 +8480,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\musicglyph \\evans-downbow \\vspace #0.2 \\upright \\fraction 3 5 }
+                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 }
                                         \hspace
                                             #0.5
                                     }
@@ -8518,7 +8518,7 @@
                             - \tweak bound-details.left.text \markup {
                                 \concat
                                     {
-                                        \\center-column { \\center-align \\vcenter \\with-color #white \\musicglyph \\evans-upbow \\vspace #0.2 \\upright \\with-color #black \\fraction 4 5 }
+                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 4 5 }
                                         \hspace
                                             #0.5
                                     }
