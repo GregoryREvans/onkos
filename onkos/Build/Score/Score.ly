@@ -2,7 +2,7 @@
 \language "english" %! LilyPondFile
 
 \include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily"
-\include "/Users/evansdsg2/evans/evans/lilypond/evans-markups.ily"   
+\include "/Users/evansdsg2/evans/lilypond/evans-markups.ily"   
 \include "../first_stylesheet.ily"  
 \include "ekmel.ily"
 \ekmelicStyle evans                                

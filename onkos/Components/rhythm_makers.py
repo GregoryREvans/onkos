@@ -1,6 +1,6 @@
 import abjad
 import abjadext.rmakers
-from evans.abjad_functions.rtm.rtm_maker import RTMMaker_4
+from evans import RTMMaker
 
 from onkos.Components.rtm_lists import final_rtm_list
 
@@ -14,7 +14,7 @@ rmaker_one = abjadext.rmakers.stack(
     abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
 )
 
-rmaker_two = RTMMaker_4(rtm=final_rtm_list)
+rmaker_two = RTMMaker(rtm=final_rtm_list)
 
 rmaker_three = abjadext.rmakers.stack(
     abjadext.rmakers.talea([3, 2, 4, 1, 5], 8, extra_counts=[0, 1, -1, 1, 0, -1]),

@@ -254,7 +254,7 @@ score_file = abjad.LilyPondFile.new(
     score,
     includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
-        "/Users/evansdsg2/evans/evans/lilypond/evans-markups.ily",
+        "/Users/evansdsg2/evans/lilypond/evans-markups.ily",
     ],
 )
 
