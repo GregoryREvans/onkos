@@ -129,5 +129,5 @@ for x in sets2:
     time_signatures2.extend(x)
 
 
-bounds = abjad.mathtools.cumulative_sums([_.duration for _ in time_signatures])
-bounds2 = abjad.mathtools.cumulative_sums([_.duration for _ in time_signatures2])
+bounds = abjad.mathx.cumulative_sums([_.duration for _ in time_signatures])
+bounds2 = abjad.mathx.cumulative_sums([_.duration for _ in time_signatures2])
