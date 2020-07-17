@@ -288,7 +288,7 @@ if path.exists():
     os.system(f"open {pdf_path}")
 score_lines = open(f"{directory}/illustration.ly").readlines()
 build_path = (directory / ".." / ".." / "Build/Score").resolve()
-open(f"{build_path}/Segment_I.ly", "w").writelines(score_lines[15:-1])
+open(f"{build_path}/segment_01.ly", "w").writelines(score_lines[15:-1])
 
 segment_time = time_2 - time_1
 open(f"{directory}/.optimization", "a").writelines(

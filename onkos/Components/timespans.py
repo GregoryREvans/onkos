@@ -192,7 +192,7 @@ for voice, timespan_list in all_timespans.items():
     all_timespans[voice] = evans.make_split_list(timespan_list, offsets)
 
 
-# #####Segment_II
+# #####segment_02
 
 
 timespan_maker2 = evans.TimespanMaker(
