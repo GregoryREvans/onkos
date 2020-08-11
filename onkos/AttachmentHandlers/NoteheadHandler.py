@@ -2,9 +2,9 @@ import abjad
 
 
 class NoteheadHandler:
-    def __init__(self, notehead_list=None, transition=False, continuous=False):
+    def __init__(self, notehead_list=None, transition=False, forget=True):
         def cyc(lst):
-            if self.continuous is False:
+            if self.forget is True:
                 self._count = -1
             while True:
                 self._count += 1
@@ -12,7 +12,7 @@ class NoteheadHandler:
 
         self.notehead_list = notehead_list
         self.transition = transition
-        self.continuous = continuous
+        self.forget = forget
         self._cyc_noteheads = cyc(notehead_list)
         self._count = -1
 

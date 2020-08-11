@@ -2,9 +2,9 @@ import abjad
 
 
 class PitchHandler:
-    def __init__(self, pitch_list=None, continuous=False):
+    def __init__(self, pitch_list=None, forget=True):
         self.pitch_list = pitch_list
-        self.continuous = continuous
+        self.forget = forget
         self._count = -1
 
     def __call__(self, selections):
@@ -12,7 +12,7 @@ class PitchHandler:
 
     def _collect_pitches_durations_leaves(self, logical_ties, pitches):
         def cyc(lst):
-            if self.continuous is False:
+            if self.forget is True:
                 self._count = -1
             while True:
                 self._count += 1

@@ -15,7 +15,7 @@ class MusicMaker:
         slur_handler=None,
         # grace_handler=None,
         trill_handler=None,
-        continuous=False,
+        forget=True,
         state=None,
     ):
         self.glissando_handler = glissando_handler
@@ -28,7 +28,7 @@ class MusicMaker:
         self.slur_handler = slur_handler
         # self.grace_handler = grace_handler
         self.trill_handler = trill_handler
-        self.continuous = continuous
+        self.forget = forget
         self.rmaker = rmaker
         self.state = self.rmaker.state
         self._count = 0
@@ -37,7 +37,7 @@ class MusicMaker:
         return self._make_music(durations)
 
     def _make_basic_rhythm(self, durations):
-        if self.continuous is True:
+        if self.forget is False:
             selections = self.rmaker(durations, previous_state=self.rmaker.state)
             self.state = self.rmaker.state
         else:

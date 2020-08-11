@@ -2,16 +2,16 @@ import abjad
 
 
 class ArticulationHandler:
-    def __init__(self, articulation_list=None, continuous=False):
+    def __init__(self, articulation_list=None, forget=True):
         def cyc(lst):
-            if self.continuous is False:
+            if self.forget is True:
                 self._count = -1
             while True:
                 self._count += 1
                 yield lst[self._count % len(lst)]
 
         self.articulation_list = articulation_list
-        self.continuous = continuous
+        self.forget = forget
         self._cyc_articulations = cyc(articulation_list)
         self._count = -1
 

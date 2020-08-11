@@ -3,10 +3,10 @@ import abjad
 
 class DynamicHandler:
     def __init__(
-        self, starting_dynamic=None, ending_dynamic=None, hairpin=None, continuous=False
+        self, starting_dynamic=None, ending_dynamic=None, hairpin=None, forget=True
     ):
         def cyc(lst):
-            if self.continuous is False:
+            if self.forget is True:
                 self._count = -1
             while True:
                 self._count += 1
@@ -15,7 +15,7 @@ class DynamicHandler:
         self.starting_dynamic = starting_dynamic
         self.ending_dynamic = ending_dynamic
         self.hairpin = hairpin
-        self.continuous = continuous
+        self.forget = forget
         self._cyc_dynamics = cyc([starting_dynamic, ending_dynamic])
         self._count = -1
 

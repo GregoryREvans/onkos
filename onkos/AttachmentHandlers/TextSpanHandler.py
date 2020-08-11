@@ -18,10 +18,10 @@ class TextSpanHandler:
         span_three_style=None,
         span_three_padding=None,
         attach_span_three_to=None,
-        continuous=False,
+        forget=True,
     ):
         def cyc(lst, count):
-            if self.continuous is False:
+            if self.forget is True:
                 count = -1
             while True:
                 count += 1
@@ -39,7 +39,7 @@ class TextSpanHandler:
         self.span_three_style = span_three_style
         self.span_three_padding = span_three_padding
         self.attach_span_three_to = attach_span_three_to
-        self.continuous = continuous
+        self.forget = forget
         self._count_1 = -1
         self._count_2 = -1
         self._count_3 = -1

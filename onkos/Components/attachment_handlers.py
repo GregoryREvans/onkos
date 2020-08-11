@@ -29,7 +29,7 @@ articulation_handler_one = ArticulationHandler(
         "espressivo",
         "tenuto",
     ],
-    continuous=True,
+    forget=False,
 )
 
 clef_handler_one = ClefHandler(
@@ -39,7 +39,7 @@ clef_handler_one = ClefHandler(
 )
 
 dynamic_handler_one = DynamicHandler(
-    starting_dynamic="mf", hairpin=">", ending_dynamic="mp", continuous=True
+    starting_dynamic="mf", hairpin=">", ending_dynamic="mp", forget=False
 )
 
 notehead_handler_one = NoteheadHandler(
@@ -56,10 +56,10 @@ notehead_handler_one = NoteheadHandler(
         "default",
     ],
     transition=False,
-    continuous=True,
+    forget=False,
 )
 
-pitch_handler_one = PitchHandler(pitch_list=analyzed_list, continuous=True)
+pitch_handler_one = PitchHandler(pitch_list=analyzed_list, forget=False)
 
 text_span_handler_one = TextSpanHandler(
     span_two_positions=["st.", "ord.", "st.", "sp.", "msp.", "ord."],
@@ -70,7 +70,7 @@ text_span_handler_one = TextSpanHandler(
     span_three_style="solid-line",
     span_three_padding=19.5,
     attach_span_three_to="left",
-    continuous=True,
+    forget=False,
 )
 
 # ######
@@ -84,7 +84,7 @@ articulation_handler_two = ArticulationHandler(
         "tenuto",
         "accent",
     ],
-    continuous=True,
+    forget=False,
 )
 
 clef_handler_two = ClefHandler(
@@ -95,7 +95,7 @@ clef_handler_two = ClefHandler(
 )
 
 dynamic_handler_two = DynamicHandler(
-    starting_dynamic='"ppp"', hairpin="<", ending_dynamic='"ff"', continuous=True
+    starting_dynamic='"ppp"', hairpin="<", ending_dynamic='"ff"', forget=False
 )
 
 notehead_handler_two = NoteheadHandler(
@@ -110,10 +110,10 @@ notehead_handler_two = NoteheadHandler(
         "default",
     ],
     transition=False,
-    continuous=True,
+    forget=False,
 )
 
-pitch_handler_two = PitchHandler(pitch_list=sieve_list, continuous=True)
+pitch_handler_two = PitchHandler(pitch_list=sieve_list, forget=False)
 
 text_span_handler_two = TextSpanHandler(
     span_one_positions=[
@@ -141,7 +141,7 @@ text_span_handler_two = TextSpanHandler(
     span_three_style="solid-line",
     span_three_padding=19.5,
     attach_span_three_to="left",
-    continuous=True,
+    forget=False,
 )
 
 # ######
@@ -155,7 +155,7 @@ articulation_handler_three = ArticulationHandler(
         "tenuto",
         "tenuto",
     ],
-    continuous=True,
+    forget=False,
 )
 
 clef_handler_three = ClefHandler(
@@ -166,7 +166,7 @@ clef_handler_three = ClefHandler(
 )
 
 dynamic_handler_three = DynamicHandler(
-    starting_dynamic='"mp"', hairpin=">", ending_dynamic='"ppppp"', continuous=True
+    starting_dynamic='"mp"', hairpin=">", ending_dynamic='"ppppp"', forget=False
 )
 
 # glissando_handler_three = onkos.AttachmentHandlers.GlissandoHandler(
@@ -186,10 +186,10 @@ notehead_handler_three = NoteheadHandler(
         "default",
     ],
     transition=True,
-    continuous=True,
+    forget=False,
 )
 
-pitch_handler_three = PitchHandler(pitch_list=random_walk_list, continuous=True)
+pitch_handler_three = PitchHandler(pitch_list=random_walk_list, forget=False)
 
 text_span_handler_three = TextSpanHandler(
     span_one_positions=[
@@ -214,14 +214,14 @@ text_span_handler_three = TextSpanHandler(
     span_two_style="dashed-line",
     span_two_padding=16.5,
     attach_span_two_to="bounds",
-    continuous=True,
+    forget=False,
 )
 
 
 # ######
 articulation_handler_four = ArticulationHandler(
     articulation_list=["tenuto", "tenuto", "accent", "tenuto", "espressivo"],
-    continuous=True,
+    forget=False,
 )
 
 clef_handler_four = ClefHandler(
@@ -231,13 +231,11 @@ clef_handler_four = ClefHandler(
     # ottava_shelf=5,
 )
 
-dynamic_handler_four = DynamicHandler(
-    starting_dynamic="ff", hairpin="--", continuous=True
-)
+dynamic_handler_four = DynamicHandler(starting_dynamic="ff", hairpin="--", forget=False)
 
-notehead_handler_four = NoteheadHandler(notehead_list=["default"], continuous=True)
+notehead_handler_four = NoteheadHandler(notehead_list=["default"], forget=False)
 
-pitch_handler_four = PitchHandler(pitch_list=perm_list, continuous=True)
+pitch_handler_four = PitchHandler(pitch_list=perm_list, forget=False)
 
 text_span_handler_four = TextSpanHandler(
     span_two_positions=["st.", "ord.", "sp.", "msp.", "ord."],
@@ -248,13 +246,13 @@ text_span_handler_four = TextSpanHandler(
     span_three_style="solid-line",
     span_three_padding=19.5,
     attach_span_three_to="left",
-    continuous=True,
+    forget=False,
 )
 
 # ######
-pitch_handler_five = PitchHandler(pitch_list=chords, continuous=True)
+pitch_handler_five = PitchHandler(pitch_list=chords, forget=False)
 dynamic_handler_five = DynamicHandler(
-    starting_dynamic="f", hairpin=">", ending_dynamic="mp", continuous=True
+    starting_dynamic="f", hairpin=">", ending_dynamic="mp", forget=False
 )
 clef_handler_five = ClefHandler(
     clef="tenorvarC",
@@ -264,9 +262,9 @@ clef_handler_five = ClefHandler(
 text_span_handler_five = TextSpanHandler()
 
 # ######
-pitch_handler_six = PitchHandler(pitch_list=runs, continuous=True)
+pitch_handler_six = PitchHandler(pitch_list=runs, forget=False)
 dynamic_handler_six = DynamicHandler(
-    starting_dynamic="pppp", hairpin="<|", ending_dynamic="fff", continuous=True
+    starting_dynamic="pppp", hairpin="<|", ending_dynamic="fff", forget=False
 )
 clef_handler_six = ClefHandler(
     clef="bass",

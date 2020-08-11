@@ -59,7 +59,7 @@ music_maker_one = MusicMaker(
     dynamic_handler=dynamic_handler_one,
     clef_handler=clef_handler_one,
     text_span_handler=text_span_handler_one,
-    continuous=True,
+    forget=False,
 )
 
 music_maker_two = MusicMaker(
@@ -70,7 +70,7 @@ music_maker_two = MusicMaker(
     dynamic_handler=dynamic_handler_two,
     clef_handler=clef_handler_two,
     text_span_handler=text_span_handler_two,
-    continuous=True,
+    forget=False,
 )
 
 music_maker_three = MusicMaker(
@@ -82,7 +82,7 @@ music_maker_three = MusicMaker(
     dynamic_handler=dynamic_handler_three,
     clef_handler=clef_handler_three,
     text_span_handler=text_span_handler_three,
-    continuous=True,
+    forget=False,
 )
 
 music_maker_four = MusicMaker(
@@ -93,7 +93,7 @@ music_maker_four = MusicMaker(
     dynamic_handler=dynamic_handler_four,
     clef_handler=clef_handler_four,
     text_span_handler=text_span_handler_four,
-    continuous=True,
+    forget=False,
 )
 
 music_maker_five = MusicMaker(
@@ -102,7 +102,7 @@ music_maker_five = MusicMaker(
     dynamic_handler=dynamic_handler_five,
     clef_handler=clef_handler_five,
     text_span_handler=text_span_handler_five,
-    continuous=True,
+    forget=False,
 )
 
 music_maker_six = MusicMaker(
@@ -112,5 +112,5 @@ music_maker_six = MusicMaker(
     clef_handler=clef_handler_six,
     slur_handler=slur_handler_six,
     text_span_handler=text_span_handler_six,
-    continuous=True,
+    forget=False,
 )
