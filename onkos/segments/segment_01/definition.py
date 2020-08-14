@@ -67,16 +67,6 @@ for voice_name, timespan_list in all_timespans.items():
         voice = score[voice_name]
         voice.append(container)
 
-# print('Adding Multimeasure Rests ...')
-# for voice in abjad.iterate(score['Staff Group']).components(abjad.Voice):
-#     leaves = abjad.select(voice).leaves()
-#     for shard in abjad.mutate(leaves).split(time_signatures):
-#         if not all(isinstance(leaf, abjad.Rest) for leaf in shard):
-#             continue
-#         multiplier = abjad.inspect(shard).duration()
-#         multimeasure_rest = abjad.MultimeasureRest(1, multiplier=(multiplier))
-#         abjad.mutate(shard).replace(multimeasure_rest)
-
 
 print("Adding ending skips ...")
 last_skip = abjad.select(score["Global Context"]).leaves()[-1]
@@ -273,7 +263,7 @@ if path.exists():
     path.unlink()
 time_3 = time.time()
 print(f"Persisting {pdf_path} ...")
-result = abjad.persist(score_file).as_pdf(pdf_path)  # or ly
+result = abjad.persist.as_pdf(score_file, pdf_path)  # or ly
 print(result[0])
 print(result[1])
 print(result[2])
@@ -294,41 +284,3 @@ segment_time = time_2 - time_1
 open(f"{directory}/.optimization", "a").writelines(
     f"{datetime.datetime.now()}\nSegment runtime: {int(round(segment_time))} seconds \nAbjad/Lilypond runtime: {int(round(abjad_time))} seconds \n\n"
 )
-
-# abjad.show(score_file)
-# abjad.play(score_file)
-
-# for staff in abjad.iterate(score['Staff 1']).components(abjad.Staff):
-#     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
-#     signature_copy = abjad.mutate(signatures).copy()
-#     staff_copy = abjad.mutate(staff).copy()
-#     part = abjad.Score()
-#     part.insert(0, staff)
-#     part.insert(0, signature_copy)
-#     part_file = abjad.LilyPondFile.new(
-#         part,
-#         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
-#         )
-#     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/1.)sopranino'
-#     pdf_path = f'{directory}/Section_B.pdf'
-#     path = pathlib.Path('Section_B.pdf')
-#     if path.exists():
-#         print(f'Removing {pdf_path} ...')
-#         path.unlink()
-#     time_1 = time.time()
-#     print(f'Persisting {pdf_path} ...')
-#     result = abjad.persist(part_file).as_pdf(pdf_path)
-#     print(result[0])
-#     print(result[1])
-#     print(result[2])
-#     success = result[3]
-#     if success is False:
-#         print('LilyPond failed!')
-#     time_2 = time.time()
-#     total_time = time_2 - time_1
-#     print(f'Total time: {total_time} seconds')
-#     if path.exists():
-#         print(f'Opening {pdf_path} ...')
-#         os.system(f'open {pdf_path}')
-#     part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/1.)sopranino/Section_B.ly').readlines()
-#     open('/Users/evansdsg2/Scores/guerrero/Build/parts/1.)sopranino/Section_B.ly', 'w').writelines(part_lines[15:-1])
