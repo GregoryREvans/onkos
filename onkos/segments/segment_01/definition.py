@@ -132,7 +132,7 @@ for voice in abjad.select(score).components(abjad.Voice):
 print("Stopping Hairpins and Text Spans...")
 for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
     for rest in abjad.iterate(staff).components(abjad.Rest):
-        previous_leaf = abjad.inspect(rest).leaf(-1)
+        previous_leaf = abjad.get.leaf(rest, -1)
         if isinstance(previous_leaf, abjad.Note):
             abjad.attach(abjad.StopHairpin(), rest)
             abjad.attach(abjad.StopTextSpan(command=r"\stopTextSpanOne"), rest)
@@ -148,7 +148,7 @@ for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
 # for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
 #     for run in abjad.select(staff).runs():
 #         last_leaf = run[-1]
-#         next_leaf = abjad.inspect(last_leaf).leaf(1)
+#         next_leaf = abjad.get.leaf(last_leaf, 1)
 #         abjad.attach(abjad.StopTextSpan(), next_leaf)
 #         abjad.attach(abjad.StopHairpin(), next_leaf)
 

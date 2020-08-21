@@ -73,7 +73,7 @@ for voice in abjad.iterate(score["Staff Group"]).components(abjad.Voice):
     for shard in abjad.mutate.split(leaves, time_signatures2):
         if not all(isinstance(leaf, abjad.Rest) for leaf in shard):
             continue
-        multiplier = abjad.inspect(shard).duration()
+        multiplier = abjad.get.duration(shard)
         multimeasure_rest = abjad.MultimeasureRest(1, multiplier=(multiplier))
         abjad.mutate.replace(shard, multimeasure_rest)
 
@@ -141,7 +141,7 @@ for voice in abjad.select(score).components(abjad.Voice):
 print("Stopping Hairpins and Text Spans...")
 for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
     for rest in abjad.iterate(staff).components(abjad.Rest):
-        previous_leaf = abjad.inspect(rest).leaf(-1)
+        previous_leaf = abjad.get.leaf(rest, -1)
         if isinstance(previous_leaf, abjad.Note):
             abjad.attach(abjad.StopHairpin(), rest)
             abjad.attach(abjad.StopTextSpan(command=r"\stopTextSpanOne"), rest)
@@ -187,7 +187,7 @@ for tuplet in abjad.select(score["Staff Group"]).components(abjad.Tuplet):
 # for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
 #     for run in abjad.select(staff).runs():
 #         last_leaf = run[-1]
-#         next_leaf = abjad.inspect(last_leaf).leaf(1)
+#         next_leaf = abjad.get.leaf(last_leaf, 1)
 #         abjad.attach(abjad.StopTextSpan(), next_leaf)
 #         abjad.attach(abjad.StopHairpin(), next_leaf)
 
