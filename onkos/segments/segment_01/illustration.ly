@@ -278,28 +278,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            st. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "1/2 hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "1/2 hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -340,15 +326,8 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -380,40 +359,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                msp.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    msp. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                clt.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    clt. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #19.5
                                 \startTextSpanThree
@@ -422,14 +380,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -440,14 +391,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -459,14 +403,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -474,14 +411,7 @@
                                 fqs8
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -490,14 +420,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -510,14 +433,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -526,14 +442,7 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -558,27 +467,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -598,28 +493,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            st.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                st. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            "1/2 clt."
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                "1/2 clt." \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -634,15 +515,8 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            sp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                sp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -702,40 +576,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                st.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    st. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                "1/2 clt."
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    "1/2 clt." \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #19.5
                                 \startTextSpanThree
@@ -745,14 +598,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -764,14 +610,7 @@
                             aqf4
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -782,14 +621,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -799,14 +631,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -815,14 +640,7 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -836,14 +654,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -852,14 +663,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -885,27 +689,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -926,28 +716,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            clt.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                clt. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -959,15 +735,8 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -1000,40 +769,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                sp.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    sp. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                "3/4 hair"
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    "3/4 hair" \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #19.5
                                 \startTextSpanThree
@@ -1043,14 +791,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -1063,14 +804,7 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -1081,14 +815,7 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -1099,14 +826,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -1117,14 +837,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -1138,14 +851,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -1153,14 +859,7 @@
                                 fqs8.
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -1185,27 +884,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -1234,27 +919,13 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            st. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -1272,14 +943,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -1310,27 +974,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -1365,40 +1015,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                ord.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    ord. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                "1/2 clt."
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    "1/2 clt." \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #19.5
                                 \startTextSpanThree
@@ -1408,14 +1037,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -1427,14 +1049,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -1446,14 +1061,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -1463,14 +1071,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -1478,14 +1079,7 @@
                                 ef8
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -1499,14 +1093,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -1516,14 +1103,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -1550,27 +1130,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 5 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 5 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            st.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                st. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -1602,27 +1168,13 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            sp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                sp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -1639,14 +1191,7 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -1663,14 +1208,7 @@
                             \stopTextSpanOne
                             ~
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -1707,27 +1245,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -1746,28 +1270,14 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            st. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "1/2 clt."
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "1/2 clt." \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -1798,15 +1308,8 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -1831,28 +1334,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            st. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "1/2 hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "1/2 hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -1865,15 +1354,8 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        sp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            sp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -1902,27 +1384,13 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -1938,14 +1406,7 @@
                         - \tenuto
                         \stopTextSpanOne
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
@@ -1976,27 +1437,13 @@
                         \stopTextSpanOne
                         \stopTextSpanTwo
                         - \abjad-invisible-line
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            st. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -2029,40 +1476,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                ord.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    ord. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                clt.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    clt. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #19.5
                                 \startTextSpanThree
@@ -2072,14 +1498,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -2091,14 +1510,7 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -2107,14 +1519,7 @@
                                 fqs8
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -2124,14 +1529,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -2140,14 +1538,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -2160,14 +1551,7 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -2176,14 +1560,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -2209,27 +1586,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            sp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                sp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -2249,28 +1612,14 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            st. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "flat hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "flat hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -2284,15 +1633,8 @@
                             - \tenuto
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -2314,28 +1656,14 @@
                             \stopTextSpanThree
                             ~
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            "1/2 clt."
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                "1/2 clt." \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -2370,15 +1698,8 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -2407,27 +1728,13 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -2443,14 +1750,7 @@
                         - \accent
                         \stopTextSpanOne
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
@@ -2467,14 +1767,7 @@
                         \stopTextSpanOne
                         ~
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
@@ -2497,14 +1790,7 @@
                             \stopTextSpanOne
                             ~
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -2528,15 +1814,8 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        sp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            sp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -2573,27 +1852,13 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -2609,14 +1874,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -2634,14 +1892,7 @@
                         - \tenuto
                         \stopTextSpanOne
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
@@ -2673,27 +1924,13 @@
                         \stopTextSpanOne
                         \stopTextSpanTwo
                         - \abjad-invisible-line
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -2712,28 +1949,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            st.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                st. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            clt.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                clt. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -2763,15 +1986,8 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -2789,28 +2005,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        sp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            sp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "flat hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "flat hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -2820,15 +2022,8 @@
                         - \tenuto
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        msp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            msp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -2865,40 +2060,19 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            "1/2 clt."
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                "1/2 clt." \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -2907,14 +2081,7 @@
                             a,16.
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -2923,14 +2090,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -2940,14 +2100,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -2956,14 +2109,7 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -2972,14 +2118,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -2989,14 +2128,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -3005,14 +2137,7 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -3035,27 +2160,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -3077,28 +2188,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            st.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                st. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            "1/2 clt."
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                "1/2 clt." \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -3129,15 +2226,8 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        sp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            sp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -3169,40 +2259,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                st.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    st. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                "3/4 hair"
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    "3/4 hair" \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #19.5
                                 \startTextSpanThree
@@ -3211,14 +2280,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3229,14 +2291,7 @@
                             - \espressivo
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -3248,14 +2303,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3264,14 +2312,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3280,14 +2321,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3299,14 +2333,7 @@
                                 eqs,4
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3315,14 +2342,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3332,14 +2352,7 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -3355,14 +2368,7 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3373,14 +2379,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3393,14 +2392,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -3411,14 +2403,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3427,14 +2412,7 @@
                                 bf,16.
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3443,14 +2421,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3464,14 +2435,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3480,14 +2444,7 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3513,27 +2470,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 5 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 5 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -3554,28 +2497,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            "1/2 hair"
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                "1/2 hair" \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -3590,15 +2519,8 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -3653,40 +2575,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                sp.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    sp. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                "1/2 clt."
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    "1/2 clt." \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #19.5
                                 \startTextSpanThree
@@ -3696,14 +2597,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3715,14 +2609,7 @@
                             c4
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -3733,14 +2620,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3751,14 +2631,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3769,14 +2642,7 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3790,14 +2656,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3806,14 +2665,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -3838,27 +2690,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -3878,28 +2716,14 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "flat hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "flat hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -3907,15 +2731,8 @@
                         f'4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            st. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -3947,40 +2764,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                ord.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    ord. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                clt.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    clt. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #19.5
                                 \startTextSpanThree
@@ -3990,14 +2786,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -4009,14 +2798,7 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -4028,14 +2810,7 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -4045,14 +2820,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -4061,14 +2829,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -4082,14 +2843,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -4098,14 +2852,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -4132,27 +2879,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            st.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                st. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -4182,27 +2915,13 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            st. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -4221,14 +2940,7 @@
                         \stopTextSpanOne
                         ~
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
@@ -4264,27 +2976,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 4 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 4 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -4302,28 +3000,14 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            st. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "1/2 clt."
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "1/2 clt." \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -4339,15 +3023,8 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -4373,28 +3050,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "flat hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "flat hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -4406,15 +3069,8 @@
                         af'4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        sp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            sp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -4442,15 +3098,8 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        sp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            sp. \hspace #0.5 }
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                     }
@@ -4466,28 +3115,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        msp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            msp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "flat hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "flat hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -4496,15 +3131,8 @@
                         - \tenuto
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -4537,40 +3165,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                ord.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    ord. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                "1/2 clt."
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    "1/2 clt." \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #19.5
                                 \startTextSpanThree
@@ -4580,14 +3187,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -4599,14 +3199,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -4616,14 +3209,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -4633,14 +3219,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -4648,14 +3227,7 @@
                                 g,8
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -4668,14 +3240,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -4684,14 +3249,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -4717,27 +3275,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            sp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                sp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -4758,28 +3302,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            st.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                st. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            "flat hair"
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                "flat hair" \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -4792,15 +3322,8 @@
                         d'4.
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -4820,28 +3343,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            st.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                st. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            clt.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                clt. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -4875,15 +3384,8 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            sp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                sp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -4912,27 +3414,13 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        msp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            msp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -4948,14 +3436,7 @@
                         - \tenuto
                         \stopTextSpanOne
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
@@ -4972,14 +3453,7 @@
                         \stopTextSpanOne
                         ~
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
@@ -5000,14 +3474,7 @@
                         \stopTextSpanOne
                         ~
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
@@ -5026,14 +3493,7 @@
                         - \tenuto
                         \stopTextSpanOne
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
@@ -5052,14 +3512,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -5075,14 +3528,7 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -5100,14 +3546,7 @@
                             \stopTextSpanOne
                             ~
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -5132,15 +3571,8 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -5156,28 +3588,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        msp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            msp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "1/2 clt."
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "1/2 clt." \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -5204,15 +3622,8 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -5232,28 +3643,14 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        sp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            sp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "flat hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "flat hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -5262,15 +3659,8 @@
                         fs'4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        msp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            msp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -5315,40 +3705,19 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            "3/4 hair"
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                "3/4 hair" \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -5357,14 +3726,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -5373,14 +3735,7 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -5389,14 +3744,7 @@
                                 af,16
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5405,14 +3753,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5421,14 +3762,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5438,14 +3772,7 @@
                             - \espressivo
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -5454,14 +3781,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -5470,14 +3790,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -5493,14 +3806,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5508,14 +3814,7 @@
                                 e,16.
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5526,14 +3825,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -5545,14 +3837,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5561,14 +3846,7 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5577,14 +3855,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5597,14 +3868,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5613,14 +3877,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5629,14 +3886,7 @@
                             af,4
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -5652,14 +3902,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5669,14 +3912,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5687,14 +3923,7 @@
                             - \espressivo
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -5706,14 +3935,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5722,14 +3944,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5738,14 +3953,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5757,14 +3965,7 @@
                                 a,4
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5773,14 +3974,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -5805,27 +3999,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -5843,28 +4023,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            st. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "1/2 hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "1/2 hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -5897,15 +4063,8 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -5937,27 +4096,13 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            st.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                st. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -5988,27 +4133,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -6029,28 +4160,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            "flat hair"
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                "flat hair" \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -6059,15 +4176,8 @@
                             - \tenuto
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            st.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                st. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -6107,40 +4217,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                st.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    st. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                "1/2 clt."
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    "1/2 clt." \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #19.5
                                 \startTextSpanThree
@@ -6151,14 +4240,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -6171,14 +4253,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -6189,14 +4264,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -6205,14 +4273,7 @@
                                 g,16.
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -6221,14 +4282,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -6242,14 +4296,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -6258,14 +4305,7 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -6291,27 +4331,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -6332,28 +4358,14 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "flat hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "flat hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -6361,15 +4373,8 @@
                         ef4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        sp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            sp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -6402,40 +4407,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                sp.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    sp. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                clt.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    clt. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #19.5
                                 \startTextSpanThree
@@ -6446,14 +4430,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -6465,14 +4442,7 @@
                             g,4
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -6483,14 +4453,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -6501,14 +4464,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -6519,14 +4475,7 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -6540,14 +4489,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -6556,14 +4498,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -6588,27 +4523,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 5 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 5 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -6627,28 +4548,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        msp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            msp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "flat hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "flat hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -6657,15 +4564,8 @@
                         - \tenuto
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -6682,28 +4582,14 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            st. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "1/2 clt."
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "1/2 clt." \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -6737,15 +4623,8 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        sp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            sp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -6773,27 +4652,13 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        sp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            sp. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -6810,14 +4675,7 @@
                         - \tenuto
                         \stopTextSpanOne
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
@@ -6835,14 +4693,7 @@
                         \stopTextSpanOne
                         ~
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
@@ -6862,14 +4713,7 @@
                         - \accent
                         \stopTextSpanOne
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
@@ -6886,14 +4730,7 @@
                         \stopTextSpanOne
                         ~
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 }
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #12
                         \startTextSpanOne
@@ -6918,14 +4755,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -6945,14 +4775,7 @@
                             - \espressivo
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -6983,27 +4806,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -7024,28 +4833,14 @@
                             \stopTextSpanThree
                             ~
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            clt.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                clt. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -7067,15 +4862,8 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -7092,28 +4880,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            st. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "flat hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "flat hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -7127,15 +4901,8 @@
                         e'4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -7162,15 +4929,8 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                     }
@@ -7202,40 +4962,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                ord.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    ord. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                "1/2 clt."
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    "1/2 clt." \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #19.5
                                 \startTextSpanThree
@@ -7246,14 +4985,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -7265,14 +4997,7 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -7284,14 +5009,7 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -7300,14 +5018,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -7316,14 +5027,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -7336,14 +5040,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -7352,14 +5049,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -7386,27 +5076,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            st.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                st. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -7438,27 +5114,13 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            st.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                st. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -7474,14 +5136,7 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -7498,14 +5153,7 @@
                             \stopTextSpanOne
                             ~
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -7529,15 +5177,8 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -7574,27 +5215,13 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            sp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                sp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -7625,27 +5252,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -7663,27 +5276,13 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        sp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            sp. \hspace #0.5 }
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "flat hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "flat hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -7701,28 +5300,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            st.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                st. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            "1/2 clt."
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                "1/2 clt." \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -7759,15 +5344,8 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
@@ -7788,28 +5366,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            "flat hair"
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                "flat hair" \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -7824,15 +5388,8 @@
                             - \accent
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -7867,40 +5424,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                ord.
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    ord. \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \upright
-                                                "3/4 hair"
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \upright
+                                    "3/4 hair" \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #19.5
                                 \startTextSpanThree
@@ -7910,14 +5446,7 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -7929,14 +5458,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -7946,14 +5468,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -7963,14 +5478,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -7978,14 +5486,7 @@
                                 aqs8
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -7998,14 +5499,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -8014,14 +5508,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -8047,27 +5534,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            sp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                sp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -8086,28 +5559,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            st. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "flat hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "flat hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -8125,15 +5584,8 @@
                             - \tenuto
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -8172,40 +5624,19 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            "1/2 clt."
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                "1/2 clt." \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -8215,14 +5646,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -8231,14 +5655,7 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -8247,14 +5664,7 @@
                                 bf16
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -8263,14 +5673,7 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -8279,14 +5682,7 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup {
-                                    \concat
-                                        {
-                                            \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 }
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
                                 - \tweak staff-padding #12
                                 \startTextSpanOne
@@ -8296,14 +5692,7 @@
                             - \espressivo
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -8312,14 +5701,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -8343,27 +5725,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -8390,27 +5758,13 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        sp.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            sp. \hspace #0.5 }
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "flat hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "flat hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -8441,27 +5795,13 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -8477,14 +5817,7 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #12
                             \startTextSpanOne
@@ -8515,27 +5848,13 @@
                             \stopTextSpanOne
                             \stopTextSpanTwo
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 4 5 }
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 4 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            st.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                st. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -8557,28 +5876,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            msp.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                msp. \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            "flat hair"
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                "flat hair" \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #19.5
                             \startTextSpanThree
@@ -8588,15 +5893,8 @@
                             - \tenuto
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup {
-                                \concat
-                                    {
-                                        \upright
-                                            ord.
-                                        \hspace
-                                            #0.5
-                                    }
-                                }
+                            - \tweak bound-details.left.text \markup \concat { \upright
+                                ord. \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
                             - \tweak staff-padding #16.5
                             \startTextSpanTwo
@@ -8623,28 +5921,14 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        st.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            st. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        "flat hair"
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "flat hair" \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #19.5
                         \startTextSpanThree
@@ -8680,15 +5964,8 @@
                         af4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup {
-                            \concat
-                                {
-                                    \upright
-                                        ord.
-                                    \hspace
-                                        #0.5
-                                }
-                            }
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            ord. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
                         - \tweak staff-padding #16.5
                         \startTextSpanTwo
