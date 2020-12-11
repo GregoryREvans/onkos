@@ -184,7 +184,7 @@ evans.add_silences_to_timespan_dict(all_timespans, silence_specifier)
 time_signatures = [
     abjad.TimeSignature(timespan.duration) for timespan in all_timespans["Voice 1"]
 ]
-offsets = abjad.mathx.cumulative_sums(
+offsets = abjad.math.cumulative_sums(
     [abjad.Offset(t_s.duration) for t_s in time_signatures]
 )
 
@@ -240,7 +240,7 @@ evans.add_silences_to_timespan_dict(all_timespans2, silence_specifier2)
 time_signatures2 = [
     abjad.TimeSignature(timespan.duration) for timespan in all_timespans2["Voice 1"]
 ]
-offsets2 = abjad.mathx.cumulative_sums(
+offsets2 = abjad.math.cumulative_sums(
     [abjad.Offset(t_s.duration) for t_s in time_signatures2]
 )
 
