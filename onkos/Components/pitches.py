@@ -1,7 +1,8 @@
 import typing
 
 import abjad
-from evans import cyc, flatten, grouper, mirror, perm, random_walk, rotate
+import evans
+from evans import cyc, flatten
 
 from onkos.Components.instruments import (
     instrument_one_range_highest,
@@ -49,15 +50,14 @@ for x in sieve_l:
         new_sieve_l.append(x)
 
 rotation = len(new_sieve_l) // 3
-mirrored_sieve = mirror(new_sieve_l, sequential_duplicates=False)
-rotated_sieve = rotate(mirrored_sieve, rotation)
+mirrored_sieve = evans.Sequence(new_sieve_l).mirror(sequential_duplicates=False)
+rotated_sieve = evans.Sequence(mirrored_sieve).rotate(rotation)
 sieve_list = [
     x
-    for x in random_walk(
+    for x in evans.Sequence(rotated_sieve).random_walk(
         random_seed=9,
         length=1000,
         step_list=[1, 1, 4, 2, 3, 1],
-        mapped_list=rotated_sieve,
     )
 ]
 
@@ -67,7 +67,7 @@ sieve_list = [_ - 20 for _ in sieve_list]
 
 lst = [5, 6, 9, 11]
 lst = [_ - 24 for _ in lst]
-permutations = perm(lst)
+permutations = evans.Sequence(lst).permutations()
 c = [
     0,
     11,
@@ -100,7 +100,7 @@ cyclic_group = cyc([1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1])
 group_list = []
 for x in perms:
     group_list.append(next(cyclic_group))
-perm_list = grouper(perms, group_list)  # keep experimenting with this...
+perm_list = evans.Sequence(perms).grouper(group_list)  # keep experimenting with this...
 # print(permutations)
 # print(transpositions)
 # print(perms)
@@ -227,13 +227,15 @@ for x in range(-12, 26):
     walk_list.append(x)
     walk_list.append(x + 0.5)
 
-mirrored_walk_list = mirror(walk_list, sequential_duplicates=False)
-rotated_walk_list = rotate(mirrored_walk_list, 18)
+mirrored_walk_list = evans.Sequence(walk_list).mirror(sequential_duplicates=False)
+rotated_walk_list = evans.Sequence(mirrored_walk_list).rotate(18)
 
 random_walk_list = [
     x
-    for x in random_walk(
-        random_seed=2, length=1000, step_list=[1, 2, 2], mapped_list=rotated_walk_list
+    for x in evans.Sequence(rotated_walk_list).random_walk(
+        random_seed=2,
+        length=1000,
+        step_list=[1, 2, 2],
     )
 ]
 random_walk_list = [_ - 20 for _ in random_walk_list]
@@ -257,14 +259,13 @@ for x in chords:
     for y in x:
         y = y - 20
 # #####
-rotated_walk_list2 = rotate(mirrored_walk_list, 20)
+rotated_walk_list2 = evans.Sequence(mirrored_walk_list).rotate(20)
 runs = [
     x
-    for x in random_walk(
+    for x in evans.Sequence(rotated_walk_list2).random_walk(
         random_seed=2,
         length=1000,
         step_list=[1, 2, 1, 2, 3, 1, 2, 3, 4],
-        mapped_list=rotated_walk_list2,
     )
 ]
 runs = [_ - 20 for _ in runs]
