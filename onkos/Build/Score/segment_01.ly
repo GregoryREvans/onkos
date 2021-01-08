@@ -1040,7 +1040,7 @@
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
                             \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "16")
-                            \times 5/6 {
+                            \times 15/18 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 eqs8
                                 - \tenuto
@@ -1530,7 +1530,7 @@
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "16")
-                            \times 5/4 {
+                            \times 15/12 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bqf,8
                                 - \espressivo
@@ -2789,7 +2789,7 @@
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
                             \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "16")
-                            \times 5/6 {
+                            \times 15/18 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 bqf,8
                                 - \espressivo
@@ -3219,7 +3219,7 @@
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "16")
-                            \times 5/4 {
+                            \times 15/12 {
                                 \once \override Staff.NoteHead.style = #'default
                                 eqs,8
                                 - \tenuto
@@ -3357,7 +3357,7 @@
                         ]
                         \tweak text #tuplet-number::calc-fraction-text
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "8")
-                        \times 4/3 {
+                        \times 12/9 {
                             % [Voice 1 measure 36] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
                             d''4
@@ -4988,7 +4988,7 @@
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
                             \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "32")
-                            \times 5/6 {
+                            \times 15/18 {
                                 \once \override Staff.NoteHead.style = #'default
                                 bf,16
                                 - \espressivo
@@ -5478,7 +5478,7 @@
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "16")
-                            \times 5/4 {
+                            \times 15/12 {
                                 \once \override Staff.NoteHead.style = #'default
                                 bf8
                                 - \tenuto
