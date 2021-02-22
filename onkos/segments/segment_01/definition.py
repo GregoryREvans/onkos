@@ -42,7 +42,7 @@ for voice_name, timespan_list in all_timespans.items():
 
 
 for time_signature in time_signatures:
-    skip = abjad.Skip(1, multiplier=(time_signature))
+    skip = abjad.Skip(1, multiplier=(time_signature.pair))
     abjad.attach(time_signature, skip)
     score["Global Context"].append(skip)
 
@@ -79,8 +79,8 @@ for voice in abjad.select(score["Staff Group"]).components(abjad.Voice):
     container = abjad.Container()
     sig = time_signatures[-1]
     leaf_duration = sig.duration / 2
-    rest_leaf = abjad.Rest(1, multiplier=(leaf_duration))
-    mult_rest_leaf = abjad.MultimeasureRest(1, multiplier=(leaf_duration))
+    rest_leaf = abjad.Rest(1, multiplier=(leaf_duration.pair))
+    mult_rest_leaf = abjad.MultimeasureRest(1, multiplier=(leaf_duration.pair))
     container.append(rest_leaf)
     container.append(mult_rest_leaf)
     markup = abjad.Markup.musicglyph("scripts.ushortfermata", direction=abjad.Up)
@@ -174,7 +174,7 @@ for tuplet in abjad.select(score["Staff Group"]).components(abjad.Tuplet):
         else:
             notehead_wrapper = wrapper_pair[1]
             dots = ""
-        multiplier = 1
+        multiplier = (1, 1)
         abjad.tweak(
             tuplet
         ).TupletNumber.text = f'#(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text {imp_den * multiplier} {imp_num * multiplier}) "{notehead_wrapper}{dots}")'
