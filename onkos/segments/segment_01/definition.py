@@ -238,16 +238,16 @@ for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
 # print('Transforming Tuplet Brackets ...')
 # transformer = NoteheadBracketMaker()
 # transformer(score)
-score_block=abjad.Block(name="score")
+score_block = abjad.Block(name="score")
 score_block.items.append(score)
 
 false_string = r"tagline = ##f"
-header_block=abjad.Block(name="header")
+header_block = abjad.Block(name="header")
 header_block.items.append(false_string)
 
-layout_block=abjad.Block(name="layout")
+layout_block = abjad.Block(name="layout")
 
-paper_block=abjad.Block(name="paper")
+paper_block = abjad.Block(name="paper")
 
 score_file = abjad.LilyPondFile(
     items=[header_block, layout_block, paper_block, score_block],

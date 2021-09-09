@@ -256,9 +256,7 @@ class TextSpanHandler:
                         ] = fr"""\center-column {{ \upright \center-align \vcenter {start_string} }}"""
                 start_indicators = [
                     abjad.StartTextSpan(
-                        left_text=abjad.Markup(
-                            fr"{{ {start_string} }}", literal=True
-                        ),
+                        left_text=abjad.Markup(fr"{{ {start_string} }}", literal=True),
                         style=fr"{style}-with-arrow",
                         command=r"\startTextSpan" + span_command,
                         right_padding=1.4,
@@ -301,10 +299,7 @@ class TextSpanHandler:
         start_strings = [next(positions) for _ in runs]
         start_indicators = [
             abjad.StartTextSpan(
-                left_text=abjad.Markup(
-                    fr"\upright {{ {start_string} }}",
-                    literal=True
-                ),
+                left_text=abjad.Markup(fr"\upright {{ {start_string} }}", literal=True),
                 style=fr"{style}-with-hook",
                 command=r"\startTextSpan" + span_command,
                 right_padding=3,
