@@ -5,12 +5,7 @@
             % [Global Context measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \tempo 4=83-95
             \time 1/4
-            \mark \markup {
-                \bold
-                    {
-                        E
-                    }
-                }
+            \mark \markup \bold { E }
             s1 * 1/4
             % [Global Context measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 3/8
@@ -51,15 +46,10 @@
                 \context Voice = "Voice 1"
                 {
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \set Staff.instrumentName =
-                            \markup {
-                                \hcenter-in
-                                    #14
-                                    Contrabass
-                                }
+                            \markup \hcenter-in #14 Contrabass
                             \once \override TextScript.extra-offset = #'(0 . 10)
                             \clef "tenorvarC"
                             <ef' e'>4
@@ -119,7 +109,6 @@
                         \stopTextSpanThree
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
                             \clef "bass"
                             e,16
@@ -146,7 +135,6 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
                         \times 6/5 {
                             % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \clef "tenorvarC"
@@ -174,7 +162,6 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
                         \times 6/5 {
                             \clef "bass"
                             gqf,8
@@ -195,7 +182,6 @@
                         }
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \ottava 1
@@ -272,7 +258,6 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 15 14) "16")
                         \times 14/15 {
                             \clef "bass"
                             af,16
@@ -341,10 +326,7 @@
                         \stopTextSpanThree
                         \once \override MultiMeasureRest.color = #white
                         R1 * 1/16
-                        ^ \markup {
-                            \musicglyph
-                                #"scripts.uverylongfermata"
-                            }
+                        ^ \markup \center-align #"scripts.uverylongfermata" 
                         \bar "|."
                     }
                 }

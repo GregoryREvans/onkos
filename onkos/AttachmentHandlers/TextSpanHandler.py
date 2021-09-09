@@ -176,7 +176,9 @@ class TextSpanHandler:
         for run in abjad.select(container).runs():
             if len(run) < 2:
                 start_span = abjad.StartTextSpan(
-                    left_text=abjad.Markup(next(positions)).upright(),
+                    left_text=abjad.Markup(
+                        fr"\upright {{ {next(positions)} }}", literal=True
+                    ),
                     style=style + "-with-hook",
                     command=r"\startTextSpan" + span_command,
                 )
@@ -187,13 +189,17 @@ class TextSpanHandler:
                 abjad.tweak(start_span).staff_padding = span_padding
             else:
                 start_span = abjad.StartTextSpan(
-                    left_text=abjad.Markup(next(positions)).upright(),
+                    left_text=abjad.Markup(
+                        fr"\upright {{ {next(positions)} }}", literal=True
+                    ),
                     style=style + "-with-arrow",
                     command=r"\startTextSpan" + span_command,
                     right_padding=1.4,
                 )
                 stop_span = abjad.StartTextSpan(
-                    left_text=abjad.Markup(next(positions)).upright(),
+                    left_text=abjad.Markup(
+                        fr"\upright {{ {next(positions)} }}", literal=True
+                    ),
                     style=style + "-with-hook",
                     command=r"\startTextSpan" + span_command,
                     right_padding=3,
@@ -250,7 +256,9 @@ class TextSpanHandler:
                         ] = fr"""\center-column {{ \upright \center-align \vcenter {start_string} }}"""
                 start_indicators = [
                     abjad.StartTextSpan(
-                        left_text=abjad.Markup(start_string, literal=True),
+                        left_text=abjad.Markup(
+                            fr"{{ {start_string} }}", literal=True
+                        ),
                         style=fr"{style}-with-arrow",
                         command=r"\startTextSpan" + span_command,
                         right_padding=1.4,
@@ -293,7 +301,10 @@ class TextSpanHandler:
         start_strings = [next(positions) for _ in runs]
         start_indicators = [
             abjad.StartTextSpan(
-                left_text=abjad.Markup(start_string).upright(),
+                left_text=abjad.Markup(
+                    fr"\upright {{ {start_string} }}",
+                    literal=True
+                ),
                 style=fr"{style}-with-hook",
                 command=r"\startTextSpan" + span_command,
                 right_padding=3,

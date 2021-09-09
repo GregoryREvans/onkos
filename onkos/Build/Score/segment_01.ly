@@ -68,12 +68,7 @@
             s1 * 3/4
             % [Global Context measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 1/1
-            \mark \markup {
-                \bold
-                    {
-                        A
-                    }
-                }
+            \mark \markup \bold { A }
             s1 * 1
             % [Global Context measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 1/1
@@ -92,12 +87,7 @@
             s1 * 1/2
             % [Global Context measure 28] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 1/1
-            \mark \markup {
-                \bold
-                    {
-                        B
-                    }
-                }
+            \mark \markup \bold { B }
             s1 * 1
             % [Global Context measure 29] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 7/8
@@ -140,12 +130,7 @@
             s1 * 3/4
             % [Global Context measure 42] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 7/8
-            \mark \markup {
-                \bold
-                    {
-                        C
-                    }
-                }
+            \mark \markup \bold { C }
             s1 * 7/8
             % [Global Context measure 43] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 9/8
@@ -191,12 +176,7 @@
             s1 * 5/8
             % [Global Context measure 57] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 9/8
-            \mark \markup {
-                \bold
-                    {
-                        D
-                    }
-                }
+            \mark \markup \bold { D }
             s1 * 9/8
             % [Global Context measure 58] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 5/8
@@ -248,11 +228,7 @@
                     {
                         % [Voice 1 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \set Staff.instrumentName =
-                        \markup {
-                            \hcenter-in
-                                #14
-                                Contrabass
-                            }
+                        \markup \hcenter-in #14 Contrabass
                         \once \override Staff.NoteHead.style = #'default
                         \clef "tenorvarC"
                         b8
@@ -263,16 +239,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            st. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "1/2 hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { 1/2 hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         [
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -283,7 +257,6 @@
                         :32
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             \once \override Staff.NoteHead.style = #'triangle
                             d''8.
@@ -311,16 +284,13 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 8) "8")
                         \times 8/13 {
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "32")
                             \times 4/5 {
                                 % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'default
@@ -344,30 +314,28 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    msp. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #16.5
+                                - \tweak staff-padding 16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    clt. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { clt. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #19.5
+                                - \tweak staff-padding 19.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'default
                                 eqf16.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
@@ -376,60 +344,58 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 3) "8")
                             \times 3/5 {
                                 \once \override Staff.NoteHead.style = #'default
                                 d4
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'triangle
                                 fqs8
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 eqf4
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "16")
                             \times 6/7 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fs4
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 gqf8.
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
@@ -454,18 +420,16 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
                             % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -478,16 +442,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                st. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "1/2 clt." \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'triangle
                             f'4.
@@ -500,10 +462,9 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                sp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -535,9 +496,7 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 17 14) "16")
                         \times 14/17 {
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "16.")
                             \times 2/3 {
                                 % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'default
@@ -561,21 +520,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    st. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #16.5
+                                - \tweak staff-padding 16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    "1/2 clt." \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #19.5
+                                - \tweak staff-padding 19.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bf8
@@ -583,9 +540,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bf32
@@ -595,20 +552,19 @@
                             aqf4
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "16.")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 fs16
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -616,41 +572,40 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fs8
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "16")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'default
                                 gqf4
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 eqf8.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                             }
@@ -676,19 +631,17 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "16")
                         \times 6/5 {
                             % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
@@ -701,16 +654,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                clt. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { clt. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             eqf'8.
@@ -720,18 +671,15 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 4) "8.")
                         \times 4/7 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 10) "32")
                             \times 10/11 {
                                 % [Voice 1 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -754,21 +702,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    sp. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #16.5
+                                - \tweak staff-padding 16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    "3/4 hair" \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { 3/4 hair } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #19.5
+                                - \tweak staff-padding 19.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'default
                                 cqs8
@@ -776,9 +722,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 cqs32
@@ -789,20 +735,19 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "32.")
                             \times 4/5 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 d16
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -811,9 +756,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fqs64
@@ -822,31 +767,30 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "16")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'default
                                 fs4
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 fqs8.
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -871,13 +815,12 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -904,15 +847,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            st. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
 
                                         - \tweak arrow-length #2
@@ -921,16 +863,15 @@
                                         - \tweak thickness #2.5
                                         \glissando
 
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'triangle
                             dqf4
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -961,22 +902,19 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 9) "8")
                         \times 9/13 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "16")
                             \times 6/11 {
                                 % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'default
@@ -1000,21 +938,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    ord. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #16.5
+                                - \tweak staff-padding 16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    "1/2 clt." \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #19.5
+                                - \tweak staff-padding 19.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'triangle
                                 aqf4
@@ -1022,9 +958,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'triangle
                                 aqf16
@@ -1034,21 +970,20 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "16")
                             \times 15/18 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 eqs8
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -1056,31 +991,30 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 ef8
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "16")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'default
                                 d4
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fqs4
@@ -1088,9 +1022,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fqs16
@@ -1117,19 +1051,17 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 5 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                st. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "8")
                         \times 4/3 {
                             % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'triangle
@@ -1153,15 +1085,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                sp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             [
 
@@ -1176,9 +1107,9 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -1193,13 +1124,12 @@
                             \stopTextSpanOne
                             ~
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             ]
                         }
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             cqs2
@@ -1232,13 +1162,12 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -1255,16 +1184,14 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            st. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "1/2 clt." \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'triangle
                         eqf'16
@@ -1280,7 +1207,6 @@
                         :32
                         ~
                         ]
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'triangle
                             aqf''4
@@ -1293,10 +1219,9 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -1319,16 +1244,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            st. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "1/2 hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { 1/2 hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         [
                         \once \override Staff.NoteHead.style = #'triangle
@@ -1339,10 +1262,9 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            sp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         ]
                     }
@@ -1369,15 +1291,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
 
                                         - \tweak arrow-length #2
@@ -1391,9 +1312,9 @@
                         - \tenuto
                         \stopTextSpanOne
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
 
                                         - \tweak arrow-length #2
@@ -1424,20 +1345,17 @@
                         - \abjad-invisible-line
                         - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            st. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 29 16) "16")
                         \times 16/29 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "16")
                             \times 6/11 {
                                 % [Voice 1 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'triangle
@@ -1461,21 +1379,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    ord. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #16.5
+                                - \tweak staff-padding 16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    clt. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { clt. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #19.5
+                                - \tweak staff-padding 19.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 gqf4
@@ -1483,9 +1399,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 gqf16
@@ -1495,18 +1411,18 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \scaleDurations #'(1 . 1) {
                                 \once \override Staff.NoteHead.style = #'default
                                 fqs8
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -1514,40 +1430,39 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 cqs8
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "16")
                             \times 15/12 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bqf,8
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 b,8
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
@@ -1573,13 +1488,12 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                sp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -1597,19 +1511,16 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            st. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "flat hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 3) "8")
                         \times 3/4 {
                             \once \override Staff.NoteHead.style = #'default
                             f8
@@ -1618,16 +1529,14 @@
                             - \tenuto
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             % [Voice 1 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
@@ -1641,16 +1550,14 @@
                             \stopTextSpanThree
                             ~
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "1/2 clt." \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'default
                             e''16
@@ -1666,7 +1573,6 @@
                         bf'8.
                         :32
                         ~
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
                             % [Voice 1 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'triangle
@@ -1683,10 +1589,9 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             [
                         }
@@ -1713,15 +1618,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
 
                                         - \tweak arrow-length #2
@@ -1735,9 +1639,9 @@
                         - \accent
                         \stopTextSpanOne
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
 
                                         - \tweak arrow-length #2
@@ -1752,12 +1656,11 @@
                         \stopTextSpanOne
                         ~
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
                         ]
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             % [Voice 1 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
@@ -1777,7 +1680,7 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                         }
                         % [Voice 1 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1799,10 +1702,9 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            sp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
@@ -1814,7 +1716,6 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "8")
                         \times 5/6 {
                             \once \override Staff.NoteHead.style = #'triangle
                             \clef "bass"
@@ -1837,15 +1738,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
 
                                             - \tweak arrow-length #2
@@ -1859,9 +1759,9 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -1877,9 +1777,9 @@
                         - \tenuto
                         \stopTextSpanOne
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
                         [
 
@@ -1911,18 +1811,16 @@
                         - \abjad-invisible-line
                         - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             \once \override Staff.NoteHead.style = #'triangle
                             \clef "tenorvarC"
@@ -1934,16 +1832,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                st. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                clt. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { clt. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             ]
                             \once \override Staff.NoteHead.style = #'default
@@ -1971,10 +1867,9 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         ]
                     }
@@ -1990,16 +1885,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            sp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "flat hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         % [Voice 1 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \once \override Staff.NoteHead.style = #'default
@@ -2007,10 +1900,9 @@
                         - \tenuto
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            msp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
@@ -2021,7 +1913,6 @@
                         \stopTextSpanThree
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8.")
                         \times 4/5 {
                             % [Voice 1 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -2045,39 +1936,37 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "1/2 clt." \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             [
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             a,16.
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'default
                             bf,8.
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \scaleDurations #'(1 . 1) {
                                 \once \override Staff.NoteHead.style = #'default
@@ -2085,27 +1974,27 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 b,16
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bqf,16
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
@@ -2113,18 +2002,18 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'triangle
                             cqs16.
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             b,8.
@@ -2147,20 +2036,18 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             ]
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "16")
                         \times 6/7 {
                             % [Voice 1 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
@@ -2173,16 +2060,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                st. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "1/2 clt." \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             aqs8.
@@ -2211,16 +2096,13 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            sp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 8) "8")
                         \times 8/13 {
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "32")
                             \times 4/5 {
                                 % [Voice 1 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -2244,30 +2126,28 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    st. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #16.5
+                                - \tweak staff-padding 16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    "3/4 hair" \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { 3/4 hair } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #19.5
+                                - \tweak staff-padding 19.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'default
                                 a,16.
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
@@ -2276,60 +2156,58 @@
                             - \espressivo
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 3) "8")
                             \times 3/5 {
                                 \once \override Staff.NoteHead.style = #'default
                                 a,4
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fqs,8
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 g,4
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "16")
                             \times 6/7 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 eqs,4
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 fqs,8.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -2337,15 +2215,13 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                         }
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 17 14) "16")
                         \times 14/17 {
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "16.")
                             \times 2/3 {
                                 % [Voice 1 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'default
@@ -2353,9 +2229,9 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -2364,9 +2240,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 a,32
@@ -2377,61 +2253,59 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "16.")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 aqs,16
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
                                 bf,16.
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'triangle
                                 aqs,8
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "16")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 a,4
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 b,8.
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                             }
@@ -2457,19 +2331,17 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 5 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "16")
                         \times 4/3 {
                             % [Voice 1 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'triangle
@@ -2482,16 +2354,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "1/2 hair" \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { 1/2 hair } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'default
                             eqs'16
@@ -2504,15 +2374,13 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                         \times 4/5 {
                             \clef "bass"
                             e16
@@ -2533,10 +2401,8 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "8.")
                         \times 6/7 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 10) "32")
                             \times 10/11 {
                                 % [Voice 1 measure 26] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'default
@@ -2560,21 +2426,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    sp. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #16.5
+                                - \tweak staff-padding 16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    "1/2 clt." \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #19.5
+                                - \tweak staff-padding 19.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'default
                                 b,8
@@ -2582,9 +2446,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 b,32
@@ -2594,20 +2458,19 @@
                             c4
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "32.")
                             \times 4/5 {
                                 \once \override Staff.NoteHead.style = #'default
                                 b,16
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'triangle
@@ -2616,9 +2479,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'triangle
                                 d64
@@ -2627,32 +2490,31 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "16")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bqf,4
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 b,8.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
@@ -2677,13 +2539,12 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -2701,32 +2562,27 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "flat hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
                         f'4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            st. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 8) "8")
                         \times 8/13 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "16")
                             \times 6/11 {
                                 % [Voice 1 measure 28] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'default
@@ -2749,21 +2605,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    ord. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #16.5
+                                - \tweak staff-padding 16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    clt. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { clt. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #19.5
+                                - \tweak staff-padding 19.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bf,4
@@ -2771,9 +2625,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bf,16
@@ -2783,21 +2637,20 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "16")
                             \times 15/18 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 bqf,8
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -2805,41 +2658,40 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bqf,8
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "16")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'default
                                 bf,4
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 cqs4
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 cqs16
@@ -2866,13 +2718,12 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                st. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -2900,15 +2751,14 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            st. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         \once \override Staff.NoteHead.style = #'default
                         fqs4
@@ -2925,11 +2775,10 @@
                         \stopTextSpanOne
                         ~
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 30] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'triangle
@@ -2963,13 +2812,12 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 4 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -2985,18 +2833,15 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            st. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "1/2 clt." \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'triangle
                             e'16
@@ -3008,10 +2853,9 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -3035,16 +2879,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "flat hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
                         af'4
@@ -3054,10 +2896,9 @@
                         af'4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            sp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
@@ -3083,9 +2924,8 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            sp. \hspace #0.5 }
-                        - \tweak staff-padding #16.5
+                        - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
@@ -3100,33 +2940,28 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            msp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "flat hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
                         af,8
                         - \tenuto
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 29 16) "16")
                         \times 16/29 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "16")
                             \times 6/11 {
                                 % [Voice 1 measure 33] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -3150,21 +2985,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    ord. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #16.5
+                                - \tweak staff-padding 16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    "1/2 clt." \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #19.5
+                                - \tweak staff-padding 19.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'default
                                 cqs4
@@ -3172,9 +3005,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 cqs16
@@ -3184,9 +3017,9 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \scaleDurations #'(1 . 1) {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -3194,9 +3027,9 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -3204,39 +3037,38 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 g,8
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "16")
                             \times 15/12 {
                                 \once \override Staff.NoteHead.style = #'default
                                 eqs,8
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 e,8
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
@@ -3262,18 +3094,16 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                sp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 34] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
@@ -3287,16 +3117,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                st. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "flat hair" \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'default
                             d'8
@@ -3307,15 +3135,13 @@
                         d'4.
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             % [Voice 1 measure 35] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
@@ -3328,16 +3154,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                st. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                clt. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { clt. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             e4
@@ -3356,7 +3180,6 @@
                         - \accent
                         ]
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "8")
                         \times 12/9 {
                             % [Voice 1 measure 36] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
@@ -3369,10 +3192,9 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                sp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             [
                         }
@@ -3399,15 +3221,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            msp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
 
                                         - \tweak arrow-length #2
@@ -3421,9 +3242,9 @@
                         - \tenuto
                         \stopTextSpanOne
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
 
                                         - \tweak arrow-length #2
@@ -3438,9 +3259,9 @@
                         \stopTextSpanOne
                         ~
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
                         ]
                         % [Voice 1 measure 37] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -3459,9 +3280,9 @@
                         \stopTextSpanOne
                         ~
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
                         % [Voice 1 measure 38] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \once \override Staff.NoteHead.style = #'triangle
@@ -3478,9 +3299,9 @@
                         - \tenuto
                         \stopTextSpanOne
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
 
                                         - \tweak arrow-length #2
@@ -3490,16 +3311,15 @@
                                         \glissando
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "8")
                         \times 5/6 {
                             \once \override Staff.NoteHead.style = #'triangle
                             cs2
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -3513,9 +3333,9 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             [
 
@@ -3533,7 +3353,7 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             ]
                         }
@@ -3556,10 +3376,9 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
@@ -3573,16 +3392,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            msp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "1/2 clt." \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         [
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -3594,7 +3411,6 @@
                         - \espressivo
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "16")
                         \times 4/3 {
                             \once \override Staff.NoteHead.style = #'triangle
                             cs''16
@@ -3607,10 +3423,9 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             ]
                         }
@@ -3628,26 +3443,23 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            sp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "flat hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         % [Voice 1 measure 40] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \once \override Staff.NoteHead.style = #'default
                         fs'4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            msp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
@@ -3666,7 +3478,6 @@
                         \<
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8.")
                         \times 4/5 {
                             % [Voice 1 measure 41] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
@@ -3690,66 +3501,64 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "3/4 hair" \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { 3/4 hair } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'triangle
                             g,16.
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             fqs,8.
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \scaleDurations #'(1 . 1) {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 af,16
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 a,16
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 af,16
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
@@ -3757,33 +3566,31 @@
                             - \espressivo
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             fqs,16.
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'default
                             g,8.
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                         }
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 7) "8")
                         \times 7/13 {
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "32")
                             \times 4/5 {
                                 % [Voice 1 measure 42] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'triangle
@@ -3791,17 +3598,17 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 e,16.
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
@@ -3810,76 +3617,72 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 3) "8")
                             \times 3/5 {
                                 \once \override Staff.NoteHead.style = #'default
                                 e,4
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 g,8
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 fqs,4
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "16")
                             \times 6/7 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 af,4
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 g,8.
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'triangle
                             af,4
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                         }
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 9) "8")
                         \times 9/13 {
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "32")
                             \times 4/5 {
                                 % [Voice 1 measure 43] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -3887,9 +3690,9 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -3897,9 +3700,9 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
@@ -3908,60 +3711,58 @@
                             - \espressivo
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 3) "8")
                             \times 3/5 {
                                 \once \override Staff.NoteHead.style = #'default
                                 aqs,4
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 bf,8
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 aqs,4
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "16")
                             \times 6/7 {
                                 \once \override Staff.NoteHead.style = #'default
                                 a,4
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'triangle
                                 fqs,8.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -3986,13 +3787,12 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -4008,23 +3808,20 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            st. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "1/2 hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { 1/2 hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         [
                         \once \override Staff.NoteHead.style = #'harmonic-mixed
                         cs''8.
                         :32
                         ~
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                         \times 4/5 {
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             cs''8.
@@ -4035,7 +3832,6 @@
                             ~
                         }
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "16")
                         \times 6/5 {
                             \once \override Staff.NoteHead.style = #'triangle
                             d''8
@@ -4048,16 +3844,14 @@
                             \<
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             ]
                         }
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             % [Voice 1 measure 45] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'triangle
@@ -4081,15 +3875,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                st. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
 
                                             - \tweak arrow-length #2
@@ -4120,19 +3913,17 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 3) "8")
                         \times 3/4 {
                             \once \override Staff.NoteHead.style = #'default
                             \clef "bass"
@@ -4145,26 +3936,23 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "flat hair" \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'default
                             a,8
                             - \tenuto
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                st. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -4176,9 +3964,7 @@
                         \stopTextSpanThree
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 17 16) "16")
                         \times 16/17 {
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "16.")
                             \times 2/3 {
                                 % [Voice 1 measure 46] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -4202,21 +3988,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    st. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #16.5
+                                - \tweak staff-padding 16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    "1/2 clt." \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #19.5
+                                - \tweak staff-padding 19.5
                                 \startTextSpanThree
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -4225,9 +4009,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 bf,32
@@ -4238,61 +4022,59 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "16.")
                             \times 2/3 {
                                 \once \override Staff.NoteHead.style = #'default
                                 bf,16
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 g,16.
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 a,8
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "16")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'triangle
                                 bqf,4
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bf,8.
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                             }
@@ -4318,13 +4100,12 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             ]
                         }
@@ -4343,32 +4124,27 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "flat hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
                         ef4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            sp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 21 16) "16")
                         \times 16/21 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 10) "32")
                             \times 10/11 {
                                 % [Voice 1 measure 48] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'default
@@ -4392,21 +4168,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    sp. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #16.5
+                                - \tweak staff-padding 16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    clt. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { clt. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #19.5
+                                - \tweak staff-padding 19.5
                                 \startTextSpanThree
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -4415,9 +4189,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 a,32
@@ -4427,20 +4201,19 @@
                             g,4
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "32.")
                             \times 4/5 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 aqs,16
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -4449,9 +4222,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 bf,64
@@ -4460,32 +4233,31 @@
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 5) "16")
                             \times 5/7 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 a,4
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 b,8.
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
@@ -4510,13 +4282,12 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 5 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -4533,26 +4304,23 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            msp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "flat hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
                         cs4.
                         - \tenuto
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
@@ -4567,16 +4335,14 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            st. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "1/2 clt." \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
                         fs'16
@@ -4608,10 +4374,9 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            sp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         [
                     }
@@ -4637,15 +4402,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            sp. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         ]
 
@@ -4660,9 +4424,9 @@
                         - \tenuto
                         \stopTextSpanOne
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
 
                                         - \tweak arrow-length #2
@@ -4678,9 +4442,9 @@
                         \stopTextSpanOne
                         ~
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
                         % [Voice 1 measure 53] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \once \override Staff.NoteHead.style = #'default
@@ -4698,9 +4462,9 @@
                         - \accent
                         \stopTextSpanOne
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
 
                                         - \tweak arrow-length #2
@@ -4715,16 +4479,15 @@
                         \stopTextSpanOne
                         ~
                         - \abjad-solid-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #12
+                        - \tweak staff-padding 12
                         \startTextSpanOne
                         ]
                         \once \override Staff.NoteHead.style = #'default
                         cqs4
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "8")
                         \times 5/4 {
                             \once \override Staff.NoteHead.style = #'default
                             cqs8
@@ -4740,9 +4503,9 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -4752,7 +4515,6 @@
                                             \glissando
 
                         }
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 54] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'triangle
@@ -4760,9 +4522,9 @@
                             - \espressivo
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -4793,19 +4555,17 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 8) "16")
                         \times 8/7 {
                             \once \override Staff.NoteHead.style = #'default
                             \clef "tenorvarC"
@@ -4818,16 +4578,14 @@
                             \stopTextSpanThree
                             ~
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                clt. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { clt. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'default
                             dqs'16
@@ -4847,10 +4605,9 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
@@ -4865,16 +4622,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            st. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "flat hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
                         e'8
@@ -4886,10 +4641,9 @@
                         e'4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
@@ -4914,17 +4668,14 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
-                        - \tweak staff-padding #16.5
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 10) "16")
                         \times 10/13 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "32")
                             \times 6/11 {
                                 % [Voice 1 measure 56] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'default
@@ -4947,21 +4698,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    ord. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #16.5
+                                - \tweak staff-padding 16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    "1/2 clt." \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #19.5
+                                - \tweak staff-padding 19.5
                                 \startTextSpanThree
                                 [
                                 \once \override Staff.NoteHead.style = #'default
@@ -4970,9 +4719,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 b,32
@@ -4982,61 +4731,59 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "32")
                             \times 15/18 {
                                 \once \override Staff.NoteHead.style = #'default
                                 bf,16
                                 - \espressivo
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'triangle
                                 cqs16
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 d16
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 5) "32")
                             \times 5/9 {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 eqs8
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 eqf8
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 eqf32
@@ -5063,19 +4810,17 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                st. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "8")
                         \times 4/3 {
                             % [Voice 1 measure 57] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'triangle
@@ -5099,15 +4844,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                st. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
 
                                             - \tweak arrow-length #2
@@ -5121,9 +4865,9 @@
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -5140,7 +4884,7 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 1 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             ]
                         }
@@ -5162,10 +4906,9 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                     }
                     {
@@ -5176,7 +4919,6 @@
                         \stopTextSpanThree
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
                         \times 2/3 {
                             % [Voice 1 measure 58] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
@@ -5200,15 +4942,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                sp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
 
                                             - \tweak arrow-length #2
@@ -5239,13 +4980,12 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 3 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -5261,19 +5001,16 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            sp. \hspace #0.5 }
-                        - \tweak staff-padding #16.5
+                        - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "flat hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
                             % [Voice 1 measure 59] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
@@ -5285,16 +5022,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                st. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "1/2 clt." \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'triangle
                             e''4
@@ -5306,7 +5041,6 @@
                             [
                         }
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "16")
                         \times 4/3 {
                             % [Voice 1 measure 60] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
@@ -5329,15 +5063,13 @@
                         \<
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         ]
                     }
                     {
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "8")
                         \times 8/9 {
                             % [Voice 1 measure 61] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
@@ -5351,16 +5083,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "flat hair" \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             \once \override Staff.NoteHead.style = #'default
                             <b, ef>2
@@ -5373,19 +5103,16 @@
                             - \accent
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 29 18) "16")
                         \times 18/29 {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 6) "16")
                             \times 6/11 {
                                 % [Voice 1 measure 62] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                                 \once \override Staff.NoteHead.style = #'default
@@ -5409,21 +5136,19 @@
                                 \stopTextSpanTwo
                                 \stopTextSpanThree
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    ord. \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #16.5
+                                - \tweak staff-padding 16.5
                                 \startTextSpanTwo
                                 - \abjad-solid-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright
-                                    "3/4 hair" \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright { 3/4 hair } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #19.5
+                                - \tweak staff-padding 19.5
                                 \startTextSpanThree
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 gqf4
@@ -5431,9 +5156,9 @@
                                 \stopTextSpanOne
                                 ~
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 gqf16
@@ -5443,9 +5168,9 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \scaleDurations #'(1 . 1) {
                                 \once \override Staff.NoteHead.style = #'triangle
@@ -5453,9 +5178,9 @@
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 [
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -5463,39 +5188,38 @@
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 aqs8
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \tweak text #tuplet-number::calc-fraction-text
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "16")
                             \times 15/12 {
                                 \once \override Staff.NoteHead.style = #'default
                                 bf8
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 gqf8
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 ]
                             }
@@ -5521,13 +5245,12 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                sp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -5544,23 +5267,20 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            st. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "flat hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         \once \override Staff.NoteHead.style = #'default
                         bf2
                         - \espressivo
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "8")
                         \times 4/3 {
                             \once \override Staff.NoteHead.style = #'default
                             bf8
@@ -5569,10 +5289,9 @@
                             - \tenuto
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -5585,7 +5304,6 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 15 14) "16")
                         \times 14/15 {
                             % [Voice 1 measure 64] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
@@ -5609,21 +5327,19 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 4 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "1/2 clt." \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { 1/2 clt. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             [
                             \once \override Staff.NoteHead.style = #'default
@@ -5631,45 +5347,45 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'triangle
                             bqf8.
                             - \accent
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \scaleDurations #'(1 . 1) {
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 bf16
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'harmonic-mixed
                                 gqf16
                                 - \tenuto
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                                 \once \override Staff.NoteHead.style = #'default
                                 aqf16
                                 - \accent
                                 \stopTextSpanOne
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 5 7 } } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #12
+                                - \tweak staff-padding 12
                                 \startTextSpanOne
                             }
                             \once \override Staff.NoteHead.style = #'default
@@ -5677,18 +5393,18 @@
                             - \espressivo
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'default
                             fqs16.
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             \once \override Staff.NoteHead.style = #'harmonic-mixed
                             eqs8.
@@ -5712,13 +5428,12 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 7 7 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             ]
                         }
@@ -5743,20 +5458,17 @@
                         \stopTextSpanTwo
                         \stopTextSpanThree
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            sp. \hspace #0.5 }
-                        - \tweak staff-padding #16.5
+                        - \tweak bound-details.left.text \markup \concat { \upright { sp. } \hspace #0.5 }
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "flat hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "8")
                         \times 5/4 {
                             % [Voice 1 measure 66] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'triangle
@@ -5780,15 +5492,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 2 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
 
                                             - \tweak arrow-length #2
@@ -5802,9 +5513,9 @@
                             - \tenuto
                             \stopTextSpanOne
                             - \abjad-solid-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 } \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 3 5 } } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
 
                                             - \tweak arrow-length #2
@@ -5835,20 +5546,18 @@
                             - \abjad-invisible-line
                             - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction 4 5 } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #12
+                            - \tweak staff-padding 12
                             \startTextSpanOne
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                st. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             [
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 3) "8")
                         \times 3/4 {
                             \once \override Staff.NoteHead.style = #'default
                             \clef "bass"
@@ -5861,16 +5570,14 @@
                             \stopTextSpanTwo
                             \stopTextSpanThree
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { msp. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 1.4
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                             - \abjad-solid-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "flat hair" \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #19.5
+                            - \tweak staff-padding 19.5
                             \startTextSpanThree
                             ]
                             \once \override Staff.NoteHead.style = #'default
@@ -5878,10 +5585,9 @@
                             - \tenuto
                             \stopTextSpanTwo
                             - \abjad-dashed-line-with-hook
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                ord. \hspace #0.5 }
+                            - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                             - \tweak bound-details.right.padding 3
-                            - \tweak staff-padding #16.5
+                            - \tweak staff-padding 16.5
                             \startTextSpanTwo
                         }
                     }
@@ -5906,16 +5612,14 @@
                         \stopTextSpanThree
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            st. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { st. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         - \abjad-solid-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "flat hair" \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { flat hair } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #19.5
+                        - \tweak staff-padding 19.5
                         \startTextSpanThree
                         % [Voice 1 measure 68] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \once \override Staff.NoteHead.style = #'default
@@ -5927,7 +5631,6 @@
                         a4
                         - \tenuto
                         ~
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                         \times 4/5 {
                             % [Voice 1 measure 69] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \once \override Staff.NoteHead.style = #'default
@@ -5949,10 +5652,9 @@
                         af4
                         \stopTextSpanTwo
                         - \abjad-dashed-line-with-hook
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            ord. \hspace #0.5 }
+                        - \tweak bound-details.left.text \markup \concat { \upright { ord. } \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #16.5
+                        - \tweak staff-padding 16.5
                         \startTextSpanTwo
                         \bar "||"
                     }
@@ -5967,10 +5669,7 @@
                         \stopTextSpanThree
                         \once \override MultiMeasureRest.color = #white
                         R1 * 1/16
-                        ^ \markup {
-                            \musicglyph
-                                #"scripts.ushortfermata"
-                            }
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" 
                         \stopStaff \startStaff
                     }
                 }

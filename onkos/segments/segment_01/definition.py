@@ -83,8 +83,11 @@ for voice in abjad.select(score["Staff Group"]).components(abjad.Voice):
     mult_rest_leaf = abjad.MultimeasureRest(1, multiplier=(leaf_duration.pair))
     container.append(rest_leaf)
     container.append(mult_rest_leaf)
-    markup = abjad.Markup.musicglyph("scripts.ushortfermata", direction=abjad.Up)
-    markup.center_align()
+    markup = abjad.Markup(
+        r"""\markup \center-align \musicglyph #"scripts.ushortfermata" """,
+        direction=abjad.Up,
+        literal=True,
+    )
     start_command = abjad.LilyPondLiteral(
         r"\stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff",
         format_slot="before",
@@ -175,9 +178,9 @@ for tuplet in abjad.select(score["Staff Group"]).components(abjad.Tuplet):
             notehead_wrapper = wrapper_pair[1]
             dots = ""
         multiplier = (1, 1)
-        abjad.tweak(
-            tuplet
-        ).TupletNumber.text = f'#(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text {imp_den * multiplier} {imp_num * multiplier}) "{notehead_wrapper}{dots}")'
+        # abjad.tweak(
+        #     tuplet
+        # ).TupletNumber.text = f'#(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text {imp_den * multiplier} {imp_num * multiplier}) "{notehead_wrapper}{dots}")'
 
 staffs = [
     staff for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff)
@@ -187,29 +190,24 @@ print("Adding attachments ...")
 bar_line = abjad.BarLine("||")
 metro = abjad.MetronomeMark((1, 4), (63, 72))
 
-markup2 = abjad.Markup(r"\bold { A }")
+markup2 = abjad.Markup(r"\markup \bold { A }", literal=True)
 mark2 = abjad.RehearsalMark(markup=markup2)
 
-markup3 = abjad.Markup(r"\bold { B }")
+markup3 = abjad.Markup(r"\markup \bold { B }", literal=True)
 mark3 = abjad.RehearsalMark(markup=markup3)
 
-markup4 = abjad.Markup(r"\bold { C }")
+markup4 = abjad.Markup(r"\markup \bold { C }", literal=True)
 mark4 = abjad.RehearsalMark(markup=markup4)
 
-markup5 = abjad.Markup(r"\bold { D }")
+markup5 = abjad.Markup(r"\markup \bold { D }", literal=True)
 mark5 = abjad.RehearsalMark(markup=markup5)
 
-# instruments = cyc([abjad.Viola()])
 instruments = cyc([abjad.Contrabass()])
 
-# mark_abbreviation = abjad.Markup("vla.")
-mark_abbreviation = abjad.Markup("cb.")
-mark_abbreviation = mark_abbreviation.hcenter_in(12)
+mark_abbreviation = abjad.Markup(r"\markup \hcenter-in #12 cb.", literal=True)
 abbreviations = cyc([abjad.MarginMarkup(markup=mark_abbreviation)])
 
-# mark_name = abjad.Markup("Viola")
-mark_name = abjad.Markup("Contrabass")
-mark_name = mark_name.hcenter_in(14)
+mark_name = abjad.Markup(r"\markup \hcenter-in #14 Contrabass", literal=True)
 names = cyc([abjad.StartMarkup(markup=mark_name)])
 
 for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
@@ -240,8 +238,19 @@ for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
 # print('Transforming Tuplet Brackets ...')
 # transformer = NoteheadBracketMaker()
 # transformer(score)
-score_file = abjad.LilyPondFile.new(
-    score,
+score_block=abjad.Block(name="score")
+score_block.items.append(score)
+
+false_string = r"tagline = ##f"
+header_block=abjad.Block(name="header")
+header_block.items.append(false_string)
+
+layout_block=abjad.Block(name="layout")
+
+paper_block=abjad.Block(name="paper")
+
+score_file = abjad.LilyPondFile(
+    items=[header_block, layout_block, paper_block, score_block],
     includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/evans/lilypond/evans-markups.ily",
