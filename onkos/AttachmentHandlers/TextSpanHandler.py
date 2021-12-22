@@ -54,7 +54,7 @@ class TextSpanHandler:
     #     print('Adding After Grace to runs ...')
     #     container = abjad.Container()
     #     container.extend(selections)
-    #     for run in abjad.select(container).runs():
+    #     for run in abjad.Selection(container).runs():
     #         string = '#(define afterGraceFraction (cons 15 16))'
     #         literal = abjad.LilyPondLiteral(string)
     #         abjad.attach(literal, run[0])
@@ -160,7 +160,7 @@ class TextSpanHandler:
         # print('Adding empty spanner ...')
         container = abjad.Container()
         container.extend(selections)
-        first_leaf = abjad.select(container).leaves()[0]
+        first_leaf = abjad.Selection(container).leaves()[0]
         abjad.attach(
             abjad.StopTextSpan(command=r"\stopTextSpan" + span_command), first_leaf
         )
@@ -173,11 +173,11 @@ class TextSpanHandler:
         # self._add_after_grace(selections)
         container = abjad.Container()
         container.extend(selections)
-        for run in abjad.select(container).runs():
+        for run in abjad.Selection(container).runs():
             if len(run) < 2:
                 start_span = abjad.StartTextSpan(
                     left_text=abjad.Markup(
-                        fr"\upright {{ {next(positions)} }}", literal=True
+                        fr"\upright {{ {next(positions)} }}",
                     ),
                     style=style + "-with-hook",
                     command=r"\startTextSpan" + span_command,
@@ -190,7 +190,7 @@ class TextSpanHandler:
             else:
                 start_span = abjad.StartTextSpan(
                     left_text=abjad.Markup(
-                        fr"\upright {{ {next(positions)} }}", literal=True
+                        fr"\upright {{ {next(positions)} }}",
                     ),
                     style=style + "-with-arrow",
                     command=r"\startTextSpan" + span_command,
@@ -198,7 +198,7 @@ class TextSpanHandler:
                 )
                 stop_span = abjad.StartTextSpan(
                     left_text=abjad.Markup(
-                        fr"\upright {{ {next(positions)} }}", literal=True
+                        fr"\upright {{ {next(positions)} }}",
                     ),
                     style=style + "-with-hook",
                     command=r"\startTextSpan" + span_command,
@@ -223,9 +223,9 @@ class TextSpanHandler:
         # self._add_after_grace(selections)
         container = abjad.Container()
         container.extend(selections)
-        for run in abjad.select(container).runs():
+        for run in abjad.Selection(container).runs():
             if len(run) > 1:
-                ties = abjad.select(run).logical_ties(pitched=True)
+                ties = abjad.Selection(run).logical_ties(pitched=True)
                 distance = len(ties)
                 start_strings = [next(positions) for _ in range(distance)]
                 for i, start_string in enumerate(start_strings[:-1]):
@@ -256,7 +256,9 @@ class TextSpanHandler:
                         ] = fr"""\center-column {{ \upright \center-align \vcenter {start_string} }}"""
                 start_indicators = [
                     abjad.StartTextSpan(
-                        left_text=abjad.Markup(fr"{{ {start_string} }}", literal=True),
+                        left_text=abjad.Markup(
+                            fr"{{ {start_string} }}",
+                        ),
                         style=fr"{style}-with-arrow",
                         command=r"\startTextSpan" + span_command,
                         right_padding=1.4,
@@ -266,7 +268,6 @@ class TextSpanHandler:
                 final_indicator = abjad.StartTextSpan(
                     left_text=abjad.Markup(
                         fr"""\center-column {{ \center-align \vcenter \with-color #white \musicglyph \evans-upbow \vspace #0.2 \upright \with-color #black \fraction {start_strings[-1][0]} {start_strings[-1][-1]} }}""",
-                        literal=True,
                     ),
                     style=r"invisible-line",
                     command=r"\startTextSpan" + span_command,
@@ -295,11 +296,13 @@ class TextSpanHandler:
         # print('Adding left spanner ...')
         container = abjad.Container()
         container.extend(selections)
-        runs = abjad.select(container).runs()
+        runs = abjad.Selection(container).runs()
         start_strings = [next(positions) for _ in runs]
         start_indicators = [
             abjad.StartTextSpan(
-                left_text=abjad.Markup(fr"\upright {{ {start_string} }}", literal=True),
+                left_text=abjad.Markup(
+                    fr"\upright {{ {start_string} }}",
+                ),
                 style=fr"{style}-with-hook",
                 command=r"\startTextSpan" + span_command,
                 right_padding=3,

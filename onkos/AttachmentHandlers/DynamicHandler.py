@@ -23,10 +23,10 @@ class DynamicHandler:
         return self.add_dynamics(selections)
 
     def add_dynamics(self, selections):
-        runs = abjad.select(selections).runs()
+        runs = abjad.Selection(selections).runs()
         for run in runs:
             if len(run) > 1:
-                leaves = abjad.select(run).leaves()
+                leaves = abjad.Selection(run).leaves()
                 if self.starting_dynamic is not None:
                     abjad.attach(abjad.Dynamic(self.starting_dynamic), leaves[0])
                 if self.hairpin is not None:
@@ -37,7 +37,7 @@ class DynamicHandler:
                         abjad.StartHairpin("--"), leaves[-1]
                     )  # makes ending with a logical tie weird. If problematic: reduce indentation by 1
             else:
-                leaves = abjad.select(run).leaves()
+                leaves = abjad.Selection(run).leaves()
                 dynamic = next(self._cyc_dynamics)
                 if self.starting_dynamic is not None:
                     if self.ending_dynamic is not None:

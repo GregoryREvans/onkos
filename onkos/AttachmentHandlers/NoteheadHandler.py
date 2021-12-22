@@ -22,12 +22,12 @@ class NoteheadHandler:
     def add_noteheads(self, selections):
         if self.notehead_list is not None:
             head = self._cyc_noteheads
-            for tie in abjad.select(selections).logical_ties(pitched=True):
+            for tie in abjad.Selection(selections).logical_ties(pitched=True):
                 head_name = next(head)
                 string = str(r"""\once \override Staff.NoteHead.style = #'""")
                 full_string = string + head_name
                 style = abjad.LilyPondLiteral(full_string, format_slot="before")
-                for leaf in abjad.select(tie).leaves(pitched=True):
+                for leaf in abjad.Selection(tie).leaves(pitched=True):
                     abjad.attach(style, leaf)
         if self.transition is True:
             transition_arrow = abjad.LilyPondLiteral(
@@ -40,10 +40,10 @@ class NoteheadHandler:
             """,
                 "absolute_after",
             )
-            for tie in abjad.select(selections).logical_ties(pitched=True):
+            for tie in abjad.Selection(selections).logical_ties(pitched=True):
                 abjad.attach(transition_arrow, tie[-1])
-            for run in abjad.select(selections).runs():
-                last_tie = abjad.select(run).logical_ties(pitched=True)[-1]
+            for run in abjad.Selection(selections).runs():
+                last_tie = abjad.Selection(run).logical_ties(pitched=True)[-1]
                 abjad.detach(transition_arrow, last_tie[-1])
         return selections
 

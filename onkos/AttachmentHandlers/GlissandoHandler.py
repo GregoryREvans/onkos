@@ -10,7 +10,7 @@ class GlissandoHandler:
         return self.add_glissando(selections)
 
     def add_glissando(self, selections):
-        runs = abjad.select(selections).runs()
+        runs = abjad.Selection(selections).runs()
         if self.glissando_style == "hide_middle_note_heads":
             if self.line_style is not None:
                 for run in runs:

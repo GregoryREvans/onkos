@@ -19,7 +19,7 @@ class ArticulationHandler:
         return self.add_articulations(selections)
 
     def add_articulations(self, selections):
-        ties = abjad.select(selections).logical_ties(pitched=True)
+        ties = abjad.Selection(selections).logical_ties(pitched=True)
         for tie in ties:
             if self.articulation_list is not None:
                 articulation = self._cyc_articulations

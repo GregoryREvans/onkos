@@ -48,7 +48,7 @@ from onkos.Components.rhythm_makers import (
 
 silence_maker = abjadext.rmakers.stack(
     abjadext.rmakers.NoteRhythmMaker(),
-    abjadext.rmakers.force_rest(abjad.select().leaves(pitched=True)),
+    abjadext.rmakers.force_rest(lambda _: abjad.Selection(_).leaves(pitched=True)),
 )
 
 music_maker_one = MusicMaker(

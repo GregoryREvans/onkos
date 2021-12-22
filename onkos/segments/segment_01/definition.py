@@ -69,13 +69,13 @@ for voice_name, timespan_list in all_timespans.items():
 
 
 print("Adding ending skips ...")
-last_skip = abjad.select(score["Global Context"]).leaves()[-1]
+last_skip = abjad.Selection(score["Global Context"]).leaves()[-1]
 override_command = abjad.LilyPondLiteral(
     r"\once \override TimeSignature.color = #white", format_slot="before"
 )
 abjad.attach(override_command, last_skip)
 
-for voice in abjad.select(score["Staff Group"]).components(abjad.Voice):
+for voice in abjad.Selection(score["Staff Group"]).components(abjad.Voice):
     container = abjad.Container()
     sig = time_signatures[-1]
     leaf_duration = sig.duration / 2
@@ -86,7 +86,6 @@ for voice in abjad.select(score["Staff Group"]).components(abjad.Voice):
     markup = abjad.Markup(
         r"""\markup \center-align \musicglyph #"scripts.ushortfermata" """,
         direction=abjad.Up,
-        literal=True,
     )
     start_command = abjad.LilyPondLiteral(
         r"\stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff",
@@ -114,13 +113,13 @@ for voice in abjad.select(score["Staff Group"]).components(abjad.Voice):
 
 
 print("Beaming runs ...")
-for voice in abjad.select(score).components(abjad.Voice):
+for voice in abjad.Selection(score).components(abjad.Voice):
     abjad.beam(voice[:], beam_lone_notes=False, beam_rests=False)
 
 # print('Beautifying score ...')
 # cutaway score
 # for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
-#     for selection in abjad.select(staff).components(abjad.Rest).group_by_contiguity():
+#     for selection in abjad.Selection(staff).components(abjad.Rest).group_by_contiguity():
 #         start_command = abjad.LilyPondLiteral(
 #             r'\stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff',
 #             format_slot='before',
@@ -149,18 +148,18 @@ for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
         elif isinstance(previous_leaf, abjad.Rest):
             pass
 # for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
-#     for run in abjad.select(staff).runs():
+#     for run in abjad.Selection(staff).runs():
 #         last_leaf = run[-1]
 #         next_leaf = abjad.get.leaf(last_leaf, 1)
 #         abjad.attach(abjad.StopTextSpan(), next_leaf)
 #         abjad.attach(abjad.StopHairpin(), next_leaf)
 
 # for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
-#     first_leaf = abjad.select(staff).leaves()[0]
+#     first_leaf = abjad.Selection(staff).leaves()[0]
 #     stop = abjad.LilyPondLiteral(r'\!', format_slot='after',)
 #     abjad.attach(stop, first_leaf)
 
-for tuplet in abjad.select(score["Staff Group"]).components(abjad.Tuplet):
+for tuplet in abjad.Selection(score["Staff Group"]).components(abjad.Tuplet):
     tuplet.rewrite_dots()
     if tuplet.trivial() is True:
         tuplet.hide = True
@@ -190,42 +189,54 @@ print("Adding attachments ...")
 bar_line = abjad.BarLine("||")
 metro = abjad.MetronomeMark((1, 4), (63, 72))
 
-markup2 = abjad.Markup(r"\markup \bold { A }", literal=True)
+markup2 = abjad.Markup(
+    r"\markup \bold { A }",
+)
 mark2 = abjad.RehearsalMark(markup=markup2)
 
-markup3 = abjad.Markup(r"\markup \bold { B }", literal=True)
+markup3 = abjad.Markup(
+    r"\markup \bold { B }",
+)
 mark3 = abjad.RehearsalMark(markup=markup3)
 
-markup4 = abjad.Markup(r"\markup \bold { C }", literal=True)
+markup4 = abjad.Markup(
+    r"\markup \bold { C }",
+)
 mark4 = abjad.RehearsalMark(markup=markup4)
 
-markup5 = abjad.Markup(r"\markup \bold { D }", literal=True)
+markup5 = abjad.Markup(
+    r"\markup \bold { D }",
+)
 mark5 = abjad.RehearsalMark(markup=markup5)
 
 instruments = cyc([abjad.Contrabass()])
 
-mark_abbreviation = abjad.Markup(r"\markup \hcenter-in #12 cb.", literal=True)
+mark_abbreviation = abjad.Markup(
+    r"\markup \hcenter-in #12 cb.",
+)
 abbreviations = cyc([abjad.MarginMarkup(markup=mark_abbreviation)])
 
-mark_name = abjad.Markup(r"\markup \hcenter-in #14 Contrabass", literal=True)
+mark_name = abjad.Markup(
+    r"\markup \hcenter-in #14 Contrabass",
+)
 names = cyc([abjad.StartMarkup(markup=mark_name)])
 
 for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
-    leaf1 = abjad.select(staff).leaves()[0]
+    leaf1 = abjad.Selection(staff).leaves()[0]
     abjad.attach(next(instruments), leaf1)
     # abjad.attach(next(abbreviations), leaf1)
     abjad.attach(next(names), leaf1)
 
-for staff in abjad.select(score["Staff Group"]).components(abjad.Staff):
-    last_leaf = abjad.select(staff).leaves()[-3]
+for staff in abjad.Selection(score["Staff Group"]).components(abjad.Staff):
+    last_leaf = abjad.Selection(staff).leaves()[-3]
     abjad.attach(bar_line, last_leaf)
 
 for staff in abjad.iterate(score["Global Context"]).components(abjad.Staff):
-    leaf1 = abjad.select(staff).leaves()[0]
-    leaf2 = abjad.select(staff).leaves()[21]
-    leaf3 = abjad.select(staff).leaves()[27]
-    leaf4 = abjad.select(staff).leaves()[41]
-    leaf5 = abjad.select(staff).leaves()[56]
+    leaf1 = abjad.Selection(staff).leaves()[0]
+    leaf2 = abjad.Selection(staff).leaves()[21]
+    leaf3 = abjad.Selection(staff).leaves()[27]
+    leaf4 = abjad.Selection(staff).leaves()[41]
+    leaf5 = abjad.Selection(staff).leaves()[56]
     abjad.attach(metro, leaf1)
     abjad.attach(mark2, leaf2)
     abjad.attach(mark3, leaf3)
