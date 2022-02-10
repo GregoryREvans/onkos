@@ -263,8 +263,8 @@ paper_block = abjad.Block(name="paper")
 score_file = abjad.LilyPondFile(
     items=[header_block, layout_block, paper_block, score_block],
     includes=[
-        "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
-        "/Users/evansdsg2/evans/lilypond/evans-markups.ily",
+        "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily",
+        "/Users/gregoryevans/evans/lilypond/evans-markups.ily",
     ],
 )
 

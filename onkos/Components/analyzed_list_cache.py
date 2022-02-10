@@ -22,7 +22,7 @@
 #     else:
 #         analyzed_list_1.append(x)
 #
-# # analyzed_list_2 = [x for x in get_audio_pitches(path='/Users/evansdsg2/Scores/onkos/Components/audio_sources/Eatern_Towhee_2.wav')]
+# # analyzed_list_2 = [x for x in get_audio_pitches(path='/Users/gregoryevans/Scores/onkos/Components/audio_sources/Eatern_Towhee_2.wav')]
 # path3 = f"{parent_path}/audio_sources/Eatern_Towhee_3.wav"
 # old_analyzed_list_3 = [x for x in get_audio_pitches(path=path3)]
 # analyzed_list_3 = []
